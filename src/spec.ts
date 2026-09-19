@@ -26,6 +26,13 @@ export interface SkinSpec {
   beard: number
   /** how strongly pores, stubble and fine lines show */
   pores: number
+  /**
+   * TEMPORARY (2026-09-19), for working out why some skins read as pox: the two halves of `pores` on their own.
+   * `relief` is the skin photograph's own normal map, `detail` the procedural micro-detail tiled over it. Unset
+   * means "follow the Texture slider", which is the shipping behaviour; remove both once the balance is settled.
+   */
+  relief?: number
+  detail?: number
   /** matte 0 .. dewy 1 */
   shine: number
   /** the detail photograph (a MakeHuman skin id: freckled, older, bronzed, …); null = MakeHuman's own young skin
@@ -126,6 +133,9 @@ export function normalizeSpec(input?: unknown): AvatarSpec {
       redness: unit(skin.redness, D.skin.redness), blotchiness: unit(skin.blotchiness, D.skin.blotchiness),
       beard: unit(skin.beard, D.skin.beard), pores: unit(skin.pores, D.skin.pores), shine: unit(skin.shine, D.skin.shine),
       texture: id(skin.texture, null),
+      // (temporary; see SkinSpec. Absent unless set, so specs and codes are unchanged for everyone else)
+      ...(skin.relief === undefined ? {} : { relief: unit(skin.relief, D.skin.pores) }),
+      ...(skin.detail === undefined ? {} : { detail: unit(skin.detail, D.skin.pores) }),
     },
     eyes: (EYE_MATERIALS as readonly string[]).includes(src.eyes as string) ? (src.eyes as string) : D.eyes,
     hair: { id: 'id' in hair ? id(hair.id, D.hair.id) : D.hair.id, color: normalizeColor(hair.color, D.hair.color) },

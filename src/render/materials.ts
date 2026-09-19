@@ -68,13 +68,16 @@ export function applySpecToMaterials(m: AvatarMaterials, spec: AvatarSpec): void
   m.body.albedoColor = color.toLinearSpace().scale(2)
   // surface: how strongly the relief shows, and matte to dewy (the roughness map is scaled around its own values)
   // (the photograph's own relief is soft and lumpy at this scale: the micro-detail below carries the fine grain)
-  if (m.body.bumpTexture) m.body.bumpTexture.level = 1.4 * spec.skin.pores
+  // (temporary: skin.relief and skin.detail split the Texture slider in two, to weigh them separately)
+  const relief = spec.skin.relief ?? spec.skin.pores
+  const detail = spec.skin.detail ?? spec.skin.pores
+  if (m.body.bumpTexture) m.body.bumpTexture.level = 1.4 * relief
   // (the micro-detail follows the same slider: none when smooth)
-  m.body.detailMap.diffuseBlendLevel = 0.35 * spec.skin.pores
-  m.body.detailMap.bumpLevel = 1.8 * spec.skin.pores
-  m.body.detailMap.roughnessBlendLevel = 0.5 * spec.skin.pores
+  m.body.detailMap.diffuseBlendLevel = 0.35 * detail
+  m.body.detailMap.bumpLevel = 1.8 * detail
+  m.body.detailMap.roughnessBlendLevel = 0.5 * detail
   m.body.roughness = 1.35 - 0.7 * spec.skin.shine
-  m.pores = spec.skin.pores
+  m.pores = relief
   const fem = spec.macros.Gender < 0.5
   void loadIndex().then((idx) => {
     // a chosen photograph, else MakeHuman's own young skin of this sex nearest the colour
