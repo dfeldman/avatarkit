@@ -133,6 +133,8 @@ export class Designer {
       this.busyEl.textContent = text ?? 'Shaping…'
       this.busyEl.classList.toggle('on', b)
     }
+    // a build or a download that fails says so, instead of leaving the stage on "Shaping…"
+    this.preview.onError = (message) => this.toast(message)
     stage.append(this.viewButtons(), this.poseDock(), this.motionBar())
 
     // --- panel

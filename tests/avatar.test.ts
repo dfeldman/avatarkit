@@ -347,6 +347,17 @@ describe('GeometryService (main-thread fallback)', () => {
     }
   })
 
+  it('rejects when a build fails, so a caller can tell it apart from a superseded request', async () => {
+    const svc = new GeometryService()
+    // a spec whose clothes don't exist: the build throws, and the caller hears about it
+    const bad = cloneSpec(preset('sam'))
+    bad.clothes = [{ id: 'no_such_garment' }]
+    await expect(svc.request(bad, 'low')).rejects.toThrow()
+    // the service keeps working afterwards
+    await expect(svc.request(tallSam(0.69), 'low').then((g) => g?.rig.height)).resolves.toBe(heightOf(0.69))
+    svc.dispose()
+  })
+
   it('builds every request in order by default', async () => {
     const svc = new GeometryService()
     const done: number[] = []

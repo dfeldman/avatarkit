@@ -19,6 +19,7 @@ import { moveFor, type Move } from '../anim/moves.ts'
 import { Avatar } from '../render/avatar.ts'
 import { Bike } from '../render/bike.ts'
 import { GeometryService } from '../render/geometryService.ts'
+import type { AvatarGeometry } from '../body/build.ts'
 import { shapeKey, type AvatarSpec } from '../spec.ts'
 
 export type View = 'body' | 'face'
@@ -32,6 +33,8 @@ export class Preview {
   /** null until the first geometry arrives */
   avatar: Avatar | null = null
   onBusy: (busy: boolean, text?: string) => void = () => {}
+  /** something went wrong building or loading (the designer shows it rather than waiting forever) */
+  onError: (message: string) => void = () => {}
   private readonly service = new GeometryService()
   private readonly shadows: ShadowGenerator
   private bike: Bike | null = null
@@ -218,7 +221,14 @@ export class Preview {
     const key = shapeKey(spec)
     const hit = this.service.cached(spec, this.quality)
     if (!hit) this.onBusy(true)
-    const g = hit ?? (await this.service.request(spec, this.quality, { latest: true }))
+    let g: AvatarGeometry | null
+    try {
+      g = hit ?? (await this.service.request(spec, this.quality, { latest: true }))
+    } catch (err) {
+      this.onBusy(false)
+      this.onError(`Couldn't build this avatar: ${(err as Error).message}`)
+      return
+    }
     if (!g || key !== this.wanted) return
     if (!this.avatar) {
       this.avatar = new Avatar(this.scene, this.spec, { geometry: g, quality: this.quality, shadows: this.shadows, name: 'designer' })
@@ -266,7 +276,15 @@ export class Preview {
     }
     if (!this.clipSet) this.onBusy(true, 'Loading moves…')
     this.clipsReady ??= loadClips().then((set) => { this.clipSet = set })
-    await this.clipsReady
+    try {
+      await this.clipsReady
+    } catch (err) {
+      this.clipsReady = null
+      this.move = null
+      this.onBusy(false)
+      this.onError(`Couldn't load the moves: ${(err as Error).message}`)
+      return
+    }
     this.onBusy(false)
     const a = this.avatar
     if (!a || this.move !== move) return

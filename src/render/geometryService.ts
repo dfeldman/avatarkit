@@ -3,6 +3,9 @@
  * in turn (a game loading its players); with `latest: true` a newer request replaces any queued ones (a dragged
  * slider only builds its latest value) and the replaced ones resolve with null. Falls back to building on the
  * main thread when workers aren't available.
+ *
+ * A build that fails rejects, so a caller can tell "nothing to draw yet" (null: superseded) from "this avatar
+ * cannot be built" and say so; the failure is never silent.
  */
 import { assetBase } from '../body/mhassets.ts'
 import { buildAvatarGeometry, preloadAssets, type AvatarGeometry, type Quality } from '../body/build.ts'
@@ -13,6 +16,7 @@ interface Pending {
   spec: AvatarSpec
   quality: Quality
   resolve: (g: AvatarGeometry | null) => void
+  reject: (err: Error) => void
 }
 
 export class GeometryService {
@@ -58,14 +62,19 @@ export class GeometryService {
     const key = GeometryService.key(spec, quality)
     const hit = this.cache.get(key)
     if (hit) return Promise.resolve(hit)
-    return new Promise((resolve) => {
-      const p: Pending = { key, spec: JSON.parse(JSON.stringify(spec)) as AvatarSpec, quality, resolve }
+    return new Promise((resolve, reject) => {
+      const p: Pending = { key, spec: JSON.parse(JSON.stringify(spec)) as AvatarSpec, quality, resolve, reject }
       const same = this.inflight?.key === key ? this.inflight : this.queue.find((q) => q.key === key)
       if (same) {
         const prev = same.resolve
         same.resolve = (g) => {
           prev(g)
           resolve(g)
+        }
+        const prevReject = same.reject
+        same.reject = (e) => {
+          prevReject(e)
+          reject(e)
         }
         return
       }
@@ -104,6 +113,13 @@ export class GeometryService {
     const p = this.inflight
     this.inflight = null
     this.busy = false
+    if (p && error) {
+      // (the caller shows it; the log keeps the cause where a caller only reports "couldn't build")
+      console.warn('avatar geometry:', error)
+      p.reject(new Error(error))
+      this.pump()
+      return
+    }
     if (error) console.warn('avatar geometry:', error)
     if (p && g) {
       this.cache.set(p.key, g)

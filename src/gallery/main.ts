@@ -139,7 +139,10 @@ const t0 = performance.now()
 specs.forEach((spec, i) => {
   const mode: MotionMode = (['walk', 'run', 'cycle', 'run', 'walk', 'cycle'] as const)[i % 6]
   const speed = mode === 'walk' ? 1.1 + (i % 3) * 0.25 : mode === 'run' ? 2.6 + (i % 4) * 0.5 : 5 + (i % 3)
-  void service.request(spec, quality).then((g) => {
+  void service.request(spec, quality).catch((err: Error) => {
+    console.error(`avatar ${i} could not be built:`, err.message)
+    return null
+  }).then((g) => {
     if (!g) return
     const avatar = new Avatar(scene, spec, { quality, geometry: g, shadows, name: `a${i}` })
     avatar.setMotion({ mode, speed, cadence: mode === 'cycle' ? speed * 12 : 0, effort: mode === 'walk' ? 0.3 : 0.7 })
