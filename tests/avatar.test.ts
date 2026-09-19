@@ -322,6 +322,31 @@ describe('GeometryService (main-thread fallback)', () => {
     svc.dispose()
   })
 
+  it('retries on the main thread when the worker fails, rather than dropping what it was building', async () => {
+    // a worker that dies on its first job (no module workers, a blocked script): the avatar still appears
+    class DeadWorker {
+      onmessage: ((e: MessageEvent) => void) | null = null
+      onerror: ((e: Event) => void) | null = null
+      postMessage(): void {
+        setTimeout(() => this.onerror?.(new Event('error')), 0)
+      }
+      terminate(): void {}
+    }
+    const g = globalThis as { Worker?: unknown }
+    const had = Object.prototype.hasOwnProperty.call(g, 'Worker')
+    const before = g.Worker
+    g.Worker = DeadWorker
+    try {
+      const svc = new GeometryService()
+      const spec = tallSam(0.68)
+      await expect(svc.request(spec, 'low').then((x) => x?.rig.height)).resolves.toBe(heightOf(0.68))
+      svc.dispose()
+    } finally {
+      if (had) g.Worker = before
+      else delete g.Worker
+    }
+  })
+
   it('builds every request in order by default', async () => {
     const svc = new GeometryService()
     const done: number[] = []

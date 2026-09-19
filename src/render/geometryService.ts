@@ -27,9 +27,18 @@ export class GeometryService {
     try {
       this.worker = new Worker(new URL('./geometry.worker.ts', import.meta.url), { type: 'module' })
       this.worker.onmessage = (e: MessageEvent<{ id: number; geometry?: AvatarGeometry; error?: string }>) => this.done(e.data.geometry ?? null, e.data.error)
-      this.worker.onerror = () => {
+      // A worker that fails (a browser without module workers, a blocked or broken script) drops the kit to the
+      // main thread. The request it was carrying goes back to the front of the queue: losing it would leave the
+      // avatar that asked for it blank until something else asked again.
+      this.worker.onerror = (e: ErrorEvent | Event) => {
         this.worker = null
-        this.done(null, 'worker failed')
+        const why = (e as ErrorEvent).message || 'the worker failed to start'
+        console.warn(`avatar geometry: ${why}; building on the main thread instead`)
+        const p = this.inflight
+        this.inflight = null
+        this.busy = false
+        if (p) this.queue.unshift(p)
+        this.pump()
       }
     } catch {
       this.worker = null
