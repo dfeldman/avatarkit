@@ -48,8 +48,9 @@ of the console's main bundle. The server serves this folder's `public/` at `/ava
 `setAssetBase('/avatars/mh/')` and `setStudioHdri('/avatars/env/…')`. A host page that serves the kit's assets
 elsewhere does the same two calls.
 
-For now the designer's Save keeps the avatar in that browser (`localStorage`, key `dh.avatar`); storing it on the
-player's profile is next.
+Save stores the avatar on the player's profile (`users.profile.avatar`, through `PUT /api/me`), so it follows the
+account to any device; `consoles/web/src/avatar.ts` does the reading and merging. An avatar left in a browser by the
+earlier version (`localStorage`, key `dh.avatar`) is picked up once and then cleared.
 
 ## Run
 

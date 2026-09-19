@@ -21,7 +21,9 @@ getstate (1 Hz) ─► speed / cadence / incline + EffortMeter ─► avatar.set
   - `@dandyhorse/avatarkit` is for games: spec, `Avatar`, `GeometryService`, `Bike`, `Animator`.
   - `@dandyhorse/avatarkit/designer` is for the console. It adds DOM code and CSS, which no game needs.
 
-## 2. Storing the avatar
+## 2. Storing the avatar — done
+
+(`consoles/web/src/avatar.ts` and `views/Avatar.vue`; the server caps the profile at 32 KB.)
 
 - **Where:** in `users.profile.avatar`. PLAN.md §8.1 already lists "avatar" among the profile JSON's contents.
 - **The value:** an `AvatarSpec`, a versioned JSON object of about 1 KB (the default is in README.md). Readers
