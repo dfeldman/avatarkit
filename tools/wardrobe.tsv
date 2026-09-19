@@ -1,0 +1,216 @@
+# Garments shipped in public/mh (chosen 2026-09-18 from every MakeHuman clothing pack): id, designer slot, display
+# name, note. Order matters: the designer lists each slot in this order (exercise wear first).
+# tools/mkmhassets.mjs converts only these clothes; add a line here to ship another.
+punkduck_sport_bra	tops	Sports bra	Racerback sports bra, clean
+wolgade_female_top_01	tops	Sports bra, stars	Sports bra top, 4k texture, fits exercise use
+mindfront_tank_top_01	tops	Athletic tank	Athletic tank with trim, light mesh
+punkduck_sleeveless_crop_top	tops	Crop tank	Simple crop tank, sporty
+elvs_lara_tank1	tops	Fitted tank	Fitted tank, light mesh
+toigo_basic_tucked_t-shirt	tops	T-shirt	Best plain tee: knit texture, tints well
+elvs_crude_t-shirt_male	tops	T-shirt, loose	Clean plain tee, tints well (current default)
+joepal_crude_t-shirt_female	tops	T-shirt, fitted	Plain fitted tee, tints well
+elvs_male_logo_tshirt1	tops	Logo tee	Fitted tee with small logo
+namuhekam_male_polo_shirt	tops	Henley	Henley/polo, clean and tintable
+elvs_hooded_sweat_jacket1	tops	Hoodie	Black hoodie, 20k tris
+punkduck_spaghetti_strap_tank_top	tops	Cami	Clean cami, light mesh
+punkduck_v_neck_top	tops	V-neck cami	V-neck cami, clean
+punkduck_retro_top	tops	Sweetheart crop top	Sweetheart-neck crop, tints well
+punkduck_high_neck_crop_top	tops	High-neck crop top	Patterned high-neck crop
+punkduck_tube_top	tops	Tube top	Plain tube top
+punkduck_sleeveless_shirt	tops	Sleeveless shirt	Button-front sleeveless tie shirt, normal map
+punkduck_off-shoulder_long-sleeve_top	tops	Cold-shoulder top	Cold-shoulder top
+elvs_disco_top2	tops	Halter top	Halter top, open back
+toigo_keyhole_tank_top	tops	Keyhole tank	Keyhole tank, giraffe print
+toigo_camisole_top	tops	Paisley camisole	Paisley camisole
+toigo_bodice-style_top	tops	Corset top	Corset-style top
+punkduck_lace_up_blouse	tops	Lace-up blouse	Lace-up peasant blouse
+elvs_ruffle_sleeve_peasant_blouse_1	tops	Ruffle blouse	Ruffle-sleeve blouse, busy print
+drednicolson_asymmetric_tunic_and_sash	tops	Tunic and sash	Nice floral print, fantasy cut
+drednicolson_short-tail_camo_tee	tops	Camo tee	Camo tee, dark texture
+ews_striped_shirt	tops	Striped top	Striped long-sleeve crop, texture-driven (won't tint)
+mindfront_knitted_sweater_01	tops	Knit sweater	Realistic knit, normal map, light mesh
+mindfront_knitted_sweater_02	tops	Cable-knit sweater	Cable-knit sweater, excellent texture
+toigo_fisherman_sweater	tops	Ribbed sweater	Ribbed sweater, rich texture (small alpha specks to fix)
+janexx_old_female_sweater	tops	Loose sweater	Relaxed long-sleeve sweater, clean
+mindfront_lusekofta	tops	Nordic cardigan	Norwegian knit cardigan, 4k texture, standout detail
+mindfront_cardigan_long_open_front	tops	Long cardigan	Long knit cardigan; texture alpha needs converter fix
+punkduck_winter_coat	tops	Winter coat	Belted long coat; alpha holes need converter fix
+elvs_emt_uniform_jacket_female	tops	Rescue jacket (f)	Detailed paramedic jacket, 21k tris
+elvs_emt_uniform_jacket_male	tops	Rescue jacket (m)	Detailed paramedic jacket, 21k tris
+punkduck_bandeau_bikini_bra	tops	Bikini top	Bandeau bikini top (pairs with the slip)
+punkduck_sport_briefs	bottoms	Sport briefs	Logo sport briefs (underwear)
+wolgade_female_panties_01	bottoms	Sport briefs, stars	Star-print sport bottoms; pairs with wolgade_female_top_01
+mindfront_male_swimming_trunks_03	bottoms	Swim briefs	Swim briefs, clean
+mindfront_male_swimming_trunks_01	bottoms	Swim shorts	Swim shorts, normal map
+mindfront_male_swimming_trunks_02	bottoms	Swim shorts, print	Patterned swim shorts
+elvs_male_swim_shorts1	bottoms	Board shorts	Board shorts (current default)
+punkduck_female_short_jeans	bottoms	Denim shorts	Denim shorts, detailed
+cortu_jeans_shorts	bottoms	Denim hot pants	Denim hot pants, 500 tris
+scsouza_mini_denin_skirt	bottoms	Denim micro shorts	Denim micro-shorts, 360 tris, sharp texture
+punkduck_male_classic_jeans	bottoms	Jeans	Classic straight jeans, normal map
+mindfront_male_trousers_1	bottoms	Straight jeans	Straight jeans, 4k texture, excellent
+punkduck_female_tight_jeans	bottoms	Skinny jeans	Skinny jeans, normal map
+mindfront_female_trousers_1	bottoms	Embroidered jeans	Embroidered skinny jeans, 4k texture, excellent
+elvs_disco_pants_skinny	bottoms	Skinny trousers	Black skinny trousers, normal map
+toigo_wool_pants	bottoms	Trousers	Plain wool trousers, light and tintable
+mindfront_male_trousers_2	bottoms	Chinos	Dark chinos/slacks, 15k tris
+cortu_cargo_pants	bottoms	Loose trousers	Loose trousers, very low poly (392 tris)
+toigo_harem_pants	bottoms	Harem pants	Floral harem pants, 11k tris
+elvs_emt_uniform_pants_female	bottoms	Work trousers (f)	Work trousers with reflective bands
+elvs_emt_uniform_pants_male	bottoms	Work trousers (m)	Work trousers with reflective bands
+punkduck_black_mini_skirt	bottoms	Mini skirt	Plain black mini, tintable
+toigo_tiered_mini_skirt	bottoms	Tiered mini skirt	Tiered black mini, tintable
+punkduck_jeans_skirt	bottoms	Denim skirt	Stonewash denim mini, detailed
+elvs_disco_mini_skirt	bottoms	Knit mini skirt	Knit mini skirt
+elvs_pencil_skirt	bottoms	Pencil skirt	Knit pencil skirt, normal map
+sonicteam998_maria_skirt	bottoms	Flared midi skirt	Plain flared midi, tints well
+elvs_asymmetrical_skirt	bottoms	Asymmetric skirt	Asymmetric knit skirt
+elvs_gored_midi_skirt	bottoms	Lace-panel skirt	Gored midi with lace panels
+punkduck_retro_polka_dot_skirt	bottoms	Polka-dot skirt	A-line polka-dot skirt, clean
+mtknife_pleated_mini_skirt	bottoms	Tartan mini, pleated	Pleated tartan mini, 4k texture
+mtknife_low_mini_skirt	bottoms	Tartan mini, low	Low-rise tartan mini
+frankyaye_mini_skirt_02	bottoms	Tartan mini	Pleated tartan mini
+callharvey3d_harvey_pskirt01	bottoms	Plaid mini	Pleated plaid mini, very light mesh
+toigo_skirt_with_lace_ruffle	bottoms	Ruffle skirt	Printed ruffle skirt
+toigo_long_full_skirt	bottoms	Long skirt	Long printed skirt
+toigo_tiered_skirt	bottoms	Ombre tiered skirt	Ombre tiered skirt, 13k tris
+punkduck_skirt_native_american_fashion	bottoms	Banded long skirt	Long banded skirt, 10k tris
+punkduck_bandeau_bikini_slip	bottoms	Bikini bottom	Bandeau bikini bottom
+punkduck_triathlon_suit_female	outfits	Triathlon suit	Triathlon suit, ideal for the exergames
+punkduck_short_bodysuit_female	outfits	Cycling skinsuit	Short-sleeve zip skinsuit: reads as a cycling skinsuit
+culturalibre_heroine_suit_5	outfits	Speed suit	Short-sleeve skinsuit, tintable: speed-suit base
+culturalibre_hero_suit_4	outfits	Long skinsuit	Plain long-sleeve skinsuit, tintable: a cycling skinsuit base
+culturalibre_hero_suit_2	outfits	Short skinsuit	Plain short-sleeve bodysuit, 11k tris
+culturalibre_heroine_suit_1	outfits	Long bodysuit	Plain long-sleeve bodysuit
+matcreator_mc-skinsuit_2022	outfits	Black skinsuit	Black skinsuit, 4k texture, 20k tris
+female_sportsuit01	outfits	Crop top and leggings	Crop top + track leggings (system), exercise-ready
+culturalibre_heroine_suit_4	outfits	Bandeau and leggings	Bandeau + leggings + gloves, 22k tris
+culturalibre_male_sport_suit	outfits	Running kit	Athletic tee + running shorts in one, tintable
+punkduck_wetsuit	outfits	Wetsuit	Full wetsuit with stripes; doubles as a winter/rowing suit
+mindfront_f_one-piece_swimsuit_01	outfits	Swimsuit	One-piece swimsuit, clean
+punkduck_one_piece_bikini01	outfits	Swimsuit, white	White one-piece swimsuit
+mindfront_bikini_01	outfits	Sport bikini	Sporty bikini, 3.4k tris
+elvs_racing_fire_suit_female1	outfits	Race suit (f)	Motorsport race suit, 19k tris; good for Night Racer
+elvs_racing_fire_suit_male1	outfits	Race suit (m)	Motorsport race suit, 26k tris; good for Night Racer
+punkduck_tennis_dress	outfits	Tennis dress	Tennis dress; the dark waistband looks odd
+punkduck_figure_skating_dress	outfits	Skating dress	Figure-skating dress, detailed
+female_casualsuit01	outfits	Tee and jeans (f)	Logo tee + jeans (system), clean
+female_casualsuit02	outfits	Tee and denim shorts	Logo tee + denim shorts (system)
+male_casualsuit04	outfits	Tee and jeans (m)	Logo tee + jeans (system)
+male_casualsuit06	outfits	White tee and jeans	White tee + jeans (system)
+male_casualsuit02	outfits	Long-sleeve tee and jeans	Long-sleeve logo tee + jeans (system)
+male_casualsuit01	outfits	Shirt and jeans	Dark shirt + jeans (system), 17k tris
+male_casualsuit03	outfits	Pinstripe shirt and jeans	Pinstripe shirt + jeans (system)
+male_casualsuit05	outfits	Field jacket and jeans	Field jacket + jeans (system)
+male_worksuit01	outfits	Dungarees	Denim dungarees + tee (system)
+punkduck_halterneck_romper	outfits	Romper	White halter romper
+mindfront_f_dress_02	outfits	Sundress	Jade sundress, 4k texture
+toigo_bodice_dress_with_lace_ruffle_skirt	outfits	Floral sundress	Red floral sundress, excellent texture
+toigo_camisole_dress_with_full_skirt	outfits	Floral day dress	Purple floral day dress
+toigo_strapless_ruffle_top_dress	outfits	Strapless print dress	Strapless ditsy-print dress
+toigo_dress_with_tiered_skirt	outfits	Tiered floral dress	Tiered floral halter dress, 19k tris
+mindfront_f_dress_01	outfits	Little black dress	Little black dress, 4k texture, light mesh
+punkduck_black_cocktail_dress	outfits	Cocktail dress	Simple black cocktail dress, tintable
+toigo_shift_dress	outfits	Shift dress	Plain black shift, 14k tris (mindfront_f_dress_01 is lighter)
+punkduck_tube_dress	outfits	Tube dress	Plain strapless tube dress, tintable
+mindfront_f_dress_11	outfits	Tweed dress	Tweed shift dress, 4k texture, excellent
+mindfront_f_dress_08	outfits	Cut-out sheath dress	Red cut-out sheath dress, 1.4k tris
+mindfront_f_dress_06	outfits	Plunge dress	Teal plunge dress, 4k texture
+elvs_halter_dress_knee_length	outfits	Halter swing dress	Red halter swing dress, normal map
+elvs_halter_dress_mini	outfits	Halter mini dress	Mini version of the halter dress, 15k tris
+toigo_halter_dress_knee_length	outfits	Knit halter dress	Burgundy knit halter dress
+toigo_halter_dress_midi	outfits	Knit halter midi	Burgundy knit halter midi
+mindfront_f_dress_04	outfits	Halter two-piece	Halter two-piece; skin gap at the waist
+toigo_cut_out_dress	outfits	Print cut-out dress	Giraffe-print cut-out dress
+toigo_keyhole_neck_dress	outfits	Zebra keyhole dress	Zebra-print keyhole dress, 18k tris
+elvs_fringe_leather_dress	outfits	Fringed dress	Fringed leather dress
+aethelraed_flapper_dress	outfits	Flapper dress	Loose flapper dress, busy print
+punkduck_middle_length_qipao	outfits	Qipao	Red dragon qipao, rich texture
+mindfront_f_dress_03	outfits	Brocade dress and coat	Brocade dress with coat, 8k texture, 22k tris
+mindfront_f_dress_07	outfits	Checked maxi dress	Checked-bodice maxi dress
+mindfront_f_dress_09	outfits	Long-sleeve maxi dress	Black long-sleeve maxi, 16k tris
+punkduck_evening_gown	outfits	Evening gown	Navy halter maxi gown, clean
+mindfront_f_dress_05	outfits	Plum gown	Plum evening gown, 13k tris
+mindfront_f_dress_10	outfits	Slit gown	Cold-shoulder slit gown
+toigo_halter_dress_with_fluted_skirt	outfits	Fluted gown	Tiger-stripe fluted gown
+elvs_goddess_dress1	outfits	Grecian gown	White Grecian gown
+elvs_goddess_dress5	outfits	Halter gown	Green halter gown, 23k tris
+mindfront_m_suit_01	outfits	Slim suit	Slim black suit, 4k texture
+male_elegantsuit01	outfits	Suit and tie	Black suit and tie (system)
+toigo_male_suit_3	outfits	Suit, red tie	Black suit with red tie
+toigo_male_suit_tie_and_jacket	outfits	Suit, patterned tie	Suit with patterned tie, 19k tris
+toigo_male_double-breasted_suit	outfits	Double-breasted suit (m)	Navy pinstripe double-breasted suit
+toigo_female_double-breasted_suit	outfits	Double-breasted suit (f)	Double-breasted trouser suit
+toigo_female_suit_2	outfits	Trouser suit	Magenta trouser suit
+toigo_suit_with_dinner_jacket	outfits	Dinner jacket	White dinner jacket tux
+female_elegantsuit01	outfits	Blouse and pencil skirt	Pinstripe blouse + pencil skirt (system)
+mindfront_kimono	outfits	Robe	Robe/kimono
+punkduck_female_strapless_bodysuit	outfits	Strapless bodysuit	Strapless bodysuit, looks like shapewear
+joepal_plain_bra	outfits	Bra	Plain bra, 4k texture; underwear layer
+punkduck_running_shoes_01	shoes	Running shoes	Running shoes (current default)
+punkduck_cycling_shoes	shoes	Cycling shoes	Road cycling shoes, ideal for the bike games
+shoes06	shoes	Trainers, blue	Blue running trainers with socks (system)
+shoes05	shoes	Trainers, white	White trainers with socks (system)
+punkduck_tennis_shoes	shoes	Tennis shoes	White tennis shoes with socks
+culturalibre_sneakers	shoes	High-tops	Red high-top basketball sneakers, detailed
+punkduck_kill_bill_shoes	shoes	Retro trainers	Yellow retro trainers, distinctive
+punkduck_comfortable_sneakers	shoes	Slip-on sneakers	Slip-on canvas sneakers
+cortu_t-bar	shoes	Low sneakers	Low-poly sneaker, decent texture
+toigo_ballet_flats	shoes	Ballet flats	Plain ballet flats, tintable
+toigo_ballet_flats_with_bows	shoes	Flats with bows	Flats with bows, 15k tris
+toigo_ballet_flats_with_flowers	shoes	Flats with flower	Flats with flower, 10k tris
+toigo_mj_cloth_shoes	shoes	Mary Janes	Mary-Jane cloth shoes, 1k tris
+shoes01	shoes	Brown lace-ups	Brown leather lace-ups with socks (system)
+shoes02	shoes	Worn lace-ups	Worn black lace-ups with socks (system)
+shoes03	shoes	Dress shoes	Black dress shoes with socks (system)
+shoes04	shoes	Loafers	Black loafers with socks (system)
+mindfront_shoes_oxford_male	shoes	Oxfords (m)	Oxfords with sock, clean
+mindfront_shoes_oxford_female	shoes	Oxfords (f)	Oxfords with sock
+mindfront_shoes_monk_strap_male	shoes	Monk straps (m)	Monk-strap dress shoes with sock
+mindfront_shoes_monk_strap_female	shoes	Monk straps (f)	Monk-strap dress shoes with sock
+callharvey3d_harvey_saddleshoes1	shoes	Saddle shoes	Two-tone saddle shoes, low-res texture
+toigo_ankle_boots_male	shoes	Ankle boots (m)	Plain ankle boots, tintable
+toigo_ankle_boots_female	shoes	Ankle boots (f)	Plain ankle boots, tintable
+punkduck_female_half-boots	shoes	Heeled ankle boots	Heeled ankle boots, normal map
+mindfront_shoes_biker_boots_male	shoes	Biker boots (m)	Buckled biker boots, detailed sole
+mindfront_shoes_biker_boots_female	shoes	Biker boots (f)	Buckled biker boots, detailed sole
+madmanny_tight_leather_boots	shoes	Leather boots	Mid-calf leather boots, light mesh
+culturalibre_male_boots	shoes	Slouch boots	Slouch leather boots, 31k tris
+punkduck_winter_boots	shoes	Winter boots	Shearling winter boots
+punkduck_riding_boots	shoes	Riding boots	Tall riding boots, normal map
+scailman_low-heeled_boots	shoes	Tall boots	Tall low-heel boots
+punkduck_female_knee_boots	shoes	Heeled knee boots	Heeled knee boots
+cortu_floppy_overknee_shoes	shoes	Over-knee boots	Over-knee boots, plain
+joepal_crude_low_socks	socks	Ankle socks	Ankle socks (hidden by most shoes)
+joepal_crude_high_socks	socks	Knee socks	Knee socks, tintable
+toigo_leg_warmer_socks	socks	Leg warmers	Slouch leg warmers, good knit texture
+kwnet_at_pantyhose01	socks	Tights	Opaque tights/leggings, 4k texture
+toigo_lace_frill_socks	socks	Frill socks	Lace-frill ankle socks
+punkduck_bicycle_helmet_time_trial_aero_helmet	other	Aero bike helmet	Time-trial aero helmet with visor, ideal for cycling
+punkduck_sport-sunglasses	other	Sport sunglasses	Wraparound sport sunglasses, ideal for cycling/running
+punkduck_sun_visor_sports_visor	other	Sun visor	Sports visor, fits the exergame theme
+punkduck_swim_cap	other	Swim cap	Swim cap; hidden by hair until hats hide hair
+mindfront_knitted_hat_01	other	Beanie	Knit beanie, 448 tris
+toigo_gloves_short	other	Gloves	Short black gloves (winter/cycling)
+punkduck_glasses_modern_form	other	Sunglasses	Modern sunglasses
+frankyaye_glasses_library_male	other	Dark sunglasses	Dark sunglasses, light mesh
+kwnet_at_optical_glasses	other	Metal sunglasses	Metal-frame sunglasses, 4k texture
+elvs_ladies_sunglass1	other	Aviators	Aviator sunglasses, 38k tris
+spamrakuen_tbm_glasses_frames_01	other	Thick frames	Thick black frames, no lenses, reads well
+spamrakuen_sagerfrogs_glasses_01	other	Glasses	Glasses; lenses opaque blue until lens transparency is supported
+spamrakuen_sagerfrogs_glasses_02	other	Glasses, rectangular	Glasses; lenses opaque blue until lens transparency is supported
+spamrakuen_sagerfrogs_glasses_03	other	Half-rim glasses	Half-rim glasses; lenses opaque until transparency fix
+spamrakuen_sagerfrogs_glasses_04	other	Rimless glasses	Rimless glasses; lenses opaque until transparency fix
+toigo_round_glasses_leopard	other	Round glasses	Round wire glasses
+punkduck_goggles	other	Round glasses, thick	Round glasses, low-res texture
+jujube_newsboy_cap	other	Newsboy cap	Newsboy cap, light, normal map
+mindfront_patrol_cap	other	Patrol cap	Camo patrol cap
+mindfront_fishing_hat_01	other	Bucket hat	Bucket/fishing hat
+mindfront_sherpa_hat	other	Trapper hat	Knit trapper hat with ties
+drednicolson_pith_helmet	other	Safari hat	Pith/safari hat, normal map
+fedora01	other	Fedora	Fedora; hair pokes through (needs hat-hides-hair)
+elvs_male_trilby_hat	other	Trilby	Trilby, 29k tris
+culturalibre_cl_bowler_hat	other	Bowler hat	Bowler hat
+punkduck_riding_helmet	other	Riding helmet	Equestrian helmet
+elvs_santa_hat	other	Santa hat	Santa hat (seasonal)
+culturalibre_hero-heroine_gloves_1	other	Long gloves	Long black gloves

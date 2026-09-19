@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Designer embed example</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>">
+<style>
+  /* a host page with its own, clashing styles: none of this may reach the designer, and none of its may leak out */
+  :root { --bg: #ff0000; --text: #00ff00; --accent: #ff00ff; }
+  html, body { margin: 0; height: 100%; font: 16px Georgia, serif; background: #fdf6e3; color: #333; }
+  .btn, .tab, .panel, .card, button { background: #ff0000 !important; border-radius: 0 !important; }
+  header { display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 16px; background: #073642; color: #eee8d5; }
+  header .grow { flex: 1; }
+  #slot { height: calc(100dvh - 56px); }
+  #log { font: 13px ui-monospace, monospace; }
+</style>
+</head>
+<body>
+<header><strong>Console</strong><span class="grow" id="log">embedded designer</span><button id="close" type="button">Close</button></header>
+<div id="slot"></div>
+<script type="module" src="./src/embed/main.ts"></script>
+</body>
+</html>

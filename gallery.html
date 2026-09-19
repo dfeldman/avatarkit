@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avatar gallery</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #9ed1ff; font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  #c { width: 100%; height: 100%; display: block; outline: none; touch-action: none; }
+  .hud { position: absolute; top: 14px; left: 14px; display: flex; gap: 10px; align-items: center; }
+  .hud a, .hud span { padding: 8px 14px; border-radius: 999px; background: rgba(10, 15, 36, 0.72); color: #f3f5ff; font-weight: 700; font-size: 14px; text-decoration: none; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="hud"><a href="./index.html">✏️ Edit my avatar</a><span id="stats">…</span></div>
+<script type="module" src="./src/gallery/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>Avatar designer</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧍</text></svg>">
+<style>
+  /* the page around the designer (which brings its own styles in a shadow root) */
+  html, body { margin: 0; height: 100%; background: #0a0f24; }
+  @media (prefers-color-scheme: light) { html:not([data-theme='dark']), html:not([data-theme='dark']) body { background: #e9edfb; } }
+  html[data-theme='light'], html[data-theme='light'] body { background: #e9edfb; }
+  #app { display: block; height: 100dvh; }
+  @media (max-width: 860px) { #app { height: auto; } }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script type="module" src="./src/designer/main.ts"></script>
+</body>
+</html>

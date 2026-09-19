@@ -1,0 +1,111 @@
+/**
+ * Geometry off the main thread. `request` resolves with geometry for a spec. By default every request is built
+ * in turn (a game loading its players); with `latest: true` a newer request replaces any queued ones (a dragged
+ * slider only builds its latest value) and the replaced ones resolve with null. Falls back to building on the
+ * main thread when workers aren't available.
+ */
+import { assetBase } from '../body/mhassets.ts'
+import { buildAvatarGeometry, preloadAssets, type AvatarGeometry, type Quality } from '../body/build.ts'
+import { shapeKey, type AvatarSpec } from '../spec.ts'
+
+interface Pending {
+  key: string
+  spec: AvatarSpec
+  quality: Quality
+  resolve: (g: AvatarGeometry | null) => void
+}
+
+export class GeometryService {
+  private worker: Worker | null = null
+  private busy = false
+  private queue: Pending[] = []
+  private inflight: Pending | null = null
+  private nextId = 1
+  private readonly cache = new Map<string, AvatarGeometry>()
+
+  constructor() {
+    try {
+      this.worker = new Worker(new URL('./geometry.worker.ts', import.meta.url), { type: 'module' })
+      this.worker.onmessage = (e: MessageEvent<{ id: number; geometry?: AvatarGeometry; error?: string }>) => this.done(e.data.geometry ?? null, e.data.error)
+      this.worker.onerror = () => {
+        this.worker = null
+        this.done(null, 'worker failed')
+      }
+    } catch {
+      this.worker = null
+    }
+  }
+
+  static key(spec: AvatarSpec, quality: Quality): string {
+    return `${quality}|${shapeKey(spec)}`
+  }
+
+  cached(spec: AvatarSpec, quality: Quality): AvatarGeometry | undefined {
+    return this.cache.get(GeometryService.key(spec, quality))
+  }
+
+  /** Resolves with the geometry, or null if a newer request superseded this one. */
+  request(spec: AvatarSpec, quality: Quality, opts: { latest?: boolean } = {}): Promise<AvatarGeometry | null> {
+    const key = GeometryService.key(spec, quality)
+    const hit = this.cache.get(key)
+    if (hit) return Promise.resolve(hit)
+    return new Promise((resolve) => {
+      const p: Pending = { key, spec: JSON.parse(JSON.stringify(spec)) as AvatarSpec, quality, resolve }
+      const same = this.inflight?.key === key ? this.inflight : this.queue.find((q) => q.key === key)
+      if (same) {
+        const prev = same.resolve
+        same.resolve = (g) => {
+          prev(g)
+          resolve(g)
+        }
+        return
+      }
+      if (opts.latest) {
+        for (const q of this.queue) q.resolve(null)
+        this.queue = []
+      }
+      this.queue.push(p)
+      this.pump()
+    })
+  }
+
+  private pump(): void {
+    if (this.busy || this.queue.length === 0) return
+    const p = this.queue.shift()!
+    this.inflight = p
+    this.busy = true
+    if (this.worker) {
+      // (a worker can't see the page's address, so it is told where the MakeHuman assets are)
+      let base: string | undefined
+      try { base = assetBase() } catch { base = undefined }
+      this.worker.postMessage({ id: this.nextId++, spec: p.spec, quality: p.quality, assetBase: base })
+    } else {
+      // no worker: load the assets and build on the main thread, letting the UI paint first
+      preloadAssets(p.spec, p.quality).then(() => new Promise((r) => setTimeout(r, 0))).then(() => {
+        try {
+          this.done(buildAvatarGeometry(p.spec, p.quality))
+        } catch (err) {
+          this.done(null, String(err))
+        }
+      }, (err) => this.done(null, String(err)))
+    }
+  }
+
+  private done(g: AvatarGeometry | null, error?: string): void {
+    const p = this.inflight
+    this.inflight = null
+    this.busy = false
+    if (error) console.warn('avatar geometry:', error)
+    if (p && g) {
+      this.cache.set(p.key, g)
+      if (this.cache.size > 40) this.cache.delete(this.cache.keys().next().value as string)
+    }
+    p?.resolve(g)
+    this.pump()
+  }
+
+  dispose(): void {
+    this.worker?.terminate()
+    this.worker = null
+  }
+}
