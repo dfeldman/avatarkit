@@ -347,7 +347,7 @@ describe('the withdrawn garments', () => {
     const clothes = idx.filter((a) => a.kind === 'clothes')
     for (const id of ['toigo_bodice-style_top', 'mindfront_bikini_01', 'punkduck_black_mini_skirt',
       'toigo_fisherman_sweater', 'punkduck_female_strapless_bodysuit', 'mindfront_f_one-piece_swimsuit_01',
-      'toigo_basic_tucked_t-shirt']) {
+      'toigo_basic_tucked_t-shirt', 'punkduck_short_bodysuit_female', 'matcreator_mc-skinsuit_2022']) {
       expect(clothes.some((a) => a.id === id), id).toBe(false)
     }
     // the modesty garments and the everyday kit are untouched

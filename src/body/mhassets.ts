@@ -87,7 +87,7 @@ export { readJson }
 
 /**
  * Garments that no longer ship: swimwear, bodysuits, corsetry and mini skirts (this is exercise kit for a family
- * audience), and the ribbed sweater and the plain t-shirt, which render badly. They are dropped from the library here as well as
+ * audience), the skinsuits, and the ribbed sweater and the plain t-shirt, which render badly. They are dropped from the library here as well as
  * from tools/wardrobe.tsv, so a folder of assets built earlier stops offering them too. An avatar saved wearing
  * one still renders: the files are there, they are just not on offer.
  */
@@ -100,6 +100,9 @@ const WITHDRAWN = new Set([
   'mtknife_pleated_mini_skirt', 'punkduck_black_mini_skirt', 'toigo_tiered_mini_skirt',
   'toigo_fisherman_sweater',
   'toigo_basic_tucked_t-shirt',
+  // the skinsuits: skin-tight from neck to thigh, which no amount of easing makes right for this
+  'culturalibre_hero_suit_2', 'culturalibre_hero_suit_4', 'matcreator_mc-skinsuit_2022',
+  'punkduck_short_bodysuit_female',
 ])
 
 let indexP: Promise<AssetEntry[]> | null = null
