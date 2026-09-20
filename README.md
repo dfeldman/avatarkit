@@ -123,6 +123,10 @@ scene.onBeforeRenderObservable.add(() => avatar.update(engine.getDeltaTime() / 1
   where this rider's body goes. Parent `bike.root` to `avatar.root`, and call
   `bike.update(avatar.animator.crank, metresTravelled)` each frame. A game with its own bike model can read
   `avatar.animator.fit` (bottom bracket, crank length, saddle, grips, wheel size) and scale its model to match.
+- **Showing it only when it's dressed:** the meshes exist before their skin, clothes and hair textures arrive, so an
+  avatar added to a scene at once looks bare and half-painted for a moment. `await avatar.whenReady()` resolves when
+  every texture it draws with has loaded (with a timeout, so a texture that never arrives can't hide it for good);
+  keep it hidden or behind a spinner until then, as the designer does.
 - **Attaching things:** `avatar.nodes.get('hand.R')` and the other bone names (see `BONES`) are TransformNodes you
   can parent props to. `avatar.bonePosition(name)` returns a bone's world position.
 - **Changing the look:** `avatar.setLook(spec)` applies colours, skin settings and eyes without a rebuild.
@@ -151,7 +155,7 @@ designer.dispose()
 - **Tabs:** Body (macros, age, ancestry, skin colour, skin settings and skin photographs), Face and Shape
   (MakeHuman's modifiers as it groups them), Hair & eyes, Clothes (by slot, with colours), and Share (the code and
   the credits).
-- **Preview:** stand, walk, run or cycle with a speed slider, or pick one of the moves (dance, jab, jump, …) from
+- **Preview:** a spinner holds the stage until the avatar is built and dressed; then stand, walk, run or cycle with a speed slider, or pick one of the moves (dance, jab, jump, …) from
   the Moves tray; close-up and full-body views; a turntable; and a pose dock with the face's expressions (which turn
   the camera to the face) and the hands' poses. One-shot moves repeat after a pause while chosen.
 - **Editing:** undo/redo (Ctrl/Cmd+Z, and Shift for redo) and a dice button for a random look.

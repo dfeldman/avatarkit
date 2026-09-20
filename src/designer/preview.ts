@@ -241,6 +241,13 @@ export class Preview {
       this.frame(this.view)
     } else this.avatar.setSpec(this.spec, g)
     this.dropBike()
+    // The meshes are here but their skin, hair and clothes textures are still arriving: shown now, the avatar is
+    // bare and half-painted for a moment. Keep it hidden behind the spinner until it is dressed.
+    const avatar = this.avatar
+    avatar.root.setEnabled(false)
+    await avatar.whenReady()
+    if (avatar !== this.avatar || key !== this.wanted) return  // a newer look took over meanwhile
+    avatar.root.setEnabled(true)
     this.onBusy(false)
   }
 

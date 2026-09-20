@@ -10,7 +10,7 @@
  * The face and hands take poses on top of the motion: `a.setExpression('smile')`, `a.setHands('fist')`.
  */
 import {
-  Bone, BoundingInfo, Color3, Matrix, Mesh, MorphTarget, MorphTargetManager, PBRMaterial, Quaternion, Skeleton, Texture, TransformNode, VertexBuffer,
+  BaseTexture, Bone, BoundingInfo, Color3, Matrix, Mesh, MorphTarget, MorphTargetManager, PBRMaterial, Quaternion, Skeleton, Texture, TransformNode, VertexBuffer,
   type Scene, type ShadowGenerator, Vector3, VertexData,
 } from '@babylonjs/core'
 import { Animator, type Motion } from '../anim/animator.ts'
@@ -178,6 +178,28 @@ export class Avatar {
     const hips = this.nodes.get('hips')!
     const rest = this.rig.joints.hips
     hips.position.set(rest[0] + pose.hipsOffset.x, rest[1] + pose.hipsOffset.y, rest[2] + pose.hipsOffset.z)
+  }
+
+  /**
+   * Resolves when every texture this avatar draws with has loaded. The meshes exist before their skin, clothes and
+   * hair textures arrive, so anything shown at once appears bare and half-painted for a moment: hide it (or hold a
+   * spinner) until this resolves. Gives up after `timeoutMs`, so a texture that never loads can't hide the avatar
+   * for good.
+   */
+  whenReady(timeoutMs = 15000): Promise<void> {
+    const textures = this.getMeshes().flatMap((m) => m.material?.getActiveTextures() ?? [])
+    if (!textures.length) return Promise.resolve()
+    return new Promise<void>((resolve) => {
+      let settled = false
+      const finish = (): void => {
+        if (settled) return
+        settled = true
+        clearTimeout(timer)
+        resolve()
+      }
+      const timer = setTimeout(finish, timeoutMs)
+      BaseTexture.WhenAllReady(textures, finish)
+    })
   }
 
   /** World position of a bone (after the last update). */

@@ -92,6 +92,7 @@ export class Designer {
   private readonly codeInput: HTMLInputElement
   private readonly toastEl: HTMLElement
   private readonly busyEl: HTMLElement
+  private readonly busyText: HTMLElement
   private toastTimer = 0
   private readonly opts: DesignerOptions
   private readonly root: HTMLElement
@@ -131,12 +132,15 @@ export class Designer {
     // --- stage
     const canvas = stageCanvas
     canvas.setAttribute('aria-label', 'Avatar preview. Drag to turn, scroll to zoom.')
-    this.busyEl = el('div', { class: 'busy', textContent: 'Shaping…' })
+    // (a spinner beside the word: building a body and fetching its textures takes a moment, and the stage is
+    // empty until the avatar is dressed)
+    this.busyText = el('span', { textContent: 'Shaping…' })
+    this.busyEl = el('div', { class: 'busy', role: 'status' }, el('span', { class: 'spinner', ariaHidden: 'true' }), this.busyText)
     const stage = el('div', { class: 'stage' }, canvas, this.busyEl)
     root.append(stage)
     this.preview = new Preview(engine, canvas, this.spec)
     this.preview.onBusy = (b, text) => {
-      this.busyEl.textContent = text ?? 'Shaping…'
+      this.busyText.textContent = text ?? 'Shaping…'
       this.busyEl.classList.toggle('on', b)
     }
     // a build or a download that fails says so, instead of leaving the stage on "Shaping…"

@@ -157,6 +157,20 @@ button { cursor: pointer; }
   pointer-events: none;
 }
 .stage .busy.on { opacity: 1; }
+.stage .busy { display: inline-flex; align-items: center; gap: 8px; }
+.spinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid color-mix(in srgb, var(--muted) 35%, transparent);
+  border-top-color: var(--accent, var(--c-blue));
+  animation: spin 0.7s linear infinite;
+  flex: 0 0 auto;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation-duration: 2.4s; }
+}
 .stage .views {
   position: absolute;
   top: 12px;
