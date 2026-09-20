@@ -14,12 +14,12 @@ import type { HandPose } from '../anim/hands.ts'
 import { MOVES, type Move } from '../anim/moves.ts'
 import type { AbstractEngine } from '@babylonjs/core'
 import { loadModifierDefs, type ModifierDef } from '../body/mhmodifiers.ts'
-import { PRESETS, randomSpec } from '../presets.ts'
+import { randomSpec } from '../presets.ts'
 import {
   EYE_MATERIALS, HAIR_COLORS, OUTFIT_COLORS, SKIN_TONES, cloneSpec, decodeSpec, encodeSpec, normalizeSpec,
   type AvatarSpec, type Macro,
 } from '../spec.ts'
-import { card, chips, el, hasFocus, slider, swatches, type Sync } from './controls.ts'
+import { card, el, hasFocus, slider, swatches, type Sync } from './controls.ts'
 import css from './designer.css?inline'
 import { Preview } from './preview.ts'
 
@@ -412,12 +412,8 @@ export class Designer {
   private buildBody(): void {
     const sheet = this.sheets.get('body')!
     const pct = (v: number): string => `${Math.round(v * 100)}%`
-    const start = card('Start from',
-      chips(PRESETS.map((p) => ({ value: p.id, label: p.name })), () => PRESETS.find((p) => encodeSpec(p.spec) === encodeSpec(this.spec))?.id ?? '',
-        (id) => this.apply(PRESETS.find((p) => p.id === id)!.spec), this.syncs, true),
-    )
-    start.root.classList.add('start')
-    sheet.append(start.root)
+    // (no ready-made bodies to start from: naming body types invites a fight nobody wins. The dice still offers a
+    // random one, and every slider starts in the middle.)
     const body = card('Body')
     for (const m of MACRO_SLIDERS) {
       body.root.append(slider({

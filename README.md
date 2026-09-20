@@ -148,7 +148,7 @@ designer.dispose()
 
 - **Isolation:** it renders into a shadow root on `element`, so its styles and the host page's can't affect each
   other. Set `element.dataset.theme = 'light'` or `'dark'` to force a theme; otherwise it follows the system.
-- **Tabs:** Body (macros, age, ancestry, skin colour, skin settings and skin photographs, presets), Face and Shape
+- **Tabs:** Body (macros, age, ancestry, skin colour, skin settings and skin photographs), Face and Shape
   (MakeHuman's modifiers as it groups them), Hair & eyes, Clothes (by slot, with colours), and Share (the code and
   the credits).
 - **Preview:** stand, walk, run or cycle with a speed slider, or pick one of the moves (dance, jab, jump, …) from

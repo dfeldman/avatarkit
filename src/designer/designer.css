@@ -476,10 +476,6 @@ input[type='range']::-moz-range-thumb {
 .target .dot { width: 30px; height: 30px; border-radius: 50%; box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2); }
 .target[aria-pressed='true'] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 18%, var(--panel)); }
 
-/* the presets: a compact run of pills */
-.card.start .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.card.start .chip { min-height: 40px; padding: 0 14px; border-radius: 999px; flex-direction: row; }
-
 /* chips */
 .chips { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; }
 .chips.wide { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
