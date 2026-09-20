@@ -34,7 +34,7 @@ const TABS: Array<{ id: TabId; label: string; ico: string }> = [
   { id: 'body', label: 'Body', ico: '🧍' },
   { id: 'face', label: 'Face', ico: '🙂' },
   { id: 'shape', label: 'Shape', ico: '📐' },
-  { id: 'hair', label: 'Hair & eyes', ico: '💇' },
+  { id: 'hair', label: 'Hair', ico: '💇' },
   { id: 'clothes', label: 'Clothes', ico: '👟' },
   { id: 'share', label: 'Share', ico: '🔗' },
 ]
@@ -311,7 +311,18 @@ export class Designer {
       if (id !== 'neutral') this.preview.frame('face')
     }))
     const handGrid = el('div', { class: 'dock-grid', role: 'group', ariaLabel: 'Hands' }, ...group(hands, 'relaxed', (id) => this.preview.setHands(id)))
-    return el('div', { class: 'dock' }, el('span', { class: 'dock-label', textContent: 'Face' }), faceGrid, el('span', { class: 'dock-label', textContent: 'Hands' }), handGrid)
+    // On a phone the open dock covered a third of the avatar, so there it collapses to this button. On a wide
+    // screen there is room beside the body and the grids are simply always out (the button is hidden by CSS).
+    const more = el('button', { class: 'dock-toggle', type: 'button', title: 'Expressions and hands', textContent: '\u{1F642}' })
+    more.setAttribute('aria-expanded', 'false')
+    const dock = el('div', { class: 'dock' }, more,
+      el('span', { class: 'dock-label', textContent: 'Face' }), faceGrid,
+      el('span', { class: 'dock-label', textContent: 'Hands' }), handGrid)
+    more.addEventListener('click', () => {
+      const open = dock.classList.toggle('open')
+      more.setAttribute('aria-expanded', String(open))
+    })
+    return dock
   }
 
   private motionBar(): HTMLElement {
