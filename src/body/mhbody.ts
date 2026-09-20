@@ -910,7 +910,13 @@ function clothingBody(P: Float64Array, spec: AvatarSpec): Float64Array {
     if (!weight) continue
     cur[v] = sum / weight
     const l = Math.hypot(nrm[0], nrm[1], nrm[2])
-    if (l) for (let k = 0; k < 3; k++) normal[i + k] = nrm[k] / l
+    if (!l) continue
+    for (let k = 0; k < 3; k++) normal[i + k] = nrm[k] / l
+    // how far the chest already stands out here, along that borrowed normal: without this the cage would be
+    // pushed out by the chest's whole height on top of the chest it already has, and a garment fitted to it
+    // (the cami, and a hundred others) would balloon
+    mag[v] = Math.max(0, (withChest[i] - without[i]) * normal[i] + (withChest[i + 1] - without[i + 1]) * normal[i + 1]
+      + (withChest[i + 2] - without[i + 2]) * normal[i + 2])
     cage.push(v)
   }
   // never less than the chest's own reach: that would put the garment inside the skin
