@@ -20,7 +20,7 @@ import type { AvatarSpec } from '../spec.ts'
 
 export interface AvatarMaterials {
   body: PBRMaterial
-  /** TEMPORARY: how much of the photograph's own variation to keep (see skin.photo), and what is drawn now */
+  /** how much of the photograph's own variation is kept (see skin.photo), and what is drawn now */
   photo: number
   photoKey?: string
   /** textures and shading follow it: low reads the smaller textures and skips subsurface scattering */
@@ -63,8 +63,8 @@ export function createAvatarMaterials(scene: Scene, name: string, quality: Quali
 }
 
 /**
- * TEMPORARY (2026-09-19): the photograph with its own variation pulled toward
- * its median, for judging how much of a heavily freckled skin should survive. The textures hold half the
+ * The photograph with its own variation pulled toward its median: how much of a heavily freckled or
+ * weathered skin survives is the designer's "Detail strength". The textures hold half the
  * photograph's ratio to its median, so the neutral texel is mid grey: fading toward that flattens freckles,
  * creases and shading together, and 1 leaves the photograph alone.
  */

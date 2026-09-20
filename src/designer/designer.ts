@@ -19,7 +19,7 @@ import {
   EYE_MATERIALS, HAIR_COLORS, OUTFIT_COLORS, SKIN_TONES, cloneSpec, decodeSpec, encodeSpec, normalizeSpec,
   type AvatarSpec, type Macro,
 } from '../spec.ts'
-import { card, el, hasFocus, slider, swatches, type Sync } from './controls.ts'
+import { card, chips, el, hasFocus, slider, swatches, type Sync } from './controls.ts'
 import css from './designer.css?inline'
 import { Preview } from './preview.ts'
 
@@ -413,19 +413,26 @@ export class Designer {
 
   // ------------------------------------------------------------------------------------------------ tabs
 
+  /** A card that starts closed: everything that is worth having but is not worth scrolling past. */
+  private foldout(title: string, open = false): HTMLElement {
+    return el('details', { class: 'card', open }, el('summary', { textContent: title }))
+  }
+
   private buildBody(): void {
     const sheet = this.sheets.get('body')!
     const pct = (v: number): string => `${Math.round(v * 100)}%`
+    const macro = (m: (typeof MACRO_SLIDERS)[number]): HTMLElement => slider({
+      label: m.label, min: 0, max: 1, step: 0.01, get: () => this.spec.macros[m.key],
+      set: (v, commit) => this.edit((s) => { s.macros[m.key] = v }, !commit),
+      format: (v) => (v < 0.47 ? m.left : v > 0.53 ? m.right : 'Average') + ` \u00b7 ${pct(v)}`,
+    }, this.syncs)
+    const byKey = new Map(MACRO_SLIDERS.map((m) => [m.key, m]))
     // (no ready-made bodies to start from: naming body types invites a fight nobody wins. The dice still offers a
     // random one, and every slider starts in the middle.)
+    // The five people actually reach for, in the order they reach for them. Everything else is a foldout: this
+    // tab used to open with sixteen sliders, which on a phone is a wall to scroll past to reach the clothes.
     const body = card('Body')
-    for (const m of MACRO_SLIDERS) {
-      body.root.append(slider({
-        label: m.label, min: 0, max: 1, step: 0.01, get: () => this.spec.macros[m.key],
-        set: (v, commit) => this.edit((s) => { s.macros[m.key] = v }, !commit),
-        format: (v) => (v < 0.47 ? m.left : v > 0.53 ? m.right : 'Average') + ` · ${pct(v)}`,
-      }, this.syncs))
-    }
+    for (const k of ['Height', 'Gender', 'Weight', 'Muscle'] as Macro[]) body.root.append(macro(byKey.get(k)!))
     // age, as MakeHuman reckons it: 0.5 = 25 years, 1 = 90
     body.root.append(slider({
       label: 'Age', min: 0.5, max: 1, step: 0.005, get: () => this.spec.macros.Age,
@@ -435,23 +442,34 @@ export class Designer {
     const height = el('p', { class: 'hint' })
     this.syncs.push(() => {
       const h = this.preview.avatar?.rig.height
-      height.textContent = h ? `Standing ${(h * 100).toFixed(0)} cm (${Math.floor(h / 0.3048)}′ ${Math.round((h / 0.0254) % 12)}″)` : ''
+      height.textContent = h ? `Standing ${(h * 100).toFixed(0)} cm (${Math.floor(h / 0.3048)}\u2032 ${Math.round((h / 0.0254) % 12)}\u2033)` : ''
     })
     body.root.append(height)
     sheet.append(body.root)
 
+    const more = this.foldout('More body shape')
+    for (const k of ['BodyProportions', 'BreastSize', 'BreastFirmness'] as Macro[]) more.append(macro(byKey.get(k)!))
+    more.append(el('p', { class: 'hint', textContent: 'The Shape tab has MakeHuman\u2019s full set, limb by limb.' }))
+    sheet.append(more)
+
     // MakeHuman's ethnicity sliders: they always sum to one (moving one rebalances the others, as MakeHuman does);
-    // they shape the face and body only — skin colour is chosen separately, below
-    const eth = card('Ancestry')
+    // they shape the face and body only \u2014 skin colour is chosen separately, below
+    const eth = this.foldout('Ancestry')
     for (const k of ETHNIC) {
-      eth.root.append(slider({
+      eth.append(slider({
         label: k, min: 0, max: 1, step: 0.01, get: () => this.spec.macros[k],
         set: (v, commit) => this.edit((s) => setEthnic(s, k, v), !commit), format: pct,
       }, this.syncs))
     }
-    eth.root.append(el('p', { class: 'hint', textContent: 'MakeHuman blends face and body features from these. Skin colour is separate.' }))
-    sheet.append(eth.root)
-    const skin = card('Skin', swatches(SKIN_TONES, () => this.spec.skin.color, (c) => this.edit((s) => { s.skin.color = c }), this.syncs))
+    eth.append(el('p', { class: 'hint', textContent: 'MakeHuman blends face and body features from these. Skin colour is separate.' }))
+    sheet.append(eth)
+
+    sheet.append(card('Skin', swatches(SKIN_TONES, () => this.spec.skin.color, (c) => this.edit((s) => { s.skin.color = c }), this.syncs)).root)
+
+    // The detail under the colour: freckles, stubble, fine lines, age. Named, not shown \u2014 these are
+    // photographs of real skin, and a grid of them is an unpleasant thing to scroll past when all anyone
+    // needs is the word. The preview is the picture.
+    const detail = this.foldout('Skin detail')
     const SKIN: Array<{ key: 'redness' | 'blotchiness' | 'beard' | 'pores' | 'shine'; label: string; words: [string, string, string] }> = [
       { key: 'redness', label: 'Redness', words: ['Pale', 'Natural', 'Flushed'] },
       { key: 'blotchiness', label: 'Evenness', words: ['Even', 'Natural', 'Blotchy'] },
@@ -460,30 +478,25 @@ export class Designer {
       { key: 'shine', label: 'Shine', words: ['Matte', 'Natural', 'Dewy'] },
     ]
     for (const k of SKIN) {
-      skin.root.append(slider({
+      detail.append(slider({
         label: k.label, min: 0, max: 1, step: 0.01, get: () => this.spec.skin[k.key],
         set: (v, commit) => this.edit((s) => { s.skin[k.key] = v }, !commit),
         format: (v) => (v < 0.2 ? k.words[0] : v > 0.75 ? k.words[2] : k.words[1]),
       }, this.syncs))
     }
-    // TEMPORARY (2026-09-19): how much of the skin photograph's own freckles, creases and shading to keep, faded
-    // toward its median. It redraws the texture, so it moves on release rather than while dragging. Remove with
-    // SkinSpec.photo once the balance is settled.
-    skin.root.append(slider({
-      label: 'Photo strength (temp)', min: 0, max: 1, step: 0.05, get: () => this.spec.skin.photo ?? 1,
+    // how much of the photograph's own freckles, creases and shading to keep, faded toward its median.
+    // It redraws the texture, so it moves on release rather than while dragging.
+    detail.append(slider({
+      label: 'Detail strength', min: 0, max: 1, step: 0.05, get: () => this.spec.skin.photo ?? 1,
       set: (v, commit) => { if (commit) this.edit((s) => { s.skin.photo = v }) },
       format: (v) => `${Math.round(v * 100)}%`,
     }, this.syncs))
-    sheet.append(skin.root)
-    // the detail photograph under the colour: freckles, stubble, fine lines, age
-    const detail = card('Skin detail')
-    detail.root.append(el('p', { class: 'hint', textContent: 'Real skin photographs from the MakeHuman community, recoloured to the colour above.' }))
-    sheet.append(detail.root)
+    detail.append(el('p', { class: 'hint', textContent: 'Photographed skin from the MakeHuman community, recoloured to the colour above.' }))
+    sheet.append(detail)
     void loadIndex().then((idx) => {
-      const skins = idx.filter((a) => a.kind === 'skin')
-        .sort((x, y) => Number(x.auto) - Number(y.auto) || x.tags[0].localeCompare(y.tags[0]) || x.name.localeCompare(y.name))
-        .map((a) => ({ ...a, name: `${a.name} · ${a.tags[0] === 'female' ? 'F' : 'M'}` }))
-      detail.root.append(this.tiles(skins, () => this.spec.skin.texture, (id) => this.edit((s) => { s.skin.texture = id }), 'Automatic'))
+      const skins = idx.filter((a) => a.kind === 'skin').sort((x, y) => x.name.localeCompare(y.name))
+      const options = [{ value: '', label: 'Automatic' }, ...skins.map((a) => ({ value: a.id, label: a.name }))]
+      detail.append(chips(options, () => this.spec.skin.texture ?? '', (v) => this.edit((s) => { s.skin.texture = v || null }), this.syncs, true))
       for (const f of this.syncs) f()
     })
   }

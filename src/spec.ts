@@ -26,7 +26,7 @@ export interface SkinSpec {
   beard: number
   /** how strongly pores, stubble and fine lines show */
   pores: number
-  /** TEMPORARY (2026-09-19): the photograph's own variation, pulled toward its median (1 = as photographed) */
+  /** how much of the photograph's own freckles, creases and shading to keep (1 = as photographed) */
   photo?: number
   /** matte 0 .. dewy 1 */
   shine: number
