@@ -312,6 +312,35 @@ describe('facial expressions', () => {
   })
 })
 
+describe('clothes over a chest', () => {
+  it('drape across it rather than shrink-wrapping each breast', async () => {
+    // MakeHuman garments bind to body vertices, so a thin one fitted to the skin copies its every curve. Clothes
+    // are fitted to a body whose chest crease is eased (mhbody clothingBody), so the fabric spans it.
+    const spec = normalizeSpec({
+      macros: { ...preset('sam').macros, Gender: 0.15, BreastSize: 0.8, BreastFirmness: 0.6 },
+      clothes: [{ id: 'punkduck_triathlon_suit_female' }],
+    })
+    await preloadAssets(spec)
+    const mesh = buildAvatarGeometry(spec)
+    // how far forward the surface reaches between the breasts, and over one of them
+    const front = (P: Float32Array, xlo: number, xhi: number): number => {
+      let z = -Infinity
+      for (let i = 0; i < P.length / 3; i++) {
+        const x = P[3 * i], y = P[3 * i + 1]
+        if (y < 1.15 || y > 1.35 || x < xlo || x > xhi) continue
+        z = Math.max(z, P[3 * i + 2])
+      }
+      return z
+    }
+    const suit = mesh.proxies.find((p) => p.id === 'punkduck_triathlon_suit_female')!.positions
+    const skin = mesh.body.positions
+    const gap = (P: Float32Array): number => front(P, 0.04, 0.09) - front(P, -0.015, 0.015)
+    // the suit's chest is flatter than the body under it, and still sits outside the skin
+    expect(gap(suit)).toBeLessThan(gap(skin) * 0.85)
+    expect(front(suit, 0.04, 0.09)).toBeGreaterThan(front(skin, 0.04, 0.09))
+  })
+})
+
 describe('the withdrawn garments', () => {
   it('are gone from the library, and the rest of it still stands', async () => {
     const idx = await loadIndex()

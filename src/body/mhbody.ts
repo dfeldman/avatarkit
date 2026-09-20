@@ -503,7 +503,9 @@ export function buildMakeHuman(spec: AvatarSpec, worn: Worn[] = wornFor(spec), q
     body = lowPolyBody(lowBody, P, welded, bi, bw, hidden, tone, A.ao)
   }
 
-  const fitted = wear.map((pr) => fitProxy(P, pr))
+  // clothes are fitted to a body whose chest curve is eased (see clothingBody); everything else follows the skin
+  const dressBody = wear.some((pr) => pr.kind === 'clothes') ? clothingBody(P, spec) : P
+  const fitted = wear.map((pr) => fitProxy(pr.kind === 'clothes' ? dressBody : P, pr))
   layerClothes(P, welded, wear, fitted)
   const underHats = hairUnderHats(wear, fitted, rig.headCenter)
   const proxies: ProxyMesh[] = wear.map((pr, k) => {
@@ -748,6 +750,98 @@ function relaxHands(P: Float64Array, { curl, close, thumb }: HandShape): void {
       P[3 * v] += d[0]; P[3 * v + 1] += d[1]; P[3 * v + 2] += d[2]
     }
   }
+}
+
+/** Each body vertex's neighbours in the mesh (the topology never changes, so this is worked out once). */
+let NEIGHBOURS: Int32Array[] | null = null
+function neighbours(): Int32Array[] {
+  if (NEIGHBOURS) return NEIGHBOURS
+  const n = A.positions.length / 3
+  const lists: number[][] = Array.from({ length: n }, () => [])
+  for (let t = 0; t < A.tris.length; t += 3) {
+    for (let k = 0; k < 3; k++) {
+      const a = A.tris[t + k], b = A.tris[t + ((k + 1) % 3)]
+      if (!lists[a].includes(b)) lists[a].push(b)
+      if (!lists[b].includes(a)) lists[b].push(a)
+    }
+  }
+  NEIGHBOURS = lists.map((l) => Int32Array.from(l))
+  return NEIGHBOURS
+}
+
+/** how much of the chest's own shape a garment keeps after smoothing, and how far the smoothing reaches */
+const CHEST_SMOOTHING = 40
+
+/**
+ * The body garments are fitted to: this body with the chest's curve eased.
+ *
+ * MakeHuman garments bind each of their vertices to body vertices, so a thin one fitted to the skin is a displaced
+ * copy of it and reproduces every curve, including the crease between the breasts — a cycling suit ends up
+ * shrink-wrapped. MakeHuman's own garments avoid this by binding to its clothes helper cage, which has no such
+ * crease. This does the same for every garment: the chest's own displacement (what the BreastSize macro adds) is
+ * blurred over the mesh, so the volume stays and the crease goes, and garments drape across it.
+ */
+function clothingBody(P: Float64Array, spec: AvatarSpec): Float64Array {
+  const n = A.positions.length / 3
+  // the chest's contribution on its own: targets add to whatever they are given, so the difference between the
+  // body's targets with and without it is exactly that
+  const withChest = new Float64Array(3 * n)
+  const without = new Float64Array(3 * n)
+  try {
+    applyTargets(withChest, spec.macros, spec.modifiers)
+    applyTargets(without, { ...spec.macros, BreastSize: 0 }, spec.modifiers)
+  } catch {
+    // (a caller that preloaded only its own targets: the garments hug the chest, as they did before)
+    return P
+  }
+  let moved = 0
+  for (let i = 0; i < withChest.length; i++) {
+    withChest[i] -= without[i]
+    if (withChest[i] !== 0) moved++
+  }
+  if (!moved) return P
+  // blur that displacement over the mesh (a vertex takes the average of its neighbours and itself), keeping the
+  // original to compare against: the two buffers swap each pass, so the result must not share one with it.
+  // Only the chest and as far as the blur can reach take part; the rest of the body is untouched either way.
+  const nb = neighbours()
+  const active: number[] = []
+  {
+    const seen = new Uint8Array(n)
+    let front: number[] = []
+    for (let v = 0; v < n; v++) {
+      if (withChest[3 * v] || withChest[3 * v + 1] || withChest[3 * v + 2]) { seen[v] = 1; front.push(v); active.push(v) }
+    }
+    for (let ring = 0; ring < CHEST_SMOOTHING && front.length; ring++) {
+      const nextRing: number[] = []
+      for (const v of front) for (const u of nb[v]) if (!seen[u]) { seen[u] = 1; nextRing.push(u); active.push(u) }
+      front = nextRing
+    }
+  }
+  let cur = Float64Array.from(withChest), next = Float64Array.from(withChest)
+  for (let pass = 0; pass < CHEST_SMOOTHING; pass++) {
+    for (const v of active) {
+      const list = nb[v]
+      if (!list.length) continue
+      for (let k = 0; k < 3; k++) {
+        let sum = cur[3 * v + k]
+        for (const u of list) sum += cur[3 * u + k]
+        next[3 * v + k] = sum / (list.length + 1)
+      }
+    }
+    const swap = cur; cur = next; next = swap
+  }
+  // Fill the crease without flattening the chest: where the blur moved a vertex further out than the chest itself
+  // did (the valley between the breasts, which borrows from its neighbours) take the blurred displacement,
+  // and keep the original everywhere else. Lowering the apex instead would put the garment inside the skin.
+  const out = Float64Array.from(P)
+  for (const v of active) {
+    const i = 3 * v
+    const own = Math.hypot(withChest[i], withChest[i + 1], withChest[i + 2])
+    const smoothed = Math.hypot(cur[i], cur[i + 1], cur[i + 2])
+    if (smoothed <= own) continue
+    for (let k = 0; k < 3; k++) out[i + k] += cur[i + k] - withChest[i + k]
+  }
+  return out
 }
 
 function mean(P: Float64Array, ids: number[]): V3 {

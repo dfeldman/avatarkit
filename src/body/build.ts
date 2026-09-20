@@ -61,7 +61,14 @@ export async function preloadAssets(spec: AvatarSpec, quality: Quality = 'high')
   await loadIndex()
   const list: Array<[ProxyKind, string]> = wornFor(spec).map((w) => [w.kind, w.id])
   if (quality === 'low') list.push(['body', lowBodyFor(spec)])
-  await Promise.all([preloadTargets(spec.macros, spec.modifiers), preloadExpressions(spec.macros), preloadProxies(list)])
+  await Promise.all([
+    preloadTargets(spec.macros, spec.modifiers),
+    // clothes are fitted to a body whose chest curve is eased, which needs the same body without its chest
+    // (mhbody.ts clothingBody)
+    preloadTargets({ ...spec.macros, BreastSize: 0 }, spec.modifiers),
+    preloadExpressions(spec.macros),
+    preloadProxies(list),
+  ])
 }
 
 const ARM = new Set(['shoulder', 'upperArm', 'forearm'])
