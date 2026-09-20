@@ -77,14 +77,16 @@ export class Preview {
     cam.upperRadiusLimit = 9
     cam.lowerBetaLimit = 0.35
     cam.upperBetaLimit = 1.62
-    cam.wheelDeltaPercentage = 0.01
     cam.pinchDeltaPercentage = 0.004
     cam.panningSensibility = 0
     cam.minZ = 0.05
     cam.fov = 0.55
     cam.attachControl(canvas, true)
+    // The wheel belongs to the page. Zooming the avatar on it meant that scrolling down to the controls —
+    // which is the whole of using this on a narrow screen — zoomed the body at the same time. Drag to turn,
+    // pinch to zoom on a touchscreen, and the close-up / whole-body buttons frame it on any device.
+    cam.inputs.removeByType('ArcRotateCameraMouseWheelInput')
     canvas.addEventListener('pointerdown', () => (this.spinPause = 4))
-    canvas.addEventListener('wheel', () => (this.spinPause = 4), { passive: true })
 
     const { key: sun } = lightStage(scene, cam, this.quality)
     this.shadows = new ShadowGenerator(1024, sun)
