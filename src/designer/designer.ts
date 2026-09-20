@@ -20,6 +20,7 @@ import {
   type AvatarSpec, type Macro,
 } from '../spec.ts'
 import { card, chips, el, hasFocus, slider, swatches, type Sync } from './controls.ts'
+import { activeIn, moveFocus, type Dir } from './spatial.ts'
 import css from './designer.css?inline'
 import { Preview } from './preview.ts'
 
@@ -27,6 +28,12 @@ export interface DesignerOptions {
   initial?: unknown
   onSave?: (spec: AvatarSpec) => void | Promise<void>
   title?: string
+  /**
+   * Whether the designer reads the arrow keys itself (default true). A host that already turns presses into
+   * `press()` calls — the console, which also maps the arrow keys for its bridge remote — must turn this off,
+   * or every press moves the focus twice.
+   */
+  arrows?: boolean
 }
 
 type TabId = 'body' | 'face' | 'shape' | 'hair' | 'clothes' | 'share'
@@ -97,14 +104,63 @@ export class Designer {
   private readonly opts: DesignerOptions
   private readonly root: HTMLElement
   private readonly onKey = (e: KeyboardEvent): void => {
-    if (!(e.metaKey || e.ctrlKey) || e.key.toLowerCase() !== 'z') return
-    // text fields keep their own undo (the target is retargeted to the host outside a shadow root)
     const t = e.composedPath()[0] as HTMLElement | undefined
-    if (t?.tagName === 'INPUT' && (t as HTMLInputElement).type === 'text') return
-    if (t?.tagName === 'TEXTAREA' || t?.isContentEditable) return
+    const typing = (t?.tagName === 'INPUT' && (t as HTMLInputElement).type === 'text') || t?.tagName === 'TEXTAREA' || !!t?.isContentEditable
+    if (e.metaKey || e.ctrlKey) {
+      if (e.key.toLowerCase() !== 'z') return
+      if (typing) return   // text fields keep their own undo
+      e.preventDefault()
+      if (e.shiftKey) this.redo()
+      else this.undo()
+      return
+    }
+    // Arrow keys walk the controls, so the whole designer is usable from a keyboard or the bridge's d-pad.
+    // Only when the press is ours: a host page around us keeps its own arrows.
+    if (this.opts.arrows === false || typing || !t || !this.root.contains(t)) return
+    const dir = ({ ArrowUp: 'up', ArrowDown: 'down', ArrowLeft: 'left', ArrowRight: 'right' } as const)[e.key]
+    if (!dir) return
+    // left/right on a slider is the slider's own: that is how you set it
+    if (this.isRange(t) && (dir === 'left' || dir === 'right')) return
     e.preventDefault()
-    if (e.shiftKey) this.redo()
-    else this.undo()
+    this.move(dir)
+  }
+
+  private isRange(e: Element | null): boolean {
+    return e?.tagName === 'INPUT' && (e as HTMLInputElement).type === 'range'
+  }
+
+  private move(dir: Dir): void {
+    this.root.classList.add('driven')   // make the focus ring visible even when no key was pressed
+    moveFocus(dir, this.root)
+  }
+
+  /**
+   * One press of a d-pad (the bridge's remote, over the console). Directions walk the controls, except
+   * left/right on a slider, which set it; select is a click; back steps up to the tab row.
+   */
+  press(p: 'up' | 'down' | 'left' | 'right' | 'select' | 'back'): void {
+    const cur = activeIn(this.root)
+    if (p === 'back') {
+      const tab = this.tabButtons.get(this.tab)
+      this.root.classList.add('driven')
+      tab?.focus({ preventScroll: true })
+      return
+    }
+    if (p === 'select') {
+      this.root.classList.add('driven')
+      if (cur) cur.click()
+      else this.move('down')
+      return
+    }
+    if (cur && this.isRange(cur) && (p === 'left' || p === 'right')) {
+      const input = cur as HTMLInputElement
+      if (p === 'right') input.stepUp()
+      else input.stepDown()
+      input.dispatchEvent(new Event('input', { bubbles: true }))
+      input.dispatchEvent(new Event('change', { bubbles: true }))
+      return
+    }
+    this.move(p)
   }
 
   constructor(root: HTMLElement, opts: DesignerOptions, stageCanvas: HTMLCanvasElement, engine: AbstractEngine) {
