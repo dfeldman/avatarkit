@@ -125,7 +125,7 @@ export const SKIN_DETAILS = {
 
 const WARDROBE = {
   topsF: ['joepal_crude_t-shirt_female', 'elvs_lara_tank1', 'punkduck_sleeveless_crop_top', 'punkduck_v_neck_top', 'punkduck_high_neck_crop_top', 'punkduck_spaghetti_strap_tank_top', 'mindfront_tank_top_01'],
-  topsM: ['elvs_crude_t-shirt_male', 'elvs_male_logo_tshirt1', 'mindfront_tank_top_01', 'namuhekam_male_polo_shirt', 'toigo_basic_tucked_t-shirt'],
+  topsM: ['elvs_crude_t-shirt_male', 'elvs_male_logo_tshirt1', 'mindfront_tank_top_01', 'namuhekam_male_polo_shirt'],
   bottomsF: ['punkduck_female_short_jeans', 'cortu_jeans_shorts'],
   bottomsM: ['elvs_male_swim_shorts1', 'mindfront_male_swimming_trunks_01', 'mindfront_male_swimming_trunks_03', 'cortu_cargo_pants', 'cortu_jeans_shorts'],
   shoes: [RUN, 'punkduck_cycling_shoes', 'punkduck_tennis_shoes', 'culturalibre_sneakers', 'shoes05', 'shoes06'],

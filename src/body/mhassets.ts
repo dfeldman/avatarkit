@@ -87,7 +87,7 @@ export { readJson }
 
 /**
  * Garments that no longer ship: swimwear, bodysuits, corsetry and mini skirts (this is exercise kit for a family
- * audience), and the ribbed sweater, whose knit renders badly. They are dropped from the library here as well as
+ * audience), and the ribbed sweater and the plain t-shirt, which render badly. They are dropped from the library here as well as
  * from tools/wardrobe.tsv, so a folder of assets built earlier stops offering them too. An avatar saved wearing
  * one still renders: the files are there, they are just not on offer.
  */
@@ -99,6 +99,7 @@ const WITHDRAWN = new Set([
   'callharvey3d_harvey_pskirt01', 'elvs_disco_mini_skirt', 'frankyaye_mini_skirt_02', 'mtknife_low_mini_skirt',
   'mtknife_pleated_mini_skirt', 'punkduck_black_mini_skirt', 'toigo_tiered_mini_skirt',
   'toigo_fisherman_sweater',
+  'toigo_basic_tucked_t-shirt',
 ])
 
 let indexP: Promise<AssetEntry[]> | null = null
