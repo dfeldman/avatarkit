@@ -11,7 +11,7 @@
  * The designer (DOM, no game needs it) is a separate entry: '@dandyhorse/avatarkit/designer'.
  */
 export * from './spec.ts'
-export { PRESETS, makeRng, randomSpec, type Preset, type Rng } from './presets.ts'
+export { EXERCISE_KIT, PRESETS, makeRng, randomSpec, type Preset, type Rng } from './presets.ts'
 export { Avatar, getGeometry, type AvatarOptions } from './render/avatar.ts'
 export { GeometryService } from './render/geometryService.ts'
 export { Bike, type BikeOptions } from './render/bike.ts'

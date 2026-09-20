@@ -133,6 +133,23 @@ const WARDROBE = {
   hairM: ['short01', 'short02', 'short03', 'short04', 'afro01', null],
 }
 
+/**
+ * What you would wear to do this: the shortlist the designer offers before the whole wardrobe. Held here
+ * rather than derived from the top of each slot, because tools/wardrobe.tsv runs sport, then swimwear, then
+ * street clothes — the top of "bottoms" is three kinds of swim trunks. Ids are checked against wardrobe.tsv
+ * by the kit's tests, so this cannot quietly drift away from what is actually shipped.
+ */
+export const EXERCISE_KIT: readonly string[] = [
+  // tops
+  'punkduck_sport_bra', 'mindfront_tank_top_01', 'punkduck_sleeveless_crop_top', 'elvs_lara_tank1', 'joepal_crude_t-shirt_female',
+  // bottoms
+  'punkduck_sport_briefs', 'elvs_male_swim_shorts1', 'punkduck_female_short_jeans',
+  // whole kits
+  'culturalibre_male_sport_suit', 'female_sportsuit01',
+  // shoes and socks
+  'punkduck_running_shoes_01', 'punkduck_cycling_shoes', 'shoes06', 'joepal_crude_low_socks',
+]
+
 /** A plausible, varied avatar (every value, ethnicity included, drawn independently: nothing is inferred). */
 export function randomSpec(seed: number): AvatarSpec {
   const rng = makeRng(seed)

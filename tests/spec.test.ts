@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { loadIndex } from '../src/body/mhassets.ts'
-import { PRESETS, SKIN_DETAILS, randomSpec } from '../src/presets.ts'
+import { EXERCISE_KIT, PRESETS, SKIN_DETAILS, randomSpec } from '../src/presets.ts'
 import {
   DEFAULT_SPEC, EYE_MATERIALS, MACROS, cloneSpec, decodeSpec, encodeSpec, normalizeSpec, shapeKey, type AvatarSpec,
 } from '../src/spec.ts'
@@ -106,6 +106,14 @@ describe('presets and random avatars', () => {
       expect(has('skin', s.skin.texture), s.skin.texture ?? '').toBe(true)
     }
     for (const id of [...SKIN_DETAILS.female, ...SKIN_DETAILS.male]) expect(has('skin', id), id).toBe(true)
+  })
+  it('offer an exercise shortlist that is all really in the wardrobe, and is wearable head to toe', async () => {
+    const idx = await loadIndex()
+    const kit = EXERCISE_KIT.map((id) => idx.find((a) => a.kind === 'clothes' && a.id === id))
+    EXERCISE_KIT.forEach((id, i) => expect(kit[i], `${id} is not a garment the kit ships`).toBeTruthy())
+    // a shortlist with nothing for the feet, or nothing to wear on top, is not a shortlist
+    const slots = new Set(kit.map((a) => a?.slot))
+    for (const need of ['tops', 'bottoms', 'shoes']) expect(slots.has(need), `nothing for ${need}`).toBe(true)
   })
   it('vary', () => {
     const keys = new Set(Array.from({ length: 30 }, (_, i) => shapeKey(randomSpec(i))))

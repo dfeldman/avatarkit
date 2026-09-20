@@ -14,7 +14,7 @@ import type { HandPose } from '../anim/hands.ts'
 import { MOVES, type Move } from '../anim/moves.ts'
 import type { AbstractEngine } from '@babylonjs/core'
 import { loadModifierDefs, type ModifierDef } from '../body/mhmodifiers.ts'
-import { randomSpec } from '../presets.ts'
+import { EXERCISE_KIT, randomSpec } from '../presets.ts'
 import {
   EYE_MATERIALS, HAIR_COLORS, OUTFIT_COLORS, SKIN_TONES, cloneSpec, decodeSpec, encodeSpec, normalizeSpec,
   type AvatarSpec, type Macro,
@@ -574,20 +574,41 @@ export class Designer {
       if (!this.spec.clothes.length) worn.append(el('p', { class: 'hint', textContent: 'Nothing yet: pick from below.' }))
     })
     const garments = idx.filter((a) => a.kind === 'clothes')
-    for (const slot of SLOTS) {
-      const items = garments.filter((a) => slotOf(a) === slot.id).sort((x, y) => (x.order ?? 1e9) - (y.order ?? 1e9))
-      if (!items.length) continue
-      const pick = (id: string | null): void => this.edit((s) => {
-        if (!id) return
-        if (s.clothes.some((x) => x.id === id)) { s.clothes = s.clothes.filter((x) => x.id !== id); return }
-        // one item per slot, except socks and other accessories
-        const keep = s.clothes.filter((x) => slot.id === 'other' || slotOf(garments.find((g) => g.id === x.id) ?? { id: x.id, tags: [] } as unknown as AssetEntry) !== slot.id)
-        // (in its own colour until one is chosen)
-        s.clothes = [...keep, { id }]
+    const bySlot = new Map<string, AssetEntry[]>()
+    for (const a of garments) {
+      const k = slotOf(a)
+      const list = bySlot.get(k) ?? []
+      list.push(a)
+      bySlot.set(k, list)
+    }
+    for (const list of bySlot.values()) list.sort((x, y) => (x.order ?? 1e9) - (y.order ?? 1e9))
+    const isWorn = (id: string): boolean => this.spec.clothes.some((x) => x.id === id)
+    /** Put it on, or take it off if it is already on; one item per slot, except socks and accessories. */
+    const pick = (id: string | null): void => this.edit((s) => {
+      if (!id) return
+      if (isWorn(id)) { s.clothes = s.clothes.filter((x) => x.id !== id); return }
+      const a = garments.find((g) => g.id === id)
+      const slot = a ? slotOf(a) : 'tops'
+      const keep = s.clothes.filter((x) => {
+        const g = garments.find((y) => y.id === x.id)
+        return slot === 'other' || !g || slotOf(g) !== slot
       })
-      const details = el('details', { class: 'card', open: slot.id === 'tops' }, el('summary', { textContent: `${slot.label} (${items.length})` }),
-        this.tiles(items, () => null, pick, false, (id) => this.spec.clothes.some((x) => x.id === id)))
-      sheet.append(details)
+      // (in its own colour until one is chosen)
+      s.clothes = [...keep, { id }]
+    })
+
+    // The kit you would actually wear to do this, across every slot, so nobody has to open four sections to
+    // get dressed for a ride (EXERCISE_KIT, beside the wardrobe the random avatars draw from).
+    const byId = new Map(garments.map((a) => [a.id, a]))
+    const kit = EXERCISE_KIT.map((id) => byId.get(id)).filter((a): a is AssetEntry => !!a)
+    if (kit.length) sheet.append(card('For exercise', this.tiles(kit, () => null, pick, false, isWorn)).root)
+
+    // and the whole wardrobe underneath, a section per slot, closed: this is where the dresses live
+    for (const slot of SLOTS) {
+      const items = bySlot.get(slot.id) ?? []
+      if (!items.length) continue
+      sheet.append(el('details', { class: 'card' }, el('summary', { textContent: `${slot.label} (${items.length})` }),
+        this.tiles(items, () => null, pick, false, isWorn)))
     }
   }
 
