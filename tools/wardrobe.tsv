@@ -22,7 +22,6 @@ punkduck_off-shoulder_long-sleeve_top	tops	Cold-shoulder top	Cold-shoulder top
 elvs_disco_top2	tops	Halter top	Halter top, open back
 toigo_keyhole_tank_top	tops	Keyhole tank	Keyhole tank, giraffe print
 toigo_camisole_top	tops	Paisley camisole	Paisley camisole
-toigo_bodice-style_top	tops	Corset top	Corset-style top
 punkduck_lace_up_blouse	tops	Lace-up blouse	Lace-up peasant blouse
 elvs_ruffle_sleeve_peasant_blouse_1	tops	Ruffle blouse	Ruffle-sleeve blouse, busy print
 drednicolson_asymmetric_tunic_and_sash	tops	Tunic and sash	Nice floral print, fantasy cut
@@ -30,14 +29,12 @@ drednicolson_short-tail_camo_tee	tops	Camo tee	Camo tee, dark texture
 ews_striped_shirt	tops	Striped top	Striped long-sleeve crop, texture-driven (won't tint)
 mindfront_knitted_sweater_01	tops	Knit sweater	Realistic knit, normal map, light mesh
 mindfront_knitted_sweater_02	tops	Cable-knit sweater	Cable-knit sweater, excellent texture
-toigo_fisherman_sweater	tops	Ribbed sweater	Ribbed sweater, rich texture (small alpha specks to fix)
 janexx_old_female_sweater	tops	Loose sweater	Relaxed long-sleeve sweater, clean
 mindfront_lusekofta	tops	Nordic cardigan	Norwegian knit cardigan, 4k texture, standout detail
 mindfront_cardigan_long_open_front	tops	Long cardigan	Long knit cardigan; texture alpha needs converter fix
 punkduck_winter_coat	tops	Winter coat	Belted long coat; alpha holes need converter fix
 elvs_emt_uniform_jacket_female	tops	Rescue jacket (f)	Detailed paramedic jacket, 21k tris
 elvs_emt_uniform_jacket_male	tops	Rescue jacket (m)	Detailed paramedic jacket, 21k tris
-punkduck_bandeau_bikini_bra	tops	Bikini top	Bandeau bikini top (pairs with the slip)
 punkduck_sport_briefs	bottoms	Sport briefs	Logo sport briefs (underwear)
 wolgade_female_panties_01	bottoms	Sport briefs, stars	Star-print sport bottoms; pairs with wolgade_female_top_01
 mindfront_male_swimming_trunks_03	bottoms	Swim briefs	Swim briefs, clean
@@ -58,38 +55,26 @@ cortu_cargo_pants	bottoms	Loose trousers	Loose trousers, very low poly (392 tris
 toigo_harem_pants	bottoms	Harem pants	Floral harem pants, 11k tris
 elvs_emt_uniform_pants_female	bottoms	Work trousers (f)	Work trousers with reflective bands
 elvs_emt_uniform_pants_male	bottoms	Work trousers (m)	Work trousers with reflective bands
-punkduck_black_mini_skirt	bottoms	Mini skirt	Plain black mini, tintable
-toigo_tiered_mini_skirt	bottoms	Tiered mini skirt	Tiered black mini, tintable
 punkduck_jeans_skirt	bottoms	Denim skirt	Stonewash denim mini, detailed
-elvs_disco_mini_skirt	bottoms	Knit mini skirt	Knit mini skirt
 elvs_pencil_skirt	bottoms	Pencil skirt	Knit pencil skirt, normal map
 sonicteam998_maria_skirt	bottoms	Flared midi skirt	Plain flared midi, tints well
 elvs_asymmetrical_skirt	bottoms	Asymmetric skirt	Asymmetric knit skirt
 elvs_gored_midi_skirt	bottoms	Lace-panel skirt	Gored midi with lace panels
 punkduck_retro_polka_dot_skirt	bottoms	Polka-dot skirt	A-line polka-dot skirt, clean
-mtknife_pleated_mini_skirt	bottoms	Tartan mini, pleated	Pleated tartan mini, 4k texture
-mtknife_low_mini_skirt	bottoms	Tartan mini, low	Low-rise tartan mini
-frankyaye_mini_skirt_02	bottoms	Tartan mini	Pleated tartan mini
-callharvey3d_harvey_pskirt01	bottoms	Plaid mini	Pleated plaid mini, very light mesh
 toigo_skirt_with_lace_ruffle	bottoms	Ruffle skirt	Printed ruffle skirt
 toigo_long_full_skirt	bottoms	Long skirt	Long printed skirt
 toigo_tiered_skirt	bottoms	Ombre tiered skirt	Ombre tiered skirt, 13k tris
 punkduck_skirt_native_american_fashion	bottoms	Banded long skirt	Long banded skirt, 10k tris
-punkduck_bandeau_bikini_slip	bottoms	Bikini bottom	Bandeau bikini bottom
 punkduck_triathlon_suit_female	outfits	Triathlon suit	Triathlon suit, ideal for the exergames
 punkduck_short_bodysuit_female	outfits	Cycling skinsuit	Short-sleeve zip skinsuit: reads as a cycling skinsuit
 culturalibre_heroine_suit_5	outfits	Speed suit	Short-sleeve skinsuit, tintable: speed-suit base
 culturalibre_hero_suit_4	outfits	Long skinsuit	Plain long-sleeve skinsuit, tintable: a cycling skinsuit base
 culturalibre_hero_suit_2	outfits	Short skinsuit	Plain short-sleeve bodysuit, 11k tris
-culturalibre_heroine_suit_1	outfits	Long bodysuit	Plain long-sleeve bodysuit
 matcreator_mc-skinsuit_2022	outfits	Black skinsuit	Black skinsuit, 4k texture, 20k tris
 female_sportsuit01	outfits	Crop top and leggings	Crop top + track leggings (system), exercise-ready
 culturalibre_heroine_suit_4	outfits	Bandeau and leggings	Bandeau + leggings + gloves, 22k tris
 culturalibre_male_sport_suit	outfits	Running kit	Athletic tee + running shorts in one, tintable
 punkduck_wetsuit	outfits	Wetsuit	Full wetsuit with stripes; doubles as a winter/rowing suit
-mindfront_f_one-piece_swimsuit_01	outfits	Swimsuit	One-piece swimsuit, clean
-punkduck_one_piece_bikini01	outfits	Swimsuit, white	White one-piece swimsuit
-mindfront_bikini_01	outfits	Sport bikini	Sporty bikini, 3.4k tris
 elvs_racing_fire_suit_female1	outfits	Race suit (f)	Motorsport race suit, 19k tris; good for Night Racer
 elvs_racing_fire_suit_male1	outfits	Race suit (m)	Motorsport race suit, 26k tris; good for Night Racer
 punkduck_tennis_dress	outfits	Tennis dress	Tennis dress; the dark waistband looks odd
@@ -145,7 +130,6 @@ toigo_female_suit_2	outfits	Trouser suit	Magenta trouser suit
 toigo_suit_with_dinner_jacket	outfits	Dinner jacket	White dinner jacket tux
 female_elegantsuit01	outfits	Blouse and pencil skirt	Pinstripe blouse + pencil skirt (system)
 mindfront_kimono	outfits	Robe	Robe/kimono
-punkduck_female_strapless_bodysuit	outfits	Strapless bodysuit	Strapless bodysuit, looks like shapewear
 joepal_plain_bra	outfits	Bra	Plain bra, 4k texture; underwear layer
 punkduck_running_shoes_01	shoes	Running shoes	Running shoes (current default)
 punkduck_cycling_shoes	shoes	Cycling shoes	Road cycling shoes, ideal for the bike games
