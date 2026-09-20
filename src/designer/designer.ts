@@ -466,30 +466,14 @@ export class Designer {
         format: (v) => (v < 0.2 ? k.words[0] : v > 0.75 ? k.words[2] : k.words[1]),
       }, this.syncs))
     }
-    // TEMPORARY (2026-09-19): the two halves of Texture on their own, to see which one turns freckles into pox.
-    // `relief` is the skin photograph's own normal map (× 1.4), `detail` the procedural micro-detail tiled over it
-    // (bump × 1.8, albedo × 0.35, roughness × 0.5). Either one unset follows Texture. Remove with SkinSpec's fields.
-    const SPLIT: Array<{ key: 'relief' | 'detail'; label: string }> = [
-      { key: 'relief', label: 'Photo relief (temp)' },
-      { key: 'detail', label: 'Micro-detail (temp)' },
-    ]
-    for (const k of SPLIT) {
-      skin.root.append(slider({
-        label: k.label, min: 0, max: 1, step: 0.01, get: () => this.spec.skin[k.key] ?? this.spec.skin.pores,
-        set: (v, commit) => this.edit((s) => { s.skin[k.key] = v }, !commit),
-        format: (v) => `${Math.round(v * 100)}%${this.spec.skin[k.key] === undefined ? ' (follows Texture)' : ''}`,
-      }, this.syncs))
-    }
-    // (the photograph's own freckles, creases and shading, faded toward its median; it redraws the texture, so
-    // it moves on release rather than while dragging)
+    // TEMPORARY (2026-09-19): how much of the skin photograph's own freckles, creases and shading to keep, faded
+    // toward its median. It redraws the texture, so it moves on release rather than while dragging. Remove with
+    // SkinSpec.photo once the balance is settled.
     skin.root.append(slider({
       label: 'Photo strength (temp)', min: 0, max: 1, step: 0.05, get: () => this.spec.skin.photo ?? 1,
       set: (v, commit) => { if (commit) this.edit((s) => { s.skin.photo = v }) },
       format: (v) => `${Math.round(v * 100)}%`,
     }, this.syncs))
-    const bothOff = el('button', { class: 'btn sm', type: 'button', textContent: 'Back to the Texture slider' })
-    bothOff.addEventListener('click', () => this.edit((s) => { delete s.skin.relief; delete s.skin.detail; delete s.skin.photo }))
-    skin.root.append(bothOff)
     sheet.append(skin.root)
     // the detail photograph under the colour: freckles, stubble, fine lines, age
     const detail = card('Skin detail')

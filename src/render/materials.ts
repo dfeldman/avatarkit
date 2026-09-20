@@ -20,8 +20,6 @@ import type { AvatarSpec } from '../spec.ts'
 
 export interface AvatarMaterials {
   body: PBRMaterial
-  /** the relief strength to give the normal map once it loads */
-  pores: number
   /** TEMPORARY: how much of the photograph's own variation to keep (see skin.photo), and what is drawn now */
   photo: number
   photoKey?: string
@@ -61,11 +59,11 @@ export function createAvatarMaterials(scene: Scene, name: string, quality: Quali
     body.detailMap.texture = detail
     body.detailMap.isEnabled = true
   }
-  return { body, pores: 0.5, photo: 1, quality }
+  return { body, photo: 1, quality }
 }
 
 /**
- * TEMPORARY (2026-09-19, with skin.relief and skin.detail): the photograph with its own variation pulled toward
+ * TEMPORARY (2026-09-19): the photograph with its own variation pulled toward
  * its median, for judging how much of a heavily freckled skin should survive. The textures hold half the
  * photograph's ratio to its median, so the neutral texel is mid grey: fading toward that flattens freckles,
  * creases and shading together, and 1 leaves the photograph alone.
@@ -87,23 +85,25 @@ function fadedPhoto(url: string, scene: Scene, keep: number): Texture {
   return t
 }
 
-/** The skin colour, and its detail photograph: the chosen one, or the nearest to the colour. */
+/**
+ * The skin colour, and its detail photograph: the chosen one, or the nearest to the colour.
+ *
+ * The photograph's own relief is deliberately not used. It was derived from the photograph's brightness (a
+ * high-pass, then slopes), which cannot tell a pore from a freckle, so every dark mark became a dent and freckled
+ * skins came out pitted. The fine grain now comes only from the tiled micro-detail map, which is the same for
+ * everyone and knows nothing about pigment.
+ */
 export function applySpecToMaterials(m: AvatarMaterials, spec: AvatarSpec): void {
   const color = Color3.FromHexString(spec.skin.color)
   // the detail map holds half the photograph's ratio to its own median: twice the linear colour gives the colour itself
   m.body.albedoColor = color.toLinearSpace().scale(2)
-  // surface: how strongly the relief shows, and matte to dewy (the roughness map is scaled around its own values)
-  // (the photograph's own relief is soft and lumpy at this scale: the micro-detail below carries the fine grain)
-  // (temporary: skin.relief and skin.detail split the Texture slider in two, to weigh them separately)
-  const relief = spec.skin.relief ?? spec.skin.pores
-  const detail = spec.skin.detail ?? spec.skin.pores
-  if (m.body.bumpTexture) m.body.bumpTexture.level = 1.4 * relief
-  // (the micro-detail follows the same slider: none when smooth)
+  // surface: the micro-detail's grain, and matte to dewy (the roughness map is scaled around its own values)
+  // (the skin has no relief from the photograph: see the note above applySpecToMaterials)
+  const detail = spec.skin.pores
   m.body.detailMap.diffuseBlendLevel = 0.35 * detail
   m.body.detailMap.bumpLevel = 1.8 * detail
   m.body.detailMap.roughnessBlendLevel = 0.5 * detail
   m.body.roughness = 1.35 - 0.7 * spec.skin.shine
-  m.pores = relief
   m.photo = spec.skin.photo ?? 1
   const fem = spec.macros.Gender < 0.5
   void loadIndex().then((idx) => {
@@ -121,14 +121,9 @@ export function applySpecToMaterials(m: AvatarMaterials, spec: AvatarSpec): void
     if (m.photoKey === `${url}|${m.photo}`) return
     m.photoKey = `${url}|${m.photo}`
     const scene = m.body.getScene()
-    for (const t of [m.body.albedoTexture, m.body.bumpTexture, m.body.metallicTexture]) t?.dispose()
+    for (const t of [m.body.albedoTexture, m.body.metallicTexture]) t?.dispose()
     // (sRGB-encoded, decoded to linear by the GPU)
     m.body.albedoTexture = m.photo >= 0.999 ? new Texture(url, scene) : fadedPhoto(url, scene, m.photo)
-    // relief from the same photograph: pores, stubble, fine lines
-    const bump = new Texture(url.replace(/(\.lo)?\.jpg$/, '_normal$1.jpg'), scene)
-    bump.gammaSpace = false
-    bump.level = 1.4 * m.pores
-    m.body.bumpTexture = bump
     // roughness in green (lips and damp skin shinier, pores and creases rougher), metallic 0 in blue
     const surface = new Texture(url.replace(/(\.lo)?\.jpg$/, '_rough.jpg'), scene)
     surface.gammaSpace = false

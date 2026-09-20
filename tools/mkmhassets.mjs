@@ -370,18 +370,12 @@ for k in range(3):
     enc = lambda x: 12.92 * x if x <= 0.0031308 else 1.055 * x ** (1 / 2.4) - 0.055
     lut += [min(255, round(255 * enc(min(1.0, 0.5 * v / max(1, med[k]))))) for v in range(256)]
 detail.point(lut).save(out + '.jpg', quality=90)
-# relief: the photograph's fine detail (pores, stubble, fine lines) as height, darker = deeper; its slopes as a
-# tangent-space normal map
+# the photograph's fine detail as height, darker = deeper. No normal map comes out of it any more: brightness
+# cannot tell a pore from a freckle, so every dark mark became a dent and freckled skins rendered pitted (the skin
+# takes its grain from the tiled micro-detail map instead). The high pass is still used by the roughness below.
 L = im.convert('L')
 hp = ImageChops.subtract(L, L.filter(ImageFilter.GaussianBlur(5)), 1, 128)
 hp = hp.filter(ImageFilter.GaussianBlur(0.7))
-gx = hp.filter(ImageFilter.Kernel((3, 3), [-1, 0, 1, -2, 0, 2, -1, 0, 1], 1, 128))
-gy = hp.filter(ImageFilter.Kernel((3, 3), [-1, -2, -1, 0, 0, 0, 1, 2, 1], 1, 128))
-k = 2.2
-nx = gx.point(lambda v: max(0, min(255, round(128 - (v - 128) * k))))
-ny = gy.point(lambda v: max(0, min(255, round(128 + (v - 128) * k))))
-nz = Image.new('L', L.size, 255)
-Image.merge('RGB', (nx, ny, nz)).save(out + '_normal.jpg', quality=90)
 # roughness (green channel; blue = metallic 0): skin 0.5, lips and the damp inner parts shinier (reddest), pores
 # and creases rougher
 r, g, b = im.split()
