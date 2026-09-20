@@ -2,7 +2,7 @@
  * Avatar geometry from a spec: the MakeHuman body (mhbody.ts) with its eyes and proxies, skinned to our skeleton,
  * as typed arrays ready for the GPU (and for transfer out of a worker).
  */
-import { preloadProxies } from './mhassets.ts'
+import { loadIndex, preloadProxies } from './mhassets.ts'
 import type { MhProxy } from './mhproxy.ts'
 import { buildMakeHuman, lowBodyFor, wornFor, type MeshPart } from './mhbody.ts'
 import type { ProxyKind } from './mhproxy.ts'
@@ -57,6 +57,8 @@ export interface AvatarGeometry {
 
 /** Loads the MakeHuman targets and proxies a spec uses (buildAvatarGeometry then reads them synchronously). */
 export async function preloadAssets(spec: AvatarSpec, quality: Quality = 'high'): Promise<void> {
+  // (the index first: what a garment covers decides whether the modesty garments are worn, and the build can't wait)
+  await loadIndex()
   const list: Array<[ProxyKind, string]> = wornFor(spec).map((w) => [w.kind, w.id])
   if (quality === 'low') list.push(['body', lowBodyFor(spec)])
   await Promise.all([preloadTargets(spec.macros, spec.modifiers), preloadExpressions(spec.macros), preloadProxies(list)])

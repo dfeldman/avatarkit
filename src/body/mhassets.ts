@@ -86,9 +86,22 @@ export async function readBytes(path: string): Promise<ArrayBuffer> {
 export { readJson }
 
 let indexP: Promise<AssetEntry[]> | null = null
+let indexNow: AssetEntry[] | null = null
 /** Every asset, with its tags and credits. */
 export function loadIndex(): Promise<AssetEntry[]> {
-  return (indexP ??= readJson<{ assets: AssetEntry[] }>('index.json').then((j) => j.assets))
+  return (indexP ??= readJson<{ assets: AssetEntry[] }>('index.json').then((j) => {
+    indexNow = j.assets
+    return j.assets
+  }))
+}
+
+/**
+ * A garment's designer slot (tops, bottoms, outfits, shoes, socks, other), or undefined when the index hasn't
+ * loaded yet or the garment isn't in it. Synchronous, for the geometry build, which cannot wait (preloadAssets
+ * loads the index first).
+ */
+export function garmentSlot(id: string): string | undefined {
+  return indexNow?.find((a) => a.kind === 'clothes' && a.id === id)?.slot
 }
 
 const proxies = new Map<string, MhProxy>()

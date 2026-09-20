@@ -45,9 +45,10 @@ const MACRO_SLIDERS: Array<{ key: Macro; label: string; left: string; right: str
   { key: 'Muscle', label: 'Muscle', left: 'Minimum', right: 'Maximum' },
   { key: 'Weight', label: 'Weight', left: 'Minimum', right: 'Maximum' },
   { key: 'Height', label: 'Height', left: 'Short', right: 'Tall' },
-  { key: 'BodyProportions', label: 'Proportions', left: 'Uncommon', right: 'Ideal' },
-  { key: 'BreastSize', label: 'Breast size', left: 'Small', right: 'Large' },
-  { key: 'BreastFirmness', label: 'Breast firmness', left: 'Low', right: 'High' },
+  // (MakeHuman calls this "uncommon to ideal"; what it actually does is straighten or curve the silhouette)
+  { key: 'BodyProportions', label: 'Proportions', left: 'Straight', right: 'Hourglass' },
+  { key: 'BreastSize', label: 'Chest size', left: 'Small', right: 'Large' },
+  { key: 'BreastFirmness', label: 'Chest firmness', left: 'Low', right: 'High' },
 ]
 const ETHNIC: Macro[] = ['African', 'Asian', 'Caucasian']
 
@@ -71,6 +72,11 @@ function slotOf(a: AssetEntry): Slot {
 const pretty = (id: string): string =>
   id.replace(/^(elvs|punkduck|toigo|mindfront|joepal|cortu|namuhekam|culturalibre|dressupdoc|callharvey3d|drednicolson|skalldyrssuppe|v0rt3x|matcreator|spamrakuen|maciekg|grinsegold|green_tomato|scailman|mtknife|frankyaye|rehmanpolanski|jaldmic|jujube|donitz|madmanny|wolgade|aethelraed|kwnet_at|marco_105|janexx|ews|wdg|scsouza|sonicteam998)_/, '')
     .replace(/[_-]+/g, ' ').replace(/\b(\d)$/, ' $1').replace(/^./, (c) => c.toUpperCase())
+
+// MakeHuman models genitals and names things anatomically; a fitness game shows neither. These sliders are left
+// out, and "breast" is called "chest" wherever MakeHuman's own labels come through.
+const HIDDEN_MODIFIER = /^genitals\/|^pelvis\/bulge/
+const chestly = (t: string): string => t.replace(/breasts?/gi, (m) => (m[0] === m[0].toUpperCase() ? 'Chest' : 'chest'))
 
 export class Designer {
   spec: AvatarSpec
@@ -474,8 +480,15 @@ export class Designer {
         format: (v) => `${Math.round(v * 100)}%${this.spec.skin[k.key] === undefined ? ' (follows Texture)' : ''}`,
       }, this.syncs))
     }
+    // (the photograph's own freckles, creases and shading, faded toward its median; it redraws the texture, so
+    // it moves on release rather than while dragging)
+    skin.root.append(slider({
+      label: 'Photo strength (temp)', min: 0, max: 1, step: 0.05, get: () => this.spec.skin.photo ?? 1,
+      set: (v, commit) => { if (commit) this.edit((s) => { s.skin.photo = v }) },
+      format: (v) => `${Math.round(v * 100)}%`,
+    }, this.syncs))
     const bothOff = el('button', { class: 'btn sm', type: 'button', textContent: 'Back to the Texture slider' })
-    bothOff.addEventListener('click', () => this.edit((s) => { delete s.skin.relief; delete s.skin.detail }))
+    bothOff.addEventListener('click', () => this.edit((s) => { delete s.skin.relief; delete s.skin.detail; delete s.skin.photo }))
     skin.root.append(bothOff)
     sheet.append(skin.root)
     // the detail photograph under the colour: freckles, stubble, fine lines, age
@@ -497,14 +510,15 @@ export class Designer {
     const byName = new Map(defs.map((d) => [d.name, d]))
     for (const t of tabs) {
       for (const [group, items] of Object.entries(layout[t]?.modifiers ?? {})) {
-        const details = el('details', { class: 'card' }, el('summary', { textContent: title(group) }))
+        if (/genital/i.test(group)) continue
+        const details = el('details', { class: 'card' }, el('summary', { textContent: chestly(title(group)) }))
         let n = 0
         for (const it of items) {
           const d = byName.get(it.mod)
-          if (!d) continue
+          if (!d || HIDDEN_MODIFIER.test(it.mod)) continue
           n++
           details.append(slider({
-            label: it.label ?? it.mod, min: d.min, max: d.max, step: 0.01, get: () => this.spec.modifiers[d.name] ?? 0,
+            label: chestly(it.label ?? it.mod), min: d.min, max: d.max, step: 0.01, get: () => this.spec.modifiers[d.name] ?? 0,
             set: (v, commit) => this.edit((s) => {
               if (Math.abs(v) < 0.005) delete s.modifiers[d.name]
               else s.modifiers[d.name] = v

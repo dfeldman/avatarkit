@@ -33,6 +33,8 @@ export interface SkinSpec {
    */
   relief?: number
   detail?: number
+  /** TEMPORARY with the two above: the photograph's own variation, pulled toward its median (1 = as photographed) */
+  photo?: number
   /** matte 0 .. dewy 1 */
   shine: number
   /** the detail photograph (a MakeHuman skin id: freckled, older, bronzed, …); null = MakeHuman's own young skin
@@ -136,6 +138,7 @@ export function normalizeSpec(input?: unknown): AvatarSpec {
       // (temporary; see SkinSpec. Absent unless set, so specs and codes are unchanged for everyone else)
       ...(skin.relief === undefined ? {} : { relief: unit(skin.relief, D.skin.pores) }),
       ...(skin.detail === undefined ? {} : { detail: unit(skin.detail, D.skin.pores) }),
+      ...(skin.photo === undefined ? {} : { photo: unit(skin.photo, 1) }),
     },
     eyes: (EYE_MATERIALS as readonly string[]).includes(src.eyes as string) ? (src.eyes as string) : D.eyes,
     hair: { id: 'id' in hair ? id(hair.id, D.hair.id) : D.hair.id, color: normalizeColor(hair.color, D.hair.color) },

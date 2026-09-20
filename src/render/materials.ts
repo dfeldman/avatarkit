@@ -8,7 +8,7 @@
  * Everything else an avatar wears (eyes, hair, eyebrows, eyelashes, clothes, shoes) is a MakeHuman proxy with its own
  * material (avatar.ts).
  */
-import { Color3, PBRMaterial, Texture, type Scene } from '@babylonjs/core'
+import { Color3, DynamicTexture, PBRMaterial, Texture, type Scene } from '@babylonjs/core'
 import { assetUrl, loadIndex, texturePath } from '../body/mhassets.ts'
 import type { Quality } from '../body/build.ts'
 // the scattering pass's shaders, registered up front: Babylon imports them when it first builds the pass, but not when
@@ -22,6 +22,9 @@ export interface AvatarMaterials {
   body: PBRMaterial
   /** the relief strength to give the normal map once it loads */
   pores: number
+  /** TEMPORARY: how much of the photograph's own variation to keep (see skin.photo), and what is drawn now */
+  photo: number
+  photoKey?: string
   /** textures and shading follow it: low reads the smaller textures and skips subsurface scattering */
   quality: Quality
 }
@@ -58,7 +61,30 @@ export function createAvatarMaterials(scene: Scene, name: string, quality: Quali
     body.detailMap.texture = detail
     body.detailMap.isEnabled = true
   }
-  return { body, pores: 0.5, quality }
+  return { body, pores: 0.5, photo: 1, quality }
+}
+
+/**
+ * TEMPORARY (2026-09-19, with skin.relief and skin.detail): the photograph with its own variation pulled toward
+ * its median, for judging how much of a heavily freckled skin should survive. The textures hold half the
+ * photograph's ratio to its median, so the neutral texel is mid grey: fading toward that flattens freckles,
+ * creases and shading together, and 1 leaves the photograph alone.
+ */
+function fadedPhoto(url: string, scene: Scene, keep: number): Texture {
+  const size = 2048
+  const t = new DynamicTexture(`skinPhoto|${keep}`, { width: size, height: size }, scene, true)
+  const ctx = t.getContext() as CanvasRenderingContext2D
+  const img = new Image()
+  img.crossOrigin = 'anonymous'
+  img.onload = () => {
+    ctx.drawImage(img, 0, 0, size, size)
+    // sRGB(0.5 linear) = 188: the value a texel has where the photograph matches its own median
+    ctx.fillStyle = `rgba(188, 188, 188, ${1 - keep})`
+    ctx.fillRect(0, 0, size, size)
+    t.update()
+  }
+  img.src = url
+  return t
 }
 
 /** The skin colour, and its detail photograph: the chosen one, or the nearest to the colour. */
@@ -78,6 +104,7 @@ export function applySpecToMaterials(m: AvatarMaterials, spec: AvatarSpec): void
   m.body.detailMap.roughnessBlendLevel = 0.5 * detail
   m.body.roughness = 1.35 - 0.7 * spec.skin.shine
   m.pores = relief
+  m.photo = spec.skin.photo ?? 1
   const fem = spec.macros.Gender < 0.5
   void loadIndex().then((idx) => {
     // a chosen photograph, else MakeHuman's own young skin of this sex nearest the colour
@@ -91,11 +118,12 @@ export function applySpecToMaterials(m: AvatarMaterials, spec: AvatarSpec): void
     }
     if (!best) return
     const url = assetUrl(texturePath(best, m.quality))
-    if ((m.body.albedoTexture as Texture | null)?.url === url) return
+    if (m.photoKey === `${url}|${m.photo}`) return
+    m.photoKey = `${url}|${m.photo}`
     const scene = m.body.getScene()
     for (const t of [m.body.albedoTexture, m.body.bumpTexture, m.body.metallicTexture]) t?.dispose()
     // (sRGB-encoded, decoded to linear by the GPU)
-    m.body.albedoTexture = new Texture(url, scene)
+    m.body.albedoTexture = m.photo >= 0.999 ? new Texture(url, scene) : fadedPhoto(url, scene, m.photo)
     // relief from the same photograph: pores, stubble, fine lines
     const bump = new Texture(url.replace(/(\.lo)?\.jpg$/, '_normal$1.jpg'), scene)
     bump.gammaSpace = false

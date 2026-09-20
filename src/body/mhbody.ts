@@ -11,7 +11,7 @@
  * re-posing the mesh with its own weights, as MakeHuman does when it changes rest pose.
  */
 import mh from './mhbase.json' with { type: 'json' }
-import { loadedProxy } from './mhassets.ts'
+import { garmentSlot, loadedProxy } from './mhassets.ts'
 import { applyTargets, EXPRESSION_UNITS, expressionDeltas, type ExpressionUnit } from './mhmodifiers.ts'
 import type { MhProxy, ProxyKind } from './mhproxy.ts'
 import type { Quality } from './build.ts'
@@ -82,6 +82,25 @@ export interface Worn { kind: ProxyKind; id: string; tint?: string }
 export const lowBodyFor = (spec: AvatarSpec): string => (spec.macros.Gender < 0.5 ? 'female1605' : 'male1591')
 
 /** The proxies a spec names. */
+/**
+ * Nobody is drawn bare: an avatar with nothing over its hips wears these briefs, and one with a woman's chest
+ * wears this top. Games and the designer get the same body, so a spec can't produce a nude avatar anywhere.
+ */
+export const MODESTY = { bottoms: 'punkduck_sport_briefs', top: 'punkduck_sport_bra' } as const
+/** a chest this size or larger is covered whatever the gender says (MakeHuman's BreastSize, 0..1) */
+const COVER_CHEST = 0.1
+
+/** What a spec wears, with the modesty garments added where it covers nothing (see MODESTY). */
+export function modestyFor(spec: AvatarSpec): Worn[] {
+  const slots = spec.clothes.map((c) => garmentSlot(c.id))
+  const add: Worn[] = []
+  // (an outfit is a whole garment: a dress or a suit covers both)
+  if (!slots.some((s) => s === 'bottoms' || s === 'outfits')) add.push({ kind: 'clothes', id: MODESTY.bottoms })
+  const chest = spec.macros.Gender < 0.5 || spec.macros.BreastSize > COVER_CHEST
+  if (chest && !slots.some((s) => s === 'tops' || s === 'outfits')) add.push({ kind: 'clothes', id: MODESTY.top })
+  return add
+}
+
 export function wornFor(spec: AvatarSpec): Worn[] {
   const w: Worn[] = []
   if (spec.hair.id) w.push({ kind: 'hair', id: spec.hair.id, tint: spec.hair.color })
@@ -89,6 +108,8 @@ export function wornFor(spec: AvatarSpec): Worn[] {
   if (spec.eyelashes) w.push({ kind: 'eyelashes', id: spec.eyelashes })
   // the mouth's insides, seen when it opens (facial expressions)
   w.push({ kind: 'teeth', id: 'teeth_base' }, { kind: 'tongue', id: 'tongue01' })
+  // (worn under the spec's own clothes: layering sorts the order out)
+  for (const m of modestyFor(spec)) w.push(m)
   for (const c of spec.clothes) w.push({ kind: 'clothes', id: c.id, tint: c.color })
   return w
 }

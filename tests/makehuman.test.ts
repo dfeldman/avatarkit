@@ -3,7 +3,7 @@ import { buildAvatarGeometry, preloadAssets, type AvatarGeometry } from '../src/
 import { decodeProxy, encodeProxy } from '../src/body/proxybin.ts'
 import { existsSync } from 'node:fs'
 import { loadIndex, loadProxy } from '../src/body/mhassets.ts'
-import { clothingLayer, fitProxy, layerClothes } from '../src/body/mhbody.ts'
+import { clothingLayer, fitProxy, layerClothes, MODESTY, wornFor } from '../src/body/mhbody.ts'
 import type { MhProxy } from '../src/body/mhproxy.ts'
 import { EXPRESSION_UNITS, loadModifierDefs, macroFactors, MACRO_DEFAULTS, targetWeights, type ExpressionUnit } from '../src/body/mhmodifiers.ts'
 import { BONES, torsoHalfWidth } from '../src/body/rig.ts'
@@ -309,6 +309,28 @@ describe('facial expressions', () => {
     // and the low body carries them through its fitting
     await preloadAssets(spec, 'low')
     expect(units(buildAvatarGeometry(spec, 'low').body.morphs)).toBe(EXPRESSION_UNITS.length)
+  })
+})
+
+describe('modesty', () => {
+  it('dresses anyone the spec leaves bare, in the designer and in a game alike', async () => {
+    await loadIndex()
+    const ids = (spec: AvatarSpec): string[] => wornFor(spec).filter((w) => w.kind === 'clothes').map((w) => w.id)
+    const bare = (over: Partial<AvatarSpec['macros']>, clothes: AvatarSpec['clothes'] = []): AvatarSpec =>
+      normalizeSpec({ ...preset('sam'), macros: { ...preset('sam').macros, ...over }, clothes })
+    // a man with nothing on gets briefs, and no top
+    expect(ids(bare({ Gender: 1, BreastSize: 0 }))).toEqual([MODESTY.bottoms])
+    // a woman gets both
+    expect(ids(bare({ Gender: 0.2, BreastSize: 0.5 }))).toEqual([MODESTY.bottoms, MODESTY.top])
+    // so does a masculine body with a chest
+    expect(ids(bare({ Gender: 0.9, BreastSize: 0.4 }))).toEqual([MODESTY.bottoms, MODESTY.top])
+    // an outfit covers both halves; a top still leaves the hips bare
+    expect(ids(bare({ Gender: 0.2 }, [{ id: 'toigo_keyhole_neck_dress' }]))).toEqual(['toigo_keyhole_neck_dress'])
+    expect(ids(bare({ Gender: 1, BreastSize: 0 }, [{ id: 'mindfront_tank_top_01' }])))
+      .toEqual([MODESTY.bottoms, 'mindfront_tank_top_01'])
+    // nothing is added when the spec already covers both
+    const dressed = bare({ Gender: 0.2 }, [{ id: 'mindfront_tank_top_01' }, { id: 'punkduck_female_short_jeans' }])
+    expect(ids(dressed)).toEqual(['mindfront_tank_top_01', 'punkduck_female_short_jeans'])
   })
 })
 
