@@ -769,8 +769,15 @@ function neighbours(): Int32Array[] {
   return NEIGHBOURS
 }
 
-/** how much of the chest's own shape a garment keeps after smoothing, and how far the smoothing reaches */
-const CHEST_SMOOTHING = 40
+/**
+ * How the chest is eased for clothes: its reach spreads over this many mesh steps (fabric spans a hollow rather
+ * than dipping into it), then is blurred this many passes to take the edges off. MakeHuman's clothes helper cage
+ * has no triangles of its own, so it takes a smooth average of the skin around it: garments bind to either, and a
+ * few to both, and a triangle with one bind point moved and another left behind tears open.
+ */
+const CHEST_BRIDGE = 8
+const CHEST_SMOOTHING = 20
+const CAGE_REACH = 0.04
 
 /**
  * The body garments are fitted to: this body with the chest's curve eased.
@@ -778,8 +785,11 @@ const CHEST_SMOOTHING = 40
  * MakeHuman garments bind each of their vertices to body vertices, so a thin one fitted to the skin is a displaced
  * copy of it and reproduces every curve, including the crease between the breasts — a cycling suit ends up
  * shrink-wrapped. MakeHuman's own garments avoid this by binding to its clothes helper cage, which has no such
- * crease. This does the same for every garment: the chest's own displacement (what the BreastSize macro adds) is
- * blurred over the mesh, so the volume stays and the crease goes, and garments drape across it.
+ * crease. This gives every garment the same: each vertex is pushed out along the body's own outward normal until
+ * it reaches as far as the fullest part of the chest near it, so the hollow fills, the chest keeps its size, and
+ * the garment never ends up inside the skin. The normal is what keeps it coherent — pushing each vertex along its
+ * own share of the chest's displacement sends neighbours either side of the breastbone in opposite directions and
+ * tears the garment down the middle.
  */
 function clothingBody(P: Float64Array, spec: AvatarSpec): Float64Array {
   const n = A.positions.length / 3
@@ -794,52 +804,121 @@ function clothingBody(P: Float64Array, spec: AvatarSpec): Float64Array {
     // (a caller that preloaded only its own targets: the garments hug the chest, as they did before)
     return P
   }
-  let moved = 0
-  for (let i = 0; i < withChest.length; i++) {
-    withChest[i] -= without[i]
-    if (withChest[i] !== 0) moved++
-  }
-  if (!moved) return P
-  // blur that displacement over the mesh (a vertex takes the average of its neighbours and itself), keeping the
-  // original to compare against: the two buffers swap each pass, so the result must not share one with it.
-  // Only the chest and as far as the blur can reach take part; the rest of the body is untouched either way.
   const nb = neighbours()
+  // the body's own outward normal, which every vertex is measured and pushed along
+  const normal = new Float64Array(3 * n)
+  for (let t = 0; t < A.tris.length; t += 3) {
+    const a = 3 * A.tris[t], b = 3 * A.tris[t + 1], c = 3 * A.tris[t + 2]
+    const ux = P[b] - P[a], uy = P[b + 1] - P[a + 1], uz = P[b + 2] - P[a + 2]
+    const vx = P[c] - P[a], vy = P[c + 1] - P[a + 1], vz = P[c + 2] - P[a + 2]
+    const nx = uy * vz - uz * vy, ny = uz * vx - ux * vz, nz = ux * vy - uy * vx
+    for (const at of [a, b, c]) { normal[at] += nx; normal[at + 1] += ny; normal[at + 2] += nz }
+  }
+  for (let v = 0; v < n; v++) {
+    const i = 3 * v
+    const l = Math.hypot(normal[i], normal[i + 1], normal[i + 2])
+    if (l) for (let k = 0; k < 3; k++) normal[i + k] /= l
+  }
+  // How far the chest stands out, measured along that normal — not how far the vertex travelled. A vertex under
+  // the breast moves a long way without standing out at all, and equalising travel would float the fabric off
+  // the front of the chest.
+  const mag = new Float64Array(n)
+  let most = 0
+  for (let v = 0; v < n; v++) {
+    const i = 3 * v
+    const h = (withChest[i] - without[i]) * normal[i] + (withChest[i + 1] - without[i + 1]) * normal[i + 1]
+      + (withChest[i + 2] - without[i + 2]) * normal[i + 2]
+    mag[v] = Math.max(0, h)
+    most = Math.max(most, mag[v])
+  }
+  if (most < 0.005) return P
+  // the skin around the chest, as far as the spreading and blurring can reach
   const active: number[] = []
   {
     const seen = new Uint8Array(n)
     let front: number[] = []
-    for (let v = 0; v < n; v++) {
-      if (withChest[3 * v] || withChest[3 * v + 1] || withChest[3 * v + 2]) { seen[v] = 1; front.push(v); active.push(v) }
-    }
-    for (let ring = 0; ring < CHEST_SMOOTHING && front.length; ring++) {
+    for (let v = 0; v < n; v++) if (mag[v] > 0 && nb[v].length) { seen[v] = 1; front.push(v); active.push(v) }
+    for (let ring = 0; ring < CHEST_BRIDGE + CHEST_SMOOTHING && front.length; ring++) {
       const nextRing: number[] = []
       for (const v of front) for (const u of nb[v]) if (!seen[u]) { seen[u] = 1; nextRing.push(u); active.push(u) }
       front = nextRing
     }
   }
-  let cur = Float64Array.from(withChest), next = Float64Array.from(withChest)
+  if (!active.length) return P
+  // Close the hollows: take the highest of each neighbourhood, then the lowest of that. Spreading alone lifts
+  // everything near a full part of the chest; going back down again leaves the peaks and the flat where they were
+  // and keeps only what filled a dip — which is what fabric does across the breastbone.
+  let cur = Float64Array.from(mag), next = Float64Array.from(mag)
+  for (let pass = 0; pass < CHEST_BRIDGE; pass++) {
+    for (const v of active) {
+      let best = cur[v]
+      for (const u of nb[v]) if (cur[u] > best) best = cur[u]
+      next[v] = best
+    }
+    cur.set(next)
+  }
+  for (let pass = 0; pass < CHEST_BRIDGE; pass++) {
+    for (const v of active) {
+      let least = cur[v]
+      for (const u of nb[v]) if (cur[u] < least) least = cur[u]
+      next[v] = least
+    }
+    cur.set(next)
+  }
   for (let pass = 0; pass < CHEST_SMOOTHING; pass++) {
     for (const v of active) {
       const list = nb[v]
-      if (!list.length) continue
-      for (let k = 0; k < 3; k++) {
-        let sum = cur[3 * v + k]
-        for (const u of list) sum += cur[3 * u + k]
-        next[3 * v + k] = sum / (list.length + 1)
-      }
+      let sum = cur[v]
+      for (const u of list) sum += cur[u]
+      next[v] = sum / (list.length + 1)
     }
     const swap = cur; cur = next; next = swap
   }
-  // Fill the crease without flattening the chest: where the blur moved a vertex further out than the chest itself
-  // did (the valley between the breasts, which borrows from its neighbours) take the blurred displacement,
-  // and keep the original everywhere else. Lowering the apex instead would put the garment inside the skin.
-  const out = Float64Array.from(P)
+  // the helper cage: a smooth average of the skin near it, so it moves with the skin rather than against it
+  const cell = CAGE_REACH
+  const grid = new Map<string, number[]>()
+  const key = (v: number): string =>
+    `${Math.floor(P[3 * v] / cell)},${Math.floor(P[3 * v + 1] / cell)},${Math.floor(P[3 * v + 2] / cell)}`
+  const lo = [Infinity, Infinity, Infinity], hi = [-Infinity, -Infinity, -Infinity]
   for (const v of active) {
+    const k = key(v)
+    const at = grid.get(k)
+    if (at) at.push(v)
+    else grid.set(k, [v])
+    for (let k2 = 0; k2 < 3; k2++) { lo[k2] = Math.min(lo[k2], P[3 * v + k2]); hi[k2] = Math.max(hi[k2], P[3 * v + k2]) }
+  }
+  const cage: number[] = []
+  for (let v = 0; v < n; v++) {
+    if (nb[v].length) continue
     const i = 3 * v
-    const own = Math.hypot(withChest[i], withChest[i + 1], withChest[i + 2])
-    const smoothed = Math.hypot(cur[i], cur[i + 1], cur[i + 2])
-    if (smoothed <= own) continue
-    for (let k = 0; k < 3; k++) out[i + k] += cur[i + k] - withChest[i + k]
+    if (P[i] < lo[0] - cell || P[i] > hi[0] + cell) continue
+    if (P[i + 1] < lo[1] - cell || P[i + 1] > hi[1] + cell) continue
+    if (P[i + 2] < lo[2] - cell || P[i + 2] > hi[2] + cell) continue
+    const cx = Math.floor(P[i] / cell), cy = Math.floor(P[i + 1] / cell), cz = Math.floor(P[i + 2] / cell)
+    let sum = 0, weight = 0
+    const nrm = [0, 0, 0]
+    for (let x = cx - 1; x <= cx + 1; x++) for (let y = cy - 1; y <= cy + 1; y++) for (let z = cz - 1; z <= cz + 1; z++) {
+      for (const u of grid.get(`${x},${y},${z}`) ?? []) {
+        const d = Math.hypot(P[3 * u] - P[i], P[3 * u + 1] - P[i + 1], P[3 * u + 2] - P[i + 2])
+        if (d > CAGE_REACH) continue
+        const w = 1 - d / CAGE_REACH
+        sum += cur[u] * w
+        weight += w
+        for (let k = 0; k < 3; k++) nrm[k] += normal[3 * u + k] * w
+      }
+    }
+    if (!weight) continue
+    cur[v] = sum / weight
+    const l = Math.hypot(nrm[0], nrm[1], nrm[2])
+    if (l) for (let k = 0; k < 3; k++) normal[i + k] = nrm[k] / l
+    cage.push(v)
+  }
+  // never less than the chest's own reach: that would put the garment inside the skin
+  const out = Float64Array.from(P)
+  for (const v of active.concat(cage)) {
+    const extra = cur[v] - mag[v]
+    if (extra <= 0) continue
+    for (let k = 0; k < 3; k++) out[3 * v + k] += normal[3 * v + k] * extra
   }
   return out
 }
