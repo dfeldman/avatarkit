@@ -3,7 +3,7 @@
  * hips, feet and hands). Parent `root` to the same transform as the avatar root. Games with their own bike model
  * can read the fit instead.
  */
-import { Color3, Mesh, MeshBuilder, StandardMaterial, TransformNode, Vector3, type Scene } from '@babylonjs/core'
+import { Color3, Mesh, MeshBuilder, Quaternion, StandardMaterial, TransformNode, Vector3, type Scene } from '@babylonjs/core'
 import type { BikeFit } from '../anim/poser.ts'
 
 export interface BikeOptions {
@@ -17,6 +17,9 @@ export class Bike {
   private readonly crankNode: TransformNode
   private readonly pedals: TransformNode[] = []
   private readonly wheels: TransformNode[] = []
+  /** the fork, front wheel, stem and bar: turned about the head tube's own axis by `steer` */
+  private readonly steerNode: TransformNode
+  private readonly steerAxis: Vector3
   private readonly mats: StandardMaterial[] = []
   private wheelAngle = 0
 
@@ -58,6 +61,12 @@ export class Bike {
     const tAxle = (headTop.y - R) / Math.sin(1.257)
     const front = headTop.add(steer.scale(tAxle)).add(new Vector3(0, 0, 0.045 * k))
     const headBottom = headTop.add(steer.scale(0.14 * k))
+    // everything that turns with the bars pivots about the head tube's axis, through its top
+    this.steerNode = new TransformNode(`${name}.steer`, scene)
+    this.steerNode.parent = this.root
+    this.steerNode.setPivotPoint(headTop)
+    this.steerAxis = steer.scale(-1)
+    const turns = this.steerNode
 
     // frame
     const fr = 0.022 * k
@@ -70,7 +79,7 @@ export class Bike {
       tube(`chainstay${sx}`, bb.add(new Vector3(sx * 0.03 * k, 0, 0)), r, fr * 0.55, frameMat)
       tube(`seatstay${sx}`, seatCluster.add(new Vector3(sx * 0.015 * k, 0, 0)), r, fr * 0.5, frameMat)
       const f = front.add(new Vector3(sx * 0.055 * k, 0, 0))
-      tube(`fork${sx}`, headBottom.add(new Vector3(sx * 0.02 * k, 0, 0)), f, fr * 0.6, frameMat)
+      tube(`fork${sx}`, headBottom.add(new Vector3(sx * 0.02 * k, 0, 0)), f, fr * 0.6, frameMat, turns)
     }
     // seatpost and saddle
     tube('seatpost', seatCluster, fit.saddle.add(new Vector3(0, -0.025 * k, 0.01 * k)), fr * 0.6, metal)
@@ -78,7 +87,7 @@ export class Bike {
     saddle.scaling.set(0.085 * k, 0.045 * k, 0.26 * k)
     saddle.position.copyFrom(fit.saddle.add(new Vector3(0, -0.012 * k, 0.03 * k)))
     // stem and bars, grips at the rider's hands
-    tube('stem', headTop, bar, fr * 0.7, metal)
+    tube('stem', headTop, bar, fr * 0.7, metal, turns)
     const gx = fit.grip.x
     // a flat bar running out past the hands, with a grip under each palm
     const ext = 0.055 * k
@@ -92,16 +101,16 @@ export class Bike {
       new Vector3(gx, fit.grip.y, fit.grip.z),
       new Vector3(gx + ext, fit.grip.y, fit.grip.z),
     ]
-    add(MeshBuilder.CreateTube(`${name}.bar`, { path: barPath, radius: 0.012 * k, tessellation: 10, cap: Mesh.CAP_ALL }, scene), metal)
+    add(MeshBuilder.CreateTube(`${name}.bar`, { path: barPath, radius: 0.012 * k, tessellation: 10, cap: Mesh.CAP_ALL }, scene), metal, turns)
     for (const sx of [-1, 1]) {
       const g = new Vector3(sx * gx, fit.grip.y, fit.grip.z)
-      tube(`grip${sx}`, g.add(new Vector3(-0.045 * k, 0, 0)), g.add(new Vector3(0.05 * k, 0, 0)), 0.016 * k, dark)
+      tube(`grip${sx}`, g.add(new Vector3(-0.045 * k, 0, 0)), g.add(new Vector3(0.05 * k, 0, 0)), 0.016 * k, dark, turns)
     }
 
     // wheels
     for (const [id, c] of [['rear', rear], ['front', front]] as const) {
       const w = new TransformNode(`${name}.${id}Wheel`, scene)
-      w.parent = this.root
+      w.parent = id === 'front' ? this.steerNode : this.root
       w.position.copyFrom(c)
       const tire = add(MeshBuilder.CreateTorus(`${name}.${id}Tire`, { diameter: 2 * R - 0.03 * k, thickness: 0.036 * k, tessellation: 40 }, scene), dark, w)
       tire.rotation.z = Math.PI / 2
@@ -151,6 +160,16 @@ export class Bike {
     for (const p of this.pedals) p.rotation.x = -crank
     this.wheelAngle = (this.wheelAngle + distance / this.fit.wheelRadius) % (Math.PI * 2)
     for (const w of this.wheels) w.rotation.x = this.wheelAngle
+  }
+
+  /**
+   * Turn the bars: `angle` radians, positive to the rider's RIGHT (as a positive yaw turns +z towards +x in Babylon's
+   * left-handed frame — the same sense as a heading growing clockwise),
+   * about the head tube's own raked axis — the fork, the front wheel, the stem, the bar and the grips together.
+   * The hands are the avatar's; at the few degrees a moving bike steers they stay on the grips.
+   */
+  steer(angle: number): void {
+    this.steerNode.rotationQuaternion = Quaternion.RotationAxis(this.steerAxis, angle)
   }
 
   setEnabled(on: boolean): void {
