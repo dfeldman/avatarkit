@@ -185,3 +185,35 @@ export function randomSpec(seed: number): AvatarSpec {
     clothes,
   })
 }
+
+/**
+ * BEACHWEAR (Street Runner's Ocean Beach, 2026-10-06; the owner: "swimwear is different from athletic wear. no one is
+ * offended by people wearing swimming attire on a beach. it just wasn't appropriate for running"). The bikinis and
+ * swimsuits stay off the designer's list (mhassets.ts WITHDRAWN) and out of the street crowds; a beach scene dresses
+ * its people from here by id. Outfits are [garment, garment?]: a swimsuit or a bikini set is one garment, a bikini in
+ * two parts is two; men in trunks or board shorts, bare-chested more often than not, a tank or a tee on some.
+ * Barefoot: no shoes on the sand.
+ */
+export const BEACH_WARDROBE: { female: readonly (readonly string[])[]; male: readonly (readonly string[])[] } = {
+  female: [
+    ['mindfront_f_one-piece_swimsuit_01'], ['punkduck_one_piece_bikini01'], ['mindfront_bikini_01'],
+    ['punkduck_bandeau_bikini_bra', 'punkduck_bandeau_bikini_slip'],
+    // and some who came to the beach dressed (Ocean Beach is cold more often than not)
+    ['punkduck_spaghetti_strap_tank_top', 'punkduck_female_short_jeans'], ['joepal_crude_t-shirt_female', 'cortu_jeans_shorts'],
+  ],
+  male: [
+    ['elvs_male_swim_shorts1'], ['mindfront_male_swimming_trunks_01'], ['mindfront_male_swimming_trunks_02'], ['mindfront_male_swimming_trunks_03'],
+    ['mindfront_tank_top_01', 'elvs_male_swim_shorts1'], ['elvs_crude_t-shirt_male', 'mindfront_male_swimming_trunks_01'],
+  ],
+}
+
+const BEACH_COLORS = ['#e03131', '#1f6bff', '#f59f00', '#12b886', '#e64980', '#111111', '#ffffff', '#7048e8', '#fd7e14', '#263066', '#0ca678', '#f8f0e3']
+
+/** A random avatar in beachwear (`randomSpec`'s body and face; the clothes from BEACH_WARDROBE, barefoot). */
+export function beachSpec(seed: number): AvatarSpec {
+  const spec = randomSpec(seed)
+  const rng = makeRng(seed ^ 0x5eaf00d)
+  const fem = (spec.macros.Gender ?? 0.5) < 0.5
+  const outfit = pickOf(rng, fem ? BEACH_WARDROBE.female : BEACH_WARDROBE.male)
+  return normalizeSpec({ ...spec, clothes: outfit.map((id) => ({ id, color: pickOf(rng, BEACH_COLORS) })) })
+}

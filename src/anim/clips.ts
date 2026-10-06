@@ -14,6 +14,7 @@ import { Quaternion, Vector3 } from '@babylonjs/core'
 import { readJson } from '../body/mhassets.ts'
 import { BONES, PARENT, type BodyBone, type Rig } from '../body/rig.ts'
 import type { Pose } from './pose.ts'
+import { addLoungeClips } from './lounge.ts'
 
 export interface Clip {
   frames: number
@@ -37,7 +38,7 @@ export interface ClipSet {
 let setP: Promise<ClipSet> | null = null
 /** The clip library (fetched once, on first use). */
 export function loadClips(): Promise<ClipSet> {
-  return (setP ??= readJson<ClipSet>('anim/ual.json'))
+  return (setP ??= readJson<ClipSet>('anim/ual.json').then(addLoungeClips))
 }
 
 // each bone's direction: toward its child's joint; leaves continue their parent's (as tools/mkclips.mjs)

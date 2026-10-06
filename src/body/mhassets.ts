@@ -107,9 +107,12 @@ const WITHDRAWN = new Set([
 
 let indexP: Promise<AssetEntry[]> | null = null
 let indexNow: AssetEntry[] | null = null
-/** Every asset, with its tags and credits. */
+/** every asset, the withdrawn included: a scene may still dress someone in one (beachwear on a beach) */
+let indexAll: AssetEntry[] | null = null
+/** Every asset on offer, with its tags and credits. */
 export function loadIndex(): Promise<AssetEntry[]> {
   return (indexP ??= readJson<{ assets: AssetEntry[] }>('index.json').then((j) => {
+    indexAll = j.assets
     indexNow = j.assets.filter((a) => !(a.kind === 'clothes' && WITHDRAWN.has(a.id)))
     return indexNow
   }))
@@ -121,7 +124,8 @@ export function loadIndex(): Promise<AssetEntry[]> {
  * loads the index first).
  */
 export function garmentSlot(id: string): string | undefined {
-  return indexNow?.find((a) => a.kind === 'clothes' && a.id === id)?.slot
+  // (from every asset, the withdrawn too: a bikini's slot says it covers, or the modesty garments go on under it)
+  return (indexAll ?? indexNow)?.find((a) => a.kind === 'clothes' && a.id === id)?.slot
 }
 
 const proxies = new Map<string, MhProxy>()
