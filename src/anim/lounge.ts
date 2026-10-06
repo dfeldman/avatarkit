@@ -76,9 +76,21 @@ export function addLoungeClips(set: ClipSet): ClipSet {
     }
   }
 
+  /*
+   * LYING STILL (Street Runner's owner, 2026-10-06: "npcs lying on the beach should be still, not a sideways standing
+   * animation"): the idle's sway is a standing weight shift, and turned on its back it reads as a body sliding about.
+   * The lying clips hold the idle's first frame throughout.
+   */
+  const n = set.bones.length
+  const still: Clip = {
+    frames: idle.frames, loop: true,
+    rot: Array.from({ length: idle.frames * n * 4 }, (_, i) => idle.rot[i % (n * 4)]),
+    hips: Array.from({ length: idle.frames * 3 }, (_, i) => idle.hips[i % 3]),
+  }
+
   // on the back: a quarter turn about x, the head to −z and the face up
   const back = Quaternion.RotationAxis(X, -Math.PI / 2)
-  set.clips.Lie_Back_Loop = derive(set, idle, (q, h) => {
+  set.clips.Lie_Back_Loop = derive(set, still, (q, h) => {
     legsOut(q, new Vector3(0, -0.25, 1))
     for (const [b, v] of q) q.set(b, back.multiply(v))
     h.set(0, LYING_HIPS - H, 0)
@@ -86,7 +98,7 @@ export function addLoungeClips(set: ClipSet): ClipSet {
 
   // on the front: the other way, and the arms up over the head with the forearms crossed under the chin
   const front = Quaternion.RotationAxis(X, Math.PI / 2)
-  set.clips.Lie_Front_Loop = derive(set, idle, (q, h) => {
+  set.clips.Lie_Front_Loop = derive(set, still, (q, h) => {
     for (const s of [1, -1]) {
       const side = s > 0 ? 'R' : 'L'
       // (source frame, standing, the right side +x: up and a little out, then the forearm folded back across in front)
