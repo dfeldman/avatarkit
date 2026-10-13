@@ -14,6 +14,7 @@ import type { Quality } from '../body/build.ts'
 import type { MotionMode } from '../anim/animator.ts'
 import { preloadAssets } from '../body/build.ts'
 import { loadIndex, setAssetBase } from '../body/mhassets.ts'
+import { loadFromBucket } from '../body/bucket.ts'
 import { MACROS, normalizeSpec, type AvatarSpec, type Macro } from '../spec.ts'
 import { createStage } from './scene.ts'
 import { captureFrame } from '../render/capture.ts'
@@ -22,6 +23,8 @@ import { loadClips } from '../anim/clips.ts'
 const params = new URLSearchParams(location.search)
 // ?assets=mh-all loads another asset directory (e.g. a staging build of the packs)
 if (params.get('assets')) setAssetBase(new URL(`${params.get('assets')}/`, document.baseURI).href)
+// ?bucket loads from the shared assetmgr bucket (src/body/bucket.ts)
+if (params.has('bucket')) await loadFromBucket(params.get('bucket') || undefined)
 const canvas = document.getElementById('c') as HTMLCanvasElement
 const stage = await createStage(canvas)
 const { engine, scene, camera, shadows } = stage

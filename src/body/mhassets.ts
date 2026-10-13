@@ -57,8 +57,20 @@ export function assetBase(): string {
   if (typeof document !== 'undefined') return (base = new URL('mh/', document.baseURI).href)
   throw new Error('asset base not set (call setAssetBase in workers)')
 }
+let manifest: Record<string, string> | null = null
+/**
+ * Serve assets from somewhere other than a copy of public/mh/: a map from each path under mh/ (as the index gives
+ * it) to its URL. src/body/bucket.ts builds one from the shared assetmgr bucket. Paths missing from the map fall
+ * back to the asset base.
+ */
+export function setAssetManifest(m: Record<string, string> | null): void {
+  manifest = m
+}
+export function assetManifest(): Record<string, string> | null {
+  return manifest
+}
 /** A texture or thumbnail's URL (paths as the index gives them). */
-export const assetUrl = (path: string): string => assetBase() + path
+export const assetUrl = (path: string): string => manifest?.[path] ?? assetBase() + path
 /** A texture's path at a quality: low reads the smaller copy beside it (<name>.lo.<ext>, tools/mkmhassets.mjs). */
 export const texturePath = (path: string, quality: 'low' | 'medium' | 'high'): string =>
   quality === 'low' ? path.replace(/\.(jpg|png)$/, '.lo.$1') : path

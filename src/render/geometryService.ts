@@ -7,7 +7,7 @@
  * A build that fails rejects, so a caller can tell "nothing to draw yet" (null: superseded) from "this avatar
  * cannot be built" and say so; the failure is never silent.
  */
-import { assetBase } from '../body/mhassets.ts'
+import { assetBase, assetManifest } from '../body/mhassets.ts'
 import { buildAvatarGeometry, preloadAssets, type AvatarGeometry, type Quality } from '../body/build.ts'
 import { shapeKey, type AvatarSpec } from '../spec.ts'
 
@@ -22,6 +22,8 @@ interface Pending {
 export class GeometryService {
   private worker: Worker | null = null
   private busy = false
+  /** The asset manifest the worker was last given (it keeps it). */
+  private sentManifest: Record<string, string> | null = null
   private queue: Pending[] = []
   private inflight: Pending | null = null
   private nextId = 1
@@ -96,7 +98,11 @@ export class GeometryService {
       // (a worker can't see the page's address, so it is told where the MakeHuman assets are)
       let base: string | undefined
       try { base = assetBase() } catch { base = undefined }
-      this.worker.postMessage({ id: this.nextId++, spec: p.spec, quality: p.quality, assetBase: base })
+      // (and the asset manifest, once: it is a few thousand entries)
+      const manifest = assetManifest()
+      const fresh = manifest && manifest !== this.sentManifest ? manifest : undefined
+      if (fresh) this.sentManifest = fresh
+      this.worker.postMessage({ id: this.nextId++, spec: p.spec, quality: p.quality, assetBase: base, manifest: fresh })
     } else {
       // no worker: load the assets and build on the main thread, letting the UI paint first
       preloadAssets(p.spec, p.quality).then(() => new Promise((r) => setTimeout(r, 0))).then(() => {

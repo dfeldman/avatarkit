@@ -1,0 +1,245 @@
+{
+  "format": "assetmgr-index/1",
+  "name": "avatarkit-data",
+  "description": "The designer catalogue, modifier definitions, motion clips, studio lighting and shared maps",
+  "defaults": {
+    "project": "avatarkit",
+    "projectName": "Avatar Kit",
+    "repo": "https://github.com/dfeldman/dandyhorse"
+  },
+  "assets": [
+    {
+      "id": "env-readme",
+      "name": "env/README.md",
+      "folder": "env",
+      "license": "CC0-1.0",
+      "notes": "avatarkit tools output",
+      "type": "2d",
+      "subtype": "json",
+      "assetKeywords": [
+        "readme"
+      ],
+      "assetFiles": [
+        {
+          "filename": "asset-07772579bf-readme-texture.md",
+          "hash": "07772579bf044cb121078343b464c0cf4abd550fc351c97dbbe98ea48180db1e",
+          "size": 220,
+          "fileFormat": "md",
+          "extension": "md",
+          "fileKeywords": [
+            "texture"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/env/README.md"
+        }
+      ],
+      "extra": {
+        "avatarkit": {
+          "paths": {
+            "asset-07772579bf-readme-texture.md": "env/README.md"
+          }
+        }
+      }
+    },
+    {
+      "id": "env-studio-small-08-1k",
+      "name": "Studio Small 08 (1k)",
+      "folder": "env",
+      "downloadDate": "2026-10-13",
+      "license": "CC0-1.0",
+      "attribution": "Poly Haven, CC0",
+      "sourceUrl": "https://polyhaven.com/a/studio_small_08",
+      "type": "2d",
+      "subtype": "hdri",
+      "hdr": true,
+      "assetKeywords": [
+        "1k"
+      ],
+      "assetFiles": [
+        {
+          "filename": "asset-f6a989f894-1k-texture.hdr",
+          "hash": "f6a989f89432eb4eee3191364a9c1ceed195c4ec3544173a3c04fd96cb91d0ba",
+          "size": 1508872,
+          "fileFormat": "hdr",
+          "extension": "hdr",
+          "fileKeywords": [
+            "texture"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/env/studio_small_08_1k.hdr"
+        }
+      ],
+      "extra": {
+        "avatarkit": {
+          "paths": {
+            "asset-f6a989f894-1k-texture.hdr": "env/studio_small_08_1k.hdr"
+          }
+        }
+      }
+    },
+    {
+      "id": "mh-anim-ual",
+      "name": "Universal Animation Library clips (retargeted)",
+      "folder": "mh/anim",
+      "downloadDate": "2026-10-13",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://quaternius.com",
+      "artist": "Quaternius",
+      "type": "3d",
+      "subtype": "animation",
+      "generator": {
+        "script": "avatarkit/tools/mkclips.mjs"
+      },
+      "assetKeywords": [
+        "ual"
+      ],
+      "assetFiles": [
+        {
+          "filename": "asset-708297d5cf-ual-texture.json",
+          "hash": "708297d5cf04b3d43a2a6973037daa6ec7ff2322a105e569d42b70a49215a690",
+          "size": 1235374,
+          "fileFormat": "json",
+          "extension": "json",
+          "fileKeywords": [
+            "texture"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/anim/ual.json"
+        }
+      ],
+      "extra": {
+        "avatarkit": {
+          "paths": {
+            "asset-708297d5cf-ual-texture.json": "mh/anim/ual.json"
+          }
+        }
+      }
+    },
+    {
+      "id": "mh-index",
+      "name": "Designer catalogue",
+      "folder": "mh",
+      "license": "CC0-1.0",
+      "type": "2d",
+      "subtype": "json",
+      "generator": {
+        "script": "avatarkit/tools/mkmhassets.mjs"
+      },
+      "assetKeywords": [
+        "index"
+      ],
+      "assetFiles": [
+        {
+          "filename": "asset-df80c05e4a-index-texture.json",
+          "hash": "df80c05e4aab5c59a3af0463532d48d977feb52e2b224a1be3b10e6125c0dfc7",
+          "size": 135185,
+          "fileFormat": "json",
+          "extension": "json",
+          "fileKeywords": [
+            "texture"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/index.json"
+        }
+      ],
+      "extra": {
+        "avatarkit": {
+          "paths": {
+            "asset-df80c05e4a-index-texture.json": "mh/index.json"
+          }
+        }
+      }
+    },
+    {
+      "id": "mh-modifiers",
+      "name": "MakeHuman modifier definitions",
+      "folder": "mh",
+      "downloadDate": "2026-10-13",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://github.com/makehumancommunity/makehuman",
+      "type": "2d",
+      "subtype": "json",
+      "generator": {
+        "script": "avatarkit/tools/mkmhtargets.mjs"
+      },
+      "assetKeywords": [
+        "modifiers"
+      ],
+      "assetFiles": [
+        {
+          "filename": "asset-727122cdce-modifiers-texture.json",
+          "hash": "727122cdce8d24bfe05fa1bfb17c3fdd1b0d0c540c3e57ef3d92b1d87b755278",
+          "size": 113955,
+          "fileFormat": "json",
+          "extension": "json",
+          "fileKeywords": [
+            "texture"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/modifiers.json"
+        }
+      ],
+      "extra": {
+        "avatarkit": {
+          "paths": {
+            "asset-727122cdce-modifiers-texture.json": "mh/modifiers.json"
+          }
+        }
+      }
+    },
+    {
+      "id": "mh-tex-skin-detail",
+      "name": "mh/tex/skin/detail.png",
+      "folder": "mh/tex/skin",
+      "license": "CC0-1.0",
+      "notes": "avatarkit tools output",
+      "type": "2d",
+      "subtype": "texture",
+      "assetKeywords": [
+        "detail"
+      ],
+      "assetFiles": [
+        {
+          "filename": "asset-3d97aa68b6-detail-texture-lo.png",
+          "hash": "3d97aa68b6557d016e0e02dd57465c90687d18258d62c548970e475a8d46f381",
+          "size": 794455,
+          "fileFormat": "png",
+          "extension": "png",
+          "fileKeywords": [
+            "texture",
+            "lo"
+          ],
+          "lod": 1,
+          "isProd": true,
+          "fileNote": "public/mh/tex/skin/detail.lo.png"
+        },
+        {
+          "filename": "asset-3d97aa68b6-detail-texture.png",
+          "hash": "3d97aa68b6557d016e0e02dd57465c90687d18258d62c548970e475a8d46f381",
+          "size": 794455,
+          "fileFormat": "png",
+          "extension": "png",
+          "fileKeywords": [
+            "texture"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/skin/detail.png"
+        }
+      ],
+      "extra": {
+        "avatarkit": {
+          "paths": {
+            "asset-3d97aa68b6-detail-texture-lo.png": "mh/tex/skin/detail.lo.png",
+            "asset-3d97aa68b6-detail-texture.png": "mh/tex/skin/detail.png"
+          }
+        }
+      }
+    }
+  ]
+}

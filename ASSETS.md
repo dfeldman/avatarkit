@@ -86,3 +86,27 @@ instead (`public/mh/tex/skin/detail.png`, made by the same tool). A folder synce
 Two decisions worth knowing before rebuilding: the macro targets are kept for adults only (25 to 90; children and
 babies would add more than 100 MB), and textures are capped at 1024 px (512 for brows and lashes) with a `.lo` copy
 beside each one.
+
+## The shared bucket
+
+The same files are also in the shared assetmgr bucket (see `~/assetmgr`, github.com/dfeldman/assetmgr), so a page
+doesn't need a copy of `public/` at all:
+
+```ts
+import { loadFromBucket } from '@dandyhorse/avatarkit'
+await loadFromBucket()            // before mountDesigner or the first Avatar
+```
+
+or add `?bucket` to the designer or dev page (`?bucket=<url>` for another bucket). `src/body/bucket.ts` fetches the
+`avatarkit-*` indexes over public HTTP (no key) and maps each path the kit asks for (`tex/skin/detail.png`) to its
+content-hashed bucket URL; `assetUrl()` consults that map, so nothing else changed. Without `?bucket` the kit reads
+`public/` as before.
+
+The indexes are `indexes/asset-index-avatarkit-{body,wardrobe,targets,data}.json`, written by
+`node tools/mkassetmgr.ts` from `public/`: one asset per `index.json` entry (mesh, textures, `.lo` copies and
+thumbnail together), one per morph target, one per remaining file. Every file keeps its original path in
+`extra.avatarkit.paths`. After rebuilding `public/`, re-run it and `npx assetmgr upload` (credentials:
+`ASSETMGR_ENV_FILE`). The tool loads assetmgr from a checkout beside dandyhorse, or from `$ASSETMGR`.
+
+The free `r2.dev` address is rate-limited (HTTP 429 at a few dozen parallel requests); a real deployment needs a
+custom domain on the bucket.
