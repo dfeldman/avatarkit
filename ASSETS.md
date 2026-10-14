@@ -4,7 +4,7 @@ Everything the designer draws comes from files under `public/`, which is **not i
 what is in there, where each piece came from, and how to build it again.
 
 ```bash
-npm run assets            # rebuild public/ from the shared asset bucket (tools/fetch-assets.ts; no key)
+npm run assets            # rebuild public/ from the shared asset bucket: assetmgr restore (no key; assetmgr at $ASSETMGR_DIR, default ../assetmgr)
 ```
 
 Dandyhorse's server serves this folder at `/avatars/` (`servers/api-flask/dandyhorse/static.py` in the dandyhorse

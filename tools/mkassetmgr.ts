@@ -21,8 +21,8 @@ import { pathToFileURL } from 'node:url'
 import type { Asset, AssetFile, Repo } from 'assetmgr/node'
 
 // assetmgr isn't a dependency of the kit (only this maintenance tool uses it): it comes from a checkout of
-// github.com/dfeldman/assetmgr, beside this repo by default, or wherever ASSETMGR points (built: npm run build).
-const ASSETMGR = process.env.ASSETMGR ?? join(import.meta.dirname, '..', '..', 'assetmgr')
+// github.com/dfeldman/assetmgr, beside this repo by default, or wherever ASSETMGR_DIR points (built: npm run build).
+const ASSETMGR = process.env.ASSETMGR_DIR || join(import.meta.dirname, '..', '..', 'assetmgr')
 const { addFile, emptyIndex, indexFileName, loadRepo, saveIndex, serializeIndex, slugify } = (await import(
   pathToFileURL(join(ASSETMGR, 'dist', 'node', 'index.js')).href
 )) as typeof import('assetmgr/node')
@@ -85,6 +85,8 @@ function describe(path: string, rest: string): Partial<AssetFile> {
     lod: lo ? 1 : 0,
     isProd: true,
     fileNote: `public/${path}`,
+    // where `assetmgr restore` (npm run assets) puts it back
+    localPath: `public/${path}`,
   }
 }
 

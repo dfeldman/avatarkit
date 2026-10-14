@@ -33,8 +33,13 @@ Everything under `public/` is **not in git**: `mh/` (MakeHuman bodies and target
 (`?bucket` on the designer, or `loadFromBucket()`), or rebuild `public/` from it (public HTTPS, no key):
 
 ```bash
-npm run assets            # every file to public/, hash-checked; re-running skips what is there
-npm run assets -- --check # report what is missing, write nothing
+npm run assets            # assetmgr restore: every file back to public/, hash-checked; re-running skips what is there
+npm run assets:upload     # after rebuilding public/: record (tools/mkassetmgr.ts) and upload (needs the bucket's keys)
+```
+
+assetmgr is found at `$ASSETMGR_DIR` (default: the checkout beside this repo). Nothing is symlinked between repos.
+
+```bash
 ```
 
 [ASSETS.md](ASSETS.md) says what every file is, where it came from (MakeHuman, its community packs, Quaternius,

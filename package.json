@@ -19,7 +19,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "bench": "node tools/bench.ts",
-    "assets": "node tools/fetch-assets.ts"
+    "assets": "node ${ASSETMGR_DIR:-../assetmgr}/dist/cli.js restore",
+    "assets:upload": "node tools/mkassetmgr.ts && node ${ASSETMGR_DIR:-../assetmgr}/dist/cli.js upload"
   },
   "peerDependencies": {
     "@babylonjs/core": "9.26.0"

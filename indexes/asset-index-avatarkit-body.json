@@ -33,7 +33,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/body/female1605.bin"
+          "fileNote": "public/mh/proxy/body/female1605.bin",
+          "localPath": "public/mh/proxy/body/female1605.bin"
         },
         {
           "filename": "asset-2cc7c5b337-body-female-lowpoly-thumb.jpg",
@@ -46,7 +47,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/body/female1605.jpg"
+          "fileNote": "public/mh/thumb/body/female1605.jpg",
+          "localPath": "public/mh/thumb/body/female1605.jpg"
         }
       ],
       "extra": {
@@ -91,7 +93,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/body/male1591.bin"
+          "fileNote": "public/mh/proxy/body/male1591.bin",
+          "localPath": "public/mh/proxy/body/male1591.bin"
         },
         {
           "filename": "asset-cfda62669f-body-lowpoly-thumb.jpg",
@@ -104,7 +107,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/body/male1591.jpg"
+          "fileNote": "public/mh/thumb/body/male1591.jpg",
+          "localPath": "public/mh/thumb/body/male1591.jpg"
         }
       ],
       "extra": {
@@ -149,7 +153,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow001.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow001.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow001.bin"
         },
         {
           "filename": "asset-a95b75e851-eyebrows-young-texture-lo.png",
@@ -163,7 +168,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow001.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow001.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow001.lo.png"
         },
         {
           "filename": "asset-a95b75e851-eyebrows-young-texture.png",
@@ -176,7 +182,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow001.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow001.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow001.png"
         },
         {
           "filename": "asset-42aadebb68-eyebrows-young-thumb.jpg",
@@ -189,7 +196,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow001.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow001.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow001.jpg"
         }
       ],
       "extra": {
@@ -236,7 +244,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow002.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow002.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow002.bin"
         },
         {
           "filename": "asset-2c9fd33dea-eyebrows-young-texture-lo.png",
@@ -250,7 +259,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow002.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow002.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow002.lo.png"
         },
         {
           "filename": "asset-2c9fd33dea-eyebrows-young-texture.png",
@@ -263,7 +273,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow002.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow002.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow002.png"
         },
         {
           "filename": "asset-f808f3ed03-eyebrows-young-thumb.jpg",
@@ -276,7 +287,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow002.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow002.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow002.jpg"
         }
       ],
       "extra": {
@@ -323,7 +335,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow003.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow003.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow003.bin"
         },
         {
           "filename": "asset-4beda8343d-eyebrows-young-texture-lo.png",
@@ -337,7 +350,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow003.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow003.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow003.lo.png"
         },
         {
           "filename": "asset-4beda8343d-eyebrows-young-texture.png",
@@ -350,7 +364,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow003.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow003.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow003.png"
         },
         {
           "filename": "asset-2eb5d29f47-eyebrows-young-thumb.jpg",
@@ -363,7 +378,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow003.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow003.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow003.jpg"
         }
       ],
       "extra": {
@@ -410,7 +426,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow004.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow004.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow004.bin"
         },
         {
           "filename": "asset-b2b0301a24-eyebrows-young-texture-lo.png",
@@ -424,7 +441,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow004.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow004.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow004.lo.png"
         },
         {
           "filename": "asset-b2b0301a24-eyebrows-young-texture.png",
@@ -437,7 +455,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow004.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow004.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow004.png"
         },
         {
           "filename": "asset-86c82ddae0-eyebrows-young-thumb.jpg",
@@ -450,7 +469,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow004.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow004.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow004.jpg"
         }
       ],
       "extra": {
@@ -497,7 +517,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow005.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow005.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow005.bin"
         },
         {
           "filename": "asset-78534d120c-eyebrows-young-texture-lo.png",
@@ -511,7 +532,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow005.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow005.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow005.lo.png"
         },
         {
           "filename": "asset-78534d120c-eyebrows-young-texture.png",
@@ -524,7 +546,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow005.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow005.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow005.png"
         },
         {
           "filename": "asset-cd1bd3469e-eyebrows-young-thumb.jpg",
@@ -537,7 +560,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow005.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow005.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow005.jpg"
         }
       ],
       "extra": {
@@ -584,7 +608,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow006.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow006.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow006.bin"
         },
         {
           "filename": "asset-b490c5da1a-eyebrows-young-texture-lo.png",
@@ -598,7 +623,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow006.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow006.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow006.lo.png"
         },
         {
           "filename": "asset-b490c5da1a-eyebrows-young-texture.png",
@@ -611,7 +637,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow006.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow006.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow006.png"
         },
         {
           "filename": "asset-fe80eded93-eyebrows-young-thumb.jpg",
@@ -624,7 +651,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow006.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow006.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow006.jpg"
         }
       ],
       "extra": {
@@ -671,7 +699,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow007.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow007.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow007.bin"
         },
         {
           "filename": "asset-c86d8d55ec-eyebrows-young-texture-lo.png",
@@ -685,7 +714,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow007.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow007.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow007.lo.png"
         },
         {
           "filename": "asset-c86d8d55ec-eyebrows-young-texture.png",
@@ -698,7 +728,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow007.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow007.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow007.png"
         },
         {
           "filename": "asset-f034fce403-eyebrows-young-thumb.jpg",
@@ -711,7 +742,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow007.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow007.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow007.jpg"
         }
       ],
       "extra": {
@@ -758,7 +790,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow008.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow008.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow008.bin"
         },
         {
           "filename": "asset-c17e43627d-eyebrows-young-texture-lo.png",
@@ -772,7 +805,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow008.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow008.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow008.lo.png"
         },
         {
           "filename": "asset-c17e43627d-eyebrows-young-texture.png",
@@ -785,7 +819,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow008.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow008.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow008.png"
         },
         {
           "filename": "asset-d6ee5b2c5c-eyebrows-young-thumb.jpg",
@@ -798,7 +833,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow008.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow008.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow008.jpg"
         }
       ],
       "extra": {
@@ -845,7 +881,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow009.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow009.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow009.bin"
         },
         {
           "filename": "asset-5926344d7e-eyebrows-young-texture-lo.png",
@@ -859,7 +896,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow009.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow009.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow009.lo.png"
         },
         {
           "filename": "asset-5926344d7e-eyebrows-young-texture.png",
@@ -872,7 +910,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow009.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow009.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow009.png"
         },
         {
           "filename": "asset-d3a69f0b9d-eyebrows-young-thumb.jpg",
@@ -885,7 +924,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow009.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow009.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow009.jpg"
         }
       ],
       "extra": {
@@ -932,7 +972,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow010.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow010.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow010.bin"
         },
         {
           "filename": "asset-3193aef5c2-eyebrows-young-texture-lo.png",
@@ -946,7 +987,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow010.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow010.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow010.lo.png"
         },
         {
           "filename": "asset-3193aef5c2-eyebrows-young-texture.png",
@@ -959,7 +1001,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow010.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow010.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow010.png"
         },
         {
           "filename": "asset-bccb760dfe-eyebrows-young-thumb.jpg",
@@ -972,7 +1015,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow010.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow010.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow010.jpg"
         }
       ],
       "extra": {
@@ -1019,7 +1063,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow011.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow011.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow011.bin"
         },
         {
           "filename": "asset-c78b35f24d-eyebrows-young-texture-lo.png",
@@ -1033,7 +1078,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow011.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow011.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow011.lo.png"
         },
         {
           "filename": "asset-c78b35f24d-eyebrows-young-texture.png",
@@ -1046,7 +1092,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow011.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow011.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow011.png"
         },
         {
           "filename": "asset-1e4279bcaa-eyebrows-young-thumb.jpg",
@@ -1059,7 +1106,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow011.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow011.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow011.jpg"
         }
       ],
       "extra": {
@@ -1106,7 +1154,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyebrows/eyebrow012.bin"
+          "fileNote": "public/mh/proxy/eyebrows/eyebrow012.bin",
+          "localPath": "public/mh/proxy/eyebrows/eyebrow012.bin"
         },
         {
           "filename": "asset-0847242aa2-eyebrows-young-texture-lo.png",
@@ -1120,7 +1169,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow012.lo.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow012.lo.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow012.lo.png"
         },
         {
           "filename": "asset-0847242aa2-eyebrows-young-texture.png",
@@ -1133,7 +1183,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyebrows/eyebrow012.png"
+          "fileNote": "public/mh/tex/eyebrows/eyebrow012.png",
+          "localPath": "public/mh/tex/eyebrows/eyebrow012.png"
         },
         {
           "filename": "asset-15eab61204-eyebrows-young-thumb.jpg",
@@ -1146,7 +1197,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyebrows/eyebrow012.jpg"
+          "fileNote": "public/mh/thumb/eyebrows/eyebrow012.jpg",
+          "localPath": "public/mh/thumb/eyebrows/eyebrow012.jpg"
         }
       ],
       "extra": {
@@ -1192,7 +1244,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyelashes/eyelashes01.bin"
+          "fileNote": "public/mh/proxy/eyelashes/eyelashes01.bin",
+          "localPath": "public/mh/proxy/eyelashes/eyelashes01.bin"
         },
         {
           "filename": "asset-5d509e77c9-eyelashes-texture-lo.png",
@@ -1206,7 +1259,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyelashes/eyelashes01.lo.png"
+          "fileNote": "public/mh/tex/eyelashes/eyelashes01.lo.png",
+          "localPath": "public/mh/tex/eyelashes/eyelashes01.lo.png"
         },
         {
           "filename": "asset-a7b766f5f9-eyelashes-texture.png",
@@ -1219,7 +1273,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyelashes/eyelashes01.png"
+          "fileNote": "public/mh/tex/eyelashes/eyelashes01.png",
+          "localPath": "public/mh/tex/eyelashes/eyelashes01.png"
         },
         {
           "filename": "asset-39e18491be-eyelashes-thumb.jpg",
@@ -1232,7 +1287,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyelashes/eyelashes01.jpg"
+          "fileNote": "public/mh/thumb/eyelashes/eyelashes01.jpg",
+          "localPath": "public/mh/thumb/eyelashes/eyelashes01.jpg"
         }
       ],
       "extra": {
@@ -1278,7 +1334,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyelashes/eyelashes02.bin"
+          "fileNote": "public/mh/proxy/eyelashes/eyelashes02.bin",
+          "localPath": "public/mh/proxy/eyelashes/eyelashes02.bin"
         },
         {
           "filename": "asset-088844ba34-eyelashes-texture-lo.png",
@@ -1292,7 +1349,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyelashes/eyelashes02.lo.png"
+          "fileNote": "public/mh/tex/eyelashes/eyelashes02.lo.png",
+          "localPath": "public/mh/tex/eyelashes/eyelashes02.lo.png"
         },
         {
           "filename": "asset-56b8e789e9-eyelashes-texture.png",
@@ -1305,7 +1363,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyelashes/eyelashes02.png"
+          "fileNote": "public/mh/tex/eyelashes/eyelashes02.png",
+          "localPath": "public/mh/tex/eyelashes/eyelashes02.png"
         },
         {
           "filename": "asset-8ed76520c5-eyelashes-thumb.jpg",
@@ -1318,7 +1377,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyelashes/eyelashes02.jpg"
+          "fileNote": "public/mh/thumb/eyelashes/eyelashes02.jpg",
+          "localPath": "public/mh/thumb/eyelashes/eyelashes02.jpg"
         }
       ],
       "extra": {
@@ -1364,7 +1424,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyelashes/eyelashes03.bin"
+          "fileNote": "public/mh/proxy/eyelashes/eyelashes03.bin",
+          "localPath": "public/mh/proxy/eyelashes/eyelashes03.bin"
         },
         {
           "filename": "asset-dff7311003-eyelashes-texture-lo.png",
@@ -1378,7 +1439,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyelashes/eyelashes03.lo.png"
+          "fileNote": "public/mh/tex/eyelashes/eyelashes03.lo.png",
+          "localPath": "public/mh/tex/eyelashes/eyelashes03.lo.png"
         },
         {
           "filename": "asset-84305e899e-eyelashes-texture.png",
@@ -1391,7 +1453,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyelashes/eyelashes03.png"
+          "fileNote": "public/mh/tex/eyelashes/eyelashes03.png",
+          "localPath": "public/mh/tex/eyelashes/eyelashes03.png"
         },
         {
           "filename": "asset-190a464600-eyelashes-thumb.jpg",
@@ -1404,7 +1467,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyelashes/eyelashes03.jpg"
+          "fileNote": "public/mh/thumb/eyelashes/eyelashes03.jpg",
+          "localPath": "public/mh/thumb/eyelashes/eyelashes03.jpg"
         }
       ],
       "extra": {
@@ -1450,7 +1514,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/eyelashes/eyelashes04.bin"
+          "fileNote": "public/mh/proxy/eyelashes/eyelashes04.bin",
+          "localPath": "public/mh/proxy/eyelashes/eyelashes04.bin"
         },
         {
           "filename": "asset-af2fcd4bcd-eyelashes-texture-lo.png",
@@ -1464,7 +1529,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyelashes/eyelashes04.lo.png"
+          "fileNote": "public/mh/tex/eyelashes/eyelashes04.lo.png",
+          "localPath": "public/mh/tex/eyelashes/eyelashes04.lo.png"
         },
         {
           "filename": "asset-f419e39acd-eyelashes-texture.png",
@@ -1477,7 +1543,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyelashes/eyelashes04.png"
+          "fileNote": "public/mh/tex/eyelashes/eyelashes04.png",
+          "localPath": "public/mh/tex/eyelashes/eyelashes04.png"
         },
         {
           "filename": "asset-02e633ef7f-eyelashes-thumb.jpg",
@@ -1490,7 +1557,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/eyelashes/eyelashes04.jpg"
+          "fileNote": "public/mh/thumb/eyelashes/eyelashes04.jpg",
+          "localPath": "public/mh/thumb/eyelashes/eyelashes04.jpg"
         }
       ],
       "extra": {
@@ -1536,7 +1604,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/blue.jpg"
+          "fileNote": "public/mh/tex/eyes/blue.jpg",
+          "localPath": "public/mh/tex/eyes/blue.jpg"
         }
       ],
       "extra": {
@@ -1578,7 +1647,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/bluegreen.jpg"
+          "fileNote": "public/mh/tex/eyes/bluegreen.jpg",
+          "localPath": "public/mh/tex/eyes/bluegreen.jpg"
         }
       ],
       "extra": {
@@ -1620,7 +1690,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/brown.jpg"
+          "fileNote": "public/mh/tex/eyes/brown.jpg",
+          "localPath": "public/mh/tex/eyes/brown.jpg"
         }
       ],
       "extra": {
@@ -1662,7 +1733,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/brownlight.jpg"
+          "fileNote": "public/mh/tex/eyes/brownlight.jpg",
+          "localPath": "public/mh/tex/eyes/brownlight.jpg"
         }
       ],
       "extra": {
@@ -1704,7 +1776,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/deepblue.jpg"
+          "fileNote": "public/mh/tex/eyes/deepblue.jpg",
+          "localPath": "public/mh/tex/eyes/deepblue.jpg"
         }
       ],
       "extra": {
@@ -1746,7 +1819,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/green.jpg"
+          "fileNote": "public/mh/tex/eyes/green.jpg",
+          "localPath": "public/mh/tex/eyes/green.jpg"
         }
       ],
       "extra": {
@@ -1788,7 +1862,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/grey.jpg"
+          "fileNote": "public/mh/tex/eyes/grey.jpg",
+          "localPath": "public/mh/tex/eyes/grey.jpg"
         }
       ],
       "extra": {
@@ -1830,7 +1905,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/ice.jpg"
+          "fileNote": "public/mh/tex/eyes/ice.jpg",
+          "localPath": "public/mh/tex/eyes/ice.jpg"
         }
       ],
       "extra": {
@@ -1872,7 +1948,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/eyes/lightblue.jpg"
+          "fileNote": "public/mh/tex/eyes/lightblue.jpg",
+          "localPath": "public/mh/tex/eyes/lightblue.jpg"
         }
       ],
       "extra": {
@@ -1915,7 +1992,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/afro01.bin"
+          "fileNote": "public/mh/proxy/hair/afro01.bin",
+          "localPath": "public/mh/proxy/hair/afro01.bin"
         },
         {
           "filename": "asset-8c34e3f62c-hair-afro-texture-lo.png",
@@ -1929,7 +2007,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/afro01.lo.png"
+          "fileNote": "public/mh/tex/hair/afro01.lo.png",
+          "localPath": "public/mh/tex/hair/afro01.lo.png"
         },
         {
           "filename": "asset-e70f764f65-hair-afro-texture.png",
@@ -1942,7 +2021,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/afro01.png"
+          "fileNote": "public/mh/tex/hair/afro01.png",
+          "localPath": "public/mh/tex/hair/afro01.png"
         },
         {
           "filename": "asset-cdfaba5a24-hair-afro-thumb.jpg",
@@ -1955,7 +2035,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/afro01.jpg"
+          "fileNote": "public/mh/thumb/hair/afro01.jpg",
+          "localPath": "public/mh/thumb/hair/afro01.jpg"
         }
       ],
       "extra": {
@@ -2004,7 +2085,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/bob01.bin"
+          "fileNote": "public/mh/proxy/hair/bob01.bin",
+          "localPath": "public/mh/proxy/hair/bob01.bin"
         },
         {
           "filename": "asset-e799f4a64a-hair-bob-short-female-texture-lo.png",
@@ -2018,7 +2100,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/bob01.lo.png"
+          "fileNote": "public/mh/tex/hair/bob01.lo.png",
+          "localPath": "public/mh/tex/hair/bob01.lo.png"
         },
         {
           "filename": "asset-d66970fd01-hair-bob-short-female-texture.png",
@@ -2031,7 +2114,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/bob01.png"
+          "fileNote": "public/mh/tex/hair/bob01.png",
+          "localPath": "public/mh/tex/hair/bob01.png"
         },
         {
           "filename": "asset-b8559fbd8e-hair-bob-short-female-thumb.jpg",
@@ -2044,7 +2128,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/bob01.jpg"
+          "fileNote": "public/mh/thumb/hair/bob01.jpg",
+          "localPath": "public/mh/thumb/hair/bob01.jpg"
         }
       ],
       "extra": {
@@ -2093,7 +2178,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/bob02.bin"
+          "fileNote": "public/mh/proxy/hair/bob02.bin",
+          "localPath": "public/mh/proxy/hair/bob02.bin"
         },
         {
           "filename": "asset-b67d784fb9-hair-short-bob-female-texture-lo.png",
@@ -2107,7 +2193,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/bob02.lo.png"
+          "fileNote": "public/mh/tex/hair/bob02.lo.png",
+          "localPath": "public/mh/tex/hair/bob02.lo.png"
         },
         {
           "filename": "asset-69f7cb23cc-hair-short-bob-female-texture.png",
@@ -2120,7 +2207,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/bob02.png"
+          "fileNote": "public/mh/tex/hair/bob02.png",
+          "localPath": "public/mh/tex/hair/bob02.png"
         },
         {
           "filename": "asset-41a53d5002-hair-short-bob-female-thumb.jpg",
@@ -2133,7 +2221,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/bob02.jpg"
+          "fileNote": "public/mh/thumb/hair/bob02.jpg",
+          "localPath": "public/mh/thumb/hair/bob02.jpg"
         }
       ],
       "extra": {
@@ -2181,7 +2270,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/braid01.bin"
+          "fileNote": "public/mh/proxy/hair/braid01.bin",
+          "localPath": "public/mh/proxy/hair/braid01.bin"
         },
         {
           "filename": "asset-a1323e3b4b-hair-long-female-texture-lo.png",
@@ -2195,7 +2285,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/braid01.lo.png"
+          "fileNote": "public/mh/tex/hair/braid01.lo.png",
+          "localPath": "public/mh/tex/hair/braid01.lo.png"
         },
         {
           "filename": "asset-82fc1e3618-hair-long-female-texture.png",
@@ -2208,7 +2299,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/braid01.png"
+          "fileNote": "public/mh/tex/hair/braid01.png",
+          "localPath": "public/mh/tex/hair/braid01.png"
         },
         {
           "filename": "asset-7f70b4ebce-hair-long-female-thumb.jpg",
@@ -2221,7 +2313,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/braid01.jpg"
+          "fileNote": "public/mh/thumb/hair/braid01.jpg",
+          "localPath": "public/mh/thumb/hair/braid01.jpg"
         }
       ],
       "extra": {
@@ -2269,7 +2362,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/long01.bin"
+          "fileNote": "public/mh/proxy/hair/long01.bin",
+          "localPath": "public/mh/proxy/hair/long01.bin"
         },
         {
           "filename": "asset-595e4df8c4-hair-long-female-texture-lo.png",
@@ -2283,7 +2377,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/long01.lo.png"
+          "fileNote": "public/mh/tex/hair/long01.lo.png",
+          "localPath": "public/mh/tex/hair/long01.lo.png"
         },
         {
           "filename": "asset-0b0cd85f85-hair-long-female-texture.png",
@@ -2296,7 +2391,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/long01.png"
+          "fileNote": "public/mh/tex/hair/long01.png",
+          "localPath": "public/mh/tex/hair/long01.png"
         },
         {
           "filename": "asset-359aba0f97-hair-long-female-thumb.jpg",
@@ -2309,7 +2405,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/long01.jpg"
+          "fileNote": "public/mh/thumb/hair/long01.jpg",
+          "localPath": "public/mh/thumb/hair/long01.jpg"
         }
       ],
       "extra": {
@@ -2357,7 +2454,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/ponytail01.bin"
+          "fileNote": "public/mh/proxy/hair/ponytail01.bin",
+          "localPath": "public/mh/proxy/hair/ponytail01.bin"
         },
         {
           "filename": "asset-0f81c78baa-hair-female-long-texture-lo.png",
@@ -2371,7 +2469,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/ponytail01.lo.png"
+          "fileNote": "public/mh/tex/hair/ponytail01.lo.png",
+          "localPath": "public/mh/tex/hair/ponytail01.lo.png"
         },
         {
           "filename": "asset-2c90ae892d-hair-female-long-texture.png",
@@ -2384,7 +2483,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/ponytail01.png"
+          "fileNote": "public/mh/tex/hair/ponytail01.png",
+          "localPath": "public/mh/tex/hair/ponytail01.png"
         },
         {
           "filename": "asset-9a4db25fb0-hair-female-long-thumb.jpg",
@@ -2397,7 +2497,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/ponytail01.jpg"
+          "fileNote": "public/mh/thumb/hair/ponytail01.jpg",
+          "localPath": "public/mh/thumb/hair/ponytail01.jpg"
         }
       ],
       "extra": {
@@ -2445,7 +2546,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/short01.bin"
+          "fileNote": "public/mh/proxy/hair/short01.bin",
+          "localPath": "public/mh/proxy/hair/short01.bin"
         },
         {
           "filename": "asset-746c5073b6-hair-male-short-texture-lo.png",
@@ -2459,7 +2561,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/short01.lo.png"
+          "fileNote": "public/mh/tex/hair/short01.lo.png",
+          "localPath": "public/mh/tex/hair/short01.lo.png"
         },
         {
           "filename": "asset-0ad64dc518-hair-male-short-texture.png",
@@ -2472,7 +2575,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/short01.png"
+          "fileNote": "public/mh/tex/hair/short01.png",
+          "localPath": "public/mh/tex/hair/short01.png"
         },
         {
           "filename": "asset-e77f498fad-hair-male-short-thumb.jpg",
@@ -2485,7 +2589,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/short01.jpg"
+          "fileNote": "public/mh/thumb/hair/short01.jpg",
+          "localPath": "public/mh/thumb/hair/short01.jpg"
         }
       ],
       "extra": {
@@ -2533,7 +2638,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/short02.bin"
+          "fileNote": "public/mh/proxy/hair/short02.bin",
+          "localPath": "public/mh/proxy/hair/short02.bin"
         },
         {
           "filename": "asset-02b2ccdcbd-hair-short-male-texture-lo.png",
@@ -2547,7 +2653,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/short02.lo.png"
+          "fileNote": "public/mh/tex/hair/short02.lo.png",
+          "localPath": "public/mh/tex/hair/short02.lo.png"
         },
         {
           "filename": "asset-614735ea50-hair-short-male-texture.png",
@@ -2560,7 +2667,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/short02.png"
+          "fileNote": "public/mh/tex/hair/short02.png",
+          "localPath": "public/mh/tex/hair/short02.png"
         },
         {
           "filename": "asset-1c9a0e86f5-hair-short-male-thumb.jpg",
@@ -2573,7 +2681,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/short02.jpg"
+          "fileNote": "public/mh/thumb/hair/short02.jpg",
+          "localPath": "public/mh/thumb/hair/short02.jpg"
         }
       ],
       "extra": {
@@ -2621,7 +2730,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/short03.bin"
+          "fileNote": "public/mh/proxy/hair/short03.bin",
+          "localPath": "public/mh/proxy/hair/short03.bin"
         },
         {
           "filename": "asset-800f37d12a-hair-short-female-texture-lo.png",
@@ -2635,7 +2745,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/short03.lo.png"
+          "fileNote": "public/mh/tex/hair/short03.lo.png",
+          "localPath": "public/mh/tex/hair/short03.lo.png"
         },
         {
           "filename": "asset-fab6d30c15-hair-short-female-texture.png",
@@ -2648,7 +2759,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/short03.png"
+          "fileNote": "public/mh/tex/hair/short03.png",
+          "localPath": "public/mh/tex/hair/short03.png"
         },
         {
           "filename": "asset-d6c95b58e1-hair-short-female-thumb.jpg",
@@ -2661,7 +2773,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/short03.jpg"
+          "fileNote": "public/mh/thumb/hair/short03.jpg",
+          "localPath": "public/mh/thumb/hair/short03.jpg"
         }
       ],
       "extra": {
@@ -2709,7 +2822,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/hair/short04.bin"
+          "fileNote": "public/mh/proxy/hair/short04.bin",
+          "localPath": "public/mh/proxy/hair/short04.bin"
         },
         {
           "filename": "asset-0d6a650419-hair-male-short-texture-lo.png",
@@ -2723,7 +2837,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/short04.lo.png"
+          "fileNote": "public/mh/tex/hair/short04.lo.png",
+          "localPath": "public/mh/tex/hair/short04.lo.png"
         },
         {
           "filename": "asset-a65c3b5357-hair-male-short-texture.png",
@@ -2736,7 +2851,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/hair/short04.png"
+          "fileNote": "public/mh/tex/hair/short04.png",
+          "localPath": "public/mh/tex/hair/short04.png"
         },
         {
           "filename": "asset-1af141eabb-hair-male-short-thumb.jpg",
@@ -2749,7 +2865,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/hair/short04.jpg"
+          "fileNote": "public/mh/thumb/hair/short04.jpg",
+          "localPath": "public/mh/thumb/hair/short04.jpg"
         }
       ],
       "extra": {
@@ -2796,7 +2913,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless.jpg"
+          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless.jpg",
+          "localPath": "public/mh/tex/skin/bobby_03_young_female_hairless.jpg"
         },
         {
           "filename": "asset-8007175360-skin-female-texture-lo.jpg",
@@ -2810,7 +2928,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless.lo.jpg"
+          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless.lo.jpg",
+          "localPath": "public/mh/tex/skin/bobby_03_young_female_hairless.lo.jpg"
         },
         {
           "filename": "asset-8450277210-skin-female-texture-normal-lo.jpg",
@@ -2825,7 +2944,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/bobby_03_young_female_hairless_normal.lo.jpg"
         },
         {
           "filename": "asset-812996f3ae-skin-female-texture-rough.jpg",
@@ -2839,7 +2959,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless_rough.jpg"
+          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless_rough.jpg",
+          "localPath": "public/mh/tex/skin/bobby_03_young_female_hairless_rough.jpg"
         },
         {
           "filename": "asset-912800b79d-skin-female-texture-swatch.jpg",
@@ -2853,7 +2974,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/bobby_03_young_female_hairless_swatch.jpg",
+          "localPath": "public/mh/tex/skin/bobby_03_young_female_hairless_swatch.jpg"
         }
       ],
       "extra": {
@@ -2902,7 +3024,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female.jpg"
+          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female.jpg",
+          "localPath": "public/mh/tex/skin/callharvey3d_midtoned_female.jpg"
         },
         {
           "filename": "asset-829bf6d2f8-skin-female-texture-lo.jpg",
@@ -2916,7 +3039,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/callharvey3d_midtoned_female.lo.jpg"
         },
         {
           "filename": "asset-7cac7cb884-skin-female-texture-normal-lo.jpg",
@@ -2931,7 +3055,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/callharvey3d_midtoned_female_normal.lo.jpg"
         },
         {
           "filename": "asset-5b27b15033-skin-female-texture-rough.jpg",
@@ -2945,7 +3070,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/callharvey3d_midtoned_female_rough.jpg"
         },
         {
           "filename": "asset-38b664527e-skin-female-texture-swatch.jpg",
@@ -2959,7 +3085,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/callharvey3d_midtoned_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/callharvey3d_midtoned_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -3008,7 +3135,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_enhanced.jpg"
         },
         {
           "filename": "asset-6f76442b22-skin-female-texture-lo.jpg",
@@ -3022,7 +3150,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced.lo.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced.lo.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_enhanced.lo.jpg"
         },
         {
           "filename": "asset-f1088c45e9-skin-female-texture-normal-lo.jpg",
@@ -3037,7 +3166,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_normal.lo.jpg"
         },
         {
           "filename": "asset-77f712504b-skin-female-texture-rough.jpg",
@@ -3051,7 +3181,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_rough.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_rough.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_rough.jpg"
         },
         {
           "filename": "asset-f6f036d641-skin-female-texture-swatch.jpg",
@@ -3065,7 +3196,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_swatch.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_enhanced_swatch.jpg"
         }
       ],
       "extra": {
@@ -3114,7 +3246,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_skin.jpg"
         },
         {
           "filename": "asset-ec1e63c775-skin-female-texture-lo.jpg",
@@ -3128,7 +3261,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin.lo.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin.lo.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_skin.lo.jpg"
         },
         {
           "filename": "asset-6bf9ed0d8b-skin-female-texture-normal-lo.jpg",
@@ -3143,7 +3277,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_skin_normal.lo.jpg"
         },
         {
           "filename": "asset-8485b0116a-skin-female-texture-rough.jpg",
@@ -3157,7 +3292,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin_rough.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin_rough.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_skin_rough.jpg"
         },
         {
           "filename": "asset-439285c0ba-skin-female-texture-swatch.jpg",
@@ -3171,7 +3307,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/cutoff3d_indian_female_skin_swatch.jpg",
+          "localPath": "public/mh/tex/skin/cutoff3d_indian_female_skin_swatch.jpg"
         }
       ],
       "extra": {
@@ -3220,7 +3357,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female.jpg"
+          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female.jpg",
+          "localPath": "public/mh/tex/skin/darthfurby_caucasian_female.jpg"
         },
         {
           "filename": "asset-52991542a7-skin-female-texture-lo.jpg",
@@ -3234,7 +3372,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/darthfurby_caucasian_female.lo.jpg"
         },
         {
           "filename": "asset-b7ba1787cd-skin-female-texture-normal-lo.jpg",
@@ -3249,7 +3388,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/darthfurby_caucasian_female_normal.lo.jpg"
         },
         {
           "filename": "asset-8bc7aeaab2-skin-female-texture-rough.jpg",
@@ -3263,7 +3403,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/darthfurby_caucasian_female_rough.jpg"
         },
         {
           "filename": "asset-db5aa01b1b-skin-female-texture-swatch.jpg",
@@ -3277,7 +3418,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/darthfurby_caucasian_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/darthfurby_caucasian_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -3326,7 +3468,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin.jpg"
+          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin.jpg",
+          "localPath": "public/mh/tex/skin/flower-angel_red_head_skin.jpg"
         },
         {
           "filename": "asset-ca3f81227e-skin-female-texture-lo.jpg",
@@ -3340,7 +3483,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin.lo.jpg"
+          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin.lo.jpg",
+          "localPath": "public/mh/tex/skin/flower-angel_red_head_skin.lo.jpg"
         },
         {
           "filename": "asset-32ada1ab08-skin-female-texture-normal-lo.jpg",
@@ -3355,7 +3499,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/flower-angel_red_head_skin_normal.lo.jpg"
         },
         {
           "filename": "asset-64145d424b-skin-female-texture-rough.jpg",
@@ -3369,7 +3514,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin_rough.jpg"
+          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin_rough.jpg",
+          "localPath": "public/mh/tex/skin/flower-angel_red_head_skin_rough.jpg"
         },
         {
           "filename": "asset-db5aa01b1b-skin-female-texture-swatch.jpg",
@@ -3383,7 +3529,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/flower-angel_red_head_skin_swatch.jpg",
+          "localPath": "public/mh/tex/skin/flower-angel_red_head_skin_swatch.jpg"
         }
       ],
       "extra": {
@@ -3432,7 +3579,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard.jpg"
         },
         {
           "filename": "asset-06387d52cc-skin-male-texture-lo.jpg",
@@ -3446,7 +3594,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard.lo.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard.lo.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard.lo.jpg"
         },
         {
           "filename": "asset-aaaae5515b-skin-male-texture-normal-lo.jpg",
@@ -3461,7 +3610,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_normal.lo.jpg"
         },
         {
           "filename": "asset-1ccda09b27-skin-male-texture-rough.jpg",
@@ -3475,7 +3625,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_rough.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_rough.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_rough.jpg"
         },
         {
           "filename": "asset-a11275c5c2-skin-male-texture-swatch.jpg",
@@ -3489,7 +3640,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_swatch.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_middleage_slavic_male_with_genitals_and_beard_swatch.jpg"
         }
       ],
       "extra": {
@@ -3538,7 +3690,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard.jpg"
         },
         {
           "filename": "asset-035a9a5e71-skin-male-texture-lo.jpg",
@@ -3552,7 +3705,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard.lo.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard.lo.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard.lo.jpg"
         },
         {
           "filename": "asset-6d341769d0-skin-male-texture-normal-lo.jpg",
@@ -3567,7 +3721,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_normal.lo.jpg"
         },
         {
           "filename": "asset-5e6b240d19-skin-male-texture-rough.jpg",
@@ -3581,7 +3736,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_rough.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_rough.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_rough.jpg"
         },
         {
           "filename": "asset-5f2019584e-skin-male-texture-swatch.jpg",
@@ -3595,7 +3751,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_swatch.jpg",
+          "localPath": "public/mh/tex/skin/jartur69_old_slavic_male_with_genitals_and_beard_swatch.jpg"
         }
       ],
       "extra": {
@@ -3644,7 +3801,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_aksel_skin.jpg"
         },
         {
           "filename": "asset-e54644ee14-skin-male-texture-lo.jpg",
@@ -3658,7 +3816,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin.lo.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin.lo.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_aksel_skin.lo.jpg"
         },
         {
           "filename": "asset-dacd6ac1e6-skin-male-texture-normal-lo.jpg",
@@ -3673,7 +3832,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_aksel_skin_normal.lo.jpg"
         },
         {
           "filename": "asset-8c6cf32488-skin-male-texture-rough.jpg",
@@ -3687,7 +3847,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin_rough.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin_rough.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_aksel_skin_rough.jpg"
         },
         {
           "filename": "asset-fe42830e1d-skin-male-texture-swatch.jpg",
@@ -3701,7 +3862,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_aksel_skin_swatch.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_aksel_skin_swatch.jpg"
         }
       ],
       "extra": {
@@ -3750,7 +3912,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_skin_male_african_middleage.jpg"
         },
         {
           "filename": "asset-a87b525e99-skin-male-texture-lo.jpg",
@@ -3764,7 +3927,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage.lo.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage.lo.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_skin_male_african_middleage.lo.jpg"
         },
         {
           "filename": "asset-de75c4ed32-skin-male-texture-normal-lo.jpg",
@@ -3779,7 +3943,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_skin_male_african_middleage_normal.lo.jpg"
         },
         {
           "filename": "asset-07478d4851-skin-male-texture-rough.jpg",
@@ -3793,7 +3958,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage_rough.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage_rough.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_skin_male_african_middleage_rough.jpg"
         },
         {
           "filename": "asset-6c5fcc2f1c-skin-male-texture-swatch.jpg",
@@ -3807,7 +3973,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/mindfront_skin_male_african_middleage_swatch.jpg",
+          "localPath": "public/mh/tex/skin/mindfront_skin_male_african_middleage_swatch.jpg"
         }
       ],
       "extra": {
@@ -3856,7 +4023,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin.jpg"
+          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin.jpg",
+          "localPath": "public/mh/tex/skin/nyloseth_zoeyskin.jpg"
         },
         {
           "filename": "asset-d80657990c-skin-female-texture-lo.jpg",
@@ -3870,7 +4038,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin.lo.jpg"
+          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin.lo.jpg",
+          "localPath": "public/mh/tex/skin/nyloseth_zoeyskin.lo.jpg"
         },
         {
           "filename": "asset-984847b435-skin-female-texture-normal-lo.jpg",
@@ -3885,7 +4054,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/nyloseth_zoeyskin_normal.lo.jpg"
         },
         {
           "filename": "asset-1e8fd8d9a2-skin-female-texture-rough.jpg",
@@ -3899,7 +4069,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin_rough.jpg"
+          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin_rough.jpg",
+          "localPath": "public/mh/tex/skin/nyloseth_zoeyskin_rough.jpg"
         },
         {
           "filename": "asset-1ab0b9dd59-skin-female-texture-swatch.jpg",
@@ -3913,7 +4084,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/nyloseth_zoeyskin_swatch.jpg",
+          "localPath": "public/mh/tex/skin/nyloseth_zoeyskin_swatch.jpg"
         }
       ],
       "extra": {
@@ -3962,7 +4134,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female.jpg"
         },
         {
           "filename": "asset-c5a6001f28-skin-female-texture-lo.jpg",
@@ -3976,7 +4149,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female.lo.jpg"
         },
         {
           "filename": "asset-e44d32b656-skin-female-texture-normal-lo.jpg",
@@ -3991,7 +4165,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_normal.lo.jpg"
         },
         {
           "filename": "asset-e2355c58f3-skin-female-texture-rough.jpg",
@@ -4005,7 +4180,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_rough.jpg"
         },
         {
           "filename": "asset-301395f110-skin-female-texture-swatch.jpg",
@@ -4019,7 +4195,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_middle_aged_eurasian_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -4068,7 +4245,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_female.jpg"
         },
         {
           "filename": "asset-f0cbc7f75b-skin-female-texture-lo.jpg",
@@ -4082,7 +4260,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_female.lo.jpg"
         },
         {
           "filename": "asset-f4deea7a7e-skin-female-texture-normal-lo.jpg",
@@ -4097,7 +4276,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_normal.lo.jpg"
         },
         {
           "filename": "asset-74a30742c1-skin-female-texture-rough.jpg",
@@ -4111,7 +4291,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_rough.jpg"
         },
         {
           "filename": "asset-0c369fa7ea-skin-female-texture-swatch.jpg",
@@ -4125,7 +4306,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -4174,7 +4356,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_male.jpg"
         },
         {
           "filename": "asset-80b25c26bf-skin-male-texture-lo.jpg",
@@ -4188,7 +4371,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male.lo.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male.lo.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_male.lo.jpg"
         },
         {
           "filename": "asset-6bd5845097-skin-male-texture-normal-lo.jpg",
@@ -4203,7 +4387,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_normal.lo.jpg"
         },
         {
           "filename": "asset-2ee9a3f792-skin-male-texture-rough.jpg",
@@ -4217,7 +4402,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_rough.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_rough.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_rough.jpg"
         },
         {
           "filename": "asset-64e93b6d94-skin-male-texture-swatch.jpg",
@@ -4231,7 +4417,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_swatch.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_old_eurasian_male_swatch.jpg"
         }
       ],
       "extra": {
@@ -4280,7 +4467,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_young_eurasian_female.jpg"
         },
         {
           "filename": "asset-45d77774ec-skin-female-texture-lo.jpg",
@@ -4294,7 +4482,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_young_eurasian_female.lo.jpg"
         },
         {
           "filename": "asset-7742eecf9a-skin-female-texture-normal-lo.jpg",
@@ -4309,7 +4498,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_normal.lo.jpg"
         },
         {
           "filename": "asset-bdab83d534-skin-female-texture-rough.jpg",
@@ -4323,7 +4513,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_rough.jpg"
         },
         {
           "filename": "asset-a5d34142f8-skin-female-texture-swatch.jpg",
@@ -4337,7 +4528,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/onlytheghosts_young_eurasian_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -4386,7 +4578,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals.jpg"
+          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals.jpg",
+          "localPath": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals.jpg"
         },
         {
           "filename": "asset-bc5fe40f46-skin-female-texture-lo.jpg",
@@ -4400,7 +4593,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals.lo.jpg"
+          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals.lo.jpg",
+          "localPath": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals.lo.jpg"
         },
         {
           "filename": "asset-ab5e3b79a8-skin-female-texture-normal-lo.jpg",
@@ -4415,7 +4609,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_normal.lo.jpg"
         },
         {
           "filename": "asset-fc2f236c5a-skin-female-texture-rough.jpg",
@@ -4429,7 +4624,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_rough.jpg"
+          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_rough.jpg",
+          "localPath": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_rough.jpg"
         },
         {
           "filename": "asset-4f16ae35b0-skin-female-texture-swatch.jpg",
@@ -4443,7 +4639,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_swatch.jpg",
+          "localPath": "public/mh/tex/skin/saltycowdawg_genuine_caucasian_female_with_genitals_swatch.jpg"
         }
       ],
       "extra": {
@@ -4492,7 +4689,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female.jpg"
+          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female.jpg",
+          "localPath": "public/mh/tex/skin/skalldyrssuppe_creamy_female.jpg"
         },
         {
           "filename": "asset-52cbf19ac0-skin-female-texture-lo.jpg",
@@ -4506,7 +4704,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/skalldyrssuppe_creamy_female.lo.jpg"
         },
         {
           "filename": "asset-2441467a65-skin-female-texture-normal-lo.jpg",
@@ -4521,7 +4720,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/skalldyrssuppe_creamy_female_normal.lo.jpg"
         },
         {
           "filename": "asset-a7b204f3bb-skin-female-texture-rough.jpg",
@@ -4535,7 +4735,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/skalldyrssuppe_creamy_female_rough.jpg"
         },
         {
           "filename": "asset-49e7f61961-skin-female-texture-swatch.jpg",
@@ -4549,7 +4750,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/skalldyrssuppe_creamy_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/skalldyrssuppe_creamy_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -4598,7 +4800,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_bronze.jpg"
         },
         {
           "filename": "asset-c08fc72816-skin-female-texture-lo.jpg",
@@ -4612,7 +4815,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_bronze.lo.jpg"
         },
         {
           "filename": "asset-ce45d0b179-skin-female-texture-normal-lo.jpg",
@@ -4627,7 +4831,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_bronze_normal.lo.jpg"
         },
         {
           "filename": "asset-f6fca7e624-skin-female-texture-rough.jpg",
@@ -4641,7 +4846,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze_rough.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze_rough.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_bronze_rough.jpg"
         },
         {
           "filename": "asset-54f411dfff-skin-female-texture-swatch.jpg",
@@ -4655,7 +4861,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_bronze_swatch.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_bronze_swatch.jpg"
         }
       ],
       "extra": {
@@ -4704,7 +4911,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_freckles.jpg"
         },
         {
           "filename": "asset-643c005473-skin-female-texture-lo.jpg",
@@ -4718,7 +4926,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_freckles.lo.jpg"
         },
         {
           "filename": "asset-a9ccabe7f5-skin-female-texture-normal-lo.jpg",
@@ -4733,7 +4942,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_freckles_normal.lo.jpg"
         },
         {
           "filename": "asset-d18cff92be-skin-female-texture-rough.jpg",
@@ -4747,7 +4957,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles_rough.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles_rough.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_freckles_rough.jpg"
         },
         {
           "filename": "asset-f2bc469b8f-skin-female-texture-swatch.jpg",
@@ -4761,7 +4972,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_freckles_swatch.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_freckles_swatch.jpg"
         }
       ],
       "extra": {
@@ -4810,7 +5022,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger.jpg"
         },
         {
           "filename": "asset-44c9a36ab3-skin-female-texture-lo.jpg",
@@ -4824,7 +5037,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger.lo.jpg"
         },
         {
           "filename": "asset-796b80ddae-skin-female-texture-normal-lo.jpg",
@@ -4839,7 +5053,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger_normal.lo.jpg"
         },
         {
           "filename": "asset-dc20fa8b74-skin-female-texture-rough.jpg",
@@ -4853,7 +5068,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_rough.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_rough.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger_rough.jpg"
         },
         {
           "filename": "asset-1ab0b9dd59-skin-female-texture-swatch.jpg",
@@ -4867,7 +5083,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_swatch.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger_swatch.jpg"
         }
       ],
       "extra": {
@@ -4916,7 +5133,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger_2.jpg"
         },
         {
           "filename": "asset-b36cd0f784-skin-female-texture-lo.jpg",
@@ -4930,7 +5148,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger_2.lo.jpg"
         },
         {
           "filename": "asset-c6486b3ef9-skin-female-texture-normal-lo.jpg",
@@ -4945,7 +5164,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_normal.lo.jpg"
         },
         {
           "filename": "asset-5b631d609c-skin-female-texture-rough.jpg",
@@ -4959,7 +5179,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_rough.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_rough.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_rough.jpg"
         },
         {
           "filename": "asset-29e552f287-skin-female-texture-swatch.jpg",
@@ -4973,7 +5194,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_swatch.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_female_ginger_2_swatch.jpg"
         }
       ],
       "extra": {
@@ -5022,7 +5244,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_bronze.jpg"
         },
         {
           "filename": "asset-e9bb3f9ab3-skin-male-texture-lo.jpg",
@@ -5036,7 +5259,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_bronze.lo.jpg"
         },
         {
           "filename": "asset-6edf2d0cff-skin-male-texture-normal-lo.jpg",
@@ -5051,7 +5275,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_bronze_normal.lo.jpg"
         },
         {
           "filename": "asset-2ac24939a4-skin-male-texture-rough.jpg",
@@ -5065,7 +5290,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze_rough.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze_rough.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_bronze_rough.jpg"
         },
         {
           "filename": "asset-55f6c8d8ef-skin-male-texture-swatch.jpg",
@@ -5079,7 +5305,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_bronze_swatch.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_bronze_swatch.jpg"
         }
       ],
       "extra": {
@@ -5128,7 +5355,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_freckles.jpg"
         },
         {
           "filename": "asset-c4a61752e0-skin-male-texture-lo.jpg",
@@ -5142,7 +5370,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_freckles.lo.jpg"
         },
         {
           "filename": "asset-45e62f3d09-skin-male-texture-normal-lo.jpg",
@@ -5157,7 +5386,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_freckles_normal.lo.jpg"
         },
         {
           "filename": "asset-e4185dde7e-skin-male-texture-rough.jpg",
@@ -5171,7 +5401,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles_rough.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles_rough.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_freckles_rough.jpg"
         },
         {
           "filename": "asset-7684ae623c-skin-male-texture-swatch.jpg",
@@ -5185,7 +5416,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_freckles_swatch.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_freckles_swatch.jpg"
         }
       ],
       "extra": {
@@ -5234,7 +5466,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_ginger.jpg"
         },
         {
           "filename": "asset-cd27b8672c-skin-male-texture-lo.jpg",
@@ -5248,7 +5481,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_ginger.lo.jpg"
         },
         {
           "filename": "asset-1199e19e15-skin-male-texture-normal-lo.jpg",
@@ -5263,7 +5497,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_ginger_normal.lo.jpg"
         },
         {
           "filename": "asset-3e984b698d-skin-male-texture-rough.jpg",
@@ -5277,7 +5512,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger_rough.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger_rough.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_ginger_rough.jpg"
         },
         {
           "filename": "asset-e83c5bb38b-skin-male-texture-swatch.jpg",
@@ -5291,7 +5527,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/toigo_light_skin_male_ginger_swatch.jpg",
+          "localPath": "public/mh/tex/skin/toigo_light_skin_male_ginger_swatch.jpg"
         }
       ],
       "extra": {
@@ -5340,7 +5577,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_female.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_female.jpg",
+          "localPath": "public/mh/tex/skin/young_african_female.jpg"
         },
         {
           "filename": "asset-6cb99c7c67-skin-female-texture-lo.jpg",
@@ -5354,7 +5592,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_african_female.lo.jpg"
         },
         {
           "filename": "asset-e1ac211860-skin-female-texture-normal-lo.jpg",
@@ -5369,7 +5608,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_african_female_normal.lo.jpg"
         },
         {
           "filename": "asset-b141d0dc94-skin-female-texture-rough.jpg",
@@ -5383,7 +5623,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/young_african_female_rough.jpg"
         },
         {
           "filename": "asset-4efca0524d-skin-female-texture-swatch.jpg",
@@ -5397,7 +5638,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/young_african_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -5446,7 +5688,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_male.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_male.jpg",
+          "localPath": "public/mh/tex/skin/young_african_male.jpg"
         },
         {
           "filename": "asset-460e6798c6-skin-male-texture-lo.jpg",
@@ -5460,7 +5703,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_male.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_male.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_african_male.lo.jpg"
         },
         {
           "filename": "asset-e8b32ff83f-skin-male-texture-normal-lo.jpg",
@@ -5475,7 +5719,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_male_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_male_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_african_male_normal.lo.jpg"
         },
         {
           "filename": "asset-89df49b7df-skin-male-texture-rough.jpg",
@@ -5489,7 +5734,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_male_rough.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_male_rough.jpg",
+          "localPath": "public/mh/tex/skin/young_african_male_rough.jpg"
         },
         {
           "filename": "asset-ac7eb11d39-skin-male-texture-swatch.jpg",
@@ -5503,7 +5749,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_african_male_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/young_african_male_swatch.jpg",
+          "localPath": "public/mh/tex/skin/young_african_male_swatch.jpg"
         }
       ],
       "extra": {
@@ -5552,7 +5799,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_female.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_female.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_female.jpg"
         },
         {
           "filename": "asset-41a94827be-skin-female-texture-lo.jpg",
@@ -5566,7 +5814,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_female.lo.jpg"
         },
         {
           "filename": "asset-6449a423a3-skin-female-texture-normal-lo.jpg",
@@ -5581,7 +5830,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_female_normal.lo.jpg"
         },
         {
           "filename": "asset-c4064d82af-skin-female-texture-rough.jpg",
@@ -5595,7 +5845,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_female_rough.jpg"
         },
         {
           "filename": "asset-f5ca15693b-skin-female-texture-swatch.jpg",
@@ -5609,7 +5860,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -5658,7 +5910,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_male.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_male.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_male.jpg"
         },
         {
           "filename": "asset-085b8ff598-skin-male-texture-lo.jpg",
@@ -5672,7 +5925,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_male.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_male.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_male.lo.jpg"
         },
         {
           "filename": "asset-590be58013-skin-male-texture-normal-lo.jpg",
@@ -5687,7 +5941,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_male_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_male_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_male_normal.lo.jpg"
         },
         {
           "filename": "asset-5fae520287-skin-male-texture-rough.jpg",
@@ -5701,7 +5956,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_male_rough.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_male_rough.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_male_rough.jpg"
         },
         {
           "filename": "asset-c94312a0e3-skin-male-texture-swatch.jpg",
@@ -5715,7 +5971,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_asian_male_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/young_asian_male_swatch.jpg",
+          "localPath": "public/mh/tex/skin/young_asian_male_swatch.jpg"
         }
       ],
       "extra": {
@@ -5764,7 +6021,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_female.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_female.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_female.jpg"
         },
         {
           "filename": "asset-a5b57ad822-skin-female-texture-lo.jpg",
@@ -5778,7 +6036,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_female.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_female.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_female.lo.jpg"
         },
         {
           "filename": "asset-f19df4dd81-skin-female-texture-normal-lo.jpg",
@@ -5793,7 +6052,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_female_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_female_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_female_normal.lo.jpg"
         },
         {
           "filename": "asset-447e128aca-skin-female-texture-rough.jpg",
@@ -5807,7 +6067,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_female_rough.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_female_rough.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_female_rough.jpg"
         },
         {
           "filename": "asset-4f16ae35b0-skin-female-texture-swatch.jpg",
@@ -5821,7 +6082,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_female_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_female_swatch.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_female_swatch.jpg"
         }
       ],
       "extra": {
@@ -5870,7 +6132,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_male.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_male.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_male.jpg"
         },
         {
           "filename": "asset-23d4f86955-skin-male-texture-lo.jpg",
@@ -5884,7 +6147,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_male.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_male.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_male.lo.jpg"
         },
         {
           "filename": "asset-15e5816647-skin-male-texture-normal-lo.jpg",
@@ -5899,7 +6163,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_male_normal.lo.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_male_normal.lo.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_male_normal.lo.jpg"
         },
         {
           "filename": "asset-f417000a46-skin-male-texture-rough.jpg",
@@ -5913,7 +6178,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_male_rough.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_male_rough.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_male_rough.jpg"
         },
         {
           "filename": "asset-1b4e354770-skin-male-texture-swatch.jpg",
@@ -5927,7 +6193,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/young_caucasian_male_swatch.jpg"
+          "fileNote": "public/mh/tex/skin/young_caucasian_male_swatch.jpg",
+          "localPath": "public/mh/tex/skin/young_caucasian_male_swatch.jpg"
         }
       ],
       "extra": {
@@ -5975,7 +6242,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/teeth/teeth_base.bin"
+          "fileNote": "public/mh/proxy/teeth/teeth_base.bin",
+          "localPath": "public/mh/proxy/teeth/teeth_base.bin"
         },
         {
           "filename": "asset-0cf02df6af-teeth-texture-lo.png",
@@ -5989,7 +6257,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/teeth/teeth_base.lo.png"
+          "fileNote": "public/mh/tex/teeth/teeth_base.lo.png",
+          "localPath": "public/mh/tex/teeth/teeth_base.lo.png"
         },
         {
           "filename": "asset-9b830cd85e-teeth-texture.png",
@@ -6002,7 +6271,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/teeth/teeth_base.png"
+          "fileNote": "public/mh/tex/teeth/teeth_base.png",
+          "localPath": "public/mh/tex/teeth/teeth_base.png"
         },
         {
           "filename": "asset-fd93a79770-teeth-thumb.jpg",
@@ -6015,7 +6285,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/teeth/teeth_base.jpg"
+          "fileNote": "public/mh/thumb/teeth/teeth_base.jpg",
+          "localPath": "public/mh/thumb/teeth/teeth_base.jpg"
         }
       ],
       "extra": {
@@ -6061,7 +6332,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/proxy/tongue/tongue01.bin"
+          "fileNote": "public/mh/proxy/tongue/tongue01.bin",
+          "localPath": "public/mh/proxy/tongue/tongue01.bin"
         },
         {
           "filename": "asset-82c95ddbae-tongue-texture.jpg",
@@ -6074,7 +6346,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/tongue/tongue01.jpg"
+          "fileNote": "public/mh/tex/tongue/tongue01.jpg",
+          "localPath": "public/mh/tex/tongue/tongue01.jpg"
         },
         {
           "filename": "asset-6efbc0fdd0-tongue-texture-lo.jpg",
@@ -6088,7 +6361,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/tongue/tongue01.lo.jpg"
+          "fileNote": "public/mh/tex/tongue/tongue01.lo.jpg",
+          "localPath": "public/mh/tex/tongue/tongue01.lo.jpg"
         },
         {
           "filename": "asset-f18758e5c6-tongue-thumb.jpg",
@@ -6101,7 +6375,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/thumb/tongue/tongue01.jpg"
+          "fileNote": "public/mh/thumb/tongue/tongue01.jpg",
+          "localPath": "public/mh/thumb/tongue/tongue01.jpg"
         }
       ],
       "extra": {

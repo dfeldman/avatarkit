@@ -31,7 +31,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/env/README.md"
+          "fileNote": "public/env/README.md",
+          "localPath": "public/env/README.md"
         }
       ],
       "extra": {
@@ -68,7 +69,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/env/studio_small_08_1k.hdr"
+          "fileNote": "public/env/studio_small_08_1k.hdr",
+          "localPath": "public/env/studio_small_08_1k.hdr"
         }
       ],
       "extra": {
@@ -107,7 +109,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/anim/ual.json"
+          "fileNote": "public/mh/anim/ual.json",
+          "localPath": "public/mh/anim/ual.json"
         }
       ],
       "extra": {
@@ -143,7 +146,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/index.json"
+          "fileNote": "public/mh/index.json",
+          "localPath": "public/mh/index.json"
         }
       ],
       "extra": {
@@ -181,7 +185,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/modifiers.json"
+          "fileNote": "public/mh/modifiers.json",
+          "localPath": "public/mh/modifiers.json"
         }
       ],
       "extra": {
@@ -216,7 +221,8 @@
           ],
           "lod": 1,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/detail.lo.png"
+          "fileNote": "public/mh/tex/skin/detail.lo.png",
+          "localPath": "public/mh/tex/skin/detail.lo.png"
         },
         {
           "filename": "asset-3d97aa68b6-detail-texture.png",
@@ -229,7 +235,8 @@
           ],
           "lod": 0,
           "isProd": true,
-          "fileNote": "public/mh/tex/skin/detail.png"
+          "fileNote": "public/mh/tex/skin/detail.png",
+          "localPath": "public/mh/tex/skin/detail.png"
         }
       ],
       "extra": {
