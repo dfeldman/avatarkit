@@ -125,7 +125,8 @@ export function applySpecToMaterials(m: AvatarMaterials, spec: AvatarSpec): void
     // (sRGB-encoded, decoded to linear by the GPU)
     m.body.albedoTexture = m.photo >= 0.999 ? new Texture(url, scene) : fadedPhoto(url, scene, m.photo)
     // roughness in green (lips and damp skin shinier, pores and creases rougher), metallic 0 in blue
-    const surface = new Texture(url.replace(/(\.lo)?\.jpg$/, '_rough.jpg'), scene)
+    // (named from the PATH, then resolved: in bucket mode the URL is a content-hashed name with no suffix to edit)
+    const surface = new Texture(assetUrl(best.replace(/\.jpg$/, '_rough.jpg')), scene)
     surface.gammaSpace = false
     m.body.metallicTexture = surface
     m.body.useRoughnessFromMetallicTextureGreen = true
