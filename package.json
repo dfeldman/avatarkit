@@ -1,5 +1,5 @@
 {
-  "name": "@dandyhorse/avatarkit",
+  "name": "avatarkit",
   "private": true,
   "version": "0.1.0",
   "description": "Procedural, skinned Nintendo-style human avatars for Dandyhorse games: a spec, a builder, walk/run/cycle animation and a designer.",

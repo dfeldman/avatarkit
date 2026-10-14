@@ -15,11 +15,11 @@ getstate (1 Hz) ─► speed / cadence / incline + EffortMeter ─► avatar.set
 
 - **Location:** the kit is its own repo (github.com/dfeldman/avatarkit), checked out beside dandyhorse. It lived in
   `dandyhorse/libs/avatarkit` from 2026-09-19 and moved out on 2026-10-14 because it has its own front end (the
-  designer) as well as assets. Dandyhorse games add `"@dandyhorse/avatarkit": "file:../../../avatarkit"` and
+  designer) as well as assets. Dandyhorse games add `"avatarkit": "file:../../../avatarkit"` and
   `@babylonjs/core` 9.26.0; sibling repos (cityengine) use `file:../avatarkit`.
 - **Two entries:**
-  - `@dandyhorse/avatarkit` is for games: spec, `Avatar`, `GeometryService`, `Bike`, `Animator`.
-  - `@dandyhorse/avatarkit/designer` is for the console. It adds DOM code and CSS, which no game needs.
+  - `avatarkit` is for games: spec, `Avatar`, `GeometryService`, `Bike`, `Animator`.
+  - `avatarkit/designer` is for the console. It adds DOM code and CSS, which no game needs.
 
 ## 2. Storing the avatar — done
 
@@ -52,7 +52,7 @@ with deliberately clashing CSS, a fake `PUT /api/me` (add `?fail=1` to see a fai
 <!-- views/Avatar.vue (or a section of Preferences.vue) -->
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import type { Designer } from '@dandyhorse/avatarkit/designer'
+import type { Designer } from 'avatarkit/designer'
 import { api } from '../api'
 
 const host = ref<HTMLElement>()
@@ -60,7 +60,7 @@ let designer: Designer | null = null
 
 onMounted(async () => {
   // loaded on demand: the designer brings Babylon (about 1.5 MB gzipped) that the rest of the console doesn't need
-  const { mountDesigner } = await import('@dandyhorse/avatarkit/designer')
+  const { mountDesigner } = await import('avatarkit/designer')
   const me = await api.get('/api/me')
   host.value!.dataset.theme = document.documentElement.dataset.theme ?? ''
   designer = await mountDesigner(host.value!, {
@@ -103,7 +103,7 @@ onBeforeUnmount(() => designer?.dispose())
     rivals and crowds.
 
 ```ts
-import { Avatar, Bike, GeometryService, normalizeSpec, setAssetBase, suggestQuality } from '@dandyhorse/avatarkit'
+import { Avatar, Bike, GeometryService, normalizeSpec, setAssetBase, suggestQuality } from 'avatarkit'
 import { EffortMeter, SessionClient, startSession } from '@dandyhorse/gamekit'
 
 const start = await startSession(...)

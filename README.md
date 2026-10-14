@@ -85,7 +85,7 @@ Debug handles (the in-app browser pane draws at about 1 fps, so tests drive thin
 ## Using it in a game
 
 ```ts
-import { Avatar, GeometryService, preloadAssets, setAssetBase, suggestQuality } from '@dandyhorse/avatarkit'
+import { Avatar, GeometryService, preloadAssets, setAssetBase, suggestQuality } from 'avatarkit'
 
 setAssetBase('https://…/mh/')                            // where public/mh/ is served
 const quality = suggestQuality(engine)                   // or 'low' for a crowd
@@ -144,7 +144,7 @@ the code is invalid).
 ## The designer
 
 ```ts
-import { mountDesigner } from '@dandyhorse/avatarkit/designer'
+import { mountDesigner } from 'avatarkit/designer'
 
 const designer = await mountDesigner(element, { initial: profile.avatar, onSave: async (spec) => { /* store it */ } })
 // later

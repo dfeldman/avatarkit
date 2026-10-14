@@ -93,7 +93,7 @@ The same files are also in the shared assetmgr bucket (see `~/assetmgr`, github.
 doesn't need a copy of `public/` at all:
 
 ```ts
-import { loadFromBucket } from '@dandyhorse/avatarkit'
+import { loadFromBucket } from 'avatarkit'
 await loadFromBucket()            // before mountDesigner or the first Avatar
 ```
 

@@ -1,14 +1,14 @@
 /**
- * @dandyhorse/avatarkit: MakeHuman avatars (body, face, hair, clothes) with procedural animation, for Dandyhorse games.
+ * avatarkit: MakeHuman avatars (body, face, hair, clothes) with procedural animation, for Dandyhorse games.
  *
- *   import { Avatar, setAssetBase } from '@dandyhorse/avatarkit'
+ *   import { Avatar, setAssetBase } from 'avatarkit'
  *   setAssetBase('https://…/mh/')                            // where public/mh/ is served (pages default to ./mh/)
  *   const avatar = await Avatar.create(scene, profile.avatar) // any JSON; missing fields get defaults
  *   avatar.root.position.copyFrom(playerPosition)
  *   avatar.setMotion({ mode: 'run', speed: 3.1 })           // or { mode: 'cycle', cadence: 85 }
  *   scene.onBeforeRenderObservable.add(() => avatar.update(engine.getDeltaTime() / 1000))
  *
- * The designer (DOM, no game needs it) is a separate entry: '@dandyhorse/avatarkit/designer'.
+ * The designer (DOM, no game needs it) is a separate entry: 'avatarkit/designer'.
  */
 export * from './spec.ts'
 export { BEACH_WARDROBE, EXERCISE_KIT, PRESETS, beachSpec, makeRng, randomSpec, type Preset, type Rng } from './presets.ts'
