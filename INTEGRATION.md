@@ -15,8 +15,9 @@ getstate (1 Hz) ─► speed / cadence / incline + EffortMeter ─► avatar.set
 
 - **Location:** the kit is its own repo (github.com/dfeldman/avatarkit), checked out beside dandyhorse. It lived in
   `dandyhorse/libs/avatarkit` from 2026-09-19 and moved out on 2026-10-14 because it has its own front end (the
-  designer) as well as assets. Dandyhorse games add `"avatarkit": "file:../../../avatarkit"` and
-  `@babylonjs/core` 9.26.0; sibling repos (cityengine) use `file:../avatarkit`.
+  designer) as well as assets. Users link it from the environment, not a path in package.json: a `postinstall` of
+  `node link-siblings.mjs avatarkit=AVATARKIT_DIR:<default>` (dandyhorse's scripts/, cityengine's tools/) points
+  `node_modules/avatarkit` at `$AVATARKIT_DIR`; they also need `@babylonjs/core` 9.26.0.
 - **Two entries:**
   - `avatarkit` is for games: spec, `Avatar`, `GeometryService`, `Bike`, `Animator`.
   - `avatarkit/designer` is for the console. It adds DOM code and CSS, which no game needs.
