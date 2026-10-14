@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+*.log
+.env
+# The MakeHuman assets (~300 MB): in the shared asset bucket (indexes/), rebuilt locally with
+# `npm run assets` (tools/fetch-assets.ts) or from MakeHuman's own data with the tools in tools/ (ASSETS.md)
+/public/
+# assetmgr: downloaded asset files and the per-checkout hash cache
+/assets/
+.assetmgr/

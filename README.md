@@ -29,11 +29,12 @@ using it on the platform; [ROADMAP.md](ROADMAP.md) is what's done and what's nex
 ## Assets (read this first)
 
 Everything under `public/` is **not in git**: `mh/` (MakeHuman bodies and targets 65 MB, textures 234 MB) and
-`env/` (the studio lighting HDRI, 1.5 MB). From the repo root:
+`env/` (the studio lighting HDRI, 1.5 MB). They are in the shared asset bucket, so either use them from there
+(`?bucket` on the designer, or `loadFromBucket()`), or rebuild `public/` from it (public HTTPS, no key):
 
 ```bash
-make avatar-assets                               # copies from ~/avatarkit/public by default
-make avatar-assets AVATAR_ASSETS=/path/to/public # or from anywhere else
+npm run assets            # every file to public/, hash-checked; re-running skips what is there
+npm run assets -- --check # report what is missing, write nothing
 ```
 
 [ASSETS.md](ASSETS.md) says what every file is, where it came from (MakeHuman, its community packs, Quaternius,

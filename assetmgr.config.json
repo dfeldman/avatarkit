@@ -1,7 +1,16 @@
 {
-  "store": { "type": "r2", "bucket": "assets" },
+  "store": {
+    "type": "r2",
+    "bucket": "assets"
+  },
   "publicUrl": "https://pub-32f6f3f21c18414cbeaf4bf0ac34ebe5.r2.dev",
-  "repo": "https://github.com/dfeldman/dandyhorse",
+  "repo": "https://github.com/dfeldman/avatarkit",
   "assetsDir": "assets",
-  "ignoreDirs": ["public", "src", "tests", "tools", "dist"]
+  "ignoreDirs": [
+    "public",
+    "src",
+    "tests",
+    "tools",
+    "dist"
+  ]
 }

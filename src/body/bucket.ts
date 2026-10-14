@@ -12,9 +12,8 @@
 import { setAssetManifest } from './mhassets.ts'
 import { setStudioHdri, STUDIO_HDRI } from '../render/lighting.ts'
 
-/** The public URL of the shared asset bucket. */
-export const ASSET_BUCKET = 'https://pub-32f6f3f21c18414cbeaf4bf0ac34ebe5.r2.dev'
-export const AVATARKIT_INDEXES = ['avatarkit-body', 'avatarkit-wardrobe', 'avatarkit-targets', 'avatarkit-data'] as const
+import { ASSET_BUCKET, AVATARKIT_INDEXES } from './bucket-config.ts'
+export { ASSET_BUCKET, AVATARKIT_INDEXES }
 
 interface IndexFile {
   assets: { isDeleted?: boolean; extra?: { avatarkit?: { paths?: Record<string, string> } } }[]

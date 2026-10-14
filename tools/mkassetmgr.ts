@@ -21,8 +21,8 @@ import { pathToFileURL } from 'node:url'
 import type { Asset, AssetFile, Repo } from 'assetmgr/node'
 
 // assetmgr isn't a dependency of the kit (only this maintenance tool uses it): it comes from a checkout of
-// github.com/dfeldman/assetmgr, beside dandyhorse by default, or wherever ASSETMGR points (built: npm run build).
-const ASSETMGR = process.env.ASSETMGR ?? join(import.meta.dirname, '..', '..', '..', '..', 'assetmgr')
+// github.com/dfeldman/assetmgr, beside this repo by default, or wherever ASSETMGR points (built: npm run build).
+const ASSETMGR = process.env.ASSETMGR ?? join(import.meta.dirname, '..', '..', 'assetmgr')
 const { addFile, emptyIndex, indexFileName, loadRepo, saveIndex, serializeIndex, slugify } = (await import(
   pathToFileURL(join(ASSETMGR, 'dist', 'node', 'index.js')).href
 )) as typeof import('assetmgr/node')
@@ -33,7 +33,7 @@ const INDEX_DIR = 'indexes'
 const DEFAULTS = {
   project: 'avatarkit',
   projectName: 'Avatar Kit',
-  repo: 'https://github.com/dfeldman/dandyhorse',
+  repo: 'https://github.com/dfeldman/avatarkit',
 }
 
 /** The skins' leftover normal maps: nothing reads them (ASSETS.md), so they aren't recorded. */

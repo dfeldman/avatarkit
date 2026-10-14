@@ -4,11 +4,11 @@ Everything the designer draws comes from files under `public/`, which is **not i
 what is in there, where each piece came from, and how to build it again.
 
 ```bash
-make avatar-assets                               # from the repo root; copies from ~/avatarkit/public
-make avatar-assets AVATAR_ASSETS=/path/to/public # or from a copy anywhere else
+npm run assets            # rebuild public/ from the shared asset bucket (tools/fetch-assets.ts; no key)
 ```
 
-The server serves this folder at `/avatars/` (`servers/api-flask/dandyhorse/static.py`), so the console's designer
+Dandyhorse's server serves this folder at `/avatars/` (`servers/api-flask/dandyhorse/static.py` in the dandyhorse
+repo, which expects this repo beside it as `../avatarkit`), so the console's designer
 reads `/avatars/mh/…` and `/avatars/env/…`. Nothing else in Dandyhorse needs it: without the assets every other
 page still runs, the kit's tests skip, and only the designer comes up empty.
 
@@ -106,7 +106,7 @@ The indexes are `indexes/asset-index-avatarkit-{body,wardrobe,targets,data}.json
 `node tools/mkassetmgr.ts` from `public/`: one asset per `index.json` entry (mesh, textures, `.lo` copies and
 thumbnail together), one per morph target, one per remaining file. Every file keeps its original path in
 `extra.avatarkit.paths`. After rebuilding `public/`, re-run it and `npx assetmgr upload` (credentials:
-`ASSETMGR_ENV_FILE`). The tool loads assetmgr from a checkout beside dandyhorse, or from `$ASSETMGR`.
+`ASSETMGR_ENV_FILE`). The tool loads assetmgr from a checkout beside this repo, or from `$ASSETMGR`.
 
 The free `r2.dev` address is rate-limited (HTTP 429 at a few dozen parallel requests); a real deployment needs a
 custom domain on the bucket.

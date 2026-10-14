@@ -13,10 +13,10 @@ game ─► startsession ─► payload.avatar (proposed, §7.1) ─► Geometry
 getstate (1 Hz) ─► speed / cadence / incline + EffortMeter ─► avatar.setMotion(...) ─► walk, run or ride
 ```
 
-- **Location:** the kit is a TypeScript-source package, like `libs/gamekit`. It would fit at
-  `dandyhorse/libs/avatarkit`, the way devicelib moved in. Games would then add
-  `"@dandyhorse/avatarkit": "file:../../libs/avatarkit"` and `@babylonjs/core` 9.26.0. Until it moves, the same
-  dependency works as `file:` + the path to `~/avatarkit`.
+- **Location:** the kit is its own repo (github.com/dfeldman/avatarkit), checked out beside dandyhorse. It lived in
+  `dandyhorse/libs/avatarkit` from 2026-09-19 and moved out on 2026-10-14 because it has its own front end (the
+  designer) as well as assets. Dandyhorse games add `"@dandyhorse/avatarkit": "file:../../../avatarkit"` and
+  `@babylonjs/core` 9.26.0; sibling repos (cityengine) use `file:../avatarkit`.
 - **Two entries:**
   - `@dandyhorse/avatarkit` is for games: spec, `Avatar`, `GeometryService`, `Bike`, `Animator`.
   - `@dandyhorse/avatarkit/designer` is for the console. It adds DOM code and CSS, which no game needs.
@@ -220,12 +220,10 @@ That is roughly 20 lines of config and a test page. It is not built yet.
    only needed once a game shows other people.
 4. **Optional: a size cap.** The server could reject a `profile.avatar` over about 4 KB. Nothing else needs
    checking there, because every reader normalizes.
-5. **Moving the kit** into `libs/avatarkit`, with a short "Show the player" section in
-   GAME_DEVELOPER_GUIDE.md that points at §4.
+5. **A short "Show the player" section** in GAME_DEVELOPER_GUIDE.md that points at §4.
 
 ## 8. Open decisions for you
 
-- **Location:** should the kit move into `dandyhorse/libs/`, or stay a standalone project the games link to?
 - **The stopgap:** may games read `/api/me` for the avatar until the payload carries it?
 - **Privacy:** should an avatar be visible on public profiles, and to other players in shared games, by
   default?
