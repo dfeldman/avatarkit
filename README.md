@@ -39,9 +39,6 @@ npm run assets:upload     # after rebuilding public/: record (tools/mkassetmgr.t
 
 assetmgr is found at `$ASSETMGR_DIR` (default: the checkout beside this repo). Nothing is symlinked between repos.
 
-```bash
-```
-
 [ASSETS.md](ASSETS.md) says what every file is, where it came from (MakeHuman, its community packs, Quaternius,
 Poly Haven) and how to build it again with the tools in `tools/`. Nothing else here needs them: the console, bridge,
 games and server all run without them, and only the designer comes up empty.
