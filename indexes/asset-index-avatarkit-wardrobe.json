@@ -367,6 +367,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/cortu_cargo_pants.jpg"
+        },
+        {
+          "filename": "asset-036dafab27-clothes-texture-normal.jpg",
+          "hash": "036dafab27544030a2a57574775bb1e2b0dcdccc633c775b4d41793b45a4d657",
+          "size": 161211,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/cortu_cargo_pants_normal.jpg"
         }
       ],
       "extra": {
@@ -389,7 +403,8 @@
             "asset-a2ad755930-clothes-texture-lo.png": "mh/tex/clothes/cortu_cargo_pants.lo.png",
             "asset-d7fb21a79e-clothes-texture.png": "mh/tex/clothes/cortu_cargo_pants.png",
             "asset-8c7dcde1b2-clothes-texture-normal-lo.jpg": "mh/tex/clothes/cortu_cargo_pants_normal.lo.jpg",
-            "asset-849e2d8c00-clothes-thumb.jpg": "mh/thumb/clothes/cortu_cargo_pants.jpg"
+            "asset-849e2d8c00-clothes-thumb.jpg": "mh/thumb/clothes/cortu_cargo_pants.jpg",
+            "asset-036dafab27-clothes-texture-normal.jpg": "mh/tex/clothes/cortu_cargo_pants_normal.jpg"
           }
         }
       }
@@ -472,6 +487,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/cortu_floppy_overknee_shoes.jpg"
+        },
+        {
+          "filename": "asset-cd1f94e37e-clothes-texture-normal.jpg",
+          "hash": "cd1f94e37e96a628300d356d679e866952b9239866d960dfec7455f1f22ee774",
+          "size": 119321,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/cortu_floppy_overknee_shoes_normal.jpg"
         }
       ],
       "extra": {
@@ -494,7 +523,8 @@
             "asset-43b4759a1e-clothes-texture-lo.png": "mh/tex/clothes/cortu_floppy_overknee_shoes.lo.png",
             "asset-79780c05e6-clothes-texture.png": "mh/tex/clothes/cortu_floppy_overknee_shoes.png",
             "asset-d1722a31f3-clothes-texture-normal-lo.jpg": "mh/tex/clothes/cortu_floppy_overknee_shoes_normal.lo.jpg",
-            "asset-d33f2356f1-clothes-thumb.jpg": "mh/thumb/clothes/cortu_floppy_overknee_shoes.jpg"
+            "asset-d33f2356f1-clothes-thumb.jpg": "mh/thumb/clothes/cortu_floppy_overknee_shoes.jpg",
+            "asset-cd1f94e37e-clothes-texture-normal.jpg": "mh/tex/clothes/cortu_floppy_overknee_shoes_normal.jpg"
           }
         }
       }
@@ -577,6 +607,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/cortu_jeans_shorts.jpg"
+        },
+        {
+          "filename": "asset-d3176affb1-clothes-texture-normal.jpg",
+          "hash": "d3176affb1e1e8a347f794483760808772b22a22fd86b6af1b3de6109222ff18",
+          "size": 180875,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/cortu_jeans_shorts_normal.jpg"
         }
       ],
       "extra": {
@@ -599,7 +643,8 @@
             "asset-cc8428008c-clothes-texture-lo.png": "mh/tex/clothes/cortu_jeans_shorts.lo.png",
             "asset-92adee956e-clothes-texture.png": "mh/tex/clothes/cortu_jeans_shorts.png",
             "asset-b4a54ced47-clothes-texture-normal-lo.jpg": "mh/tex/clothes/cortu_jeans_shorts_normal.lo.jpg",
-            "asset-d24e7ca1e5-clothes-thumb.jpg": "mh/thumb/clothes/cortu_jeans_shorts.jpg"
+            "asset-d24e7ca1e5-clothes-thumb.jpg": "mh/thumb/clothes/cortu_jeans_shorts.jpg",
+            "asset-d3176affb1-clothes-texture-normal.jpg": "mh/tex/clothes/cortu_jeans_shorts_normal.jpg"
           }
         }
       }
@@ -682,6 +727,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/cortu_t-bar.jpg"
+        },
+        {
+          "filename": "asset-61636ca250-clothes-texture-normal.jpg",
+          "hash": "61636ca250dd01450cc800e6ff72e77c84daf246e881767d49bda2520868b09e",
+          "size": 226876,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/cortu_t-bar_normal.jpg"
         }
       ],
       "extra": {
@@ -704,7 +763,8 @@
             "asset-043a1b6c0b-clothes-texture.jpg": "mh/tex/clothes/cortu_t-bar.jpg",
             "asset-6fe2cdbbfc-clothes-texture-lo.jpg": "mh/tex/clothes/cortu_t-bar.lo.jpg",
             "asset-d21762a8e4-clothes-texture-normal-lo.jpg": "mh/tex/clothes/cortu_t-bar_normal.lo.jpg",
-            "asset-4f68d7638b-clothes-thumb.jpg": "mh/thumb/clothes/cortu_t-bar.jpg"
+            "asset-4f68d7638b-clothes-thumb.jpg": "mh/thumb/clothes/cortu_t-bar.jpg",
+            "asset-61636ca250-clothes-texture-normal.jpg": "mh/tex/clothes/cortu_t-bar_normal.jpg"
           }
         }
       }
@@ -1727,6 +1787,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/drednicolson_asymmetric_tunic_and_sash.jpg"
+        },
+        {
+          "filename": "asset-5ea58b49ec-clothes-asymmetric-female-texture-normal.jpg",
+          "hash": "5ea58b49eca9200d634bae2e9e54f515bcbea569f7a39878883a1a9e69ea8a87",
+          "size": 311559,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/drednicolson_asymmetric_tunic_and_sash_normal.jpg"
         }
       ],
       "extra": {
@@ -1749,7 +1823,8 @@
             "asset-07e04a41ca-clothes-asymmetric-female-texture.jpg": "mh/tex/clothes/drednicolson_asymmetric_tunic_and_sash.jpg",
             "asset-81b22af7c2-clothes-asymmetric-female-texture-lo.jpg": "mh/tex/clothes/drednicolson_asymmetric_tunic_and_sash.lo.jpg",
             "asset-fb849fe942-clothes-asymmetric-female-texture-normal-lo.jpg": "mh/tex/clothes/drednicolson_asymmetric_tunic_and_sash_normal.lo.jpg",
-            "asset-7e9677d541-clothes-asymmetric-female-thumb.jpg": "mh/thumb/clothes/drednicolson_asymmetric_tunic_and_sash.jpg"
+            "asset-7e9677d541-clothes-asymmetric-female-thumb.jpg": "mh/thumb/clothes/drednicolson_asymmetric_tunic_and_sash.jpg",
+            "asset-5ea58b49ec-clothes-asymmetric-female-texture-normal.jpg": "mh/tex/clothes/drednicolson_asymmetric_tunic_and_sash_normal.jpg"
           }
         }
       }
@@ -1837,6 +1912,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/drednicolson_pith_helmet.jpg"
+        },
+        {
+          "filename": "asset-cfb857e3f2-clothes-hats-texture-normal.jpg",
+          "hash": "cfb857e3f2e132b95e3adeff36fcc3d6e6ec937a802dbb89b972c2499b15d84b",
+          "size": 265002,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/drednicolson_pith_helmet_normal.jpg"
         }
       ],
       "extra": {
@@ -1859,7 +1948,8 @@
             "asset-23ad0e50ff-clothes-hats-texture.jpg": "mh/tex/clothes/drednicolson_pith_helmet.jpg",
             "asset-8e2230a2a7-clothes-hats-texture-lo.jpg": "mh/tex/clothes/drednicolson_pith_helmet.lo.jpg",
             "asset-0823bac7bb-clothes-hats-texture-normal-lo.jpg": "mh/tex/clothes/drednicolson_pith_helmet_normal.lo.jpg",
-            "asset-1124a1c3bf-clothes-hats-thumb.jpg": "mh/thumb/clothes/drednicolson_pith_helmet.jpg"
+            "asset-1124a1c3bf-clothes-hats-thumb.jpg": "mh/thumb/clothes/drednicolson_pith_helmet.jpg",
+            "asset-cfb857e3f2-clothes-hats-texture-normal.jpg": "mh/tex/clothes/drednicolson_pith_helmet_normal.jpg"
           }
         }
       }
@@ -1948,6 +2038,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/drednicolson_short-tail_camo_tee.jpg"
+        },
+        {
+          "filename": "asset-7dbf5e374b-clothes-casual-female-texture-normal.jpg",
+          "hash": "7dbf5e374bdb84ece761b2ca5418cad803373bd5980241102fa655b0ac185998",
+          "size": 197648,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/drednicolson_short-tail_camo_tee_normal.jpg"
         }
       ],
       "extra": {
@@ -1970,7 +2074,8 @@
             "asset-5e79eca769-clothes-casual-female-texture.jpg": "mh/tex/clothes/drednicolson_short-tail_camo_tee.jpg",
             "asset-12b1213cf1-clothes-casual-female-texture-lo.jpg": "mh/tex/clothes/drednicolson_short-tail_camo_tee.lo.jpg",
             "asset-c8a22206e1-clothes-casual-female-texture-normal-lo.jpg": "mh/tex/clothes/drednicolson_short-tail_camo_tee_normal.lo.jpg",
-            "asset-a9d99e4259-clothes-casual-female-thumb.jpg": "mh/thumb/clothes/drednicolson_short-tail_camo_tee.jpg"
+            "asset-a9d99e4259-clothes-casual-female-thumb.jpg": "mh/thumb/clothes/drednicolson_short-tail_camo_tee.jpg",
+            "asset-7dbf5e374b-clothes-casual-female-texture-normal.jpg": "mh/tex/clothes/drednicolson_short-tail_camo_tee_normal.jpg"
           }
         }
       }
@@ -2057,6 +2162,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_asymmetrical_skirt.jpg"
+        },
+        {
+          "filename": "asset-fd3c3e41ee-clothes-texture-normal.jpg",
+          "hash": "fd3c3e41ee29829271f1f483ce6dec729719d37e1c3f6bf25e9c6520907fafd2",
+          "size": 105290,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_asymmetrical_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -2079,7 +2198,8 @@
             "asset-7e715b26b8-clothes-texture.jpg": "mh/tex/clothes/elvs_asymmetrical_skirt.jpg",
             "asset-51da35c395-clothes-texture-lo.jpg": "mh/tex/clothes/elvs_asymmetrical_skirt.lo.jpg",
             "asset-6cce7d74a5-clothes-texture-normal-lo.jpg": "mh/tex/clothes/elvs_asymmetrical_skirt_normal.lo.jpg",
-            "asset-5d4eb9e7e1-clothes-thumb.jpg": "mh/thumb/clothes/elvs_asymmetrical_skirt.jpg"
+            "asset-5d4eb9e7e1-clothes-thumb.jpg": "mh/thumb/clothes/elvs_asymmetrical_skirt.jpg",
+            "asset-fd3c3e41ee-clothes-texture-normal.jpg": "mh/tex/clothes/elvs_asymmetrical_skirt_normal.jpg"
           }
         }
       }
@@ -2261,6 +2381,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_disco_mini_skirt.jpg"
+        },
+        {
+          "filename": "asset-6d22f4c01c-clothes-female-formal-festive-vintage-skirt-texture-normal.jpg",
+          "hash": "6d22f4c01cdd6d90a14112d2f077fc54f546cc3831c8a9599e6e262ef151ffe6",
+          "size": 400516,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_disco_mini_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -2284,7 +2418,8 @@
             "asset-23540ed3b5-clothes-female-formal-festive-vintage-skirt-texture.jpg": "mh/tex/clothes/elvs_disco_mini_skirt.jpg",
             "asset-b08f253657-clothes-female-formal-festive-vintage-skirt-texture-lo.jpg": "mh/tex/clothes/elvs_disco_mini_skirt.lo.jpg",
             "asset-385214add4-clothes-female-formal-festive-vintage-skirt-texture-normal-lo.jpg": "mh/tex/clothes/elvs_disco_mini_skirt_normal.lo.jpg",
-            "asset-82453dfe6b-clothes-female-formal-festive-vintage-skirt-thumb.jpg": "mh/thumb/clothes/elvs_disco_mini_skirt.jpg"
+            "asset-82453dfe6b-clothes-female-formal-festive-vintage-skirt-thumb.jpg": "mh/thumb/clothes/elvs_disco_mini_skirt.jpg",
+            "asset-6d22f4c01c-clothes-female-formal-festive-vintage-skirt-texture-normal.jpg": "mh/tex/clothes/elvs_disco_mini_skirt_normal.jpg"
           }
         }
       }
@@ -2374,6 +2509,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_disco_pants_skinny.jpg"
+        },
+        {
+          "filename": "asset-b9433dca03-clothes-female-formal-festive-vintage-pants-texture-normal.jpg",
+          "hash": "b9433dca0363350a3a6be91887614609664531318e63dccf810a2df24eabef74",
+          "size": 362485,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_disco_pants_skinny_normal.jpg"
         }
       ],
       "extra": {
@@ -2397,7 +2546,8 @@
             "asset-705f475f58-clothes-female-formal-festive-vintage-pants-texture.jpg": "mh/tex/clothes/elvs_disco_pants_skinny.jpg",
             "asset-44d75692a7-clothes-female-formal-festive-vintage-pants-texture-lo.jpg": "mh/tex/clothes/elvs_disco_pants_skinny.lo.jpg",
             "asset-a382668e3c-clothes-female-formal-festive-vintage-pants-texture-normal-lo.jpg": "mh/tex/clothes/elvs_disco_pants_skinny_normal.lo.jpg",
-            "asset-95b0edf4ed-clothes-female-formal-festive-vintage-pants-thumb.jpg": "mh/thumb/clothes/elvs_disco_pants_skinny.jpg"
+            "asset-95b0edf4ed-clothes-female-formal-festive-vintage-pants-thumb.jpg": "mh/thumb/clothes/elvs_disco_pants_skinny.jpg",
+            "asset-b9433dca03-clothes-female-formal-festive-vintage-pants-texture-normal.jpg": "mh/tex/clothes/elvs_disco_pants_skinny_normal.jpg"
           }
         }
       }
@@ -2487,6 +2637,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_disco_top2.jpg"
+        },
+        {
+          "filename": "asset-461ae1a561-clothes-female-formal-festive-vintage-shirt-texture-normal.jpg",
+          "hash": "461ae1a56141f0d56c6b7930712a1c821c4812aab8c90f2f17f019056d6f7359",
+          "size": 340554,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_disco_top2_normal.jpg"
         }
       ],
       "extra": {
@@ -2510,7 +2674,8 @@
             "asset-1298847535-clothes-female-formal-festive-vintage-shirt-texture.jpg": "mh/tex/clothes/elvs_disco_top2.jpg",
             "asset-d28628b399-clothes-female-formal-festive-vintage-shirt-texture-lo.jpg": "mh/tex/clothes/elvs_disco_top2.lo.jpg",
             "asset-828b3ba2fd-clothes-female-formal-festive-vintage-shirt-texture-normal-lo.jpg": "mh/tex/clothes/elvs_disco_top2_normal.lo.jpg",
-            "asset-db9b5ccb25-clothes-female-formal-festive-vintage-shirt-thumb.jpg": "mh/thumb/clothes/elvs_disco_top2.jpg"
+            "asset-db9b5ccb25-clothes-female-formal-festive-vintage-shirt-thumb.jpg": "mh/thumb/clothes/elvs_disco_top2.jpg",
+            "asset-461ae1a561-clothes-female-formal-festive-vintage-shirt-texture-normal.jpg": "mh/tex/clothes/elvs_disco_top2_normal.jpg"
           }
         }
       }
@@ -3076,6 +3241,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_goddess_dress1.jpg"
+        },
+        {
+          "filename": "asset-13acefdd95-clothes-female-fantasy-play-dress-texture-normal.jpg",
+          "hash": "13acefdd95d31ed4533df107380a8c53b07c723edc1ac432c7f21f274435d46c",
+          "size": 37514,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_goddess_dress1_normal.jpg"
         }
       ],
       "extra": {
@@ -3099,7 +3278,8 @@
             "asset-704ae6a057-clothes-female-fantasy-play-dress-texture-lo.png": "mh/tex/clothes/elvs_goddess_dress1.lo.png",
             "asset-dd3b559690-clothes-female-fantasy-play-dress-texture.png": "mh/tex/clothes/elvs_goddess_dress1.png",
             "asset-aa17ab09f7-clothes-female-fantasy-play-dress-texture-normal-lo.jpg": "mh/tex/clothes/elvs_goddess_dress1_normal.lo.jpg",
-            "asset-5d0b4cb681-clothes-female-fantasy-play-dress-thumb.jpg": "mh/thumb/clothes/elvs_goddess_dress1.jpg"
+            "asset-5d0b4cb681-clothes-female-fantasy-play-dress-thumb.jpg": "mh/thumb/clothes/elvs_goddess_dress1.jpg",
+            "asset-13acefdd95-clothes-female-fantasy-play-dress-texture-normal.jpg": "mh/tex/clothes/elvs_goddess_dress1_normal.jpg"
           }
         }
       }
@@ -3189,6 +3369,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_goddess_dress5.jpg"
+        },
+        {
+          "filename": "asset-35a46a7262-clothes-female-fantasy-festive-vintage-dress-texture-normal.jpg",
+          "hash": "35a46a726249a086b133f58300a57657bcd5f77305e4397d2953fecae7564f7a",
+          "size": 466342,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_goddess_dress5_normal.jpg"
         }
       ],
       "extra": {
@@ -3212,7 +3406,8 @@
             "asset-218441ed60-clothes-female-fantasy-festive-vintage-dress-texture.jpg": "mh/tex/clothes/elvs_goddess_dress5.jpg",
             "asset-9edb1583cc-clothes-female-fantasy-festive-vintage-dress-texture-lo.jpg": "mh/tex/clothes/elvs_goddess_dress5.lo.jpg",
             "asset-ca3b45fcb9-clothes-female-fantasy-festive-vintage-dress-texture-normal-lo.jpg": "mh/tex/clothes/elvs_goddess_dress5_normal.lo.jpg",
-            "asset-361a18d2a9-clothes-female-fantasy-festive-vintage-dress-thumb.jpg": "mh/thumb/clothes/elvs_goddess_dress5.jpg"
+            "asset-361a18d2a9-clothes-female-fantasy-festive-vintage-dress-thumb.jpg": "mh/thumb/clothes/elvs_goddess_dress5.jpg",
+            "asset-35a46a7262-clothes-female-fantasy-festive-vintage-dress-texture-normal.jpg": "mh/tex/clothes/elvs_goddess_dress5_normal.jpg"
           }
         }
       }
@@ -3302,6 +3497,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_gored_midi_skirt.jpg"
+        },
+        {
+          "filename": "asset-13e9059211-clothes-female-formal-festive-contemporary-skirt-texture-normal.jpg",
+          "hash": "13e905921121c2b8d70ee2cf05d69a9d22a41bd8200907f49855d7b56d187ef2",
+          "size": 364575,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_gored_midi_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -3325,7 +3534,8 @@
             "asset-17d69cd3af-clothes-female-formal-festive-contemporary-skirt-texture-lo.png": "mh/tex/clothes/elvs_gored_midi_skirt.lo.png",
             "asset-efa58b2b1d-clothes-female-formal-festive-contemporary-skirt-texture.png": "mh/tex/clothes/elvs_gored_midi_skirt.png",
             "asset-e001b1bbf5-clothes-female-formal-festive-contemporary-skirt-texture-normal-lo.jpg": "mh/tex/clothes/elvs_gored_midi_skirt_normal.lo.jpg",
-            "asset-eed456e88c-clothes-female-formal-festive-contemporary-skirt-thumb.jpg": "mh/thumb/clothes/elvs_gored_midi_skirt.jpg"
+            "asset-eed456e88c-clothes-female-formal-festive-contemporary-skirt-thumb.jpg": "mh/thumb/clothes/elvs_gored_midi_skirt.jpg",
+            "asset-13e9059211-clothes-female-formal-festive-contemporary-skirt-texture-normal.jpg": "mh/tex/clothes/elvs_gored_midi_skirt_normal.jpg"
           }
         }
       }
@@ -3608,6 +3818,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_hooded_sweat_jacket1.jpg"
+        },
+        {
+          "filename": "asset-dee814d675-clothes-texture-normal.jpg",
+          "hash": "dee814d675def71f061688eedd38e150c62fc5871191fe50fabaa305b310a83e",
+          "size": 102105,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_hooded_sweat_jacket1_normal.jpg"
         }
       ],
       "extra": {
@@ -3630,7 +3854,8 @@
             "asset-d8fb8ea8ef-clothes-texture.jpg": "mh/tex/clothes/elvs_hooded_sweat_jacket1.jpg",
             "asset-f76d08fae9-clothes-texture-lo.jpg": "mh/tex/clothes/elvs_hooded_sweat_jacket1.lo.jpg",
             "asset-60f5d40458-clothes-texture-normal-lo.jpg": "mh/tex/clothes/elvs_hooded_sweat_jacket1_normal.lo.jpg",
-            "asset-72fdb530d9-clothes-thumb.jpg": "mh/thumb/clothes/elvs_hooded_sweat_jacket1.jpg"
+            "asset-72fdb530d9-clothes-thumb.jpg": "mh/thumb/clothes/elvs_hooded_sweat_jacket1.jpg",
+            "asset-dee814d675-clothes-texture-normal.jpg": "mh/tex/clothes/elvs_hooded_sweat_jacket1_normal.jpg"
           }
         }
       }
@@ -3813,6 +4038,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_lara_tank1.jpg"
+        },
+        {
+          "filename": "asset-a321857777-clothes-female-casual-sport-contemporary-shirt-texture-normal.jpg",
+          "hash": "a3218577771d7954b4235773de30901b5e9e0355da9d0c3d61ea7bc9a18fb9d7",
+          "size": 269492,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_lara_tank1_normal.jpg"
         }
       ],
       "extra": {
@@ -3836,7 +4075,8 @@
             "asset-c2e3822436-clothes-female-casual-sport-contemporary-shirt-texture.jpg": "mh/tex/clothes/elvs_lara_tank1.jpg",
             "asset-f9d367d636-clothes-female-casual-sport-contemporary-shirt-texture-lo.jpg": "mh/tex/clothes/elvs_lara_tank1.lo.jpg",
             "asset-00753ca853-clothes-female-casual-sport-contemporary-shirt-texture-normal-lo.jpg": "mh/tex/clothes/elvs_lara_tank1_normal.lo.jpg",
-            "asset-9082a7b322-clothes-female-casual-sport-contemporary-shirt-thumb.jpg": "mh/thumb/clothes/elvs_lara_tank1.jpg"
+            "asset-9082a7b322-clothes-female-casual-sport-contemporary-shirt-thumb.jpg": "mh/thumb/clothes/elvs_lara_tank1.jpg",
+            "asset-a321857777-clothes-female-casual-sport-contemporary-shirt-texture-normal.jpg": "mh/tex/clothes/elvs_lara_tank1_normal.jpg"
           }
         }
       }
@@ -4016,6 +4256,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_male_swim_shorts1.jpg"
+        },
+        {
+          "filename": "asset-9c63d0386d-clothes-texture-normal.jpg",
+          "hash": "9c63d0386d95e148a10123b585f3635531b111fe4898dcb0fc592acaaea6177d",
+          "size": 114270,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_male_swim_shorts1_normal.jpg"
         }
       ],
       "extra": {
@@ -4038,7 +4292,8 @@
             "asset-d5112f7bee-clothes-texture-lo.png": "mh/tex/clothes/elvs_male_swim_shorts1.lo.png",
             "asset-1096747f53-clothes-texture.png": "mh/tex/clothes/elvs_male_swim_shorts1.png",
             "asset-ca60dd57f4-clothes-texture-normal-lo.jpg": "mh/tex/clothes/elvs_male_swim_shorts1_normal.lo.jpg",
-            "asset-f51aeec0d7-clothes-thumb.jpg": "mh/thumb/clothes/elvs_male_swim_shorts1.jpg"
+            "asset-f51aeec0d7-clothes-thumb.jpg": "mh/thumb/clothes/elvs_male_swim_shorts1.jpg",
+            "asset-9c63d0386d-clothes-texture-normal.jpg": "mh/tex/clothes/elvs_male_swim_shorts1_normal.jpg"
           }
         }
       }
@@ -4125,6 +4380,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_male_trilby_hat.jpg"
+        },
+        {
+          "filename": "asset-c09ccf8c03-clothes-texture-normal.jpg",
+          "hash": "c09ccf8c036454e6af2094f5372892b143e8f4ff68e467b880263b685004c458",
+          "size": 122218,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_male_trilby_hat_normal.jpg"
         }
       ],
       "extra": {
@@ -4147,7 +4416,8 @@
             "asset-c085f07c3d-clothes-texture-lo.png": "mh/tex/clothes/elvs_male_trilby_hat.lo.png",
             "asset-0739376e7b-clothes-texture.png": "mh/tex/clothes/elvs_male_trilby_hat.png",
             "asset-83989c82cd-clothes-texture-normal-lo.jpg": "mh/tex/clothes/elvs_male_trilby_hat_normal.lo.jpg",
-            "asset-a6bbe5e644-clothes-thumb.jpg": "mh/thumb/clothes/elvs_male_trilby_hat.jpg"
+            "asset-a6bbe5e644-clothes-thumb.jpg": "mh/thumb/clothes/elvs_male_trilby_hat.jpg",
+            "asset-c09ccf8c03-clothes-texture-normal.jpg": "mh/tex/clothes/elvs_male_trilby_hat_normal.jpg"
           }
         }
       }
@@ -4237,6 +4507,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_pencil_skirt.jpg"
+        },
+        {
+          "filename": "asset-2d57527244-clothes-female-formal-festive-vintage-skirt-texture-normal.jpg",
+          "hash": "2d5752724461f5713c50a01965ab9eb3f193084024c567574502353f033a77b0",
+          "size": 286628,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_pencil_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -4260,7 +4544,8 @@
             "asset-67cbcb713b-clothes-female-formal-festive-vintage-skirt-texture.jpg": "mh/tex/clothes/elvs_pencil_skirt.jpg",
             "asset-930538638a-clothes-female-formal-festive-vintage-skirt-texture-lo.jpg": "mh/tex/clothes/elvs_pencil_skirt.lo.jpg",
             "asset-0c922b56d9-clothes-female-formal-festive-vintage-skirt-texture-normal-lo.jpg": "mh/tex/clothes/elvs_pencil_skirt_normal.lo.jpg",
-            "asset-a0b5fbe3c1-clothes-female-formal-festive-vintage-skirt-thumb.jpg": "mh/thumb/clothes/elvs_pencil_skirt.jpg"
+            "asset-a0b5fbe3c1-clothes-female-formal-festive-vintage-skirt-thumb.jpg": "mh/thumb/clothes/elvs_pencil_skirt.jpg",
+            "asset-2d57527244-clothes-female-formal-festive-vintage-skirt-texture-normal.jpg": "mh/tex/clothes/elvs_pencil_skirt_normal.jpg"
           }
         }
       }
@@ -4350,6 +4635,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_racing_fire_suit_female1.jpg"
+        },
+        {
+          "filename": "asset-eb8225f170-clothes-female-sport-contemporary-racing-fire-suit-texture-normal.jpg",
+          "hash": "eb8225f170e064a2c4641ca8bb19079c660507c7447f3bd9ce11d448241f4ef7",
+          "size": 64301,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_racing_fire_suit_female1_normal.jpg"
         }
       ],
       "extra": {
@@ -4373,7 +4672,8 @@
             "asset-7f4d5aed99-clothes-female-sport-contemporary-racing-fire-suit-texture.jpg": "mh/tex/clothes/elvs_racing_fire_suit_female1.jpg",
             "asset-5a0eb16319-clothes-female-sport-contemporary-racing-fire-suit-texture-lo.jpg": "mh/tex/clothes/elvs_racing_fire_suit_female1.lo.jpg",
             "asset-41db3fff7e-clothes-female-sport-contemporary-racing-fire-suit-texture-normal-lo.jpg": "mh/tex/clothes/elvs_racing_fire_suit_female1_normal.lo.jpg",
-            "asset-56239bfa0d-clothes-female-sport-contemporary-racing-fire-suit-thumb.jpg": "mh/thumb/clothes/elvs_racing_fire_suit_female1.jpg"
+            "asset-56239bfa0d-clothes-female-sport-contemporary-racing-fire-suit-thumb.jpg": "mh/thumb/clothes/elvs_racing_fire_suit_female1.jpg",
+            "asset-eb8225f170-clothes-female-sport-contemporary-racing-fire-suit-texture-normal.jpg": "mh/tex/clothes/elvs_racing_fire_suit_female1_normal.jpg"
           }
         }
       }
@@ -4463,6 +4763,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_racing_fire_suit_male1.jpg"
+        },
+        {
+          "filename": "asset-92cfba62ed-clothes-male-casual-sport-contemporary-racing-texture-normal.jpg",
+          "hash": "92cfba62ed66e450b0797167e7013cca972bac4e62d92a37152d4eb9693728b5",
+          "size": 60277,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_racing_fire_suit_male1_normal.jpg"
         }
       ],
       "extra": {
@@ -4486,7 +4800,8 @@
             "asset-cf5bd6b173-clothes-male-casual-sport-contemporary-racing-texture.jpg": "mh/tex/clothes/elvs_racing_fire_suit_male1.jpg",
             "asset-6787ad747b-clothes-male-casual-sport-contemporary-racing-texture-lo.jpg": "mh/tex/clothes/elvs_racing_fire_suit_male1.lo.jpg",
             "asset-e4a6e5b95e-clothes-male-casual-sport-contemporary-racing-texture-normal-lo.jpg": "mh/tex/clothes/elvs_racing_fire_suit_male1_normal.lo.jpg",
-            "asset-de948dd54e-clothes-male-casual-sport-contemporary-racing-thumb.jpg": "mh/thumb/clothes/elvs_racing_fire_suit_male1.jpg"
+            "asset-de948dd54e-clothes-male-casual-sport-contemporary-racing-thumb.jpg": "mh/thumb/clothes/elvs_racing_fire_suit_male1.jpg",
+            "asset-92cfba62ed-clothes-male-casual-sport-contemporary-racing-texture-normal.jpg": "mh/tex/clothes/elvs_racing_fire_suit_male1_normal.jpg"
           }
         }
       }
@@ -4666,6 +4981,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/elvs_santa_hat.jpg"
+        },
+        {
+          "filename": "asset-f097227da1-clothes-texture-normal.jpg",
+          "hash": "f097227da17926d86c7471e95f9a9a290e7ca2390a81c7fa43dacc6f768878fb",
+          "size": 93573,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/elvs_santa_hat_normal.jpg"
         }
       ],
       "extra": {
@@ -4688,7 +5017,8 @@
             "asset-850d328010-clothes-texture-lo.png": "mh/tex/clothes/elvs_santa_hat.lo.png",
             "asset-3b78aa5215-clothes-texture.png": "mh/tex/clothes/elvs_santa_hat.png",
             "asset-36a751e057-clothes-texture-normal-lo.jpg": "mh/tex/clothes/elvs_santa_hat_normal.lo.jpg",
-            "asset-25c5f3c336-clothes-thumb.jpg": "mh/thumb/clothes/elvs_santa_hat.jpg"
+            "asset-25c5f3c336-clothes-thumb.jpg": "mh/thumb/clothes/elvs_santa_hat.jpg",
+            "asset-f097227da1-clothes-texture-normal.jpg": "mh/tex/clothes/elvs_santa_hat_normal.jpg"
           }
         }
       }
@@ -4871,6 +5201,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/fedora01.jpg"
+        },
+        {
+          "filename": "asset-f253cea109-clothes-hats-texture-normal.jpg",
+          "hash": "f253cea1098809d51248afe037b1b1bb4b210d416b99127c30a7bc2ffe6bdb35",
+          "size": 33394,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/fedora01_normal.jpg"
         }
       ],
       "extra": {
@@ -4893,7 +5237,8 @@
             "asset-52415c2188-clothes-hats-texture.jpg": "mh/tex/clothes/fedora01.jpg",
             "asset-7dd82a8594-clothes-hats-texture-lo.jpg": "mh/tex/clothes/fedora01.lo.jpg",
             "asset-8b13fd8d52-clothes-hats-texture-normal-lo.jpg": "mh/tex/clothes/fedora01_normal.lo.jpg",
-            "asset-242dc8fe27-clothes-hats-thumb.jpg": "mh/thumb/clothes/fedora01.jpg"
+            "asset-242dc8fe27-clothes-hats-thumb.jpg": "mh/thumb/clothes/fedora01.jpg",
+            "asset-f253cea109-clothes-hats-texture-normal.jpg": "mh/tex/clothes/fedora01_normal.jpg"
           }
         }
       }
@@ -4979,6 +5324,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/female_casualsuit01.jpg"
+        },
+        {
+          "filename": "asset-ade0c9d49e-clothes-female-casual-texture-normal.jpg",
+          "hash": "ade0c9d49ede3f0e3dbd0c7736aa5889d79de5b8fbbb3741914a768f5ddd4e2a",
+          "size": 67109,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/female_casualsuit01_normal.jpg"
         }
       ],
       "extra": {
@@ -5001,7 +5360,8 @@
             "asset-eda3212aba-clothes-female-casual-texture.jpg": "mh/tex/clothes/female_casualsuit01.jpg",
             "asset-5217a5fb27-clothes-female-casual-texture-lo.jpg": "mh/tex/clothes/female_casualsuit01.lo.jpg",
             "asset-d4bcd0068b-clothes-female-casual-texture-normal-lo.jpg": "mh/tex/clothes/female_casualsuit01_normal.lo.jpg",
-            "asset-916e177070-clothes-female-casual-thumb.jpg": "mh/thumb/clothes/female_casualsuit01.jpg"
+            "asset-916e177070-clothes-female-casual-thumb.jpg": "mh/thumb/clothes/female_casualsuit01.jpg",
+            "asset-ade0c9d49e-clothes-female-casual-texture-normal.jpg": "mh/tex/clothes/female_casualsuit01_normal.jpg"
           }
         }
       }
@@ -5087,6 +5447,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/female_casualsuit02.jpg"
+        },
+        {
+          "filename": "asset-531e736c18-clothes-female-casual-texture-normal.jpg",
+          "hash": "531e736c183b260077944f1cddb3fac46859fe209ca60612d4dbbd6f090f99a4",
+          "size": 44370,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/female_casualsuit02_normal.jpg"
         }
       ],
       "extra": {
@@ -5109,7 +5483,8 @@
             "asset-2619cd0e7c-clothes-female-casual-texture.jpg": "mh/tex/clothes/female_casualsuit02.jpg",
             "asset-a892e0fc44-clothes-female-casual-texture-lo.jpg": "mh/tex/clothes/female_casualsuit02.lo.jpg",
             "asset-2337f3e893-clothes-female-casual-texture-normal-lo.jpg": "mh/tex/clothes/female_casualsuit02_normal.lo.jpg",
-            "asset-db17d6bf5d-clothes-female-casual-thumb.jpg": "mh/thumb/clothes/female_casualsuit02.jpg"
+            "asset-db17d6bf5d-clothes-female-casual-thumb.jpg": "mh/thumb/clothes/female_casualsuit02.jpg",
+            "asset-531e736c18-clothes-female-casual-texture-normal.jpg": "mh/tex/clothes/female_casualsuit02_normal.jpg"
           }
         }
       }
@@ -5195,6 +5570,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/female_elegantsuit01.jpg"
+        },
+        {
+          "filename": "asset-981c3fcc97-clothes-female-elegant-texture-normal.jpg",
+          "hash": "981c3fcc972396ef92564c457310a20a48dceacfd18fef549344e58d2e0899d3",
+          "size": 68675,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/female_elegantsuit01_normal.jpg"
         }
       ],
       "extra": {
@@ -5217,7 +5606,8 @@
             "asset-d24bdc1b03-clothes-female-elegant-texture.jpg": "mh/tex/clothes/female_elegantsuit01.jpg",
             "asset-07a18d0110-clothes-female-elegant-texture-lo.jpg": "mh/tex/clothes/female_elegantsuit01.lo.jpg",
             "asset-b0ec44c888-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/female_elegantsuit01_normal.lo.jpg",
-            "asset-bf24050912-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/female_elegantsuit01.jpg"
+            "asset-bf24050912-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/female_elegantsuit01.jpg",
+            "asset-981c3fcc97-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/female_elegantsuit01_normal.jpg"
           }
         }
       }
@@ -5303,6 +5693,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/female_sportsuit01.jpg"
+        },
+        {
+          "filename": "asset-ecb6bfa596-clothes-female-sport-texture-normal.jpg",
+          "hash": "ecb6bfa5962eba9997fc4820c56fedacedc7eb33b5afb26752778c8b79236cba",
+          "size": 37974,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/female_sportsuit01_normal.jpg"
         }
       ],
       "extra": {
@@ -5325,7 +5729,8 @@
             "asset-35c5a96a47-clothes-female-sport-texture.jpg": "mh/tex/clothes/female_sportsuit01.jpg",
             "asset-ea0f2a780d-clothes-female-sport-texture-lo.jpg": "mh/tex/clothes/female_sportsuit01.lo.jpg",
             "asset-b0af01d800-clothes-female-sport-texture-normal-lo.jpg": "mh/tex/clothes/female_sportsuit01_normal.lo.jpg",
-            "asset-5d80b64dc4-clothes-female-sport-thumb.jpg": "mh/thumb/clothes/female_sportsuit01.jpg"
+            "asset-5d80b64dc4-clothes-female-sport-thumb.jpg": "mh/thumb/clothes/female_sportsuit01.jpg",
+            "asset-ecb6bfa596-clothes-female-sport-texture-normal.jpg": "mh/tex/clothes/female_sportsuit01_normal.jpg"
           }
         }
       }
@@ -5599,6 +6004,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/janexx_old_female_sweater.jpg"
+        },
+        {
+          "filename": "asset-3295f9f9e8-clothes-female-casual-leisure-contemporary-shirt-texture-normal.jpg",
+          "hash": "3295f9f9e8c319305b76173e7781066c96d48a2f7fd366d045f9f258ec2f542e",
+          "size": 47417,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/janexx_old_female_sweater_normal.jpg"
         }
       ],
       "extra": {
@@ -5622,7 +6041,8 @@
             "asset-176636b1c2-clothes-female-casual-leisure-contemporary-shirt-texture.jpg": "mh/tex/clothes/janexx_old_female_sweater.jpg",
             "asset-03b820ea78-clothes-female-casual-leisure-contemporary-shirt-texture-lo.jpg": "mh/tex/clothes/janexx_old_female_sweater.lo.jpg",
             "asset-14a7f2222e-clothes-female-casual-leisure-contemporary-shirt-texture-normal-lo.jpg": "mh/tex/clothes/janexx_old_female_sweater_normal.lo.jpg",
-            "asset-9b674e0471-clothes-female-casual-leisure-contemporary-shirt-thumb.jpg": "mh/thumb/clothes/janexx_old_female_sweater.jpg"
+            "asset-9b674e0471-clothes-female-casual-leisure-contemporary-shirt-thumb.jpg": "mh/thumb/clothes/janexx_old_female_sweater.jpg",
+            "asset-3295f9f9e8-clothes-female-casual-leisure-contemporary-shirt-texture-normal.jpg": "mh/tex/clothes/janexx_old_female_sweater_normal.jpg"
           }
         }
       }
@@ -5983,6 +6403,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/joepal_plain_bra.jpg"
+        },
+        {
+          "filename": "asset-3a827d4511-clothes-texture-normal.jpg",
+          "hash": "3a827d4511641d9d8867ce88c2beab433fbad83ce7c85a8394a17402a13d9073",
+          "size": 42104,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/joepal_plain_bra_normal.jpg"
         }
       ],
       "extra": {
@@ -6006,7 +6440,8 @@
             "asset-6d04768572-clothes-texture.jpg": "mh/tex/clothes/joepal_plain_bra.jpg",
             "asset-32df3f2f37-clothes-texture-lo.jpg": "mh/tex/clothes/joepal_plain_bra.lo.jpg",
             "asset-3193e706f9-clothes-texture-normal-lo.jpg": "mh/tex/clothes/joepal_plain_bra_normal.lo.jpg",
-            "asset-eb8f1611b9-clothes-thumb.jpg": "mh/thumb/clothes/joepal_plain_bra.jpg"
+            "asset-eb8f1611b9-clothes-thumb.jpg": "mh/thumb/clothes/joepal_plain_bra.jpg",
+            "asset-3a827d4511-clothes-texture-normal.jpg": "mh/tex/clothes/joepal_plain_bra_normal.jpg"
           }
         }
       }
@@ -6092,6 +6527,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/jujube_newsboy_cap.jpg"
+        },
+        {
+          "filename": "asset-6d99aae01b-clothes-texture-normal.jpg",
+          "hash": "6d99aae01b50cdb1cbaa81d2f61a7214dc254b52da50d81d64c21b1df6b7d034",
+          "size": 593064,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/jujube_newsboy_cap_normal.jpg"
         }
       ],
       "extra": {
@@ -6114,7 +6563,8 @@
             "asset-bb507ee9ce-clothes-texture-lo.png": "mh/tex/clothes/jujube_newsboy_cap.lo.png",
             "asset-69e50b938d-clothes-texture.png": "mh/tex/clothes/jujube_newsboy_cap.png",
             "asset-d3c2ac738c-clothes-texture-normal-lo.jpg": "mh/tex/clothes/jujube_newsboy_cap_normal.lo.jpg",
-            "asset-a2fe6b87fc-clothes-thumb.jpg": "mh/thumb/clothes/jujube_newsboy_cap.jpg"
+            "asset-a2fe6b87fc-clothes-thumb.jpg": "mh/thumb/clothes/jujube_newsboy_cap.jpg",
+            "asset-6d99aae01b-clothes-texture-normal.jpg": "mh/tex/clothes/jujube_newsboy_cap_normal.jpg"
           }
         }
       }
@@ -6483,6 +6933,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/male_casualsuit01.jpg"
+        },
+        {
+          "filename": "asset-afabf674ac-clothes-casual-male-texture-normal.jpg",
+          "hash": "afabf674ac5f06558bee16d9e0f58a3e27a9b64db5dd3769cd29abd6bf8b7d14",
+          "size": 103142,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/male_casualsuit01_normal.jpg"
         }
       ],
       "extra": {
@@ -6505,7 +6969,8 @@
             "asset-c59c106d09-clothes-casual-male-texture.jpg": "mh/tex/clothes/male_casualsuit01.jpg",
             "asset-6e30dbee02-clothes-casual-male-texture-lo.jpg": "mh/tex/clothes/male_casualsuit01.lo.jpg",
             "asset-85d6d506ce-clothes-casual-male-texture-normal-lo.jpg": "mh/tex/clothes/male_casualsuit01_normal.lo.jpg",
-            "asset-b7e82a1054-clothes-casual-male-thumb.jpg": "mh/thumb/clothes/male_casualsuit01.jpg"
+            "asset-b7e82a1054-clothes-casual-male-thumb.jpg": "mh/thumb/clothes/male_casualsuit01.jpg",
+            "asset-afabf674ac-clothes-casual-male-texture-normal.jpg": "mh/tex/clothes/male_casualsuit01_normal.jpg"
           }
         }
       }
@@ -6591,6 +7056,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/male_casualsuit02.jpg"
+        },
+        {
+          "filename": "asset-c9a3aae39b-clothes-male-casual-texture-normal.jpg",
+          "hash": "c9a3aae39bf7703b704776feb1c6962ac32f5ed550effdd964076ef0381a9e88",
+          "size": 70687,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/male_casualsuit02_normal.jpg"
         }
       ],
       "extra": {
@@ -6613,7 +7092,8 @@
             "asset-ca240fcacc-clothes-male-casual-texture.jpg": "mh/tex/clothes/male_casualsuit02.jpg",
             "asset-7afbbff74d-clothes-male-casual-texture-lo.jpg": "mh/tex/clothes/male_casualsuit02.lo.jpg",
             "asset-3581ee00f3-clothes-male-casual-texture-normal-lo.jpg": "mh/tex/clothes/male_casualsuit02_normal.lo.jpg",
-            "asset-7b87b5dfcc-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit02.jpg"
+            "asset-7b87b5dfcc-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit02.jpg",
+            "asset-c9a3aae39b-clothes-male-casual-texture-normal.jpg": "mh/tex/clothes/male_casualsuit02_normal.jpg"
           }
         }
       }
@@ -6699,6 +7179,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/male_casualsuit03.jpg"
+        },
+        {
+          "filename": "asset-3f183eaeed-clothes-male-casual-texture-normal.jpg",
+          "hash": "3f183eaeede37033d229bdf08413837746e0cd6a26497cea20b6c4be51fa68a7",
+          "size": 158534,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/male_casualsuit03_normal.jpg"
         }
       ],
       "extra": {
@@ -6721,7 +7215,8 @@
             "asset-32c163a3fe-clothes-male-casual-texture.jpg": "mh/tex/clothes/male_casualsuit03.jpg",
             "asset-e17ca8a32b-clothes-male-casual-texture-lo.jpg": "mh/tex/clothes/male_casualsuit03.lo.jpg",
             "asset-8d55f7c3f5-clothes-male-casual-texture-normal-lo.jpg": "mh/tex/clothes/male_casualsuit03_normal.lo.jpg",
-            "asset-a5e797463e-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit03.jpg"
+            "asset-a5e797463e-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit03.jpg",
+            "asset-3f183eaeed-clothes-male-casual-texture-normal.jpg": "mh/tex/clothes/male_casualsuit03_normal.jpg"
           }
         }
       }
@@ -6807,6 +7302,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/male_casualsuit04.jpg"
+        },
+        {
+          "filename": "asset-4684743c4d-clothes-male-casual-texture-normal.jpg",
+          "hash": "4684743c4dbc719befbd4fe5522f7133e6b5c74fc484d83e8e2f71a3ffd71dd7",
+          "size": 71559,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/male_casualsuit04_normal.jpg"
         }
       ],
       "extra": {
@@ -6829,7 +7338,8 @@
             "asset-df9147de0b-clothes-male-casual-texture.jpg": "mh/tex/clothes/male_casualsuit04.jpg",
             "asset-20b1ed574b-clothes-male-casual-texture-lo.jpg": "mh/tex/clothes/male_casualsuit04.lo.jpg",
             "asset-2037954abe-clothes-male-casual-texture-normal-lo.jpg": "mh/tex/clothes/male_casualsuit04_normal.lo.jpg",
-            "asset-39ab9a6b98-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit04.jpg"
+            "asset-39ab9a6b98-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit04.jpg",
+            "asset-4684743c4d-clothes-male-casual-texture-normal.jpg": "mh/tex/clothes/male_casualsuit04_normal.jpg"
           }
         }
       }
@@ -6915,6 +7425,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/male_casualsuit05.jpg"
+        },
+        {
+          "filename": "asset-292e89c6e3-clothes-male-casual-texture-normal.jpg",
+          "hash": "292e89c6e308b57d3cf8a0d1b529f3ef16036379b45fd10051d82023a842fa3f",
+          "size": 81482,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/male_casualsuit05_normal.jpg"
         }
       ],
       "extra": {
@@ -6937,7 +7461,8 @@
             "asset-ec1b87e3b8-clothes-male-casual-texture.jpg": "mh/tex/clothes/male_casualsuit05.jpg",
             "asset-a42ea5dd2d-clothes-male-casual-texture-lo.jpg": "mh/tex/clothes/male_casualsuit05.lo.jpg",
             "asset-2b2389b428-clothes-male-casual-texture-normal-lo.jpg": "mh/tex/clothes/male_casualsuit05_normal.lo.jpg",
-            "asset-3494c1ea6f-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit05.jpg"
+            "asset-3494c1ea6f-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit05.jpg",
+            "asset-292e89c6e3-clothes-male-casual-texture-normal.jpg": "mh/tex/clothes/male_casualsuit05_normal.jpg"
           }
         }
       }
@@ -7023,6 +7548,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/male_casualsuit06.jpg"
+        },
+        {
+          "filename": "asset-11468b4b5f-clothes-male-casual-texture-normal.jpg",
+          "hash": "11468b4b5f51ac0402c578e5fa781d6b2318a8e7a7d2b02cbf534fab63d4c700",
+          "size": 86586,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/male_casualsuit06_normal.jpg"
         }
       ],
       "extra": {
@@ -7045,7 +7584,8 @@
             "asset-e924902410-clothes-male-casual-texture.jpg": "mh/tex/clothes/male_casualsuit06.jpg",
             "asset-0db0a6aab9-clothes-male-casual-texture-lo.jpg": "mh/tex/clothes/male_casualsuit06.lo.jpg",
             "asset-485b055971-clothes-male-casual-texture-normal-lo.jpg": "mh/tex/clothes/male_casualsuit06_normal.lo.jpg",
-            "asset-6fd24741cf-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit06.jpg"
+            "asset-6fd24741cf-clothes-male-casual-thumb.jpg": "mh/thumb/clothes/male_casualsuit06.jpg",
+            "asset-11468b4b5f-clothes-male-casual-texture-normal.jpg": "mh/tex/clothes/male_casualsuit06_normal.jpg"
           }
         }
       }
@@ -7221,6 +7761,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/male_worksuit01.jpg"
+        },
+        {
+          "filename": "asset-50e9a0655d-clothes-texture-normal.jpg",
+          "hash": "50e9a0655d7300db9e2e1105b69ff804311bb8ad1eb791fed2e7c000f7e18b3d",
+          "size": 109938,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/male_worksuit01_normal.jpg"
         }
       ],
       "extra": {
@@ -7243,7 +7797,8 @@
             "asset-759f69413f-clothes-texture.jpg": "mh/tex/clothes/male_worksuit01.jpg",
             "asset-c6054ae789-clothes-texture-lo.jpg": "mh/tex/clothes/male_worksuit01.lo.jpg",
             "asset-ad9d196f25-clothes-texture-normal-lo.jpg": "mh/tex/clothes/male_worksuit01_normal.lo.jpg",
-            "asset-4551d8f1a2-clothes-thumb.jpg": "mh/thumb/clothes/male_worksuit01.jpg"
+            "asset-4551d8f1a2-clothes-thumb.jpg": "mh/thumb/clothes/male_worksuit01.jpg",
+            "asset-50e9a0655d-clothes-texture-normal.jpg": "mh/tex/clothes/male_worksuit01_normal.jpg"
           }
         }
       }
@@ -7331,6 +7886,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/matcreator_mc-skinsuit_2022.jpg"
+        },
+        {
+          "filename": "asset-c95430d9ec-clothes-unisex-fantasy-profession-future-pants-texture-normal.jpg",
+          "hash": "c95430d9ec53a460eb5361d09843cc28d4fc43444e42e90fc8a1a5a0508c9f5b",
+          "size": 78073,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/matcreator_mc-skinsuit_2022_normal.jpg"
         }
       ],
       "extra": {
@@ -7353,7 +7922,8 @@
             "asset-b66162ed55-clothes-unisex-fantasy-profession-future-pants-texture-lo.png": "mh/tex/clothes/matcreator_mc-skinsuit_2022.lo.png",
             "asset-ee8be297b6-clothes-unisex-fantasy-profession-future-pants-texture.png": "mh/tex/clothes/matcreator_mc-skinsuit_2022.png",
             "asset-bd3e1fb09c-clothes-unisex-fantasy-profession-future-pants-texture-normal-lo.jpg": "mh/tex/clothes/matcreator_mc-skinsuit_2022_normal.lo.jpg",
-            "asset-ff0d029cb0-clothes-unisex-fantasy-profession-future-pants-thumb.jpg": "mh/thumb/clothes/matcreator_mc-skinsuit_2022.jpg"
+            "asset-ff0d029cb0-clothes-unisex-fantasy-profession-future-pants-thumb.jpg": "mh/thumb/clothes/matcreator_mc-skinsuit_2022.jpg",
+            "asset-c95430d9ec-clothes-unisex-fantasy-profession-future-pants-texture-normal.jpg": "mh/tex/clothes/matcreator_mc-skinsuit_2022_normal.jpg"
           }
         }
       }
@@ -7440,6 +8010,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_bikini_01.jpg"
+        },
+        {
+          "filename": "asset-937b186fae-clothes-female-swimwear-texture-normal.jpg",
+          "hash": "937b186faeac068ffb3a3cfb85b0afb4be9d536159e80547b434968e23ef8023",
+          "size": 122955,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_bikini_01_normal.jpg"
         }
       ],
       "extra": {
@@ -7462,7 +8046,8 @@
             "asset-4ab997bc13-clothes-female-swimwear-texture.jpg": "mh/tex/clothes/mindfront_bikini_01.jpg",
             "asset-6360007a8c-clothes-female-swimwear-texture-lo.jpg": "mh/tex/clothes/mindfront_bikini_01.lo.jpg",
             "asset-a11fb3d3ca-clothes-female-swimwear-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_bikini_01_normal.lo.jpg",
-            "asset-b61daa1ca7-clothes-female-swimwear-thumb.jpg": "mh/thumb/clothes/mindfront_bikini_01.jpg"
+            "asset-b61daa1ca7-clothes-female-swimwear-thumb.jpg": "mh/thumb/clothes/mindfront_bikini_01.jpg",
+            "asset-937b186fae-clothes-female-swimwear-texture-normal.jpg": "mh/tex/clothes/mindfront_bikini_01_normal.jpg"
           }
         }
       }
@@ -7552,6 +8137,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_cardigan_long_open_front.jpg"
+        },
+        {
+          "filename": "asset-62060f61c9-clothes-female-sweater-cardigan-texture-normal.jpg",
+          "hash": "62060f61c961c70aef9c7a1e352e56e2af6413bc46d7d58ebc3cd64feb970d72",
+          "size": 340350,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_cardigan_long_open_front_normal.jpg"
         }
       ],
       "extra": {
@@ -7574,7 +8173,8 @@
             "asset-973294a45e-clothes-female-sweater-cardigan-texture-lo.png": "mh/tex/clothes/mindfront_cardigan_long_open_front.lo.png",
             "asset-95560f61f6-clothes-female-sweater-cardigan-texture.png": "mh/tex/clothes/mindfront_cardigan_long_open_front.png",
             "asset-1b5c0e7bd8-clothes-female-sweater-cardigan-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_cardigan_long_open_front_normal.lo.jpg",
-            "asset-1f24b1e813-clothes-female-sweater-cardigan-thumb.jpg": "mh/thumb/clothes/mindfront_cardigan_long_open_front.jpg"
+            "asset-1f24b1e813-clothes-female-sweater-cardigan-thumb.jpg": "mh/thumb/clothes/mindfront_cardigan_long_open_front.jpg",
+            "asset-62060f61c9-clothes-female-sweater-cardigan-texture-normal.jpg": "mh/tex/clothes/mindfront_cardigan_long_open_front_normal.jpg"
           }
         }
       }
@@ -7663,6 +8263,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_01.jpg"
+        },
+        {
+          "filename": "asset-415159b8e0-clothes-female-elegant-texture-normal.jpg",
+          "hash": "415159b8e0346c0844a26ba6007d0f803419c195a343f07541ebc84739d067e1",
+          "size": 100218,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_01_normal.jpg"
         }
       ],
       "extra": {
@@ -7685,7 +8299,8 @@
             "asset-953fe175ac-clothes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_01.lo.png",
             "asset-fc25c99e5a-clothes-female-elegant-texture.png": "mh/tex/clothes/mindfront_f_dress_01.png",
             "asset-19db9fd3d2-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_01_normal.lo.jpg",
-            "asset-32bf2bf022-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_01.jpg"
+            "asset-32bf2bf022-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_01.jpg",
+            "asset-415159b8e0-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_01_normal.jpg"
           }
         }
       }
@@ -7774,6 +8389,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_02.jpg"
+        },
+        {
+          "filename": "asset-abff75054d-clothes-female-casual-texture-normal.jpg",
+          "hash": "abff75054d46d090a5863e9bab5d27fb32eb17cd100494752d67b631489826ac",
+          "size": 96028,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_02_normal.jpg"
         }
       ],
       "extra": {
@@ -7796,7 +8425,8 @@
             "asset-331f34cdf4-clothes-female-casual-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_02.lo.png",
             "asset-b96aaaf86c-clothes-female-casual-texture.png": "mh/tex/clothes/mindfront_f_dress_02.png",
             "asset-274c4cfd72-clothes-female-casual-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_02_normal.lo.jpg",
-            "asset-5f3b791a7e-clothes-female-casual-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_02.jpg"
+            "asset-5f3b791a7e-clothes-female-casual-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_02.jpg",
+            "asset-abff75054d-clothes-female-casual-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_02_normal.jpg"
           }
         }
       }
@@ -7885,6 +8515,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_03.jpg"
+        },
+        {
+          "filename": "asset-da824e85fc-clothes-female-elegant-texture-normal.jpg",
+          "hash": "da824e85fc7e1b86879f4bf6bbe518260e9da32cb1db5206d34175d644a8168a",
+          "size": 103669,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_03_normal.jpg"
         }
       ],
       "extra": {
@@ -7907,7 +8551,8 @@
             "asset-e4598e56a0-clothes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_03.lo.png",
             "asset-6706702036-clothes-female-elegant-texture.png": "mh/tex/clothes/mindfront_f_dress_03.png",
             "asset-e8d1f419c4-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_03_normal.lo.jpg",
-            "asset-4a67f34a5c-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_03.jpg"
+            "asset-4a67f34a5c-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_03.jpg",
+            "asset-da824e85fc-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_03_normal.jpg"
           }
         }
       }
@@ -7996,6 +8641,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_04.jpg"
+        },
+        {
+          "filename": "asset-3861243611-clothes-female-elegant-texture-normal.jpg",
+          "hash": "38612436114681cc42f60ea9a3c3e71037661283b4eb20baf716951f639a8bd6",
+          "size": 66016,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_04_normal.jpg"
         }
       ],
       "extra": {
@@ -8018,7 +8677,8 @@
             "asset-a1450853b0-clothes-female-elegant-texture.jpg": "mh/tex/clothes/mindfront_f_dress_04.jpg",
             "asset-fd1dfb331f-clothes-female-elegant-texture-lo.jpg": "mh/tex/clothes/mindfront_f_dress_04.lo.jpg",
             "asset-142a648ed2-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_04_normal.lo.jpg",
-            "asset-7c31c3d05f-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_04.jpg"
+            "asset-7c31c3d05f-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_04.jpg",
+            "asset-3861243611-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_04_normal.jpg"
           }
         }
       }
@@ -8107,6 +8767,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_05.jpg"
+        },
+        {
+          "filename": "asset-e9f26aa140-clothes-female-elegant-texture-normal.jpg",
+          "hash": "e9f26aa140c8c4680aa6c53fd649cdccb2831cefb5f316b1dfa21471b3ba719b",
+          "size": 134020,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_05_normal.jpg"
         }
       ],
       "extra": {
@@ -8129,7 +8803,8 @@
             "asset-6909567a19-clothes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_05.lo.png",
             "asset-4065c593c4-clothes-female-elegant-texture.png": "mh/tex/clothes/mindfront_f_dress_05.png",
             "asset-4aa255cfe5-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_05_normal.lo.jpg",
-            "asset-2a379c2ba8-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_05.jpg"
+            "asset-2a379c2ba8-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_05.jpg",
+            "asset-e9f26aa140-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_05_normal.jpg"
           }
         }
       }
@@ -8218,6 +8893,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_06.jpg"
+        },
+        {
+          "filename": "asset-f3911ae6fd-clothes-female-elegant-texture-normal.jpg",
+          "hash": "f3911ae6fdf90593882f5f8ebc61f3a82f91d77dd0066e3180159aa0e1dc403d",
+          "size": 88675,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_06_normal.jpg"
         }
       ],
       "extra": {
@@ -8240,7 +8929,8 @@
             "asset-3ee1a18faf-clothes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_06.lo.png",
             "asset-c9d07566de-clothes-female-elegant-texture.png": "mh/tex/clothes/mindfront_f_dress_06.png",
             "asset-7035d1fb57-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_06_normal.lo.jpg",
-            "asset-1e612eeb85-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_06.jpg"
+            "asset-1e612eeb85-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_06.jpg",
+            "asset-f3911ae6fd-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_06_normal.jpg"
           }
         }
       }
@@ -8329,6 +9019,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_07.jpg"
+        },
+        {
+          "filename": "asset-ad52d94c01-clothes-female-elegant-texture-normal.jpg",
+          "hash": "ad52d94c010bda6752da11e48191a3380db7e19744bed177bd0b1efda9ed11ca",
+          "size": 64197,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_07_normal.jpg"
         }
       ],
       "extra": {
@@ -8351,7 +9055,8 @@
             "asset-7912ccf181-clothes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_07.lo.png",
             "asset-290e105d4c-clothes-female-elegant-texture.png": "mh/tex/clothes/mindfront_f_dress_07.png",
             "asset-45e816f66d-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_07_normal.lo.jpg",
-            "asset-d5e80be470-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_07.jpg"
+            "asset-d5e80be470-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_07.jpg",
+            "asset-ad52d94c01-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_07_normal.jpg"
           }
         }
       }
@@ -8440,6 +9145,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_08.jpg"
+        },
+        {
+          "filename": "asset-e039b417e9-clothes-female-elegant-texture-normal.jpg",
+          "hash": "e039b417e96ab646ef31ea06f3c937359fd7d74ce71d3f12c04995f685fe8a1f",
+          "size": 75432,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_08_normal.jpg"
         }
       ],
       "extra": {
@@ -8462,7 +9181,8 @@
             "asset-5aa452061c-clothes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_08.lo.png",
             "asset-56bb908491-clothes-female-elegant-texture.png": "mh/tex/clothes/mindfront_f_dress_08.png",
             "asset-ccd3201843-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_08_normal.lo.jpg",
-            "asset-b9149ca510-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_08.jpg"
+            "asset-b9149ca510-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_08.jpg",
+            "asset-e039b417e9-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_08_normal.jpg"
           }
         }
       }
@@ -8551,6 +9271,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_09.jpg"
+        },
+        {
+          "filename": "asset-b9fc90ee82-clothes-female-elegant-texture-normal.jpg",
+          "hash": "b9fc90ee82761247acec1861391cf397a13711e696c41e0e614446863aacad70",
+          "size": 210646,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_09_normal.jpg"
         }
       ],
       "extra": {
@@ -8573,7 +9307,8 @@
             "asset-de68ef0f6c-clothes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_09.lo.png",
             "asset-4e7c78683e-clothes-female-elegant-texture.png": "mh/tex/clothes/mindfront_f_dress_09.png",
             "asset-7e738147b8-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_09_normal.lo.jpg",
-            "asset-6c2e08c2d6-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_09.jpg"
+            "asset-6c2e08c2d6-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_09.jpg",
+            "asset-b9fc90ee82-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_09_normal.jpg"
           }
         }
       }
@@ -8662,6 +9397,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_10.jpg"
+        },
+        {
+          "filename": "asset-0d878c331b-clothes-female-elegant-texture-normal.jpg",
+          "hash": "0d878c331bb289928099d0785b48f750e35a658b2ea61fdcdb30dc03d7c6d701",
+          "size": 163862,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_10_normal.jpg"
         }
       ],
       "extra": {
@@ -8684,7 +9433,8 @@
             "asset-bf2fd6a348-clothes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_f_dress_10.lo.png",
             "asset-5929ffe442-clothes-female-elegant-texture.png": "mh/tex/clothes/mindfront_f_dress_10.png",
             "asset-357c248281-clothes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_10_normal.lo.jpg",
-            "asset-a086627a4a-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_10.jpg"
+            "asset-a086627a4a-clothes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_10.jpg",
+            "asset-0d878c331b-clothes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_10_normal.jpg"
           }
         }
       }
@@ -8773,6 +9523,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_f_dress_11.jpg"
+        },
+        {
+          "filename": "asset-5b5fd562d6-clothes-female-casual-texture-normal.jpg",
+          "hash": "5b5fd562d63e42cc3a97e787cc0b4db403e7da6077e97d2176d6056db3c8594a",
+          "size": 182388,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_f_dress_11_normal.jpg"
         }
       ],
       "extra": {
@@ -8795,7 +9559,8 @@
             "asset-42a8f1807f-clothes-female-casual-texture.jpg": "mh/tex/clothes/mindfront_f_dress_11.jpg",
             "asset-96360d3604-clothes-female-casual-texture-lo.jpg": "mh/tex/clothes/mindfront_f_dress_11.lo.jpg",
             "asset-8b5702fc24-clothes-female-casual-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_f_dress_11_normal.lo.jpg",
-            "asset-3b61a30c87-clothes-female-casual-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_11.jpg"
+            "asset-3b61a30c87-clothes-female-casual-thumb.jpg": "mh/thumb/clothes/mindfront_f_dress_11.jpg",
+            "asset-5b5fd562d6-clothes-female-casual-texture-normal.jpg": "mh/tex/clothes/mindfront_f_dress_11_normal.jpg"
           }
         }
       }
@@ -8979,6 +9744,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_female_trousers_1.jpg"
+        },
+        {
+          "filename": "asset-2e8a74a345-clothes-female-trousers-jeans-pants-texture-normal.jpg",
+          "hash": "2e8a74a34586b65cbae596e556b534b55a5fca07c34b2d2d48155b778a6c26d0",
+          "size": 136589,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_female_trousers_1_normal.jpg"
         }
       ],
       "extra": {
@@ -9001,7 +9780,8 @@
             "asset-789d314159-clothes-female-trousers-jeans-pants-texture.jpg": "mh/tex/clothes/mindfront_female_trousers_1.jpg",
             "asset-c6e16737a5-clothes-female-trousers-jeans-pants-texture-lo.jpg": "mh/tex/clothes/mindfront_female_trousers_1.lo.jpg",
             "asset-0b96294451-clothes-female-trousers-jeans-pants-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_female_trousers_1_normal.lo.jpg",
-            "asset-d1e3f1432e-clothes-female-trousers-jeans-pants-thumb.jpg": "mh/thumb/clothes/mindfront_female_trousers_1.jpg"
+            "asset-d1e3f1432e-clothes-female-trousers-jeans-pants-thumb.jpg": "mh/thumb/clothes/mindfront_female_trousers_1.jpg",
+            "asset-2e8a74a345-clothes-female-trousers-jeans-pants-texture-normal.jpg": "mh/tex/clothes/mindfront_female_trousers_1_normal.jpg"
           }
         }
       }
@@ -9087,6 +9867,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_fishing_hat_01.jpg"
+        },
+        {
+          "filename": "asset-1abfcde2ed-clothes-hats-texture-normal.jpg",
+          "hash": "1abfcde2ed8411eae3817834527866b05a2e36c9776b9dfab4b383c76c08151a",
+          "size": 161532,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_fishing_hat_01_normal.jpg"
         }
       ],
       "extra": {
@@ -9109,7 +9903,8 @@
             "asset-9af699eca7-clothes-hats-texture-lo.png": "mh/tex/clothes/mindfront_fishing_hat_01.lo.png",
             "asset-79ce77b608-clothes-hats-texture.png": "mh/tex/clothes/mindfront_fishing_hat_01.png",
             "asset-eca5d02f57-clothes-hats-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_fishing_hat_01_normal.lo.jpg",
-            "asset-6bc375973d-clothes-hats-thumb.jpg": "mh/thumb/clothes/mindfront_fishing_hat_01.jpg"
+            "asset-6bc375973d-clothes-hats-thumb.jpg": "mh/thumb/clothes/mindfront_fishing_hat_01.jpg",
+            "asset-1abfcde2ed-clothes-hats-texture-normal.jpg": "mh/tex/clothes/mindfront_fishing_hat_01_normal.jpg"
           }
         }
       }
@@ -9198,6 +9993,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_kimono.jpg"
+        },
+        {
+          "filename": "asset-5c09b790f3-clothes-female-robe-casual-texture-normal.jpg",
+          "hash": "5c09b790f338610374e4a993271e0edbffb7523429bc8fba2217364baa5aa0c5",
+          "size": 116276,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_kimono_normal.jpg"
         }
       ],
       "extra": {
@@ -9220,7 +10029,8 @@
             "asset-cb601781ee-clothes-female-robe-casual-texture.jpg": "mh/tex/clothes/mindfront_kimono.jpg",
             "asset-4bb3cc257e-clothes-female-robe-casual-texture-lo.jpg": "mh/tex/clothes/mindfront_kimono.lo.jpg",
             "asset-7ef168ee4f-clothes-female-robe-casual-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_kimono_normal.lo.jpg",
-            "asset-34d16814c2-clothes-female-robe-casual-thumb.jpg": "mh/thumb/clothes/mindfront_kimono.jpg"
+            "asset-34d16814c2-clothes-female-robe-casual-thumb.jpg": "mh/thumb/clothes/mindfront_kimono.jpg",
+            "asset-5c09b790f3-clothes-female-robe-casual-texture-normal.jpg": "mh/tex/clothes/mindfront_kimono_normal.jpg"
           }
         }
       }
@@ -9308,6 +10118,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_knitted_hat_01.jpg"
+        },
+        {
+          "filename": "asset-51a41ac079-clothes-hats-texture-normal.jpg",
+          "hash": "51a41ac07991b94d9521f446344d99afda3b49b75ac13d427e06376e8b859e0a",
+          "size": 461402,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_knitted_hat_01_normal.jpg"
         }
       ],
       "extra": {
@@ -9330,7 +10154,8 @@
             "asset-ea85c2d978-clothes-hats-texture-lo.png": "mh/tex/clothes/mindfront_knitted_hat_01.lo.png",
             "asset-014b86f699-clothes-hats-texture.png": "mh/tex/clothes/mindfront_knitted_hat_01.png",
             "asset-1185df061d-clothes-hats-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_knitted_hat_01_normal.lo.jpg",
-            "asset-1eab3107f1-clothes-hats-thumb.jpg": "mh/thumb/clothes/mindfront_knitted_hat_01.jpg"
+            "asset-1eab3107f1-clothes-hats-thumb.jpg": "mh/thumb/clothes/mindfront_knitted_hat_01.jpg",
+            "asset-51a41ac079-clothes-hats-texture-normal.jpg": "mh/tex/clothes/mindfront_knitted_hat_01_normal.jpg"
           }
         }
       }
@@ -9418,6 +10243,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_knitted_sweater_01.jpg"
+        },
+        {
+          "filename": "asset-4afd065ef6-clothes-sweater-texture-normal.jpg",
+          "hash": "4afd065ef6aedd907271d9346a4e46f17717bfee920dbed6d9e7b592b479aaf7",
+          "size": 285319,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_knitted_sweater_01_normal.jpg"
         }
       ],
       "extra": {
@@ -9440,7 +10279,8 @@
             "asset-81de71bcd2-clothes-sweater-texture-lo.png": "mh/tex/clothes/mindfront_knitted_sweater_01.lo.png",
             "asset-00db5da95a-clothes-sweater-texture.png": "mh/tex/clothes/mindfront_knitted_sweater_01.png",
             "asset-b8334299a5-clothes-sweater-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_knitted_sweater_01_normal.lo.jpg",
-            "asset-0a07a26195-clothes-sweater-thumb.jpg": "mh/thumb/clothes/mindfront_knitted_sweater_01.jpg"
+            "asset-0a07a26195-clothes-sweater-thumb.jpg": "mh/thumb/clothes/mindfront_knitted_sweater_01.jpg",
+            "asset-4afd065ef6-clothes-sweater-texture-normal.jpg": "mh/tex/clothes/mindfront_knitted_sweater_01_normal.jpg"
           }
         }
       }
@@ -9528,6 +10368,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_knitted_sweater_02.jpg"
+        },
+        {
+          "filename": "asset-0ff7cf8f2a-clothes-sweater-texture-normal.jpg",
+          "hash": "0ff7cf8f2ac44b86897690fc1a446a695bb474036c3a8a6538013b5faf1c72e4",
+          "size": 208908,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_knitted_sweater_02_normal.jpg"
         }
       ],
       "extra": {
@@ -9550,7 +10404,8 @@
             "asset-66f07d9b80-clothes-sweater-texture-lo.png": "mh/tex/clothes/mindfront_knitted_sweater_02.lo.png",
             "asset-17d3347db7-clothes-sweater-texture.png": "mh/tex/clothes/mindfront_knitted_sweater_02.png",
             "asset-f801420fa3-clothes-sweater-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_knitted_sweater_02_normal.lo.jpg",
-            "asset-e8e0f418b6-clothes-sweater-thumb.jpg": "mh/thumb/clothes/mindfront_knitted_sweater_02.jpg"
+            "asset-e8e0f418b6-clothes-sweater-thumb.jpg": "mh/thumb/clothes/mindfront_knitted_sweater_02.jpg",
+            "asset-0ff7cf8f2a-clothes-sweater-texture-normal.jpg": "mh/tex/clothes/mindfront_knitted_sweater_02_normal.jpg"
           }
         }
       }
@@ -9640,6 +10495,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_lusekofta.jpg"
+        },
+        {
+          "filename": "asset-1ad019f1b4-clothes-female-sweater-cardigan-texture-normal.jpg",
+          "hash": "1ad019f1b416d9c40eeb5a4c7420296e2221f4644b2219340bd4f4fdb2ca2368",
+          "size": 358551,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_lusekofta_normal.jpg"
         }
       ],
       "extra": {
@@ -9662,7 +10531,8 @@
             "asset-d0f1ebea18-clothes-female-sweater-cardigan-texture-lo.png": "mh/tex/clothes/mindfront_lusekofta.lo.png",
             "asset-2db0bc4b9e-clothes-female-sweater-cardigan-texture.png": "mh/tex/clothes/mindfront_lusekofta.png",
             "asset-5ec91fd91c-clothes-female-sweater-cardigan-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_lusekofta_normal.lo.jpg",
-            "asset-871540bd62-clothes-female-sweater-cardigan-thumb.jpg": "mh/thumb/clothes/mindfront_lusekofta.jpg"
+            "asset-871540bd62-clothes-female-sweater-cardigan-thumb.jpg": "mh/thumb/clothes/mindfront_lusekofta.jpg",
+            "asset-1ad019f1b4-clothes-female-sweater-cardigan-texture-normal.jpg": "mh/tex/clothes/mindfront_lusekofta_normal.jpg"
           }
         }
       }
@@ -9749,6 +10619,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_m_suit_01.jpg"
+        },
+        {
+          "filename": "asset-b6e790a723-clothes-male-elegant-texture-normal.jpg",
+          "hash": "b6e790a723513308d21419012f29aa2264f6dcdead217c39c8fb0e0b13f71a89",
+          "size": 114392,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_m_suit_01_normal.jpg"
         }
       ],
       "extra": {
@@ -9771,7 +10655,8 @@
             "asset-d310507b49-clothes-male-elegant-texture-lo.png": "mh/tex/clothes/mindfront_m_suit_01.lo.png",
             "asset-46d147dc8c-clothes-male-elegant-texture.png": "mh/tex/clothes/mindfront_m_suit_01.png",
             "asset-584f041a6b-clothes-male-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_m_suit_01_normal.lo.jpg",
-            "asset-7ad70d0836-clothes-male-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_m_suit_01.jpg"
+            "asset-7ad70d0836-clothes-male-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_m_suit_01.jpg",
+            "asset-b6e790a723-clothes-male-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_m_suit_01_normal.jpg"
           }
         }
       }
@@ -9951,6 +10836,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_male_swimming_trunks_02.jpg"
+        },
+        {
+          "filename": "asset-ccbfa75385-clothes-male-swimwear-texture-normal.jpg",
+          "hash": "ccbfa753857eeeec6cdd9af44227096f0abe5eb220bb08d5ee675ade2e51a152",
+          "size": 164028,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_male_swimming_trunks_02_normal.jpg"
         }
       ],
       "extra": {
@@ -9973,7 +10872,8 @@
             "asset-45af444858-clothes-male-swimwear-texture-lo.png": "mh/tex/clothes/mindfront_male_swimming_trunks_02.lo.png",
             "asset-1650d7597f-clothes-male-swimwear-texture.png": "mh/tex/clothes/mindfront_male_swimming_trunks_02.png",
             "asset-fd4ec0b7f4-clothes-male-swimwear-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_male_swimming_trunks_02_normal.lo.jpg",
-            "asset-c8b1c26329-clothes-male-swimwear-thumb.jpg": "mh/thumb/clothes/mindfront_male_swimming_trunks_02.jpg"
+            "asset-c8b1c26329-clothes-male-swimwear-thumb.jpg": "mh/thumb/clothes/mindfront_male_swimming_trunks_02.jpg",
+            "asset-ccbfa75385-clothes-male-swimwear-texture-normal.jpg": "mh/tex/clothes/mindfront_male_swimming_trunks_02_normal.jpg"
           }
         }
       }
@@ -10062,6 +10962,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_male_swimming_trunks_03.jpg"
+        },
+        {
+          "filename": "asset-94765345a9-clothes-male-swimwear-texture-normal.jpg",
+          "hash": "94765345a92d7ee6b722ae3f285dea63ff5d6f2b3ea2a34620b8e81819f5bad7",
+          "size": 115778,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_male_swimming_trunks_03_normal.jpg"
         }
       ],
       "extra": {
@@ -10084,7 +10998,8 @@
             "asset-c82e9cf09c-clothes-male-swimwear-texture-lo.png": "mh/tex/clothes/mindfront_male_swimming_trunks_03.lo.png",
             "asset-c8e0b510fc-clothes-male-swimwear-texture.png": "mh/tex/clothes/mindfront_male_swimming_trunks_03.png",
             "asset-7f46ca4455-clothes-male-swimwear-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_male_swimming_trunks_03_normal.lo.jpg",
-            "asset-8b4c8c6eb9-clothes-male-swimwear-thumb.jpg": "mh/thumb/clothes/mindfront_male_swimming_trunks_03.jpg"
+            "asset-8b4c8c6eb9-clothes-male-swimwear-thumb.jpg": "mh/thumb/clothes/mindfront_male_swimming_trunks_03.jpg",
+            "asset-94765345a9-clothes-male-swimwear-texture-normal.jpg": "mh/tex/clothes/mindfront_male_swimming_trunks_03_normal.jpg"
           }
         }
       }
@@ -10175,6 +11090,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_male_trousers_1.jpg"
+        },
+        {
+          "filename": "asset-3070c356bd-clothes-male-trousers-jeans-pants-texture-normal.jpg",
+          "hash": "3070c356bd6135da5da5fb454c595a04dced2cc4e21437cc5d465814f4f10141",
+          "size": 163957,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_male_trousers_1_normal.jpg"
         }
       ],
       "extra": {
@@ -10197,7 +11126,8 @@
             "asset-95699dc0a2-clothes-male-trousers-jeans-pants-texture-lo.png": "mh/tex/clothes/mindfront_male_trousers_1.lo.png",
             "asset-28e6d91f30-clothes-male-trousers-jeans-pants-texture.png": "mh/tex/clothes/mindfront_male_trousers_1.png",
             "asset-0a252925e8-clothes-male-trousers-jeans-pants-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_male_trousers_1_normal.lo.jpg",
-            "asset-12bc80046b-clothes-male-trousers-jeans-pants-thumb.jpg": "mh/thumb/clothes/mindfront_male_trousers_1.jpg"
+            "asset-12bc80046b-clothes-male-trousers-jeans-pants-thumb.jpg": "mh/thumb/clothes/mindfront_male_trousers_1.jpg",
+            "asset-3070c356bd-clothes-male-trousers-jeans-pants-texture-normal.jpg": "mh/tex/clothes/mindfront_male_trousers_1_normal.jpg"
           }
         }
       }
@@ -10287,6 +11217,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_male_trousers_2.jpg"
+        },
+        {
+          "filename": "asset-3115884ff6-clothes-male-trousers-pants-texture-normal.jpg",
+          "hash": "3115884ff68409e1a817769c0966f48e5700a48f36c28178c3eaa16715a342f8",
+          "size": 160466,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_male_trousers_2_normal.jpg"
         }
       ],
       "extra": {
@@ -10309,7 +11253,8 @@
             "asset-d61c01c19e-clothes-male-trousers-pants-texture.jpg": "mh/tex/clothes/mindfront_male_trousers_2.jpg",
             "asset-dba568b16c-clothes-male-trousers-pants-texture-lo.jpg": "mh/tex/clothes/mindfront_male_trousers_2.lo.jpg",
             "asset-8efebab093-clothes-male-trousers-pants-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_male_trousers_2_normal.lo.jpg",
-            "asset-e6cf23d01c-clothes-male-trousers-pants-thumb.jpg": "mh/thumb/clothes/mindfront_male_trousers_2.jpg"
+            "asset-e6cf23d01c-clothes-male-trousers-pants-thumb.jpg": "mh/thumb/clothes/mindfront_male_trousers_2.jpg",
+            "asset-3115884ff6-clothes-male-trousers-pants-texture-normal.jpg": "mh/tex/clothes/mindfront_male_trousers_2_normal.jpg"
           }
         }
       }
@@ -10398,6 +11343,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_patrol_cap.jpg"
+        },
+        {
+          "filename": "asset-5e3d6a8318-clothes-hats-cap-texture-normal.jpg",
+          "hash": "5e3d6a8318a791e1579c801d26322f0bb15dc5a36967fb0bc7b7f5d328f5fc9d",
+          "size": 186489,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_patrol_cap_normal.jpg"
         }
       ],
       "extra": {
@@ -10420,7 +11379,8 @@
             "asset-7087344401-clothes-hats-cap-texture.jpg": "mh/tex/clothes/mindfront_patrol_cap.jpg",
             "asset-34398cd0ef-clothes-hats-cap-texture-lo.jpg": "mh/tex/clothes/mindfront_patrol_cap.lo.jpg",
             "asset-895a727783-clothes-hats-cap-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_patrol_cap_normal.lo.jpg",
-            "asset-450b898906-clothes-hats-cap-thumb.jpg": "mh/thumb/clothes/mindfront_patrol_cap.jpg"
+            "asset-450b898906-clothes-hats-cap-thumb.jpg": "mh/thumb/clothes/mindfront_patrol_cap.jpg",
+            "asset-5e3d6a8318-clothes-hats-cap-texture-normal.jpg": "mh/tex/clothes/mindfront_patrol_cap_normal.jpg"
           }
         }
       }
@@ -10508,6 +11468,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_sherpa_hat.jpg"
+        },
+        {
+          "filename": "asset-4ffe1049b8-clothes-hats-texture-normal.jpg",
+          "hash": "4ffe1049b8bd9adc451e9e9f980f2b06606347b5b5f15368b8a8e59624b0f8db",
+          "size": 379520,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_sherpa_hat_normal.jpg"
         }
       ],
       "extra": {
@@ -10530,7 +11504,8 @@
             "asset-d41eaf0566-clothes-hats-texture.jpg": "mh/tex/clothes/mindfront_sherpa_hat.jpg",
             "asset-b94819b157-clothes-hats-texture-lo.jpg": "mh/tex/clothes/mindfront_sherpa_hat.lo.jpg",
             "asset-f9f19c68e4-clothes-hats-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_sherpa_hat_normal.lo.jpg",
-            "asset-8bb359e3bc-clothes-hats-thumb.jpg": "mh/thumb/clothes/mindfront_sherpa_hat.jpg"
+            "asset-8bb359e3bc-clothes-hats-thumb.jpg": "mh/thumb/clothes/mindfront_sherpa_hat.jpg",
+            "asset-4ffe1049b8-clothes-hats-texture-normal.jpg": "mh/tex/clothes/mindfront_sherpa_hat_normal.jpg"
           }
         }
       }
@@ -10617,6 +11592,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_shoes_biker_boots_female.jpg"
+        },
+        {
+          "filename": "asset-b7cfacf878-clothes-shoes-female-texture-normal.jpg",
+          "hash": "b7cfacf878f6eca4ddc36a1228c647beb232606ac0c477b23f0a1bf7479c7aed",
+          "size": 160933,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_shoes_biker_boots_female_normal.jpg"
         }
       ],
       "extra": {
@@ -10639,7 +11628,8 @@
             "asset-f449d3d8f1-clothes-shoes-female-texture-lo.png": "mh/tex/clothes/mindfront_shoes_biker_boots_female.lo.png",
             "asset-f0562d770b-clothes-shoes-female-texture.png": "mh/tex/clothes/mindfront_shoes_biker_boots_female.png",
             "asset-8c403fe0ff-clothes-shoes-female-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_shoes_biker_boots_female_normal.lo.jpg",
-            "asset-634f82dfc8-clothes-shoes-female-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_biker_boots_female.jpg"
+            "asset-634f82dfc8-clothes-shoes-female-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_biker_boots_female.jpg",
+            "asset-b7cfacf878-clothes-shoes-female-texture-normal.jpg": "mh/tex/clothes/mindfront_shoes_biker_boots_female_normal.jpg"
           }
         }
       }
@@ -10726,6 +11716,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_shoes_biker_boots_male.jpg"
+        },
+        {
+          "filename": "asset-b7cfacf878-clothes-shoes-male-texture-normal.jpg",
+          "hash": "b7cfacf878f6eca4ddc36a1228c647beb232606ac0c477b23f0a1bf7479c7aed",
+          "size": 160933,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_shoes_biker_boots_male_normal.jpg"
         }
       ],
       "extra": {
@@ -10748,7 +11752,8 @@
             "asset-f449d3d8f1-clothes-shoes-male-texture-lo.png": "mh/tex/clothes/mindfront_shoes_biker_boots_male.lo.png",
             "asset-f0562d770b-clothes-shoes-male-texture.png": "mh/tex/clothes/mindfront_shoes_biker_boots_male.png",
             "asset-8c403fe0ff-clothes-shoes-male-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_shoes_biker_boots_male_normal.lo.jpg",
-            "asset-a2f8afdf5a-clothes-shoes-male-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_biker_boots_male.jpg"
+            "asset-a2f8afdf5a-clothes-shoes-male-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_biker_boots_male.jpg",
+            "asset-b7cfacf878-clothes-shoes-male-texture-normal.jpg": "mh/tex/clothes/mindfront_shoes_biker_boots_male_normal.jpg"
           }
         }
       }
@@ -10836,6 +11841,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_shoes_monk_strap_female.jpg"
+        },
+        {
+          "filename": "asset-997cfb3f9d-clothes-shoes-female-elegant-texture-normal.jpg",
+          "hash": "997cfb3f9dce948bcacd2426fdbf27dca39ea8285117aacbf5aad3abff02d72e",
+          "size": 125071,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_shoes_monk_strap_female_normal.jpg"
         }
       ],
       "extra": {
@@ -10858,7 +11877,8 @@
             "asset-4fd1d3944d-clothes-shoes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_shoes_monk_strap_female.lo.png",
             "asset-295726d573-clothes-shoes-female-elegant-texture.png": "mh/tex/clothes/mindfront_shoes_monk_strap_female.png",
             "asset-2b31a3f42a-clothes-shoes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_shoes_monk_strap_female_normal.lo.jpg",
-            "asset-d28ad7d758-clothes-shoes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_monk_strap_female.jpg"
+            "asset-d28ad7d758-clothes-shoes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_monk_strap_female.jpg",
+            "asset-997cfb3f9d-clothes-shoes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_shoes_monk_strap_female_normal.jpg"
           }
         }
       }
@@ -10946,6 +11966,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_shoes_monk_strap_male.jpg"
+        },
+        {
+          "filename": "asset-997cfb3f9d-clothes-shoes-male-elegant-texture-normal.jpg",
+          "hash": "997cfb3f9dce948bcacd2426fdbf27dca39ea8285117aacbf5aad3abff02d72e",
+          "size": 125071,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_shoes_monk_strap_male_normal.jpg"
         }
       ],
       "extra": {
@@ -10968,7 +12002,8 @@
             "asset-4fd1d3944d-clothes-shoes-male-elegant-texture-lo.png": "mh/tex/clothes/mindfront_shoes_monk_strap_male.lo.png",
             "asset-295726d573-clothes-shoes-male-elegant-texture.png": "mh/tex/clothes/mindfront_shoes_monk_strap_male.png",
             "asset-2b31a3f42a-clothes-shoes-male-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_shoes_monk_strap_male_normal.lo.jpg",
-            "asset-d08e7ebbef-clothes-shoes-male-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_monk_strap_male.jpg"
+            "asset-d08e7ebbef-clothes-shoes-male-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_monk_strap_male.jpg",
+            "asset-997cfb3f9d-clothes-shoes-male-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_shoes_monk_strap_male_normal.jpg"
           }
         }
       }
@@ -11056,6 +12091,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_shoes_oxford_female.jpg"
+        },
+        {
+          "filename": "asset-6309e1b9c1-clothes-shoes-female-elegant-texture-normal.jpg",
+          "hash": "6309e1b9c1c80c66caf24d991a38ee5b969813ab0b3582448404509fa3dd0d17",
+          "size": 96884,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_shoes_oxford_female_normal.jpg"
         }
       ],
       "extra": {
@@ -11078,7 +12127,8 @@
             "asset-c182b55acf-clothes-shoes-female-elegant-texture-lo.png": "mh/tex/clothes/mindfront_shoes_oxford_female.lo.png",
             "asset-eb9425d9e4-clothes-shoes-female-elegant-texture.png": "mh/tex/clothes/mindfront_shoes_oxford_female.png",
             "asset-2d9ba0577d-clothes-shoes-female-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_shoes_oxford_female_normal.lo.jpg",
-            "asset-d73da2665a-clothes-shoes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_oxford_female.jpg"
+            "asset-d73da2665a-clothes-shoes-female-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_oxford_female.jpg",
+            "asset-6309e1b9c1-clothes-shoes-female-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_shoes_oxford_female_normal.jpg"
           }
         }
       }
@@ -11166,6 +12216,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_shoes_oxford_male.jpg"
+        },
+        {
+          "filename": "asset-6309e1b9c1-clothes-shoes-male-elegant-texture-normal.jpg",
+          "hash": "6309e1b9c1c80c66caf24d991a38ee5b969813ab0b3582448404509fa3dd0d17",
+          "size": 96884,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_shoes_oxford_male_normal.jpg"
         }
       ],
       "extra": {
@@ -11188,7 +12252,8 @@
             "asset-c182b55acf-clothes-shoes-male-elegant-texture-lo.png": "mh/tex/clothes/mindfront_shoes_oxford_male.lo.png",
             "asset-eb9425d9e4-clothes-shoes-male-elegant-texture.png": "mh/tex/clothes/mindfront_shoes_oxford_male.png",
             "asset-2d9ba0577d-clothes-shoes-male-elegant-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_shoes_oxford_male_normal.lo.jpg",
-            "asset-8ea2a4893b-clothes-shoes-male-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_oxford_male.jpg"
+            "asset-8ea2a4893b-clothes-shoes-male-elegant-thumb.jpg": "mh/thumb/clothes/mindfront_shoes_oxford_male.jpg",
+            "asset-6309e1b9c1-clothes-shoes-male-elegant-texture-normal.jpg": "mh/tex/clothes/mindfront_shoes_oxford_male_normal.jpg"
           }
         }
       }
@@ -11275,6 +12340,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mindfront_tank_top_01.jpg"
+        },
+        {
+          "filename": "asset-dc8790ec1c-clothes-casual-sport-texture-normal.jpg",
+          "hash": "dc8790ec1c9c72fa84a9bcf213e0a0fbb73af28fa16735d001c68672c79380bf",
+          "size": 103046,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mindfront_tank_top_01_normal.jpg"
         }
       ],
       "extra": {
@@ -11297,7 +12376,8 @@
             "asset-b0d0d4e05f-clothes-casual-sport-texture-lo.png": "mh/tex/clothes/mindfront_tank_top_01.lo.png",
             "asset-d0ce06a3ad-clothes-casual-sport-texture.png": "mh/tex/clothes/mindfront_tank_top_01.png",
             "asset-4e9b573d99-clothes-casual-sport-texture-normal-lo.jpg": "mh/tex/clothes/mindfront_tank_top_01_normal.lo.jpg",
-            "asset-ff83dc86ad-clothes-casual-sport-thumb.jpg": "mh/thumb/clothes/mindfront_tank_top_01.jpg"
+            "asset-ff83dc86ad-clothes-casual-sport-thumb.jpg": "mh/thumb/clothes/mindfront_tank_top_01.jpg",
+            "asset-dc8790ec1c-clothes-casual-sport-texture-normal.jpg": "mh/tex/clothes/mindfront_tank_top_01_normal.jpg"
           }
         }
       }
@@ -11483,6 +12563,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/mtknife_pleated_mini_skirt.jpg"
+        },
+        {
+          "filename": "asset-bf3bd1f918-clothes-female-skirt-miniskirt-pleated-texture-normal.jpg",
+          "hash": "bf3bd1f9186bc784bcc85ffb0d8c5b37e971bb3c86d38cdb76760db4d5568ff8",
+          "size": 30574,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/mtknife_pleated_mini_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -11505,7 +12599,8 @@
             "asset-1445d4332e-clothes-female-skirt-miniskirt-pleated-texture-lo.png": "mh/tex/clothes/mtknife_pleated_mini_skirt.lo.png",
             "asset-d0462d4421-clothes-female-skirt-miniskirt-pleated-texture.png": "mh/tex/clothes/mtknife_pleated_mini_skirt.png",
             "asset-1c9a0fd16e-clothes-female-skirt-miniskirt-pleated-texture-normal-lo.jpg": "mh/tex/clothes/mtknife_pleated_mini_skirt_normal.lo.jpg",
-            "asset-ab75e93247-clothes-female-skirt-miniskirt-pleated-thumb.jpg": "mh/thumb/clothes/mtknife_pleated_mini_skirt.jpg"
+            "asset-ab75e93247-clothes-female-skirt-miniskirt-pleated-thumb.jpg": "mh/thumb/clothes/mtknife_pleated_mini_skirt.jpg",
+            "asset-bf3bd1f918-clothes-female-skirt-miniskirt-pleated-texture-normal.jpg": "mh/tex/clothes/mtknife_pleated_mini_skirt_normal.jpg"
           }
         }
       }
@@ -11687,6 +12782,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_bandeau_bikini_bra.jpg"
+        },
+        {
+          "filename": "asset-75c1236ae2-clothes-female-bikini-texture-normal.jpg",
+          "hash": "75c1236ae275215e50dab38c6c54db60c21225fab098e4fd45e8a01e80c69ea6",
+          "size": 113152,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_bandeau_bikini_bra_normal.jpg"
         }
       ],
       "extra": {
@@ -11709,7 +12818,8 @@
             "asset-ef0fcdc977-clothes-female-bikini-texture-lo.png": "mh/tex/clothes/punkduck_bandeau_bikini_bra.lo.png",
             "asset-46cd976d0a-clothes-female-bikini-texture.png": "mh/tex/clothes/punkduck_bandeau_bikini_bra.png",
             "asset-9f50749e28-clothes-female-bikini-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_bandeau_bikini_bra_normal.lo.jpg",
-            "asset-45f371ae75-clothes-female-bikini-thumb.jpg": "mh/thumb/clothes/punkduck_bandeau_bikini_bra.jpg"
+            "asset-45f371ae75-clothes-female-bikini-thumb.jpg": "mh/thumb/clothes/punkduck_bandeau_bikini_bra.jpg",
+            "asset-75c1236ae2-clothes-female-bikini-texture-normal.jpg": "mh/tex/clothes/punkduck_bandeau_bikini_bra_normal.jpg"
           }
         }
       }
@@ -11798,6 +12908,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_bandeau_bikini_slip.jpg"
+        },
+        {
+          "filename": "asset-4d146d60ae-clothes-female-bikini-texture-normal.jpg",
+          "hash": "4d146d60ae703de380a9ee5a6588650c9ee808d796aef09de87b95dcb426243a",
+          "size": 152959,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_bandeau_bikini_slip_normal.jpg"
         }
       ],
       "extra": {
@@ -11820,7 +12944,8 @@
             "asset-b68d5ed226-clothes-female-bikini-texture-lo.png": "mh/tex/clothes/punkduck_bandeau_bikini_slip.lo.png",
             "asset-f4735fd06f-clothes-female-bikini-texture.png": "mh/tex/clothes/punkduck_bandeau_bikini_slip.png",
             "asset-e914cacfdf-clothes-female-bikini-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_bandeau_bikini_slip_normal.lo.jpg",
-            "asset-2fb4f8b67b-clothes-female-bikini-thumb.jpg": "mh/thumb/clothes/punkduck_bandeau_bikini_slip.jpg"
+            "asset-2fb4f8b67b-clothes-female-bikini-thumb.jpg": "mh/thumb/clothes/punkduck_bandeau_bikini_slip.jpg",
+            "asset-4d146d60ae-clothes-female-bikini-texture-normal.jpg": "mh/tex/clothes/punkduck_bandeau_bikini_slip_normal.jpg"
           }
         }
       }
@@ -12101,6 +13226,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_black_mini_skirt.jpg"
+        },
+        {
+          "filename": "asset-1e5fb0ace5-clothes-female-skirt-texture-normal.jpg",
+          "hash": "1e5fb0ace57646e29a2e5e439ca74883f3d3214c38a2e1adc1cb3bd6a1e5e8a0",
+          "size": 152565,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_black_mini_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -12123,7 +13262,8 @@
             "asset-c81d34ba56-clothes-female-skirt-texture-lo.png": "mh/tex/clothes/punkduck_black_mini_skirt.lo.png",
             "asset-ed4fea623c-clothes-female-skirt-texture.png": "mh/tex/clothes/punkduck_black_mini_skirt.png",
             "asset-275ea6e0b9-clothes-female-skirt-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_black_mini_skirt_normal.lo.jpg",
-            "asset-b82864adcb-clothes-female-skirt-thumb.jpg": "mh/thumb/clothes/punkduck_black_mini_skirt.jpg"
+            "asset-b82864adcb-clothes-female-skirt-thumb.jpg": "mh/thumb/clothes/punkduck_black_mini_skirt.jpg",
+            "asset-1e5fb0ace5-clothes-female-skirt-texture-normal.jpg": "mh/tex/clothes/punkduck_black_mini_skirt_normal.jpg"
           }
         }
       }
@@ -12402,6 +13542,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_evening_gown.jpg"
+        },
+        {
+          "filename": "asset-579f5867bd-clothes-female-gown-texture-normal.jpg",
+          "hash": "579f5867bd7c7248bfbcad81993ac765032f939b34999f49382d9c9fee0e24f1",
+          "size": 88727,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_evening_gown_normal.jpg"
         }
       ],
       "extra": {
@@ -12424,7 +13578,8 @@
             "asset-4e6abf1d1d-clothes-female-gown-texture-lo.png": "mh/tex/clothes/punkduck_evening_gown.lo.png",
             "asset-88a46e5f7a-clothes-female-gown-texture.png": "mh/tex/clothes/punkduck_evening_gown.png",
             "asset-4e50aed551-clothes-female-gown-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_evening_gown_normal.lo.jpg",
-            "asset-155650ab29-clothes-female-gown-thumb.jpg": "mh/thumb/clothes/punkduck_evening_gown.jpg"
+            "asset-155650ab29-clothes-female-gown-thumb.jpg": "mh/thumb/clothes/punkduck_evening_gown.jpg",
+            "asset-579f5867bd-clothes-female-gown-texture-normal.jpg": "mh/tex/clothes/punkduck_evening_gown_normal.jpg"
           }
         }
       }
@@ -12513,6 +13668,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_female_half-boots.jpg"
+        },
+        {
+          "filename": "asset-56c41e57e9-clothes-shoes-boots-texture-normal.jpg",
+          "hash": "56c41e57e989e1fbebc07f4ea67f9b3244e0e617262c50cb2f76d51a1754b548",
+          "size": 250717,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_female_half-boots_normal.jpg"
         }
       ],
       "extra": {
@@ -12535,7 +13704,8 @@
             "asset-3d0455c455-clothes-shoes-boots-texture.jpg": "mh/tex/clothes/punkduck_female_half-boots.jpg",
             "asset-c10067d8a4-clothes-shoes-boots-texture-lo.jpg": "mh/tex/clothes/punkduck_female_half-boots.lo.jpg",
             "asset-ee9d7f4c8f-clothes-shoes-boots-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_female_half-boots_normal.lo.jpg",
-            "asset-4846905eb8-clothes-shoes-boots-thumb.jpg": "mh/thumb/clothes/punkduck_female_half-boots.jpg"
+            "asset-4846905eb8-clothes-shoes-boots-thumb.jpg": "mh/thumb/clothes/punkduck_female_half-boots.jpg",
+            "asset-56c41e57e9-clothes-shoes-boots-texture-normal.jpg": "mh/tex/clothes/punkduck_female_half-boots_normal.jpg"
           }
         }
       }
@@ -12625,6 +13795,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_female_knee_boots.jpg"
+        },
+        {
+          "filename": "asset-2492315e2c-clothes-shoes-boots-female-texture-normal.jpg",
+          "hash": "2492315e2c671438789c2145c0d78e0d93dc49c8a569a0270b3d15f010cc45df",
+          "size": 82973,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_female_knee_boots_normal.jpg"
         }
       ],
       "extra": {
@@ -12647,7 +13831,8 @@
             "asset-2e41459642-clothes-shoes-boots-female-texture-lo.png": "mh/tex/clothes/punkduck_female_knee_boots.lo.png",
             "asset-1b9ec15e4f-clothes-shoes-boots-female-texture.png": "mh/tex/clothes/punkduck_female_knee_boots.png",
             "asset-031f935499-clothes-shoes-boots-female-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_female_knee_boots_normal.lo.jpg",
-            "asset-d41e0b6a73-clothes-shoes-boots-female-thumb.jpg": "mh/thumb/clothes/punkduck_female_knee_boots.jpg"
+            "asset-d41e0b6a73-clothes-shoes-boots-female-thumb.jpg": "mh/thumb/clothes/punkduck_female_knee_boots.jpg",
+            "asset-2492315e2c-clothes-shoes-boots-female-texture-normal.jpg": "mh/tex/clothes/punkduck_female_knee_boots_normal.jpg"
           }
         }
       }
@@ -12737,6 +13922,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_female_short_jeans.jpg"
+        },
+        {
+          "filename": "asset-5dec81ec2d-clothes-female-jeans-pants-texture-normal.jpg",
+          "hash": "5dec81ec2d11e7a08adaa4bd90b95a137252701f4484b0d17180493608a0eaca",
+          "size": 118919,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_female_short_jeans_normal.jpg"
         }
       ],
       "extra": {
@@ -12759,7 +13958,8 @@
             "asset-7acff956dc-clothes-female-jeans-pants-texture-lo.png": "mh/tex/clothes/punkduck_female_short_jeans.lo.png",
             "asset-efc31aa3d3-clothes-female-jeans-pants-texture.png": "mh/tex/clothes/punkduck_female_short_jeans.png",
             "asset-f762ae9b4d-clothes-female-jeans-pants-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_female_short_jeans_normal.lo.jpg",
-            "asset-d7bf3e3f81-clothes-female-jeans-pants-thumb.jpg": "mh/thumb/clothes/punkduck_female_short_jeans.jpg"
+            "asset-d7bf3e3f81-clothes-female-jeans-pants-thumb.jpg": "mh/thumb/clothes/punkduck_female_short_jeans.jpg",
+            "asset-5dec81ec2d-clothes-female-jeans-pants-texture-normal.jpg": "mh/tex/clothes/punkduck_female_short_jeans_normal.jpg"
           }
         }
       }
@@ -12848,6 +14048,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_female_strapless_bodysuit.jpg"
+        },
+        {
+          "filename": "asset-377d93116e-clothes-female-lingerie-texture-normal.jpg",
+          "hash": "377d93116e847c6ffa56e7ffb32372dead1090dc4b7a38102e22146e390294dc",
+          "size": 73605,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_female_strapless_bodysuit_normal.jpg"
         }
       ],
       "extra": {
@@ -12870,7 +14084,8 @@
             "asset-dd5b4d7b3a-clothes-female-lingerie-texture-lo.png": "mh/tex/clothes/punkduck_female_strapless_bodysuit.lo.png",
             "asset-4a5c0c4800-clothes-female-lingerie-texture.png": "mh/tex/clothes/punkduck_female_strapless_bodysuit.png",
             "asset-1996b2e108-clothes-female-lingerie-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_female_strapless_bodysuit_normal.lo.jpg",
-            "asset-88e77c32e2-clothes-female-lingerie-thumb.jpg": "mh/thumb/clothes/punkduck_female_strapless_bodysuit.jpg"
+            "asset-88e77c32e2-clothes-female-lingerie-thumb.jpg": "mh/thumb/clothes/punkduck_female_strapless_bodysuit.jpg",
+            "asset-377d93116e-clothes-female-lingerie-texture-normal.jpg": "mh/tex/clothes/punkduck_female_strapless_bodysuit_normal.jpg"
           }
         }
       }
@@ -12960,6 +14175,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_female_tight_jeans.jpg"
+        },
+        {
+          "filename": "asset-5dec81ec2d-clothes-female-pants-jeans-texture-normal.jpg",
+          "hash": "5dec81ec2d11e7a08adaa4bd90b95a137252701f4484b0d17180493608a0eaca",
+          "size": 118919,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_female_tight_jeans_normal.jpg"
         }
       ],
       "extra": {
@@ -12982,7 +14211,8 @@
             "asset-370b3a01b4-clothes-female-pants-jeans-texture-lo.png": "mh/tex/clothes/punkduck_female_tight_jeans.lo.png",
             "asset-b6f40a5cba-clothes-female-pants-jeans-texture.png": "mh/tex/clothes/punkduck_female_tight_jeans.png",
             "asset-f762ae9b4d-clothes-female-pants-jeans-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_female_tight_jeans_normal.lo.jpg",
-            "asset-8206ce31cf-clothes-female-pants-jeans-thumb.jpg": "mh/thumb/clothes/punkduck_female_tight_jeans.jpg"
+            "asset-8206ce31cf-clothes-female-pants-jeans-thumb.jpg": "mh/thumb/clothes/punkduck_female_tight_jeans.jpg",
+            "asset-5dec81ec2d-clothes-female-pants-jeans-texture-normal.jpg": "mh/tex/clothes/punkduck_female_tight_jeans_normal.jpg"
           }
         }
       }
@@ -13071,6 +14301,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_figure_skating_dress.jpg"
+        },
+        {
+          "filename": "asset-e9f8836fa3-clothes-female-sport-texture-normal.jpg",
+          "hash": "e9f8836fa39fec0dbf6b663a56d44d49e976aa66d45c8d453f236fc6529f29a7",
+          "size": 139651,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_figure_skating_dress_normal.jpg"
         }
       ],
       "extra": {
@@ -13093,7 +14337,8 @@
             "asset-fa69ce044a-clothes-female-sport-texture-lo.png": "mh/tex/clothes/punkduck_figure_skating_dress.lo.png",
             "asset-d009e4a6ae-clothes-female-sport-texture.png": "mh/tex/clothes/punkduck_figure_skating_dress.png",
             "asset-fe1d3675f4-clothes-female-sport-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_figure_skating_dress_normal.lo.jpg",
-            "asset-64d9b7ba25-clothes-female-sport-thumb.jpg": "mh/thumb/clothes/punkduck_figure_skating_dress.jpg"
+            "asset-64d9b7ba25-clothes-female-sport-thumb.jpg": "mh/thumb/clothes/punkduck_figure_skating_dress.jpg",
+            "asset-e9f8836fa3-clothes-female-sport-texture-normal.jpg": "mh/tex/clothes/punkduck_figure_skating_dress_normal.jpg"
           }
         }
       }
@@ -13372,6 +14617,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_halterneck_romper.jpg"
+        },
+        {
+          "filename": "asset-aa3fba9afa-clothes-female-dress-texture-normal.jpg",
+          "hash": "aa3fba9afa9af5d4649102e7fdbe3db43e6d9e16024e57850cdfd736e12e74b0",
+          "size": 131467,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_halterneck_romper_normal.jpg"
         }
       ],
       "extra": {
@@ -13394,7 +14653,8 @@
             "asset-f4ae22d5f8-clothes-female-dress-texture-lo.png": "mh/tex/clothes/punkduck_halterneck_romper.lo.png",
             "asset-b0ce85e516-clothes-female-dress-texture.png": "mh/tex/clothes/punkduck_halterneck_romper.png",
             "asset-1cc84b895a-clothes-female-dress-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_halterneck_romper_normal.lo.jpg",
-            "asset-5fa0f664da-clothes-female-dress-thumb.jpg": "mh/thumb/clothes/punkduck_halterneck_romper.jpg"
+            "asset-5fa0f664da-clothes-female-dress-thumb.jpg": "mh/thumb/clothes/punkduck_halterneck_romper.jpg",
+            "asset-aa3fba9afa-clothes-female-dress-texture-normal.jpg": "mh/tex/clothes/punkduck_halterneck_romper_normal.jpg"
           }
         }
       }
@@ -13483,6 +14743,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_high_neck_crop_top.jpg"
+        },
+        {
+          "filename": "asset-0af16bf5ed-clothes-female-top-texture-normal.jpg",
+          "hash": "0af16bf5edcb5b37e8357dc49622e1a67eda5e90fcf23c669efdb92c3cc55c05",
+          "size": 47001,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_high_neck_crop_top_normal.jpg"
         }
       ],
       "extra": {
@@ -13505,7 +14779,8 @@
             "asset-a913dbe3a6-clothes-female-top-texture-lo.png": "mh/tex/clothes/punkduck_high_neck_crop_top.lo.png",
             "asset-1253f0c9f0-clothes-female-top-texture.png": "mh/tex/clothes/punkduck_high_neck_crop_top.png",
             "asset-4672f1bba8-clothes-female-top-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_high_neck_crop_top_normal.lo.jpg",
-            "asset-d31be771ee-clothes-female-top-thumb.jpg": "mh/thumb/clothes/punkduck_high_neck_crop_top.jpg"
+            "asset-d31be771ee-clothes-female-top-thumb.jpg": "mh/thumb/clothes/punkduck_high_neck_crop_top.jpg",
+            "asset-0af16bf5ed-clothes-female-top-texture-normal.jpg": "mh/tex/clothes/punkduck_high_neck_crop_top_normal.jpg"
           }
         }
       }
@@ -13595,6 +14870,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_jeans_skirt.jpg"
+        },
+        {
+          "filename": "asset-614803ee24-clothes-female-skirt-jeans-texture-normal.jpg",
+          "hash": "614803ee2458b108d92d2d2058fa5fd0a362d8824abdeddb17507a35fc6128e8",
+          "size": 183703,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_jeans_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -13617,7 +14906,8 @@
             "asset-93d5ad1607-clothes-female-skirt-jeans-texture-lo.png": "mh/tex/clothes/punkduck_jeans_skirt.lo.png",
             "asset-96e7d410ee-clothes-female-skirt-jeans-texture.png": "mh/tex/clothes/punkduck_jeans_skirt.png",
             "asset-d3c1534123-clothes-female-skirt-jeans-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_jeans_skirt_normal.lo.jpg",
-            "asset-aa2fe228d3-clothes-female-skirt-jeans-thumb.jpg": "mh/thumb/clothes/punkduck_jeans_skirt.jpg"
+            "asset-aa2fe228d3-clothes-female-skirt-jeans-thumb.jpg": "mh/thumb/clothes/punkduck_jeans_skirt.jpg",
+            "asset-614803ee24-clothes-female-skirt-jeans-texture-normal.jpg": "mh/tex/clothes/punkduck_jeans_skirt_normal.jpg"
           }
         }
       }
@@ -13706,6 +14996,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_kill_bill_shoes.jpg"
+        },
+        {
+          "filename": "asset-86fcc38c89-clothes-shoes-sport-texture-normal.jpg",
+          "hash": "86fcc38c89c14289bfda05c9d50383aee133ed8846eede5736aa3a5a2e1dcb8d",
+          "size": 144645,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_kill_bill_shoes_normal.jpg"
         }
       ],
       "extra": {
@@ -13728,7 +15032,8 @@
             "asset-1a2fc949f5-clothes-shoes-sport-texture-lo.png": "mh/tex/clothes/punkduck_kill_bill_shoes.lo.png",
             "asset-16ddf63e82-clothes-shoes-sport-texture.png": "mh/tex/clothes/punkduck_kill_bill_shoes.png",
             "asset-40e59cf65b-clothes-shoes-sport-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_kill_bill_shoes_normal.lo.jpg",
-            "asset-8c6c9dbcf6-clothes-shoes-sport-thumb.jpg": "mh/thumb/clothes/punkduck_kill_bill_shoes.jpg"
+            "asset-8c6c9dbcf6-clothes-shoes-sport-thumb.jpg": "mh/thumb/clothes/punkduck_kill_bill_shoes.jpg",
+            "asset-86fcc38c89-clothes-shoes-sport-texture-normal.jpg": "mh/tex/clothes/punkduck_kill_bill_shoes_normal.jpg"
           }
         }
       }
@@ -13818,6 +15123,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_lace_up_blouse.jpg"
+        },
+        {
+          "filename": "asset-32a599ad7e-clothes-costume-female-blouse-texture-normal.jpg",
+          "hash": "32a599ad7e67c7bfa607277a15f5309b77926d9b5ec570bb51b89cf72c3ea596",
+          "size": 121120,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_lace_up_blouse_normal.jpg"
         }
       ],
       "extra": {
@@ -13840,7 +15159,8 @@
             "asset-9b8947e58b-clothes-costume-female-blouse-texture-lo.png": "mh/tex/clothes/punkduck_lace_up_blouse.lo.png",
             "asset-1cc948cafa-clothes-costume-female-blouse-texture.png": "mh/tex/clothes/punkduck_lace_up_blouse.png",
             "asset-fd39010910-clothes-costume-female-blouse-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_lace_up_blouse_normal.lo.jpg",
-            "asset-452ea9d06c-clothes-costume-female-blouse-thumb.jpg": "mh/thumb/clothes/punkduck_lace_up_blouse.jpg"
+            "asset-452ea9d06c-clothes-costume-female-blouse-thumb.jpg": "mh/thumb/clothes/punkduck_lace_up_blouse.jpg",
+            "asset-32a599ad7e-clothes-costume-female-blouse-texture-normal.jpg": "mh/tex/clothes/punkduck_lace_up_blouse_normal.jpg"
           }
         }
       }
@@ -13930,6 +15250,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_male_classic_jeans.jpg"
+        },
+        {
+          "filename": "asset-c2e37deca0-clothes-jeans-pants-male-texture-normal.jpg",
+          "hash": "c2e37deca097a99f4c6090a0e18c3a2470e62430ec06b1db3668894b065636b3",
+          "size": 224318,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_male_classic_jeans_normal.jpg"
         }
       ],
       "extra": {
@@ -13952,7 +15286,8 @@
             "asset-89d47b67fd-clothes-jeans-pants-male-texture.jpg": "mh/tex/clothes/punkduck_male_classic_jeans.jpg",
             "asset-04899aa152-clothes-jeans-pants-male-texture-lo.jpg": "mh/tex/clothes/punkduck_male_classic_jeans.lo.jpg",
             "asset-04eb503ef2-clothes-jeans-pants-male-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_male_classic_jeans_normal.lo.jpg",
-            "asset-db962d786a-clothes-jeans-pants-male-thumb.jpg": "mh/thumb/clothes/punkduck_male_classic_jeans.jpg"
+            "asset-db962d786a-clothes-jeans-pants-male-thumb.jpg": "mh/thumb/clothes/punkduck_male_classic_jeans.jpg",
+            "asset-c2e37deca0-clothes-jeans-pants-male-texture-normal.jpg": "mh/tex/clothes/punkduck_male_classic_jeans_normal.jpg"
           }
         }
       }
@@ -14040,6 +15375,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_middle_length_qipao.jpg"
+        },
+        {
+          "filename": "asset-19896027e9-clothes-gown-texture-normal.jpg",
+          "hash": "19896027e95adb5aa1d5fbc39eefdad4437d55799e4ffd0de2b204fcebf2c060",
+          "size": 109613,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_middle_length_qipao_normal.jpg"
         }
       ],
       "extra": {
@@ -14062,7 +15411,8 @@
             "asset-9d0d899549-clothes-gown-texture-lo.png": "mh/tex/clothes/punkduck_middle_length_qipao.lo.png",
             "asset-9e840401e7-clothes-gown-texture.png": "mh/tex/clothes/punkduck_middle_length_qipao.png",
             "asset-8fd42b66b2-clothes-gown-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_middle_length_qipao_normal.lo.jpg",
-            "asset-59d3218180-clothes-gown-thumb.jpg": "mh/thumb/clothes/punkduck_middle_length_qipao.jpg"
+            "asset-59d3218180-clothes-gown-thumb.jpg": "mh/thumb/clothes/punkduck_middle_length_qipao.jpg",
+            "asset-19896027e9-clothes-gown-texture-normal.jpg": "mh/tex/clothes/punkduck_middle_length_qipao_normal.jpg"
           }
         }
       }
@@ -14151,6 +15501,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_off-shoulder_long-sleeve_top.jpg"
+        },
+        {
+          "filename": "asset-2f2268de78-clothes-female-shirt-texture-normal.jpg",
+          "hash": "2f2268de78a1166a694eca18c421d87381628a7a85db718498b598635c4902ce",
+          "size": 110813,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_off-shoulder_long-sleeve_top_normal.jpg"
         }
       ],
       "extra": {
@@ -14173,7 +15537,8 @@
             "asset-913e6e3c5d-clothes-female-shirt-texture-lo.png": "mh/tex/clothes/punkduck_off-shoulder_long-sleeve_top.lo.png",
             "asset-1937f61f96-clothes-female-shirt-texture.png": "mh/tex/clothes/punkduck_off-shoulder_long-sleeve_top.png",
             "asset-3602001a17-clothes-female-shirt-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_off-shoulder_long-sleeve_top_normal.lo.jpg",
-            "asset-5c9db20b91-clothes-female-shirt-thumb.jpg": "mh/thumb/clothes/punkduck_off-shoulder_long-sleeve_top.jpg"
+            "asset-5c9db20b91-clothes-female-shirt-thumb.jpg": "mh/thumb/clothes/punkduck_off-shoulder_long-sleeve_top.jpg",
+            "asset-2f2268de78-clothes-female-shirt-texture-normal.jpg": "mh/tex/clothes/punkduck_off-shoulder_long-sleeve_top_normal.jpg"
           }
         }
       }
@@ -14262,6 +15627,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_one_piece_bikini01.jpg"
+        },
+        {
+          "filename": "asset-77e70f5921-clothes-female-bikini-texture-normal.jpg",
+          "hash": "77e70f59210777ea518aa5a16ee0240d314761d45c02b02dd59452729fcc3060",
+          "size": 51631,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_one_piece_bikini01_normal.jpg"
         }
       ],
       "extra": {
@@ -14284,7 +15663,8 @@
             "asset-9fab53839c-clothes-female-bikini-texture.jpg": "mh/tex/clothes/punkduck_one_piece_bikini01.jpg",
             "asset-a2a293936c-clothes-female-bikini-texture-lo.jpg": "mh/tex/clothes/punkduck_one_piece_bikini01.lo.jpg",
             "asset-3cfb1a9c27-clothes-female-bikini-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_one_piece_bikini01_normal.lo.jpg",
-            "asset-3b105e9d38-clothes-female-bikini-thumb.jpg": "mh/thumb/clothes/punkduck_one_piece_bikini01.jpg"
+            "asset-3b105e9d38-clothes-female-bikini-thumb.jpg": "mh/thumb/clothes/punkduck_one_piece_bikini01.jpg",
+            "asset-77e70f5921-clothes-female-bikini-texture-normal.jpg": "mh/tex/clothes/punkduck_one_piece_bikini01_normal.jpg"
           }
         }
       }
@@ -14374,6 +15754,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_retro_polka_dot_skirt.jpg"
+        },
+        {
+          "filename": "asset-7a936f1611-clothes-female-skirt-vintage-texture-normal.jpg",
+          "hash": "7a936f1611ca934457882f64e69ee8186ea4f60e05b64ef2f1e8359ac0dfdedd",
+          "size": 36355,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_retro_polka_dot_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -14396,7 +15790,8 @@
             "asset-09568065f9-clothes-female-skirt-vintage-texture-lo.png": "mh/tex/clothes/punkduck_retro_polka_dot_skirt.lo.png",
             "asset-7337131aa3-clothes-female-skirt-vintage-texture.png": "mh/tex/clothes/punkduck_retro_polka_dot_skirt.png",
             "asset-e00f9944f0-clothes-female-skirt-vintage-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_retro_polka_dot_skirt_normal.lo.jpg",
-            "asset-963784320e-clothes-female-skirt-vintage-thumb.jpg": "mh/thumb/clothes/punkduck_retro_polka_dot_skirt.jpg"
+            "asset-963784320e-clothes-female-skirt-vintage-thumb.jpg": "mh/thumb/clothes/punkduck_retro_polka_dot_skirt.jpg",
+            "asset-7a936f1611-clothes-female-skirt-vintage-texture-normal.jpg": "mh/tex/clothes/punkduck_retro_polka_dot_skirt_normal.jpg"
           }
         }
       }
@@ -14486,6 +15881,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_retro_top.jpg"
+        },
+        {
+          "filename": "asset-74a3893e19-clothes-female-top-vintage-texture-normal.jpg",
+          "hash": "74a3893e19d091fd56a3483c898fa5ab78bd9cb285252c11a5f87fbcbbc40fe5",
+          "size": 101153,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_retro_top_normal.jpg"
         }
       ],
       "extra": {
@@ -14508,7 +15917,8 @@
             "asset-3b845b1df3-clothes-female-top-vintage-texture-lo.png": "mh/tex/clothes/punkduck_retro_top.lo.png",
             "asset-86b0a15f1f-clothes-female-top-vintage-texture.png": "mh/tex/clothes/punkduck_retro_top.png",
             "asset-8ee83704b8-clothes-female-top-vintage-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_retro_top_normal.lo.jpg",
-            "asset-638814ba91-clothes-female-top-vintage-thumb.jpg": "mh/thumb/clothes/punkduck_retro_top.jpg"
+            "asset-638814ba91-clothes-female-top-vintage-thumb.jpg": "mh/thumb/clothes/punkduck_retro_top.jpg",
+            "asset-74a3893e19-clothes-female-top-vintage-texture-normal.jpg": "mh/tex/clothes/punkduck_retro_top_normal.jpg"
           }
         }
       }
@@ -14597,6 +16007,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_riding_boots.jpg"
+        },
+        {
+          "filename": "asset-644bdde836-clothes-riding-female-texture-normal.jpg",
+          "hash": "644bdde836d953bc089db8ed2ba467b167db3447ac4882a11235b78e7e543b28",
+          "size": 157667,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_riding_boots_normal.jpg"
         }
       ],
       "extra": {
@@ -14619,7 +16043,8 @@
             "asset-ffdb47676a-clothes-riding-female-texture.jpg": "mh/tex/clothes/punkduck_riding_boots.jpg",
             "asset-508c723568-clothes-riding-female-texture-lo.jpg": "mh/tex/clothes/punkduck_riding_boots.lo.jpg",
             "asset-49a957d057-clothes-riding-female-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_riding_boots_normal.lo.jpg",
-            "asset-028dccf6e8-clothes-riding-female-thumb.jpg": "mh/thumb/clothes/punkduck_riding_boots.jpg"
+            "asset-028dccf6e8-clothes-riding-female-thumb.jpg": "mh/thumb/clothes/punkduck_riding_boots.jpg",
+            "asset-644bdde836-clothes-riding-female-texture-normal.jpg": "mh/tex/clothes/punkduck_riding_boots_normal.jpg"
           }
         }
       }
@@ -14709,6 +16134,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_riding_helmet.jpg"
+        },
+        {
+          "filename": "asset-0589b03065-clothes-riding-female-helmet-texture-normal.jpg",
+          "hash": "0589b03065d167a4e4232450e6f7e5d6942db0bb287ee6acbfe963e91989c991",
+          "size": 110442,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_riding_helmet_normal.jpg"
         }
       ],
       "extra": {
@@ -14731,7 +16170,8 @@
             "asset-cef6b21749-clothes-riding-female-helmet-texture.jpg": "mh/tex/clothes/punkduck_riding_helmet.jpg",
             "asset-a07713808a-clothes-riding-female-helmet-texture-lo.jpg": "mh/tex/clothes/punkduck_riding_helmet.lo.jpg",
             "asset-4b48b0edb5-clothes-riding-female-helmet-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_riding_helmet_normal.lo.jpg",
-            "asset-b86d3364cc-clothes-riding-female-helmet-thumb.jpg": "mh/thumb/clothes/punkduck_riding_helmet.jpg"
+            "asset-b86d3364cc-clothes-riding-female-helmet-thumb.jpg": "mh/thumb/clothes/punkduck_riding_helmet.jpg",
+            "asset-0589b03065-clothes-riding-female-helmet-texture-normal.jpg": "mh/tex/clothes/punkduck_riding_helmet_normal.jpg"
           }
         }
       }
@@ -14914,6 +16354,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_short_bodysuit_female.jpg"
+        },
+        {
+          "filename": "asset-2242c8d049-clothes-bodysuit-texture-normal.jpg",
+          "hash": "2242c8d04947b4778a8d38e828e7656e4132343addab5b33dc2afa954ea96a15",
+          "size": 115166,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_short_bodysuit_female_normal.jpg"
         }
       ],
       "extra": {
@@ -14936,7 +16390,8 @@
             "asset-b487b84e00-clothes-bodysuit-texture-lo.png": "mh/tex/clothes/punkduck_short_bodysuit_female.lo.png",
             "asset-ff72a8d794-clothes-bodysuit-texture.png": "mh/tex/clothes/punkduck_short_bodysuit_female.png",
             "asset-a3e71ce456-clothes-bodysuit-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_short_bodysuit_female_normal.lo.jpg",
-            "asset-44cc7987b4-clothes-bodysuit-thumb.jpg": "mh/thumb/clothes/punkduck_short_bodysuit_female.jpg"
+            "asset-44cc7987b4-clothes-bodysuit-thumb.jpg": "mh/thumb/clothes/punkduck_short_bodysuit_female.jpg",
+            "asset-2242c8d049-clothes-bodysuit-texture-normal.jpg": "mh/tex/clothes/punkduck_short_bodysuit_female_normal.jpg"
           }
         }
       }
@@ -15025,6 +16480,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_skirt_native_american_fashion.jpg"
+        },
+        {
+          "filename": "asset-ff8cf7ce7a-clothes-female-skirt-texture-normal.jpg",
+          "hash": "ff8cf7ce7afab3e7c7687bf786c4e77e0f3ca7735bf3027b9482e978e5f840a8",
+          "size": 118297,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_skirt_native_american_fashion_normal.jpg"
         }
       ],
       "extra": {
@@ -15047,7 +16516,8 @@
             "asset-f10ecf3abd-clothes-female-skirt-texture-lo.png": "mh/tex/clothes/punkduck_skirt_native_american_fashion.lo.png",
             "asset-d4875ce99d-clothes-female-skirt-texture.png": "mh/tex/clothes/punkduck_skirt_native_american_fashion.png",
             "asset-8248acd0d1-clothes-female-skirt-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_skirt_native_american_fashion_normal.lo.jpg",
-            "asset-a3edf2be1c-clothes-female-skirt-thumb.jpg": "mh/thumb/clothes/punkduck_skirt_native_american_fashion.jpg"
+            "asset-a3edf2be1c-clothes-female-skirt-thumb.jpg": "mh/thumb/clothes/punkduck_skirt_native_american_fashion.jpg",
+            "asset-ff8cf7ce7a-clothes-female-skirt-texture-normal.jpg": "mh/tex/clothes/punkduck_skirt_native_american_fashion_normal.jpg"
           }
         }
       }
@@ -15136,6 +16606,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_sleeveless_crop_top.jpg"
+        },
+        {
+          "filename": "asset-1ec4114694-clothes-female-top-texture-normal.jpg",
+          "hash": "1ec4114694593d2cfed3796101af029e81359cf2a03c43099f8b81cfb6e0eff5",
+          "size": 68620,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_sleeveless_crop_top_normal.jpg"
         }
       ],
       "extra": {
@@ -15158,7 +16642,8 @@
             "asset-429ac63a0a-clothes-female-top-texture.jpg": "mh/tex/clothes/punkduck_sleeveless_crop_top.jpg",
             "asset-a51fb40990-clothes-female-top-texture-lo.jpg": "mh/tex/clothes/punkduck_sleeveless_crop_top.lo.jpg",
             "asset-7d9af659f2-clothes-female-top-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_sleeveless_crop_top_normal.lo.jpg",
-            "asset-977e2c06cc-clothes-female-top-thumb.jpg": "mh/thumb/clothes/punkduck_sleeveless_crop_top.jpg"
+            "asset-977e2c06cc-clothes-female-top-thumb.jpg": "mh/thumb/clothes/punkduck_sleeveless_crop_top.jpg",
+            "asset-1ec4114694-clothes-female-top-texture-normal.jpg": "mh/tex/clothes/punkduck_sleeveless_crop_top_normal.jpg"
           }
         }
       }
@@ -15247,6 +16732,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_sleeveless_shirt.jpg"
+        },
+        {
+          "filename": "asset-f03669622e-clothes-female-shirt-texture-normal.jpg",
+          "hash": "f03669622ee14f127ffa5f7bbe62efb0322240473d01eebf1056871d1d310195",
+          "size": 65477,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_sleeveless_shirt_normal.jpg"
         }
       ],
       "extra": {
@@ -15269,7 +16768,8 @@
             "asset-96441f2bc5-clothes-female-shirt-texture-lo.png": "mh/tex/clothes/punkduck_sleeveless_shirt.lo.png",
             "asset-33c01a0c11-clothes-female-shirt-texture.png": "mh/tex/clothes/punkduck_sleeveless_shirt.png",
             "asset-ca57ce8156-clothes-female-shirt-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_sleeveless_shirt_normal.lo.jpg",
-            "asset-f8fdf9b84d-clothes-female-shirt-thumb.jpg": "mh/thumb/clothes/punkduck_sleeveless_shirt.jpg"
+            "asset-f8fdf9b84d-clothes-female-shirt-thumb.jpg": "mh/thumb/clothes/punkduck_sleeveless_shirt.jpg",
+            "asset-f03669622e-clothes-female-shirt-texture-normal.jpg": "mh/tex/clothes/punkduck_sleeveless_shirt_normal.jpg"
           }
         }
       }
@@ -15358,6 +16858,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_spaghetti_strap_tank_top.jpg"
+        },
+        {
+          "filename": "asset-5a12d74961-clothes-female-shirt-texture-normal.jpg",
+          "hash": "5a12d749615cfdc6eac958a58f7345c437895cde4d38a4b73041ee4cc317de6f",
+          "size": 72220,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_spaghetti_strap_tank_top_normal.jpg"
         }
       ],
       "extra": {
@@ -15380,7 +16894,8 @@
             "asset-cb1b764c66-clothes-female-shirt-texture-lo.png": "mh/tex/clothes/punkduck_spaghetti_strap_tank_top.lo.png",
             "asset-57039fbbfc-clothes-female-shirt-texture.png": "mh/tex/clothes/punkduck_spaghetti_strap_tank_top.png",
             "asset-b535890cb5-clothes-female-shirt-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_spaghetti_strap_tank_top_normal.lo.jpg",
-            "asset-c7bdb969c0-clothes-female-shirt-thumb.jpg": "mh/thumb/clothes/punkduck_spaghetti_strap_tank_top.jpg"
+            "asset-c7bdb969c0-clothes-female-shirt-thumb.jpg": "mh/thumb/clothes/punkduck_spaghetti_strap_tank_top.jpg",
+            "asset-5a12d74961-clothes-female-shirt-texture-normal.jpg": "mh/tex/clothes/punkduck_spaghetti_strap_tank_top_normal.jpg"
           }
         }
       }
@@ -15470,6 +16985,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_sport_bra.jpg"
+        },
+        {
+          "filename": "asset-18d7b4f26c-clothes-female-sport-underwear-texture-normal.jpg",
+          "hash": "18d7b4f26c471c074d52e8ef1d4f8d0b2983456a097d5b6aad70b6ac4b0864ea",
+          "size": 130381,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_sport_bra_normal.jpg"
         }
       ],
       "extra": {
@@ -15492,7 +17021,8 @@
             "asset-f20c5085eb-clothes-female-sport-underwear-texture.jpg": "mh/tex/clothes/punkduck_sport_bra.jpg",
             "asset-5fa3c47b61-clothes-female-sport-underwear-texture-lo.jpg": "mh/tex/clothes/punkduck_sport_bra.lo.jpg",
             "asset-1cce7e6c30-clothes-female-sport-underwear-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_sport_bra_normal.lo.jpg",
-            "asset-038e8c3168-clothes-female-sport-underwear-thumb.jpg": "mh/thumb/clothes/punkduck_sport_bra.jpg"
+            "asset-038e8c3168-clothes-female-sport-underwear-thumb.jpg": "mh/thumb/clothes/punkduck_sport_bra.jpg",
+            "asset-18d7b4f26c-clothes-female-sport-underwear-texture-normal.jpg": "mh/tex/clothes/punkduck_sport_bra_normal.jpg"
           }
         }
       }
@@ -15582,6 +17112,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_sport_briefs.jpg"
+        },
+        {
+          "filename": "asset-d4ee691625-clothes-female-sport-underwear-texture-normal.jpg",
+          "hash": "d4ee691625c72ce5d56febb469d6398cb462f6c77c5b06743c09d81159d72676",
+          "size": 95569,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_sport_briefs_normal.jpg"
         }
       ],
       "extra": {
@@ -15604,7 +17148,8 @@
             "asset-ee00f1fe71-clothes-female-sport-underwear-texture-lo.png": "mh/tex/clothes/punkduck_sport_briefs.lo.png",
             "asset-158c909562-clothes-female-sport-underwear-texture.png": "mh/tex/clothes/punkduck_sport_briefs.png",
             "asset-f47830c966-clothes-female-sport-underwear-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_sport_briefs_normal.lo.jpg",
-            "asset-ab22414189-clothes-female-sport-underwear-thumb.jpg": "mh/thumb/clothes/punkduck_sport_briefs.jpg"
+            "asset-ab22414189-clothes-female-sport-underwear-thumb.jpg": "mh/thumb/clothes/punkduck_sport_briefs.jpg",
+            "asset-d4ee691625-clothes-female-sport-underwear-texture-normal.jpg": "mh/tex/clothes/punkduck_sport_briefs_normal.jpg"
           }
         }
       }
@@ -15787,6 +17332,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_sun_visor_sports_visor.jpg"
+        },
+        {
+          "filename": "asset-0c468184db-clothes-sport-texture-normal.jpg",
+          "hash": "0c468184db2247911707843b2055816b29a4ac195b297b30917ca985792bea5d",
+          "size": 350553,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_sun_visor_sports_visor_normal.jpg"
         }
       ],
       "extra": {
@@ -15809,7 +17368,8 @@
             "asset-afb3fe7f88-clothes-sport-texture-lo.png": "mh/tex/clothes/punkduck_sun_visor_sports_visor.lo.png",
             "asset-c2789005bd-clothes-sport-texture.png": "mh/tex/clothes/punkduck_sun_visor_sports_visor.png",
             "asset-f92b420c4d-clothes-sport-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_sun_visor_sports_visor_normal.lo.jpg",
-            "asset-41828cbab0-clothes-sport-thumb.jpg": "mh/thumb/clothes/punkduck_sun_visor_sports_visor.jpg"
+            "asset-41828cbab0-clothes-sport-thumb.jpg": "mh/thumb/clothes/punkduck_sun_visor_sports_visor.jpg",
+            "asset-0c468184db-clothes-sport-texture-normal.jpg": "mh/tex/clothes/punkduck_sun_visor_sports_visor_normal.jpg"
           }
         }
       }
@@ -15899,6 +17459,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_swim_cap.jpg"
+        },
+        {
+          "filename": "asset-ef72544b53-clothes-sport-swimming-triathlon-texture-normal.jpg",
+          "hash": "ef72544b53c3bc73428d1f8a22fe87af898911f74fb3cf917c47cd66c84867e3",
+          "size": 38528,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_swim_cap_normal.jpg"
         }
       ],
       "extra": {
@@ -15921,7 +17495,8 @@
             "asset-9281402e11-clothes-sport-swimming-triathlon-texture.jpg": "mh/tex/clothes/punkduck_swim_cap.jpg",
             "asset-0693b77e68-clothes-sport-swimming-triathlon-texture-lo.jpg": "mh/tex/clothes/punkduck_swim_cap.lo.jpg",
             "asset-6d4763e156-clothes-sport-swimming-triathlon-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_swim_cap_normal.lo.jpg",
-            "asset-10f55995ec-clothes-sport-swimming-triathlon-thumb.jpg": "mh/thumb/clothes/punkduck_swim_cap.jpg"
+            "asset-10f55995ec-clothes-sport-swimming-triathlon-thumb.jpg": "mh/thumb/clothes/punkduck_swim_cap.jpg",
+            "asset-ef72544b53-clothes-sport-swimming-triathlon-texture-normal.jpg": "mh/tex/clothes/punkduck_swim_cap_normal.jpg"
           }
         }
       }
@@ -16009,6 +17584,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_tennis_dress.jpg"
+        },
+        {
+          "filename": "asset-288bbe807f-clothes-sport-texture-normal.jpg",
+          "hash": "288bbe807f021a46cc1e35871745f935027b7e596a739dea7d952a1c5cd0ca2b",
+          "size": 69658,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_tennis_dress_normal.jpg"
         }
       ],
       "extra": {
@@ -16031,7 +17620,8 @@
             "asset-41bcfdf5dc-clothes-sport-texture.jpg": "mh/tex/clothes/punkduck_tennis_dress.jpg",
             "asset-0970221e3e-clothes-sport-texture-lo.jpg": "mh/tex/clothes/punkduck_tennis_dress.lo.jpg",
             "asset-438de8b83c-clothes-sport-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_tennis_dress_normal.lo.jpg",
-            "asset-145ab6557d-clothes-sport-thumb.jpg": "mh/thumb/clothes/punkduck_tennis_dress.jpg"
+            "asset-145ab6557d-clothes-sport-thumb.jpg": "mh/thumb/clothes/punkduck_tennis_dress.jpg",
+            "asset-288bbe807f-clothes-sport-texture-normal.jpg": "mh/tex/clothes/punkduck_tennis_dress_normal.jpg"
           }
         }
       }
@@ -16120,6 +17710,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_tennis_shoes.jpg"
+        },
+        {
+          "filename": "asset-69e1f906b0-clothes-shoes-sport-texture-normal.jpg",
+          "hash": "69e1f906b0ed1c9fdd2fd995301648528af5950e20ca7b4a052fc3e5ac9effa9",
+          "size": 147459,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_tennis_shoes_normal.jpg"
         }
       ],
       "extra": {
@@ -16142,7 +17746,8 @@
             "asset-70db9abcb3-clothes-shoes-sport-texture-lo.png": "mh/tex/clothes/punkduck_tennis_shoes.lo.png",
             "asset-4a973f93d7-clothes-shoes-sport-texture.png": "mh/tex/clothes/punkduck_tennis_shoes.png",
             "asset-134851fe02-clothes-shoes-sport-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_tennis_shoes_normal.lo.jpg",
-            "asset-e70e3f2c97-clothes-shoes-sport-thumb.jpg": "mh/thumb/clothes/punkduck_tennis_shoes.jpg"
+            "asset-e70e3f2c97-clothes-shoes-sport-thumb.jpg": "mh/thumb/clothes/punkduck_tennis_shoes.jpg",
+            "asset-69e1f906b0-clothes-shoes-sport-texture-normal.jpg": "mh/tex/clothes/punkduck_tennis_shoes_normal.jpg"
           }
         }
       }
@@ -16232,6 +17837,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_triathlon_suit_female.jpg"
+        },
+        {
+          "filename": "asset-bd8e494e1f-clothes-sport-triathlon-bike-texture-normal.jpg",
+          "hash": "bd8e494e1fcc8ed8f360392bb8cdeca2f17906f606fccf911ceb3218e84b8eaf",
+          "size": 49794,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_triathlon_suit_female_normal.jpg"
         }
       ],
       "extra": {
@@ -16254,7 +17873,8 @@
             "asset-4444ede6db-clothes-sport-triathlon-bike-texture-lo.png": "mh/tex/clothes/punkduck_triathlon_suit_female.lo.png",
             "asset-2acc92269d-clothes-sport-triathlon-bike-texture.png": "mh/tex/clothes/punkduck_triathlon_suit_female.png",
             "asset-57b146ad58-clothes-sport-triathlon-bike-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_triathlon_suit_female_normal.lo.jpg",
-            "asset-ee6490b668-clothes-sport-triathlon-bike-thumb.jpg": "mh/thumb/clothes/punkduck_triathlon_suit_female.jpg"
+            "asset-ee6490b668-clothes-sport-triathlon-bike-thumb.jpg": "mh/thumb/clothes/punkduck_triathlon_suit_female.jpg",
+            "asset-bd8e494e1f-clothes-sport-triathlon-bike-texture-normal.jpg": "mh/tex/clothes/punkduck_triathlon_suit_female_normal.jpg"
           }
         }
       }
@@ -16343,6 +17963,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_tube_dress.jpg"
+        },
+        {
+          "filename": "asset-f6e4156a09-clothes-female-dress-texture-normal.jpg",
+          "hash": "f6e4156a09cbe53b25444a565d8dd8e12c9d54b7a42cd390fc93d89cc33611ba",
+          "size": 248723,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_tube_dress_normal.jpg"
         }
       ],
       "extra": {
@@ -16365,7 +17999,8 @@
             "asset-68c8d0d585-clothes-female-dress-texture-lo.png": "mh/tex/clothes/punkduck_tube_dress.lo.png",
             "asset-a6c7b24113-clothes-female-dress-texture.png": "mh/tex/clothes/punkduck_tube_dress.png",
             "asset-0a3b269909-clothes-female-dress-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_tube_dress_normal.lo.jpg",
-            "asset-6a1d9f9859-clothes-female-dress-thumb.jpg": "mh/thumb/clothes/punkduck_tube_dress.jpg"
+            "asset-6a1d9f9859-clothes-female-dress-thumb.jpg": "mh/thumb/clothes/punkduck_tube_dress.jpg",
+            "asset-f6e4156a09-clothes-female-dress-texture-normal.jpg": "mh/tex/clothes/punkduck_tube_dress_normal.jpg"
           }
         }
       }
@@ -16455,6 +18090,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_tube_top.jpg"
+        },
+        {
+          "filename": "asset-8666da8d69-clothes-female-shirt-top-texture-normal.jpg",
+          "hash": "8666da8d69ea75c6219ca39aecca1c199b347732af2bb832f94b4462d140d7ad",
+          "size": 85108,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_tube_top_normal.jpg"
         }
       ],
       "extra": {
@@ -16477,7 +18126,8 @@
             "asset-c1a97a5383-clothes-female-shirt-top-texture-lo.png": "mh/tex/clothes/punkduck_tube_top.lo.png",
             "asset-615d99570d-clothes-female-shirt-top-texture.png": "mh/tex/clothes/punkduck_tube_top.png",
             "asset-e8a77ed260-clothes-female-shirt-top-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_tube_top_normal.lo.jpg",
-            "asset-57b7474e9f-clothes-female-shirt-top-thumb.jpg": "mh/thumb/clothes/punkduck_tube_top.jpg"
+            "asset-57b7474e9f-clothes-female-shirt-top-thumb.jpg": "mh/thumb/clothes/punkduck_tube_top.jpg",
+            "asset-8666da8d69-clothes-female-shirt-top-texture-normal.jpg": "mh/tex/clothes/punkduck_tube_top_normal.jpg"
           }
         }
       }
@@ -16566,6 +18216,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_v_neck_top.jpg"
+        },
+        {
+          "filename": "asset-1a8c097046-clothes-female-shirt-texture-normal.jpg",
+          "hash": "1a8c097046f2249fbeb5fea078bb74a3bd2729988ea71b2c4897fddb5573a340",
+          "size": 51371,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_v_neck_top_normal.jpg"
         }
       ],
       "extra": {
@@ -16588,7 +18252,8 @@
             "asset-5f3e49c25a-clothes-female-shirt-texture-lo.png": "mh/tex/clothes/punkduck_v_neck_top.lo.png",
             "asset-5f166af0da-clothes-female-shirt-texture.png": "mh/tex/clothes/punkduck_v_neck_top.png",
             "asset-83314ac3bf-clothes-female-shirt-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_v_neck_top_normal.lo.jpg",
-            "asset-e226613650-clothes-female-shirt-thumb.jpg": "mh/thumb/clothes/punkduck_v_neck_top.jpg"
+            "asset-e226613650-clothes-female-shirt-thumb.jpg": "mh/thumb/clothes/punkduck_v_neck_top.jpg",
+            "asset-1a8c097046-clothes-female-shirt-texture-normal.jpg": "mh/tex/clothes/punkduck_v_neck_top_normal.jpg"
           }
         }
       }
@@ -16678,6 +18343,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/punkduck_wetsuit.jpg"
+        },
+        {
+          "filename": "asset-2f04085ac4-clothes-sport-swimming-triathlon-texture-normal.jpg",
+          "hash": "2f04085ac42562badae8d5d98e7197383953a23abb60c18b56026d7dbaffc8ae",
+          "size": 44722,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/punkduck_wetsuit_normal.jpg"
         }
       ],
       "extra": {
@@ -16700,7 +18379,8 @@
             "asset-9cdbc49402-clothes-sport-swimming-triathlon-texture.jpg": "mh/tex/clothes/punkduck_wetsuit.jpg",
             "asset-67e653b12b-clothes-sport-swimming-triathlon-texture-lo.jpg": "mh/tex/clothes/punkduck_wetsuit.lo.jpg",
             "asset-54321f206e-clothes-sport-swimming-triathlon-texture-normal-lo.jpg": "mh/tex/clothes/punkduck_wetsuit_normal.lo.jpg",
-            "asset-912a058d83-clothes-sport-swimming-triathlon-thumb.jpg": "mh/thumb/clothes/punkduck_wetsuit.jpg"
+            "asset-912a058d83-clothes-sport-swimming-triathlon-thumb.jpg": "mh/thumb/clothes/punkduck_wetsuit.jpg",
+            "asset-2f04085ac4-clothes-sport-swimming-triathlon-texture-normal.jpg": "mh/tex/clothes/punkduck_wetsuit_normal.jpg"
           }
         }
       }
@@ -16977,6 +18657,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/scailman_low-heeled_boots.jpg"
+        },
+        {
+          "filename": "asset-ea6e928fdc-clothes-texture-normal.jpg",
+          "hash": "ea6e928fdc2004a99f1af399fee5aad046090079ce4cb117f56cc959071f0736",
+          "size": 116564,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/scailman_low-heeled_boots_normal.jpg"
         }
       ],
       "extra": {
@@ -16999,7 +18693,8 @@
             "asset-04a0963e99-clothes-texture.jpg": "mh/tex/clothes/scailman_low-heeled_boots.jpg",
             "asset-1165690481-clothes-texture-lo.jpg": "mh/tex/clothes/scailman_low-heeled_boots.lo.jpg",
             "asset-e5dde6f9c5-clothes-texture-normal-lo.jpg": "mh/tex/clothes/scailman_low-heeled_boots_normal.lo.jpg",
-            "asset-3f99bf0175-clothes-thumb.jpg": "mh/thumb/clothes/scailman_low-heeled_boots.jpg"
+            "asset-3f99bf0175-clothes-thumb.jpg": "mh/thumb/clothes/scailman_low-heeled_boots.jpg",
+            "asset-ea6e928fdc-clothes-texture-normal.jpg": "mh/tex/clothes/scailman_low-heeled_boots_normal.jpg"
           }
         }
       }
@@ -17179,6 +18874,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/shoes01.jpg"
+        },
+        {
+          "filename": "asset-66ea9d6680-clothes-shoes-texture-normal.jpg",
+          "hash": "66ea9d66802c7c3038f18b79e2443066dae2eb017e240bdad8686c19b5fccc5b",
+          "size": 168539,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/shoes01_normal.jpg"
         }
       ],
       "extra": {
@@ -17201,7 +18910,8 @@
             "asset-5141dff497-clothes-shoes-texture.jpg": "mh/tex/clothes/shoes01.jpg",
             "asset-546c70898c-clothes-shoes-texture-lo.jpg": "mh/tex/clothes/shoes01.lo.jpg",
             "asset-d65e9daf56-clothes-shoes-texture-normal-lo.jpg": "mh/tex/clothes/shoes01_normal.lo.jpg",
-            "asset-9014df05da-clothes-shoes-thumb.jpg": "mh/thumb/clothes/shoes01.jpg"
+            "asset-9014df05da-clothes-shoes-thumb.jpg": "mh/thumb/clothes/shoes01.jpg",
+            "asset-66ea9d6680-clothes-shoes-texture-normal.jpg": "mh/tex/clothes/shoes01_normal.jpg"
           }
         }
       }
@@ -17468,6 +19178,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/shoes04.jpg"
+        },
+        {
+          "filename": "asset-66ea9d6680-clothes-shoes-texture-normal.jpg",
+          "hash": "66ea9d66802c7c3038f18b79e2443066dae2eb017e240bdad8686c19b5fccc5b",
+          "size": 168539,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/shoes04_normal.jpg"
         }
       ],
       "extra": {
@@ -17490,7 +19214,8 @@
             "asset-3e8128e6a5-clothes-shoes-texture.jpg": "mh/tex/clothes/shoes04.jpg",
             "asset-d8310fa0a3-clothes-shoes-texture-lo.jpg": "mh/tex/clothes/shoes04.lo.jpg",
             "asset-d65e9daf56-clothes-shoes-texture-normal-lo.jpg": "mh/tex/clothes/shoes04_normal.lo.jpg",
-            "asset-2339970116-clothes-shoes-thumb.jpg": "mh/thumb/clothes/shoes04.jpg"
+            "asset-2339970116-clothes-shoes-thumb.jpg": "mh/thumb/clothes/shoes04.jpg",
+            "asset-66ea9d6680-clothes-shoes-texture-normal.jpg": "mh/tex/clothes/shoes04_normal.jpg"
           }
         }
       }
@@ -17762,6 +19487,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/sonicteam998_maria_skirt.jpg"
+        },
+        {
+          "filename": "asset-7a936f1611-clothes-female-skirt-sonic-texture-normal.jpg",
+          "hash": "7a936f1611ca934457882f64e69ee8186ea4f60e05b64ef2f1e8359ac0dfdedd",
+          "size": 36355,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/sonicteam998_maria_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -17784,7 +19523,8 @@
             "asset-d9e47f2925-clothes-female-skirt-sonic-texture.jpg": "mh/tex/clothes/sonicteam998_maria_skirt.jpg",
             "asset-7dec526a29-clothes-female-skirt-sonic-texture-lo.jpg": "mh/tex/clothes/sonicteam998_maria_skirt.lo.jpg",
             "asset-e00f9944f0-clothes-female-skirt-sonic-texture-normal-lo.jpg": "mh/tex/clothes/sonicteam998_maria_skirt_normal.lo.jpg",
-            "asset-42d659fd83-clothes-female-skirt-sonic-thumb.jpg": "mh/thumb/clothes/sonicteam998_maria_skirt.jpg"
+            "asset-42d659fd83-clothes-female-skirt-sonic-thumb.jpg": "mh/thumb/clothes/sonicteam998_maria_skirt.jpg",
+            "asset-7a936f1611-clothes-female-skirt-sonic-texture-normal.jpg": "mh/tex/clothes/sonicteam998_maria_skirt_normal.jpg"
           }
         }
       }
@@ -18331,6 +20071,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_ankle_boots_female.jpg"
+        },
+        {
+          "filename": "asset-f2fc90501b-clothes-texture-normal.jpg",
+          "hash": "f2fc90501b3a2bd1ca36c1f3107f3c6f7a4c2c366b38043f05bca42d9abd2c6d",
+          "size": 257953,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_ankle_boots_female_normal.jpg"
         }
       ],
       "extra": {
@@ -18353,7 +20107,8 @@
             "asset-ede82dedbd-clothes-texture.jpg": "mh/tex/clothes/toigo_ankle_boots_female.jpg",
             "asset-d6d6052f16-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_ankle_boots_female.lo.jpg",
             "asset-6fd28329d8-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_ankle_boots_female_normal.lo.jpg",
-            "asset-e6c14c741f-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ankle_boots_female.jpg"
+            "asset-e6c14c741f-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ankle_boots_female.jpg",
+            "asset-f2fc90501b-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_ankle_boots_female_normal.jpg"
           }
         }
       }
@@ -18439,6 +20194,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_ankle_boots_male.jpg"
+        },
+        {
+          "filename": "asset-f2fc90501b-clothes-texture-normal.jpg",
+          "hash": "f2fc90501b3a2bd1ca36c1f3107f3c6f7a4c2c366b38043f05bca42d9abd2c6d",
+          "size": 257953,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_ankle_boots_male_normal.jpg"
         }
       ],
       "extra": {
@@ -18461,7 +20230,8 @@
             "asset-12fe89e098-clothes-texture.jpg": "mh/tex/clothes/toigo_ankle_boots_male.jpg",
             "asset-f620b11ee3-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_ankle_boots_male.lo.jpg",
             "asset-6fd28329d8-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_ankle_boots_male_normal.lo.jpg",
-            "asset-dab3ef0394-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ankle_boots_male.jpg"
+            "asset-dab3ef0394-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ankle_boots_male.jpg",
+            "asset-f2fc90501b-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_ankle_boots_male_normal.jpg"
           }
         }
       }
@@ -18547,6 +20317,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_ballet_flats.jpg"
+        },
+        {
+          "filename": "asset-a7d18ff058-clothes-texture-normal.jpg",
+          "hash": "a7d18ff05876dad2e86657c6a5ed41db25b9b6d6af5f7ecdef492bf5ed1e28da",
+          "size": 370766,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_ballet_flats_normal.jpg"
         }
       ],
       "extra": {
@@ -18569,7 +20353,8 @@
             "asset-ec1c08d53f-clothes-texture.jpg": "mh/tex/clothes/toigo_ballet_flats.jpg",
             "asset-42f870de3a-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_ballet_flats.lo.jpg",
             "asset-7e72060a28-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_ballet_flats_normal.lo.jpg",
-            "asset-47142fcb07-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ballet_flats.jpg"
+            "asset-47142fcb07-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ballet_flats.jpg",
+            "asset-a7d18ff058-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_ballet_flats_normal.jpg"
           }
         }
       }
@@ -18655,6 +20440,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_ballet_flats_with_bows.jpg"
+        },
+        {
+          "filename": "asset-25aabe0fe9-clothes-texture-normal.jpg",
+          "hash": "25aabe0fe9e982c881d1222a2dbf3010d5eafcb1d49f120da3a7565c984a784c",
+          "size": 412552,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_ballet_flats_with_bows_normal.jpg"
         }
       ],
       "extra": {
@@ -18677,7 +20476,8 @@
             "asset-d21027ae45-clothes-texture.jpg": "mh/tex/clothes/toigo_ballet_flats_with_bows.jpg",
             "asset-506307b1f8-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_ballet_flats_with_bows.lo.jpg",
             "asset-1457f54ad2-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_ballet_flats_with_bows_normal.lo.jpg",
-            "asset-d2750d6f8a-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ballet_flats_with_bows.jpg"
+            "asset-d2750d6f8a-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ballet_flats_with_bows.jpg",
+            "asset-25aabe0fe9-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_ballet_flats_with_bows_normal.jpg"
           }
         }
       }
@@ -18763,6 +20563,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_ballet_flats_with_flowers.jpg"
+        },
+        {
+          "filename": "asset-ed0c958575-clothes-texture-normal.jpg",
+          "hash": "ed0c95857587eb947f7b41794ff417e12d44a0b7823e2e4adab3dc06185ab02a",
+          "size": 387410,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_ballet_flats_with_flowers_normal.jpg"
         }
       ],
       "extra": {
@@ -18785,7 +20599,8 @@
             "asset-730e4094a2-clothes-texture.jpg": "mh/tex/clothes/toigo_ballet_flats_with_flowers.jpg",
             "asset-60cba24497-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_ballet_flats_with_flowers.lo.jpg",
             "asset-385468da39-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_ballet_flats_with_flowers_normal.lo.jpg",
-            "asset-d19e474f83-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ballet_flats_with_flowers.jpg"
+            "asset-d19e474f83-clothes-thumb.jpg": "mh/thumb/clothes/toigo_ballet_flats_with_flowers.jpg",
+            "asset-ed0c958575-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_ballet_flats_with_flowers_normal.jpg"
           }
         }
       }
@@ -19060,6 +20875,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_bodice-style_top.jpg"
+        },
+        {
+          "filename": "asset-1a280bf752-clothes-texture-normal.jpg",
+          "hash": "1a280bf752abc2cad4d38c48ec13b0a3c01e61c2627745738123908903d8887d",
+          "size": 140029,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_bodice-style_top_normal.jpg"
         }
       ],
       "extra": {
@@ -19082,7 +20911,8 @@
             "asset-2754a83189-clothes-texture.jpg": "mh/tex/clothes/toigo_bodice-style_top.jpg",
             "asset-754b84a9ab-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_bodice-style_top.lo.jpg",
             "asset-b335ee0f84-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_bodice-style_top_normal.lo.jpg",
-            "asset-26b6e8e20e-clothes-thumb.jpg": "mh/thumb/clothes/toigo_bodice-style_top.jpg"
+            "asset-26b6e8e20e-clothes-thumb.jpg": "mh/thumb/clothes/toigo_bodice-style_top.jpg",
+            "asset-1a280bf752-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_bodice-style_top_normal.jpg"
           }
         }
       }
@@ -19537,6 +21367,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_female_double-breasted_suit.jpg"
+        },
+        {
+          "filename": "asset-f2ed23806d-clothes-texture-normal.jpg",
+          "hash": "f2ed23806d999e6a3ba90b8043fa50f6e0ddbcba969919d8cd7e5f56d2eb75f3",
+          "size": 326437,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_female_double-breasted_suit_normal.jpg"
         }
       ],
       "extra": {
@@ -19559,7 +21403,8 @@
             "asset-17bbc99999-clothes-texture.jpg": "mh/tex/clothes/toigo_female_double-breasted_suit.jpg",
             "asset-5e340bb179-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_female_double-breasted_suit.lo.jpg",
             "asset-9fa7d23038-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_female_double-breasted_suit_normal.lo.jpg",
-            "asset-38dbf7cd8d-clothes-thumb.jpg": "mh/thumb/clothes/toigo_female_double-breasted_suit.jpg"
+            "asset-38dbf7cd8d-clothes-thumb.jpg": "mh/thumb/clothes/toigo_female_double-breasted_suit.jpg",
+            "asset-f2ed23806d-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_female_double-breasted_suit_normal.jpg"
           }
         }
       }
@@ -19645,6 +21490,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_female_suit_2.jpg"
+        },
+        {
+          "filename": "asset-6d894be00a-clothes-texture-normal.jpg",
+          "hash": "6d894be00aafa0de961f829783939ad6ff29307f864c78d9d5c0e06a68cb0898",
+          "size": 120619,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_female_suit_2_normal.jpg"
         }
       ],
       "extra": {
@@ -19667,7 +21526,8 @@
             "asset-b79b2dec1b-clothes-texture.jpg": "mh/tex/clothes/toigo_female_suit_2.jpg",
             "asset-72c87f0eaa-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_female_suit_2.lo.jpg",
             "asset-072aee7643-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_female_suit_2_normal.lo.jpg",
-            "asset-4230fbb952-clothes-thumb.jpg": "mh/thumb/clothes/toigo_female_suit_2.jpg"
+            "asset-4230fbb952-clothes-thumb.jpg": "mh/thumb/clothes/toigo_female_suit_2.jpg",
+            "asset-6d894be00a-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_female_suit_2_normal.jpg"
           }
         }
       }
@@ -20771,6 +22631,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_male_double-breasted_suit.jpg"
+        },
+        {
+          "filename": "asset-89efa60704-clothes-texture-normal.jpg",
+          "hash": "89efa607049d41a6e9c8e292dd3292d4595bf2b6ec16768745c786f31888da8c",
+          "size": 297552,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_male_double-breasted_suit_normal.jpg"
         }
       ],
       "extra": {
@@ -20793,7 +22667,8 @@
             "asset-e6f1b58df7-clothes-texture.jpg": "mh/tex/clothes/toigo_male_double-breasted_suit.jpg",
             "asset-d455bd2dd5-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_male_double-breasted_suit.lo.jpg",
             "asset-8b0ab8d7a4-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_male_double-breasted_suit_normal.lo.jpg",
-            "asset-11af3d8781-clothes-thumb.jpg": "mh/thumb/clothes/toigo_male_double-breasted_suit.jpg"
+            "asset-11af3d8781-clothes-thumb.jpg": "mh/thumb/clothes/toigo_male_double-breasted_suit.jpg",
+            "asset-89efa60704-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_male_double-breasted_suit_normal.jpg"
           }
         }
       }
@@ -20879,6 +22754,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_male_suit_3.jpg"
+        },
+        {
+          "filename": "asset-575166e9be-clothes-texture-normal.jpg",
+          "hash": "575166e9be410e757cbb9a88e90e89fb95675fcd55f215c2fe3614e7b7c20c07",
+          "size": 265676,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_male_suit_3_normal.jpg"
         }
       ],
       "extra": {
@@ -20901,7 +22790,8 @@
             "asset-5d06222926-clothes-texture.jpg": "mh/tex/clothes/toigo_male_suit_3.jpg",
             "asset-5384255c3a-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_male_suit_3.lo.jpg",
             "asset-4903abf436-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_male_suit_3_normal.lo.jpg",
-            "asset-6d215e9606-clothes-thumb.jpg": "mh/thumb/clothes/toigo_male_suit_3.jpg"
+            "asset-6d215e9606-clothes-thumb.jpg": "mh/thumb/clothes/toigo_male_suit_3.jpg",
+            "asset-575166e9be-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_male_suit_3_normal.jpg"
           }
         }
       }
@@ -21080,6 +22970,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_mj_cloth_shoes.jpg"
+        },
+        {
+          "filename": "asset-faaea713f8-clothes-texture-normal.jpg",
+          "hash": "faaea713f85fe94a70f8778db1b20f21df7861f275fddfe21f81d05d6e15353d",
+          "size": 183459,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_mj_cloth_shoes_normal.jpg"
         }
       ],
       "extra": {
@@ -21102,7 +23006,8 @@
             "asset-219a36ce77-clothes-texture.jpg": "mh/tex/clothes/toigo_mj_cloth_shoes.jpg",
             "asset-40aabf76e8-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_mj_cloth_shoes.lo.jpg",
             "asset-1d4950a501-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_mj_cloth_shoes_normal.lo.jpg",
-            "asset-5ea9a43a4f-clothes-thumb.jpg": "mh/thumb/clothes/toigo_mj_cloth_shoes.jpg"
+            "asset-5ea9a43a4f-clothes-thumb.jpg": "mh/thumb/clothes/toigo_mj_cloth_shoes.jpg",
+            "asset-faaea713f8-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_mj_cloth_shoes_normal.jpg"
           }
         }
       }
@@ -21557,6 +23462,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_suit_with_dinner_jacket.jpg"
+        },
+        {
+          "filename": "asset-4d36b35fbe-clothes-texture-normal.jpg",
+          "hash": "4d36b35fbed0607097e7c674499401ace4c2f051329cb981f27fa642d00066b1",
+          "size": 309107,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_suit_with_dinner_jacket_normal.jpg"
         }
       ],
       "extra": {
@@ -21579,7 +23498,8 @@
             "asset-30150ba310-clothes-texture.jpg": "mh/tex/clothes/toigo_suit_with_dinner_jacket.jpg",
             "asset-3628018754-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_suit_with_dinner_jacket.lo.jpg",
             "asset-b5a210088c-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_suit_with_dinner_jacket_normal.lo.jpg",
-            "asset-3391b1ee29-clothes-thumb.jpg": "mh/thumb/clothes/toigo_suit_with_dinner_jacket.jpg"
+            "asset-3391b1ee29-clothes-thumb.jpg": "mh/thumb/clothes/toigo_suit_with_dinner_jacket.jpg",
+            "asset-4d36b35fbe-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_suit_with_dinner_jacket_normal.jpg"
           }
         }
       }
@@ -21665,6 +23585,20 @@
           "lod": 0,
           "isProd": true,
           "fileNote": "public/mh/thumb/clothes/toigo_tiered_mini_skirt.jpg"
+        },
+        {
+          "filename": "asset-5298900815-clothes-texture-normal.jpg",
+          "hash": "5298900815d67bc2372a5c7cf67575a1ddc7709a79578facce86bb6f40ca69b5",
+          "size": 433061,
+          "fileFormat": "jpg",
+          "extension": "jpg",
+          "fileKeywords": [
+            "texture",
+            "normal"
+          ],
+          "lod": 0,
+          "isProd": true,
+          "fileNote": "public/mh/tex/clothes/toigo_tiered_mini_skirt_normal.jpg"
         }
       ],
       "extra": {
@@ -21687,7 +23621,8 @@
             "asset-deb9a84b0b-clothes-texture.jpg": "mh/tex/clothes/toigo_tiered_mini_skirt.jpg",
             "asset-cdd8f93be3-clothes-texture-lo.jpg": "mh/tex/clothes/toigo_tiered_mini_skirt.lo.jpg",
             "asset-fed42ccb3d-clothes-texture-normal-lo.jpg": "mh/tex/clothes/toigo_tiered_mini_skirt_normal.lo.jpg",
-            "asset-665bec90f9-clothes-thumb.jpg": "mh/thumb/clothes/toigo_tiered_mini_skirt.jpg"
+            "asset-665bec90f9-clothes-thumb.jpg": "mh/thumb/clothes/toigo_tiered_mini_skirt.jpg",
+            "asset-5298900815-clothes-texture-normal.jpg": "mh/tex/clothes/toigo_tiered_mini_skirt_normal.jpg"
           }
         }
       }

@@ -36,8 +36,8 @@ const DEFAULTS = {
   repo: 'https://github.com/dfeldman/avatarkit',
 }
 
-/** The skins' leftover normal maps: nothing reads them (ASSETS.md), so they aren't recorded. */
-const SKIP = /_normal\.(jpg|png)$/
+/** The SKINS' leftover normal maps: nothing reads them (ASSETS.md), so they aren't recorded. Garment normal maps are used. */
+const SKIP = /^mh\/tex\/skin\/.*_normal(\.lo)?\.(jpg|png)$/
 
 const INDEXES = {
   wardrobe: { name: 'avatarkit-wardrobe', description: 'MakeHuman community garments fitted to the avatarkit base mesh: mesh, texture, low-quality copy, thumbnail' },
@@ -115,7 +115,11 @@ async function main(): Promise<void> {
     const id = slugify(`${e.kind}-${e.id}`)
     const mine = [...owner].filter(([, o]) => o.entry === e).map(([p, o]) => ({ p, rest: o.rest }))
     mine.forEach(({ p }) => claimed.add(p))
-    if (has(index, id) || !mine.length) continue
+    if (!mine.length) continue
+    // an asset recorded before: add only the files it doesn't have yet (e.g. after a fix to SKIP)
+    const existing = repo.indexes.find((l) => l.name === index)!.index.assets.find((a) => a.id === id)
+    const recorded = new Set(Object.values((existing?.extra?.avatarkit as { paths?: Record<string, string> } | undefined)?.paths ?? {}))
+    if (existing && mine.every(({ p }) => recorded.has(p))) continue
     const { kind, id: _id, name, tags, pack, license, author, homepage, ...rest } = e
     const subtype = e.kind === 'clothes' ? 'garment' : e.kind === 'skin' ? 'skin' : 'avatar'
     const asset: Partial<Asset> = {
@@ -131,7 +135,7 @@ async function main(): Promise<void> {
       assetKeywords: [e.kind, ...(tags ?? []).filter((t) => !t.includes('™'))].slice(0, 6),
       extra: { avatarkit: { kind, id: _id, pack, ...rest, paths: {} as Record<string, string> } },
     }
-    for (const { p, rest: suffix } of mine) {
+    for (const { p, rest: suffix } of mine.filter(({ p }) => !recorded.has(p))) {
       const r = await addFile(repo, { index, indexDir: INDEX_DIR, src: join(PUB, p), assetId: id, asset, file: describe(p, suffix), allowDuplicate: true })
       ;((repo.indexes.find((l) => l.name === index)!.index.assets.find((a) => a.id === id)!.extra!.avatarkit as { paths: Record<string, string> }).paths)[r.file.filename] = p
     }
