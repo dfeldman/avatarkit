@@ -10,3 +10,7 @@ dist/
 # assetmgr: downloaded asset files and the per-checkout hash cache
 /assets/
 .assetmgr/
+
+# API tokens and keys: never committed
+.mapillary_token
+*.token
