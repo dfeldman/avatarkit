@@ -1,6 +1,7 @@
 /**
  * The engine for our own pages (the dev stage, the designer, the gallery; a game brings its own): WebGPU where the
- * browser has it, WebGL2 otherwise. `?engine=webgl` on the page's URL forces WebGL2, to compare the two;
+ * browser has it, WebGL2 otherwise. `?engine=webgl` on the page's URL forces WebGL2, to compare the two, and
+ * `readable` does the same for a caller that needs to read the canvas back (see EngineOptions);
  * `?gpulimits=default` keeps WebGPU's minimum limits (as on the weakest devices).
  * Everything else asks the engine what it can do (subsurface scattering, for one, needs the pre-pass renderer)
  * rather than which kind it is.
@@ -11,11 +12,21 @@ import type { Quality } from '../body/build.ts'
 export interface EngineOptions {
   /** a transparent canvas, so the page shows through (the designer) */
   alpha?: boolean
+  /**
+   * Ask for WebGL2 even where WebGPU is available, because the canvas has to be **read back** —
+   * `canvas.toDataURL()`, for a still of the avatar.
+   *
+   * WebGL2 keeps what it drew (`preserveDrawingBuffer` below), so reading the canvas gives the picture.
+   * A WebGPU canvas does not: it is configured to be drawn to and presented, not copied from, so reading
+   * one gives a fully transparent image — silently, with no error anywhere, which is a horrible way to
+   * find out. A host that wants a picture of an avatar asks for this.
+   */
+  readable?: boolean
 }
 
 export async function createEngine(canvas: HTMLCanvasElement, opts: EngineOptions = {}): Promise<AbstractEngine> {
   const forced = new URLSearchParams(location.search).get('engine')
-  if (forced !== 'webgl' && (await WebGPUEngine.IsSupportedAsync)) {
+  if (!opts.readable && forced !== 'webgl' && (await WebGPUEngine.IsSupportedAsync)) {
     try {
       const engine = new WebGPUEngine(canvas, {
         antialias: true, stencil: true, adaptToDeviceRatio: true,
