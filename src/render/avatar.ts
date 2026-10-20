@@ -30,6 +30,19 @@ export interface AvatarOptions {
   geometry?: AvatarGeometry
   /** shadow casters are added here */
   shadows?: ShadowGenerator
+  /**
+   * Build the facial expression and hand-pose morph targets. On by default above `low` quality, off at
+   * `low`, which already means a small distant figure; either way an explicit value wins.
+   *
+   * They are not cheap. Babylon wants each target as a whole set of positions rather than the deltas we
+   * hold, so every unit costs another copy of the entire body's vertices — around forty of them, tens of
+   * megabytes, whatever the body is doing. A rider seen from behind on a phone, or a figure in a crowd,
+   * never changes expression, and on a device with a hard memory ceiling that is the difference between
+   * running and being killed.
+   *
+   * With this off, `setExpression` and `setHands` have nothing to move and quietly do nothing.
+   */
+  expressions?: boolean
 }
 
 let counter = 0
@@ -75,6 +88,8 @@ export class Avatar {
   private blink = 0
   private readonly blinker = new Blinker()
   private readonly morphTargets = new Map<MorphKey, MorphTarget[]>()
+  /** See AvatarOptions.expressions: off means no morph targets are built at all. */
+  private readonly expressions: boolean
   /** the hand pose asked for, and each hand morph's weight now (they ease toward it) */
   private hands: { pose: HandPose; strength: number } = { pose: 'relaxed', strength: 1 }
   private readonly handW = new Map<HandMorph, number>(HAND_MORPHS.map((m) => [m, 0]))
@@ -92,6 +107,9 @@ export class Avatar {
     this.scene = scene
     this.name = opts.name ?? `avatar${++counter}`
     this.quality = opts.quality ?? 'medium'
+    // `low` quality is for figures in a crowd, too small for a face to read at all: no expressions there
+    // unless a caller insists.
+    this.expressions = opts.expressions ?? this.quality !== 'low'
     this.shadows = opts.shadows
     this.root = new TransformNode(this.name, scene)
     this.materials = createAvatarMaterials(scene, this.name, this.quality)
@@ -319,7 +337,9 @@ export class Avatar {
     mesh.setBoundingInfo(new BoundingInfo(new Vector3(-H * 0.6, -0.1, -H * 0.6), new Vector3(H * 0.6, H * 1.1, H * 0.6)))
     this.shadows?.addShadowCaster(mesh)
     // facial expressions and hand poses: one morph target each (its moves added to the rest positions)
-    const morphs = Object.entries(d.morphs ?? {}) as Array<[MorphKey, Float32Array]>
+    const morphs = this.expressions
+      ? (Object.entries(d.morphs ?? {}) as Array<[MorphKey, Float32Array]>)
+      : []
     if (morphs.length) {
       const mgr = new MorphTargetManager(this.scene)
       for (const [unit, delta] of morphs) {
