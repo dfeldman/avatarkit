@@ -32,6 +32,20 @@ export interface AvatarMaterials {
  *  flat. */
 const SCATTER = new Color3(0.25, 0.125, 0.05)
 
+/**
+ * The least light skin ever reflects, in linear terms, before the detail photograph is applied.
+ *
+ * The palette's swatches are chosen to look like skin in an sRGB colour picker, but albedo is used
+ * linearly, and gamma expansion punishes the dark end enormously: `#331b10` comes out at roughly 3% red,
+ * 1% green and 0.5% blue once the photograph is multiplied in. Real skin, however dark, reflects several
+ * times that — no skin is charcoal — and at those levels there is nothing left of the green and blue for
+ * the shading to vary, so a face loses its nose, mouth and cheeks and reads as a flat black oval.
+ *
+ * Added rather than mixed, so it lifts the dark end where the problem is and leaves the light end alone
+ * (a few percent on a swatch already past 1), and so the swatches stay in order.
+ */
+const FLOOR = new Color3(0.085, 0.038, 0.03)
+
 export function createAvatarMaterials(scene: Scene, name: string, quality: Quality = 'medium'): AvatarMaterials {
   const body = new PBRMaterial(`${name}.skin`, scene)
   body.metallic = 1 // (scaled by the surface map's blue channel: 0)
@@ -96,7 +110,7 @@ function fadedPhoto(url: string, scene: Scene, keep: number): Texture {
 export function applySpecToMaterials(m: AvatarMaterials, spec: AvatarSpec): void {
   const color = Color3.FromHexString(spec.skin.color)
   // the detail map holds half the photograph's ratio to its own median: twice the linear colour gives the colour itself
-  m.body.albedoColor = color.toLinearSpace().scale(2)
+  m.body.albedoColor = color.toLinearSpace().scale(2).add(FLOOR)
   // surface: the micro-detail's grain, and matte to dewy (the roughness map is scaled around its own values)
   // (the skin has no relief from the photograph: see the note above applySpecToMaterials)
   const detail = spec.skin.pores
