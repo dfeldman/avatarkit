@@ -18,6 +18,9 @@ TypeScript library to display realistic human avatars from the MakeHuman project
 > Please be a grownup. The avatars are just Barbie dolls, they are not even very detailed. 
 
 
+> [!WARNING]
+> Images and base meshes are not in Git at all. They are in my own "assets" R2 bucket, with metadata stored here.
+> If you want to use this outside my ecosystem of games, please make a copy of those assets. 
 
 
 
