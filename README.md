@@ -1,5 +1,27 @@
 # Avatar Kit
 
+TypeScript library to display realistic human avatars from the MakeHuman project. Includes some basic motion. 
+
+> [!WARNING]
+> This is entirely vibecoded. Use at your own risk.
+>
+
+
+> [!WARNING]
+> MakeHuman is not censored, and neither is this library.
+> 
+> Parameters include things like "breast size" and "genital size."
+> Clothing is rendered in a separate pass, so with certain types of errors the avatar
+> will appear naked. A lot of the clothing, submitted by volunteers, is revealing
+> (like bikinis and crop tops). This is just a hazard of the Internet.
+> 
+> Please be a grownup. The avatars are just Barbie dolls, they are not even very detailed. 
+
+
+
+
+
+
 Human avatars for Dandyhorse games. A player designs one look, and every game shows the same person walking,
 running or riding a bike. The bodies, faces, clothes, hair and skins come from [MakeHuman](http://www.makehumancommunity.org)
 (CC0, with some community assets CC-BY; see [CREDITS.md](CREDITS.md)), rendered with Babylon.js on WebGPU, with WebGL2
