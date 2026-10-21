@@ -51,12 +51,18 @@ let counter = 0
 const CACHE = new Map<string, AvatarGeometry>()
 const CACHE_MAX = 24
 
-/** Builds (or reuses) a spec's geometry; its MakeHuman assets must be loaded (see preloadAssets). */
-export function getGeometry(spec: AvatarSpec, quality: Quality): AvatarGeometry {
-  const key = `${quality}|${shapeKey(spec)}`
+/**
+ * Builds (or reuses) a spec's geometry; its MakeHuman assets must be loaded (see preloadAssets).
+ *
+ * `morphs` is part of the cache key, not just an argument: a body built without expression targets is a
+ * DIFFERENT body, and handing a cached morphless one to a face that wants to smile would leave it unable
+ * to, silently and only on whichever caller happened to ask second.
+ */
+export function getGeometry(spec: AvatarSpec, quality: Quality, morphs = true): AvatarGeometry {
+  const key = `${quality}|${morphs ? 'm' : 'no-m'}|${shapeKey(spec)}`
   let g = CACHE.get(key)
   if (!g) {
-    g = buildAvatarGeometry(spec, quality)
+    g = buildAvatarGeometry(spec, quality, morphs)
     CACHE.set(key, g)
     if (CACHE.size > CACHE_MAX) CACHE.delete(CACHE.keys().next().value as string)
   }
@@ -107,22 +113,26 @@ export class Avatar {
     this.scene = scene
     this.name = opts.name ?? `avatar${++counter}`
     this.quality = opts.quality ?? 'medium'
-    // `low` quality is for figures in a crowd, too small for a face to read at all: no expressions there
-    // unless a caller insists.
-    this.expressions = opts.expressions ?? this.quality !== 'low'
+    /*
+     * On unless a caller says otherwise. It is tempting to tie this to `low` quality — a figure in a crowd
+     * is too small for a face to read — but hand poses ride on the same morph targets, and a crowd figure
+     * still has to grip its handlebars. So the saving is opt-in, and the callers that know their avatar
+     * never changes expression ask for it by name (cityengine's phone tiers: tier.ts `expressions`).
+     */
+    this.expressions = opts.expressions ?? true
     this.shadows = opts.shadows
     this.root = new TransformNode(this.name, scene)
     this.materials = createAvatarMaterials(scene, this.name, this.quality)
     this.spec = normalizeSpec(spec)
     this.animator = new Animator()
-    this.rebuild(opts.geometry ?? getGeometry(this.spec, this.quality))
+    this.rebuild(opts.geometry ?? getGeometry(this.spec, this.quality, this.expressions))
   }
 
   /** Change the look: new shapes or proxies rebuild (their assets must be loaded), colours don't. */
   setSpec(spec: unknown, geometry?: AvatarGeometry): void {
     this.spec = normalizeSpec(spec)
     const key = `${this.quality}|${shapeKey(this.spec)}`
-    if (geometry || key !== this.geometryKey) this.rebuild(geometry ?? getGeometry(this.spec, this.quality))
+    if (geometry || key !== this.geometryKey) this.rebuild(geometry ?? getGeometry(this.spec, this.quality, this.expressions))
     else this.refreshLook()
   }
 
@@ -143,7 +153,7 @@ export class Avatar {
     this.quality = q
     // (textures follow on the next refresh; subsurface scattering stays as the avatar was created)
     this.materials.quality = q
-    this.rebuild(getGeometry(this.spec, q))
+    this.rebuild(getGeometry(this.spec, q, this.expressions))
   }
 
   setMotion(m: Partial<Motion>): void {
@@ -244,6 +254,21 @@ export class Avatar {
     for (const m of this.getMeshes()) {
       this.shadows?.removeShadowCaster(m)
       if (m !== this.body) m.material?.dispose(false, true)
+      /*
+       * The morph targets, BY HAND, because `mesh.dispose()` does not take them with it.
+       *
+       * A MorphTargetManager registers itself on the scene and keeps its targets in a float texture array on
+       * the GPU. Disposing the mesh only drops the mesh's reference to it: the manager stays on
+       * `scene.morphTargetManagers` and the texture stays uploaded, for the life of the scene. Measured in
+       * cityengine, where bodies are built to bake an animation from and then thrown away: 61 orphaned
+       * managers, 23.7 MB of GPU texture nothing could ever draw. Only ours — a manager a caller handed us
+       * through `geometry` is not ours to dispose, but we build our own in `skinnedMesh`.
+       */
+      const mgr = m.morphTargetManager
+      if (mgr) {
+        m.morphTargetManager = null
+        mgr.dispose()
+      }
       m.dispose()
     }
     this.body = this.eyes = this.cornea = null

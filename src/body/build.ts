@@ -98,9 +98,11 @@ const skinned = (m: MeshPart): SkinnedMeshData => {
   return { ...m, parts: partsOf(m.boneIndices, m.boneWeights) }
 }
 
-export function buildAvatarGeometry(spec: AvatarSpec, quality: Quality = 'medium'): AvatarGeometry {
+/** `morphs` off builds no expression or hand-pose targets at all — see buildMakeHuman. */
+export function buildAvatarGeometry(spec: AvatarSpec, quality: Quality = 'medium',
+                                    morphs = true): AvatarGeometry {
   const t0 = typeof performance !== 'undefined' ? performance.now() : Date.now()
-  const m = buildMakeHuman(spec, wornFor(spec), quality)
+  const m = buildMakeHuman(spec, wornFor(spec), quality, morphs)
   const body = { ...skinned(m.body), uvs: m.body.uvs, src: m.body.src, ao: m.body.ao, tone: m.body.tone, morphs: m.body.morphs }
   const eyes = { ...skinned(m.eyes), uvs: m.eyes.uvs }
   // (the corneas share the eyes' vertices, with their own triangles and buffers)

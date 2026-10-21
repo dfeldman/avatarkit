@@ -308,8 +308,17 @@ const B = (b: BodyBone): number => BONES.indexOf(b)
 const ARMS = new Set(['shoulder', 'upperArm', 'forearm', 'hand'].flatMap((b) => [B(`${b}.L` as BodyBone), B(`${b}.R` as BodyBone)]))
 const LEGS = new Set(['thigh', 'shin', 'foot', 'toes'].flatMap((b) => [B(`${b}.L` as BodyBone), B(`${b}.R` as BodyBone)]))
 
-/** The MakeHuman body a spec describes (its targets and proxies must be loaded: see preloadAssets). */
-export function buildMakeHuman(spec: AvatarSpec, worn: Worn[] = wornFor(spec), quality: Quality = 'high'): MakeHumanMesh {
+/**
+ * The MakeHuman body a spec describes (its targets and proxies must be loaded: see preloadAssets).
+ *
+ * `morphs` off skips the facial expression units and the hand poses entirely. They are not small: measured
+ * on the iOS tier, the deltas were 22.7 MB of Float32Array across 1160 buffers — every expression carried
+ * as a full copy of the body's vertex moves, for the body and for the brows, lashes, teeth and tongue. A
+ * rider on a bike at phone scale never changes expression, so on that tier it was 22.7 MB spent on nothing.
+ * The rest pose still relaxes the hands; it is only the moves AWAY from it that are not built.
+ */
+export function buildMakeHuman(spec: AvatarSpec, worn: Worn[] = wornFor(spec), quality: Quality = 'high',
+                               morphs = true): MakeHumanMesh {
   const wear: MhProxy[] = []
   const tints: Array<string | undefined> = []
   for (const w of worn) {
@@ -367,7 +376,7 @@ export function buildMakeHuman(spec: AvatarSpec, worn: Worn[] = wornFor(spec), q
   // hands: relaxed in the rest pose; the other hand poses are morph targets, their moves from it (base vertices)
   const flat = P.slice()
   relaxHands(P, HAND_SHAPES.relaxed)
-  const handDeltas = HAND_MORPHS.map((m) => {
+  const handDeltas = !morphs ? [] : HAND_MORPHS.map((m) => {
     const Q = flat.slice()
     relaxHands(Q, HAND_SHAPES[m])
     const D = new Float32Array(3 * N)
@@ -524,7 +533,7 @@ export function buildMakeHuman(spec: AvatarSpec, worn: Worn[] = wornFor(spec), q
 
   // facial expressions: each unit's move of the base vertices, carried to the rendered body (through its uv
   // splits, or the low body's fitting) and to the brows and lashes that sit on the face
-  const units = EXPRESSION_UNITS.map((u) => [u, expressionDeltas(u, spec.macros, N)] as const)
+  const units = !morphs ? [] : EXPRESSION_UNITS.map((u) => [u, expressionDeltas(u, spec.macros, N)] as const)
   body.morphs = {}
   for (const [u, D] of units) {
     if (!D) continue

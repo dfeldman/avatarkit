@@ -38,6 +38,8 @@ const counts = (): Record<string, number> => ({
   textures: scene.textures.length,
   skeletons: scene.skeletons.length,
   geometries: scene.geometries.length,
+  // each one holds a float texture array on the GPU, and mesh.dispose() does not take it with it
+  morphManagers: scene.morphTargetManagers.length,
 })
 
 /** Where linear blend skinning puts each vertex for the animator's current pose (character space). */
@@ -178,6 +180,32 @@ describe('Avatar', () => {
     a.dispose()
   })
 
+  it('builds no morph data at all with expressions off, and still shares nothing with the ones that have it', () => {
+    /*
+     * The point is the MEMORY, not the behaviour: the deltas are a full copy of the body's vertex moves
+     * per expression unit, per face part, and on a phone they measured 22.7 MB for a rider who never
+     * changes expression. So this checks the arrays are absent, not merely that nothing moves.
+     */
+    const withOut = buildAvatarGeometry(preset('sam'), 'low', false)
+    expect(Object.keys(withOut.body.morphs ?? {})).toEqual([])
+    for (const p of withOut.proxies) expect(Object.keys(p.morphs ?? {})).toEqual([])
+
+    const withThem = buildAvatarGeometry(preset('sam'), 'low', true)
+    expect(Object.keys(withThem.body.morphs ?? {}).length).toBeGreaterThan(10)
+
+    // And the cache must not hand one to the other: same spec, same quality, different bodies.
+    expect(getGeometry(preset('sam'), 'low', false)).not.toBe(getGeometry(preset('sam'), 'low', true))
+    expect(Object.keys(getGeometry(preset('sam'), 'low', false).body.morphs ?? {})).toEqual([])
+
+    // An avatar asked for no expressions gets no manager, and asking it to smile is quietly ignored.
+    const a = new Avatar(scene, preset('sam'), { quality: 'low', expressions: false })
+    expect(a.body!.morphTargetManager).toBe(null)
+    a.setExpression('happy', 1)
+    a.update(1 / 60)
+    expect(a.body!.morphTargetManager).toBe(null)
+    a.dispose()
+  })
+
   it('wears each proxy as its own textured mesh, alpha-tested where MakeHuman marks it transparent', () => {
     const a = new Avatar(scene, preset('sunny'), { quality: 'low' })
     const g = getGeometry(a.spec, 'low')
@@ -210,6 +238,8 @@ describe('Avatar', () => {
     a.update(0.1)
     a.setQuality('medium')
     expect(a.shape).toBe(`medium|${shapeKey(taller)}`)
+    // Two rebuilds have happened by now; neither may have left a morph manager behind.
+    expect(scene.morphTargetManagers.length).toBe(before.morphManagers + a.getMeshes().filter((m) => m.morphTargetManager).length)
     a.dispose()
     // (textures still loading are released as they finish; compare what the scene holds besides)
     const after = counts()
