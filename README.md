@@ -12,8 +12,14 @@ TypeScript library to display realistic human avatars from the MakeHuman project
 > 
 > Parameters include things like "breast size" and "genital size."
 > Clothing is rendered in a separate pass, so with certain types of errors the avatar
-> will appear naked. A lot of the clothing, submitted by volunteers, is revealing
+> will appear naked.
+>
+> A lot of the clothing, submitted by volunteers, is revealing
 > (like bikinis and crop tops). This is just a hazard of the Internet.
+>
+> There is no attempt to render people with body differences, very large/small people,
+> ethnicities that are slightly less common, or even safety gear like bike helmets. Gender is a spectrum
+> (literally in this case) and no avatars are 100% male or 100% female. 
 > 
 > Please be a grownup. The avatars are just Barbie dolls, they are not even very detailed. 
 
